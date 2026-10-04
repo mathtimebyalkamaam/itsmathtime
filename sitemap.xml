@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://www.yourwebsite.com/index.html</loc>
+    <lastmod>2025-07-16T12:00:00+00:00</lastmod>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://www.yourwebsite.com/privacy-policy.html</loc>
+    <lastmod>2025-07-16T12:00:00+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.yourwebsite.com/terms-of-service.html</loc>
+    <lastmod>2025-07-16T12:00:00+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.yourwebsite.com/sitemap.html</loc>
+    <lastmod>2025-07-16T12:00:00+00:00</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <!-- Add more URLs for your blog posts, video pages, etc., as they are created -->
+</urlset>
