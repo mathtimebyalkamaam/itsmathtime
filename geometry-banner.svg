@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 300" width="600" height="300">
+  <defs>
+    <linearGradient id="bgGeo" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e3a8a"/>
+      <stop offset="100%" stop-color="#3b82f6"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="300" fill="url(#bgGeo)"/>
+  <!-- Decorative Geometry Lines -->
+  <circle cx="150" cy="150" r="90" stroke="rgba(255,255,255,0.2)" stroke-width="2" fill="none"/>
+  <polygon points="150,60 228,195 72,195" stroke="rgba(255,255,255,0.4)" stroke-width="3" fill="rgba(255,255,255,0.05)"/>
+  <line x1="150" y1="60" x2="150" y2="195" stroke="rgba(250,204,21,0.7)" stroke-width="2" stroke-dasharray="4"/>
+  <!-- Text Content -->
+  <text x="320" y="110" font-family="'Inter', sans-serif" font-size="20" font-weight="600" fill="#93c5fd" letter-spacing="2">CLASS 8, 9 &amp; 10</text>
+  <text x="320" y="155" font-family="'Inter', sans-serif" font-size="28" font-weight="800" fill="#ffffff">Practical Geometry</text>
+  <text x="320" y="195" font-family="'Inter', sans-serif" font-size="18" font-weight="500" fill="#facc15">5 Secret Master Tips</text>
+  <rect x="320" y="220" width="130" height="32" rx="16" fill="rgba(255,255,255,0.15)"/>
+  <text x="385" y="242" font-family="'Inter', sans-serif" font-size="14" font-weight="600" fill="#ffffff" text-anchor="middle">Read Guide</text>
+</svg>

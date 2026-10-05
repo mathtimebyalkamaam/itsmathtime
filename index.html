@@ -15,11 +15,24 @@
     <title>MathTime by Alka Ma'am – Learn Math the Smart Way</title>
 
     <!-- Favicon -->
-    <link rel="icon" href="https://placehold.co/32x32/000000/FFFFFF?text=AM" type="image/x-icon">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://mathtimebyalkamaam.github.io/itsmathtime/">
+
+    <!-- Performance & DNS Prefetch Hints -->
+    <link rel="dns-prefetch" href="//www.youtube.com">
+    <link rel="dns-prefetch" href="//img.youtube.com">
+    <link rel="dns-prefetch" href="//fonts.googleapis.com">
+    <link rel="dns-prefetch" href="//fonts.gstatic.com">
+    <link rel="dns-prefetch" href="//www.googletagmanager.com">
 
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Inter Font -->
+    
+    <!-- Google Fonts with Preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
     <!-- Custom CSS -->
@@ -32,56 +45,174 @@
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://www.yourwebsite.com/"> <!-- Replace with actual URL -->
+    <meta property="og:url" content="https://mathtimebyalkamaam.github.io/itsmathtime/">
     <meta property="og:title" content="MathTime by Alka Ma'am – Learn Math the Smart Way">
     <meta property="og:description" content="Official website of MathTime by Alka Ma'am. Learn Class 7, 8, 9, 10 Math, Board Exam Tips and Strategies. Engaging video lectures and live classes for students.">
-    <meta property="og:image" content="https://placehold.co/1200x630/6B46C1/FFFFFF?text=MathTime+by+Alka+Ma'am"> <!-- Replace with actual image -->
+    <meta property="og:image" content="https://mathtimebyalkamaam.github.io/itsmathtime/social-preview.svg">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://www.yourwebsite.com/"> <!-- Replace with actual URL -->
+    <meta property="twitter:url" content="https://mathtimebyalkamaam.github.io/itsmathtime/">
     <meta property="twitter:title" content="MathTime by Alka Ma'am – Learn Math the Smart Way">
     <meta property="twitter:description" content="Official website of MathTime by Alka Ma'am. Learn Class 7, 8, 9, 10 Math, Board Exam Tips and Strategies. Engaging video lectures and live classes for students.">
-    <meta property="twitter:image" content="https://placehold.co/1200x630/6B46C1/FFFFFF?text=MathTime+by+Alka+Ma'am"> <!-- Replace with actual image -->
+    <meta property="twitter:image" content="https://mathtimebyalkamaam.github.io/itsmathtime/social-preview.svg">
 
-    <!-- Structured Data (JSON-LD) -->
+    <!-- Structured Data (JSON-LD) with E-E-A-T, VideoObject, Breadcrumb & BlogPosting Schemas -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "EducationalOrganization",
-      "name": "MathTime by Alka Ma'am",
-      "url": "https://www.yourwebsite.com/",
-      "logo": "https://placehold.co/600x600/6B46C1/FFFFFF?text=AM",
-      "description": "Online mathematics education platform by Alka Sharma, offering video lectures, live classes, and study tips for school and competitive exams.",
-      "contactPoint": {
-        "@type": "ContactPoint",
-        "contactType": "customer service",
-        "email": "contact@example.com"
-      },
-      "sameAs": [
-        "https://www.youtube.com/@its.mathtime",
-        "https://www.facebook.com/yourprofile",
-        "https://www.instagram.com/yourprofile"
-      ],
-      "founder": {
-        "@type": "Person",
-        "name": "Alka Sharma",
-        "url": "https://www.yourwebsite.com/#about",
-        "jobTitle": "Mathematics Educator"
-      }
-    }
-    </script>
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "WebSite",
-      "name": "MathTime by Alka Ma'am",
-      "url": "https://www.yourwebsite.com/",
-      "potentialAction": {
-        "@type": "SearchAction",
-        "target": "https://www.yourwebsite.com/search?q={search_term_string}",
-        "query-input": "required name=search_term_string"
-      }
+      "@graph": [
+        {
+          "@type": "EducationalOrganization",
+          "@id": "https://mathtimebyalkamaam.github.io/itsmathtime/#organization",
+          "name": "MathTime by Alka Ma'am",
+          "url": "https://mathtimebyalkamaam.github.io/itsmathtime/",
+          "logo": "https://mathtimebyalkamaam.github.io/itsmathtime/alka%20pics/intro%20pic1.jpg",
+          "description": "Online mathematics education platform by Alka Sharma, offering engaging video lectures, live classes, and study strategies for CBSE Class 7, 8, 9, 10 and board exams.",
+          "email": "info.onesharma@gmail.com",
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "contactType": "educational inquiries",
+            "email": "info.onesharma@gmail.com"
+          },
+          "sameAs": [
+            "https://www.youtube.com/@its.mathtime"
+          ],
+          "founder": {
+            "@type": "Person",
+            "@id": "https://mathtimebyalkamaam.github.io/itsmathtime/#person",
+            "name": "Alka Sharma",
+            "jobTitle": "Mathematics Educator",
+            "url": "https://mathtimebyalkamaam.github.io/itsmathtime/#about",
+            "description": "Dedicated mathematics educator with M.Sc. in Mathematics, B.Ed., and CTET certification, bringing 15+ years of teaching excellence.",
+            "knowsAbout": ["Mathematics", "CBSE Class 7 Math", "CBSE Class 8 Math", "CBSE Class 9 Math", "CBSE Class 10 Math", "Board Exam Preparation", "Geometry", "Algebra"],
+            "hasCredential": [
+              {
+                "@type": "EducationalOccupationalCredential",
+                "credentialCategory": "degree",
+                "name": "M.Sc. Mathematics"
+              },
+              {
+                "@type": "EducationalOccupationalCredential",
+                "credentialCategory": "degree",
+                "name": "B.Ed."
+              },
+              {
+                "@type": "EducationalOccupationalCredential",
+                "credentialCategory": "certification",
+                "name": "CTET Certified"
+              }
+            ],
+            "sameAs": [
+              "https://www.youtube.com/@its.mathtime"
+            ]
+          }
+        },
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://mathtimebyalkamaam.github.io/itsmathtime/#home"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "About Alka Sharma",
+              "item": "https://mathtimebyalkamaam.github.io/itsmathtime/#about"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Video Lessons",
+              "item": "https://mathtimebyalkamaam.github.io/itsmathtime/#videos"
+            },
+            {
+              "@type": "ListItem",
+              "position": 4,
+              "name": "Math Playlists",
+              "item": "https://mathtimebyalkamaam.github.io/itsmathtime/#playlists"
+            },
+            {
+              "@type": "ListItem",
+              "position": 5,
+              "name": "Math Blog",
+              "item": "https://mathtimebyalkamaam.github.io/itsmathtime/#blog"
+            }
+          ]
+        },
+        {
+          "@type": "VideoObject",
+          "name": "Estimating Sums In Addition and Subtraction ┃IN JUST 7 MINS┃",
+          "description": "Learn estimating sums in addition and subtraction with Alka Ma'am in just 7 minutes. Clear foundational math tutorial for students.",
+          "thumbnailUrl": "https://img.youtube.com/vi/tsyPRZcVJ48/hqdefault.jpg",
+          "uploadDate": "2024-01-01T08:00:00+05:30",
+          "embedUrl": "https://www.youtube.com/embed/tsyPRZcVJ48",
+          "contentUrl": "https://www.youtube.com/watch?v=tsyPRZcVJ48"
+        },
+        {
+          "@type": "VideoObject",
+          "name": "Multiples & Factors - FINDING HCF by listing all FACTORS ┃IN JUST 8MINS┃",
+          "description": "Understand multiples, factors, and how to find HCF by listing all factors in 8 minutes with Alka Ma'am.",
+          "thumbnailUrl": "https://img.youtube.com/vi/6BI1CzRtA3s/hqdefault.jpg",
+          "uploadDate": "2024-01-01T08:00:00+05:30",
+          "embedUrl": "https://www.youtube.com/embed/6BI1CzRtA3s",
+          "contentUrl": "https://www.youtube.com/watch?v=6BI1CzRtA3s"
+        },
+        {
+          "@type": "VideoObject",
+          "name": "HCF & LCM BY SHORT DIVISION METHOD",
+          "description": "Quick short division method to find HCF and LCM easily for school students.",
+          "thumbnailUrl": "https://img.youtube.com/vi/BBVCpXWtxTU/hqdefault.jpg",
+          "uploadDate": "2024-01-01T08:00:00+05:30",
+          "embedUrl": "https://www.youtube.com/embed/BBVCpXWtxTU",
+          "contentUrl": "https://www.youtube.com/shorts/BBVCpXWtxTU"
+        },
+        {
+          "@type": "BlogPosting",
+          "headline": "5 Secret Tips to Master Practical Geometry",
+          "description": "A must-know practical geometry guide for CBSE Class 8, 9, and 10 students by Alka Ma'am.",
+          "author": {
+            "@type": "Person",
+            "name": "Alka Sharma"
+          },
+          "url": "https://itsmathtime1.blogspot.com/2025/07/5-secret-tips-to-master-practical.html",
+          "publisher": {
+            "@type": "Organization",
+            "name": "MathTime by Alka Ma'am"
+          }
+        },
+        {
+          "@type": "BlogPosting",
+          "headline": "How to Prepare for Board Exams - Expert Math Advice",
+          "description": "Expert advice from Math Time by Alka Ma'am for board exams preparation and scoring high in mathematics.",
+          "author": {
+            "@type": "Person",
+            "name": "Alka Sharma"
+          },
+          "url": "https://itsmathtime2.blogspot.com/2025/07/how-to-prepare-for-board-exams.html",
+          "publisher": {
+            "@type": "Organization",
+            "name": "MathTime by Alka Ma'am"
+          }
+        },
+        {
+          "@type": "BlogPosting",
+          "headline": "Math Tricks You Will Love to Show-Off",
+          "description": "Master mental math with incredible speed calculation tricks for Class 8-10 students.",
+          "author": {
+            "@type": "Person",
+            "name": "Alka Sharma"
+          },
+          "url": "https://itsmathtime3.blogspot.com/2025/07/math-tricks-you-will-love-to-show-off.html",
+          "publisher": {
+            "@type": "Organization",
+            "name": "MathTime by Alka Ma'am"
+          }
+        }
+      ]
     }
     </script>
 </head>
@@ -90,7 +221,7 @@
     <!-- Header -->
     <header class="bg-gradient-to-r from-blue-600 to-purple-600 text-white shadow-lg py-4 sticky top-0 z-50">
         <div class="container mx-auto flex justify-between items-center px-4">
-            <a href="#" class="text-2xl font-bold tracking-tight animate-on-load fade-in">MathTime by Alka Ma'am</a>
+            <a href="#home" class="text-2xl font-bold tracking-tight animate-on-load fade-in">MathTime by Alka Ma'am</a>
             <nav class="hidden md:flex space-x-6 animate-on-load fade-in" style="animation-delay: 0.2s;">
                 <a href="#home" class="hover:text-blue-200 transition duration-300">Home</a>
                 <a href="#about" class="hover:text-blue-200 transition duration-300">About</a>
@@ -101,7 +232,7 @@
                 <a href="#contact" class="hover:text-blue-200 transition duration-300">Contact</a>
             </nav>
             <!-- Mobile Menu Button -->
-            <button id="mobile-menu-button" class="md:hidden text-white focus:outline-none animate-on-load fade-in" style="animation-delay: 0.4s;">
+            <button id="mobile-menu-button" aria-label="Toggle navigation menu" aria-expanded="false" class="md:hidden text-white focus:outline-none animate-on-load fade-in" style="animation-delay: 0.4s;">
                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
                 </svg>
@@ -146,7 +277,7 @@
                     </div>
                 </div>
                 <div class="md:w-1/2 flex justify-center md:justify-end hero-animate-image">
-                    <img src="alka pics/intro pic1.jpg" alt="Alka Sharma Profile Photo" class="rounded-full w-64 h-64 md:w-80 md:h-80 object-cover object-top shadow-xl border-4 border-white">
+                    <img src="alka pics/intro pic1.jpg" alt="Alka Sharma Profile Photo" width="320" height="320" fetchpriority="high" class="rounded-full w-64 h-64 md:w-80 md:h-80 object-cover object-top shadow-xl border-4 border-white">
                 </div>
             </div>
         </section>
@@ -214,7 +345,7 @@
                     <!-- Video 1 Placeholder -->
                     <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition duration-300 animate-on-scroll scale-in">
                         <div class="video-container">
-                            <iframe src="https://www.youtube.com/embed/tsyPRZcVJ48" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <iframe src="https://www.youtube.com/embed/tsyPRZcVJ48" title="Estimating Sums In Addition and Subtraction Video Lesson" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         </div>
                         <div class="p-6">
                             <h3 class="text-xl font-semibold mb-2">Estimating Sums In Addition and Subtraction ┃IN JUST 7 MINS┃</h3>
@@ -225,7 +356,7 @@
                     <!-- Video 2 Placeholder -->
                     <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition duration-300 animate-on-scroll scale-in">
                         <div class="video-container">
-                            <iframe src="https://www.youtube.com/embed/6BI1CzRtA3s" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <iframe src="https://www.youtube.com/embed/6BI1CzRtA3s" title="Multiples & Factors - FINDING HCF by listing all FACTORS Video Lesson" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         </div>
                         <div class="p-6">
                             <h3 class="text-xl font-semibold mb-2">Multiples & Factors - FINDING HCF by listing all FACTORS ┃IN JUST 8MINS┃</h3>
@@ -236,7 +367,7 @@
                     <!-- Video 3 Placeholder -->
                     <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition duration-300 animate-on-scroll scale-in">
                         <div class="video-container">
-                            <iframe src="https://www.youtube.com/embed/BBVCpXWtxTU" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <iframe src="https://www.youtube.com/embed/BBVCpXWtxTU" title="HCF & LCM BY SHORT DIVISION METHOD Video Lesson" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         </div>
                         <div class="p-6">
                             <h3 class="text-xl font-semibold mb-2">HCF & LCM BY SHORT DIVISION METHOD</h3>
@@ -258,40 +389,40 @@
             <div class="container mx-auto px-4">
                 <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-blue-700 section-title animate-on-scroll">Explore Our Math Playlists</h2>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    <!-- Class 9 Math -->
+                    <!-- Class 9 Math - Number System -->
                     <div class="bg-gradient-to-br from-blue-100 to-blue-200 rounded-lg shadow-md p-6 transform hover:scale-105 transition duration-300 animate-on-scroll fade-in-up">
-                        <h3 class="text-2xl font-semibold mb-3 text-blue-800">Class 9 Math</h3>
-                        <p class="text-gray-700 mb-4">In-depth coverage of Number System.</p>
+                        <h3 class="text-2xl font-semibold mb-3 text-blue-800">Class 9: Number System</h3>
+                        <p class="text-gray-700 mb-4">In-depth coverage of Number System concepts, theorems, and solutions.</p>
                         <a href="https://www.youtube.com/playlist?list=PLYwX6eCZ2uRguq6bT_Kxs0WMfJxw0Zbo_" target="_blank" class="text-blue-600 hover:underline font-medium">View Playlist &rarr;</a>
                     </div>
-                    <!-- Class 10 Math -->
+                    <!-- Class 9 Math - Coordinate Geometry -->
                     <div class="bg-gradient-to-br from-purple-100 to-purple-200 rounded-lg shadow-md p-6 transform hover:scale-105 transition duration-300 animate-on-scroll fade-in-up">
-                        <h3 class="text-2xl font-semibold mb-3 text-purple-800">Class 9 Math</h3>
-                        <p class="text-gray-700 mb-4">Fully Explained Coordinate Geometry.</p>
+                        <h3 class="text-2xl font-semibold mb-3 text-purple-800">Class 9: Coordinate Geometry</h3>
+                        <p class="text-gray-700 mb-4">Fully explained Coordinate Geometry fundamentals and exercises.</p>
                         <a href="https://www.youtube.com/playlist?list=PLYwX6eCZ2uRgx_o4x7HuHbURvrGtwXfLX" target="_blank" class="text-purple-600 hover:underline font-medium">View Playlist &rarr;</a>
                     </div>
-                    <!-- Class 11 Math -->
+                    <!-- Class 8 Math - Algebraic Expressions -->
                     <div class="bg-gradient-to-br from-indigo-100 to-indigo-200 rounded-lg shadow-md p-6 transform hover:scale-105 transition duration-300 animate-on-scroll fade-in-up">
-                        <h3 class="text-2xl font-semibold mb-3 text-indigo-800">Class 8 Math</h3>
-                        <p class="text-gray-700 mb-4">Fully Explained Algebraic Expressions and it's Identities.</p>
+                        <h3 class="text-2xl font-semibold mb-3 text-indigo-800">Class 8: Algebraic Expressions</h3>
+                        <p class="text-gray-700 mb-4">Fully explained Algebraic Expressions, identities, and practice problems.</p>
                         <a href="https://www.youtube.com/playlist?list=PLYwX6eCZ2uRjsXZyTnj1gp29m4nfXvn5U" target="_blank" class="text-indigo-600 hover:underline font-medium">View Playlist &rarr;</a>
                     </div>
-                    <!-- Class 12 Math -->
+                    <!-- Class 8 Math - Linear Equations -->
                     <div class="bg-gradient-to-br from-pink-100 to-pink-200 rounded-lg shadow-md p-6 transform hover:scale-105 transition duration-300 animate-on-scroll fade-in-up">
-                        <h3 class="text-2xl font-semibold mb-3 text-pink-800">Class 8 Math</h3>
-                        <p class="text-gray-700 mb-4">Prepare for Linear Equation in one Variable.</p>
+                        <h3 class="text-2xl font-semibold mb-3 text-pink-800">Class 8: Linear Equations</h3>
+                        <p class="text-gray-700 mb-4">Master Linear Equations in one Variable with step-by-step guidance.</p>
                         <a href="https://www.youtube.com/playlist?list=PLYwX6eCZ2uRg_-Q6oCM3Ap7Np1vmnwvAq" target="_blank" class="text-pink-600 hover:underline font-medium">View Playlist &rarr;</a>
                     </div>
-                    <!-- Board Exam Tips -->
+                    <!-- Class 4-7 Math -->
                     <div class="bg-gradient-to-br from-green-100 to-green-200 rounded-lg shadow-md p-6 transform hover:scale-105 transition duration-300 animate-on-scroll fade-in-up">
-                        <h3 class="text-2xl font-semibold mb-3 text-green-800">Class 4, 5, 6 & 7 Math</h3>
-                        <p class="text-gray-700 mb-4">Prepare for your final board exams.</p>
+                        <h3 class="text-2xl font-semibold mb-3 text-green-800">Junior Math: Classes 4 to 7</h3>
+                        <p class="text-gray-700 mb-4">Core building blocks, final exam preparation, and mental math tricks.</p>
                         <a href="https://www.youtube.com/playlist?list=PLYwX6eCZ2uRipTTWe5H13aFiZg5KYdHEe" target="_blank" class="text-green-600 hover:underline font-medium">View Playlist &rarr;</a>
                     </div>
-                    <!-- Competitive Exams -->
+                    <!-- Percentage & Applications -->
                     <div class="bg-gradient-to-br from-yellow-100 to-yellow-200 rounded-lg shadow-md p-6 transform hover:scale-105 transition duration-300 animate-on-scroll fade-in-up">
-                        <h3 class="text-2xl font-semibold mb-3 text-yellow-800">Class 5, 6 & 7</h3>
-                        <p class="text-gray-700 mb-4">Learn with fun - Percentage and its Application.</p>
+                        <h3 class="text-2xl font-semibold mb-3 text-yellow-800">Classes 5-7: Percentages & Applications</h3>
+                        <p class="text-gray-700 mb-4">Learn with fun - Percentage and practical everyday applications.</p>
                         <a href="https://www.youtube.com/playlist?list=PLYwX6eCZ2uRglr_vw-BjDOttRUPuIEifp" target="_blank" class="text-yellow-600 hover:underline font-medium">View Playlist &rarr;</a>
                     </div>
                 </div>
@@ -305,86 +436,51 @@
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
                     <!-- Gallery Item 1 -->
                     <div class="bg-white rounded-lg shadow-md overflow-hidden transform hover:scale-105 transition duration-300 animate-on-scroll scale-in">
-                        <img src="alka pics/1.jpg" alt="Alka Ma'am teaching online class" class="w-full h-48 object-cover">
+                        <img src="alka pics/1.jpg" alt="Alka Ma'am teaching online class" loading="lazy" width="400" height="192" class="w-full h-48 object-cover">
                         <div class="p-4 text-center text-gray-700">Engaging Online Session</div>
                     </div>
                     <!-- Gallery Item 2 -->
                     <div class="bg-white rounded-lg shadow-md overflow-hidden transform hover:scale-105 transition duration-300 animate-on-scroll scale-in">
-                        <img src="alka pics/2.jpg" alt="Alka Ma'am explaining concepts" class="w-full h-48 object-cover">
+                        <img src="alka pics/2.jpg" alt="Alka Ma'am explaining concepts" loading="lazy" width="400" height="192" class="w-full h-48 object-cover">
                         <div class="p-4 text-center text-gray-700">Clarity in Concepts</div>
                     </div>
                     <!-- Gallery Item 3 -->
                     <div class="bg-white rounded-lg shadow-md overflow-hidden transform hover:scale-105 transition duration-300 animate-on-scroll scale-in">
-                        <img src="alka pics/3.jpg" alt="Alka Ma'am conducting online class" class="w-full h-48 object-cover">
+                        <img src="alka pics/3.jpg" alt="Alka Ma'am conducting online class" loading="lazy" width="400" height="192" class="w-full h-48 object-cover">
                         <div class="p-4 text-center text-gray-700">Interactive Learning</div>
                     </div>
                     <!-- Gallery Item 4 -->
                     <div class="bg-white rounded-lg shadow-md overflow-hidden transform hover:scale-105 transition duration-300 animate-on-scroll scale-in">
-                        <img src="alka pics/4.jpg" alt="Alka Ma'am on video call with students" class="w-full h-48 object-cover">
+                        <img src="alka pics/4.jpg" alt="Alka Ma'am on video call with students" loading="lazy" width="400" height="192" class="w-full h-48 object-cover">
                         <div class="p-4 text-center text-gray-700">Personalized Guidance</div>
                     </div>
                     <!-- Gallery Item 5 -->
                     <div class="bg-white rounded-lg shadow-md overflow-hidden transform hover:scale-105 transition duration-300 animate-on-scroll scale-in">
-                        <img src="alka pics/5.jpg" alt="Alka Ma'am teaching from home" class="w-full h-48 object-cover">
+                        <img src="alka pics/5.jpg" alt="Alka Ma'am teaching from home" loading="lazy" width="400" height="192" class="w-full h-48 object-cover">
                         <div class="p-4 text-center text-gray-700">Accessible Education</div>
                     </div>
                     <!-- Gallery Item 6 -->
                     <div class="bg-white rounded-lg shadow-md overflow-hidden transform hover:scale-105 transition duration-300 animate-on-scroll scale-in">
-                        <img src="alka pics/6.jpg" alt="Alka Ma'am demonstrating math problems" class="w-full h-48 object-cover">
+                        <img src="alka pics/6.jpg" alt="Alka Ma'am demonstrating math problems" loading="lazy" width="400" height="192" class="w-full h-48 object-cover">
                         <div class="p-4 text-center text-gray-700">Problem Solving Focus</div>
                     </div>
-                                        <!-- Gallery Item 8 -->
+                    <!-- Gallery Item 8 -->
                     <div class="bg-white rounded-lg shadow-md overflow-hidden transform hover:scale-105 transition duration-300 animate-on-scroll scale-in">
-                        <img src="alka pics/8.jpg" alt="Alka Ma'am with digital whiteboard" class="w-full h-48 object-cover">
+                        <img src="alka pics/8.jpg" alt="Alka Ma'am with digital whiteboard" loading="lazy" width="400" height="192" class="w-full h-48 object-cover">
                         <div class="p-4 text-center text-gray-700">Modern Teaching Tools</div>
                     </div>
                     <!-- Gallery Item 9 -->
                     <div class="bg-white rounded-lg shadow-md overflow-hidden transform hover:scale-105 transition duration-300 animate-on-scroll scale-in">
-                        <img src="alka pics/9.jpg" alt="Alka Ma'am inspiring students" class="w-full h-48 object-cover">
+                        <img src="alka pics/9.jpg" alt="Alka Ma'am inspiring students" loading="lazy" width="400" height="192" class="w-full h-48 object-cover">
                         <div class="p-4 text-center text-gray-700">Inspiring Future Mathematicians</div>
                     </div>
                     <!-- Gallery Item 10 -->
                     <div class="bg-white rounded-lg shadow-md overflow-hidden transform hover:scale-105 transition duration-300 animate-on-scroll scale-in">
-                        <img src="alka pics/10.jpg" alt="Alka Ma'am focused on teaching" class="w-full h-48 object-cover">
+                        <img src="alka pics/10.jpg" alt="Alka Ma'am focused on teaching" loading="lazy" width="400" height="192" class="w-full h-48 object-cover">
                         <div class="p-4 text-center text-gray-700">Dedicated Instruction</div>
                     </div>
                 </div>
             </div>
-        </section>
-        <!-- The following div block appears to be a duplicate of the gallery items and is outside the main gallery section. -->
-        <!-- I recommend removing it to avoid redundant content and layout issues. -->
-        <!-- If these were intended for a different section, please clarify. -->
-        <!-- For now, I'm assuming they are redundant and should be removed. -->
-        <!--
-        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-            <div class="bg-white rounded-lg shadow-md overflow-hidden transform hover:scale-105 transition duration-300 animate-on-scroll scale-in">
-                <img src="https://placehold.co/600x400/E0E7FF/3B82F6?text=Math+Class+1" alt="Math Class 1" class="w-full h-48 object-cover">
-                <div class="p-4 text-center text-gray-700">Engaging Session</div>
-            </div>
-            <div class="bg-white rounded-lg shadow-md overflow-hidden transform hover:scale-105 transition duration-300 animate-on-scroll scale-in">
-                <img src="https://placehold.co/600x400/D1C4E9/673AB7?text=Student+Interaction" alt="Student Interaction" class="w-full h-48 object-cover">
-                <div class="p-4 text-center text-gray-700">Interactive Learning</div>
-            </div>
-            <div class="bg-white rounded-lg shadow-md overflow-hidden transform hover:scale-105 transition duration-300 animate-on-scroll scale-in">
-                <img src="https://placehold.co/600x400/C8E6C9/4CAF50?text=Workshop+Fun" alt="Workshop Fun" class="w-full h-48 object-cover">
-                <div class="p-4 text-center text-gray-700">Workshop Moments</div>
-            </div>
-            <div class="bg-white rounded-lg shadow-md overflow-hidden transform hover:scale-105 transition duration-300 animate-on-scroll scale-in">
-                <img src="https://placehold.co/600x400/FFECB3/FFC107?text=Alka+Ma'am+Teaching" alt="Alka Ma'am Teaching" class="w-full h-48 object-cover">
-                <div class="p-4 text-center text-gray-700">Clarity in Concepts</div>
-            </div>
-            <div class="bg-white rounded-lg shadow-md overflow-hidden transform hover:scale-105 transition duration-300 animate-on-scroll scale-in">
-                <img src="https://placehold.co/600x400/B3E5FC/03A9F4?text=Online+Class" alt="Online Class" class="w-full h-48 object-cover">
-                <div class="p-4 text-center text-gray-700">Online Sessions</div>
-            </div>
-            <div class="bg-white rounded-lg shadow-md overflow-hidden transform hover:scale-105 transition duration-300 animate-on-scroll scale-in">
-                <img src="https://placehold.co/600x400/F8BBD0/E91E63?text=Success+Stories" alt="Success Stories" class="w-full h-48 object-cover">
-                <div class="p-4 text-center text-gray-700">Student Success</div>
-            </div>
-        </div>
-        <div class="container mx-auto px-4">
-            </div>
-        -->
         </section>
 
         <!-- Blog Section (Optional) -->
@@ -394,33 +490,33 @@
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     <!-- Blog Post 1 -->
                     <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition duration-300 animate-on-scroll fade-in-up">
-                        <img src="https://placehold.co/600x300/ADD8E6/000000?text=Blog+Post+1" alt="Blog Post Image" class="w-full h-48 object-cover">
+                        <img src="geometry-banner.svg" alt="5 Secret Tips to Master Practical Geometry" loading="lazy" width="600" height="300" class="w-full h-48 object-cover">
                         <div class="p-6">
                             <h3 class="text-xl font-semibold mb-2">5 Secret Tips to Master Practical Geometry</h3>
                             <p class="text-gray-600 text-sm mb-4">A Must-Know Guide for Class 8, 9, and 10 Students.</p>
-                            <a href="https://itsmathtime1.blogspot.com/2025/07/5-secret-tips-to-master-practical.html" target="_blank" class="block w-full bg-blue-600 text-white text-center font-semibold py-2 px-4 rounded-md hover:bg-blue-700 transition duration-300">
+                            <a href="https://itsmathtime1.blogspot.com/2025/07/5-secret-tips-to-master-practical.html" target="_blank" rel="noopener noreferrer" class="block w-full bg-blue-600 text-white text-center font-semibold py-2 px-4 rounded-md hover:bg-blue-700 transition duration-300">
                                 Read Blog
                             </a>
                         </div>
                     </div>
                     <!-- Blog Post 2 -->
                     <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition duration-300 animate-on-scroll fade-in-up">
-                        <img src="https://placehold.co/600x300/DDA0DD/000000?text=Blog+Post+2" alt="Blog Post Image" class="w-full h-48 object-cover">
+                        <img src="exams-banner.svg" alt="How to Prepare for Board Exams" loading="lazy" width="600" height="300" class="w-full h-48 object-cover">
                         <div class="p-6">
                             <h3 class="text-xl font-semibold mb-2">How to Prepare for Board Exams?</h3>
                             <p class="text-gray-600 text-sm mb-4">Expert Advice from Math Time by Alka Ma'am - Your Gateway to Mathematics Excellence.</p>
-                            <a href="https://itsmathtime2.blogspot.com/2025/07/how-to-prepare-for-board-exams.html" target="_blank" class="block w-full bg-blue-600 text-white text-center font-semibold py-2 px-4 rounded-md hover:bg-blue-700 transition duration-300">
+                            <a href="https://itsmathtime2.blogspot.com/2025/07/how-to-prepare-for-board-exams.html" target="_blank" rel="noopener noreferrer" class="block w-full bg-blue-600 text-white text-center font-semibold py-2 px-4 rounded-md hover:bg-blue-700 transition duration-300">
                                 Read Blog
                             </a>
                         </div>
                     </div>
                     <!-- Blog Post 3 -->
                     <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition duration-300 animate-on-scroll fade-in-up">
-                        <img src="https://placehold.co/600x300/90EE90/000000?text=Blog+Post+3" alt="Blog Post Image" class="w-full h-48 object-cover">
+                        <img src="math-tricks-banner.svg" alt="Math tricks you will love to Show-Off" loading="lazy" width="600" height="300" class="w-full h-48 object-cover">
                         <div class="p-6">
                             <h3 class="text-xl font-semibold mb-2">Math tricks you will love to Show-Off</h3>
                             <p class="text-gray-600 text-sm mb-4">Master mental math with these incredible tricks for Class 8-10 students. Impress friends and teachers with lightning-fast calculations!</p>
-                            <a href="https://itsmathtime3.blogspot.com/2025/07/math-tricks-you-will-love-to-show-off.html" target="_blank" class="block w-full bg-blue-600 text-white text-center font-semibold py-2 px-4 rounded-md hover:bg-blue-700 transition duration-300">
+                            <a href="https://itsmathtime3.blogspot.com/2025/07/math-tricks-you-will-love-to-show-off.html" target="_blank" rel="noopener noreferrer" class="block w-full bg-blue-600 text-white text-center font-semibold py-2 px-4 rounded-md hover:bg-blue-700 transition duration-300">
                                 Read Blog
                             </a>
                         </div>
@@ -451,50 +547,86 @@
                     </form>
                     <div id="form-message" class="mt-4 text-sm text-green-600 hidden"></div>
 
-                    <div class="mt-10 animate-on-scroll fade-in-up">
-                        <h3 class="text-xl font-semibold mb-4 text-gray-800">Connect with Me</h3>
-                        <div class="flex justify-center space-x-6">
-                            <a href="https://www.youtube.com/@its.mathtime" target="_blank" class="text-red-600 hover:text-red-700 transition duration-300 transform hover:scale-110 animate-on-scroll scale-in" style="animation-delay: 0.4s;">
-                                <!-- YouTube SVG -->
-                                <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.274 16.059s-.501 1.799-1.393 2.001c-1.047.245-2.656.245-6.88.245-4.227 0-5.836 0-6.882-.245-.892-.202-1.393-2.001-1.393-2.001s-.501-3.299-.501-6.059c0-2.76.501-6.059.501-6.059s.501-1.799 1.393-2.001c1.046-.245 2.656-.245 6.882-.245 4.224 0 5.833 0 6.88.245.892.202 1.393 2.001 1.393 2.001s.501 3.299.501 6.059c0 2.76-.501 6.059-.501 6.059zm-4.729-4.059l-4.501 2.501v-5.002l4.501 2.501z"/></svg>
-                            </a>
-                            <a href="https://www.facebook.com/yourprofile" target="_blank" class="text-blue-700 hover:text-blue-800 transition duration-300 transform hover:scale-110 animate-on-scroll scale-in" style="animation-delay: 0.5s;">
-                                <!-- Facebook SVG -->
-                                <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm3 8h-1.353c-.586 0-.647.221-.647.75v1.25h2l-.265 2h-1.735v6h-3v-6h-2v-2h2v-1.157c0-1.789.932-2.75 2.75-2.75h1.25v2z"/></svg>
-                            </a>
-                            <a href="https://www.instagram.com/yourprofile" target="_blank" class="text-purple-700 hover:text-purple-800 transition duration-300 transform hover:scale-110 animate-on-scroll scale-in" style="animation-delay: 0.6s;">
-                                <!-- Instagram SVG -->
-                                <svg class="w-8 h-8" viewBox="0 0 448 512" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9 114.9-51.3 114.9-114.9S287.7 141 224.1 141zm0 186c-39.5 0-71.5-32-71.5-71.5s32-71.5 71.5-71.5 71.5 32 71.5 71.5-32 71.5-71.5 71.5zm146.4-194.3c0 14.9-12 26.9-26.9 26.9s-26.9-12-26.9-26.9 12-26.9 26.9-26.9 26.9 12 26.9 26.9zm76.1 27.2c-1.7-35.3-9.9-66.7-36.2-92.9S388.6 7.7 353.3 6c-35.3-1.7-141.3-1.7-176.6 0-35.3 1.7-66.7 9.9-92.9 36.2S7.7 123.4 6 158.7c-1.7 35.3-1.7 141.3 0 176.6 1.7 35.3 9.9 66.7 36.2 92.9s57.6 34.5 92.9 36.2c35.3 1.7 141.3 1.7 176.6 0 35.3-1.7 66.7-9.9 92.9-36.2s34.5-57.6 36.2-92.9c1.7-35.3 1.7-141.3 0-176.6zM398.8 388c-7.8 19.6-22.9 34.7-42.5 42.5-29.4 11.7-99.2 9-132.3 9s-102.9 2.6-132.3-9c-19.6-7.8-34.7-22.9-42.5-42.5-11.7-29.4-9-99.2-9-132.3s-2.6-102.9 9-132.3c7.8-19.6 22.9-34.7 42.5-42.5 29.4-11.7 99.2-9 132.3-9s102.9-2.6 132.3 9c19.6 7.8 34.7 22.9 42.5 42.5 11.7 29.4 9 99.2 9 132.3s2.6 102.9-9 132.3z"/>
-                                </svg>
-                            </a>
-                            <!-- WhatsApp -->
-                            <a href="https://wa.me/919999999999" target="_blank" class="text-green-500 hover:text-green-600 transition duration-300 transform hover:scale-110 animate-on-scroll scale-in" style="animation-delay: 0.7s;">
-                                <!-- WhatsApp SVG -->
-                                <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 32 32"><path d="M16 3C9.373 3 4 8.373 4 15c0 2.646.865 5.093 2.338 7.093L4 29l7.093-2.338C10.907 27.135 13.354 28 16 28c6.627 0 12-5.373 12-13S22.627 3 16 3zm0 22c-2.093 0-4.093-.646-5.75-1.75l-.406-.25-4.25 1.406 1.406-4.25-.25-.406C6.646 19.093 6 17.093 6 15c0-5.514 4.486-10 10-10s10 4.486 10 10-4.486 10-10 10zm5.25-7.25c-.354-.177-2.093-1.031-2.417-1.146-.323-.115-.56-.177-.797.177-.238.354-.917 1.146-1.125 1.385-.208.238-.416.269-.77.092-.354-.177-1.5-.553-2.86-1.762-1.057-.944-1.77-2.109-1.98-2.463-.208-.354-.022-.546.155-.723.16-.16.354-.416.531-.624.177-.208.238-.354.354-.592.115-.238.061-.446-.03-.624-.092-.177-.797-1.927-1.092-2.646-.288-.692-.582-.599-.797-.61-.206-.009-.446-.011-.684-.011-.238 0-.624.092-.951.446-.327.354-1.25 1.223-1.25 2.977 0 1.754 1.282 3.454 1.462 3.692.177.238 2.527 3.862 6.13 5.262.857.338 1.525.539 2.047.692.857.269 1.637.231 2.25.141.686-.099 2.093-.854 2.389-1.68.296-.826.296-1.533.208-1.68-.089-.146-.323-.238-.677-.416z"/></svg>
-                            </a>
-                            <!-- LinkedIn -->
-                            <a href="https://www.linkedin.com/in/yourprofile" target="_blank" class="text-blue-600 hover:text-blue-700 transition duration-300 transform hover:scale-110 animate-on-scroll scale-in" style="animation-delay: 0.8s;">
-                                <!-- LinkedIn SVG -->
-                                <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.761 0 5-2.239 5-5v-14c0-2.761-2.239-5-5-5zm-11 19h-3v-9h3v9zm-1.5-10.268c-.966 0-1.75-.784-1.75-1.75s.784-1.75 1.75-1.75 1.75.784 1.75 1.75-.784 1.75-1.75 1.75zm13.5 10.268h-3v-4.604c0-1.099-.021-2.513-1.531-2.513-1.531 0-1.767 1.197-1.767 2.434v4.683h-3v-9h2.881v1.233h.041c.401-.761 1.379-1.563 2.841-1.563 3.039 0 3.6 2.001 3.6 4.599v4.731z"/></svg>
-                            </a>
-                            <!-- Twitter -->
-                            <a href="https://twitter.com/yourprofile" target="_blank" class="text-blue-400 hover:text-blue-500 transition duration-300 transform hover:scale-110 animate-on-scroll scale-in" style="animation-delay: 0.9s;">
-                                <!-- Twitter SVG -->
-                                <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24"><path d="M24 4.557a9.93 9.93 0 0 1-2.828.775 4.932 4.932 0 0 0 2.165-2.724c-.951.564-2.005.974-3.127 1.195a4.92 4.92 0 0 0-8.384 4.482c-4.086-.205-7.713-2.164-10.141-5.144a4.822 4.822 0 0 0-.664 2.475c0 1.708.87 3.216 2.188 4.099a4.904 4.904 0 0 1-2.229-.616c-.054 2.281 1.581 4.415 3.949 4.89a4.936 4.936 0 0 1-2.224.084c.627 1.956 2.444 3.377 4.6 3.417a9.867 9.867 0 0 1-6.102 2.104c-.396 0-.787-.023-1.175-.069a13.945 13.945 0 0 0 7.548 2.212c9.057 0 14.009-7.513 14.009-14.009 0-.213-.005-.425-.014-.636A10.012 10.012 0 0 0 24 4.557z"/></svg>
-                            </a>
-                            <!-- Email (Gmail) -->
-                            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=info.onesharma@gmail.com" target="_blank" class="text-red-500 hover:text-red-600 transition duration-300 transform hover:scale-110 animate-on-scroll scale-in" style="animation-delay: 1.0s;">
-                                <!-- Gmail SVG -->
-                                <svg class="w-8 h-8" viewBox="0 0 48 48" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                    <rect width="48" height="48" rx="8" fill="#fff"/>
-                                    <path d="M44 39.5V15.5L24 31.5L4 15.5V39.5C4 41.1569 5.34315 42.5 7 42.5H41C42.6569 42.5 44 41.1569 44 39.5Z" fill="#EA4335"/>
-                                    <path d="M44 8.5C44 6.84315 42.6569 5.5 41 5.5H7C5.34315 5.5 4 6.84315 4 8.5V12.5L24 28.5L44 12.5V8.5Z" fill="#4285F4"/>
-                                    <path d="M4 8.5V12.5L24 28.5L44 12.5V8.5C44 6.84315 42.6569 5.5 41 5.5H7C5.34315 5.5 4 6.84315 4 8.5Z" fill="#34A853"/>
-                                    <path d="M44 15.5L24 31.5L4 15.5" stroke="#FBBC05" stroke-width="2"/>
-                                </svg>
-                            </a>
+                    <div class="border-t border-gray-200 mt-10 pt-8 animate-on-scroll fade-in-up">
+                        <div class="inline-flex items-center justify-center p-2 bg-blue-50 text-blue-600 rounded-full mb-3">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z"></path>
+                            </svg>
                         </div>
+                        <h3 class="text-xl md:text-2xl font-bold mb-3 text-gray-800">Share This Website</h3>
+                        <p class="text-gray-600 text-sm md:text-base max-w-md mx-auto mb-6 leading-relaxed">
+                            Empower your friends and classmates to conquer math fear! If you find these lessons helpful, share MathTime with your study groups and friends to make learning simple, interactive, and fun for everyone.
+                        </p>
+
+                        <!-- Share Buttons Row -->
+                        <div class="flex flex-wrap justify-center items-center gap-3 mb-4">
+                            <!-- WhatsApp Share -->
+                            <a id="share-whatsapp" href="https://api.whatsapp.com/send?text=Learn%20math%20the%20smart%20way%20with%20MathTime%20by%20Alka%20Ma%27am!%20Check%20out%20interactive%20lessons%20and%20classes%20here%3A%20https%3A%2F%2Fwww.youtube.com%2F%40its.mathtime" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 bg-[#25D366] hover:bg-[#1ebe5b] text-white font-medium py-2.5 px-4 rounded-full shadow-md hover:shadow-lg transition duration-300 transform hover:-translate-y-0.5" title="Share on WhatsApp">
+                                <svg class="w-5 h-5 fill-current" viewBox="0 0 32 32">
+                                    <path d="M16 3C9.373 3 4 8.373 4 15c0 2.646.865 5.093 2.338 7.093L4 29l7.093-2.338C10.907 27.135 13.354 28 16 28c6.627 0 12-5.373 12-13S22.627 3 16 3zm0 22c-2.093 0-4.093-.646-5.75-1.75l-.406-.25-4.25 1.406 1.406-4.25-.25-.406C6.646 19.093 6 17.093 6 15c0-5.514 4.486-10 10-10s10 4.486 10 10-4.486 10-10 10zm5.25-7.25c-.354-.177-2.093-1.031-2.417-1.146-.323-.115-.56-.177-.797.177-.238.354-.917 1.146-1.125 1.385-.208.238-.416.269-.77.092-.354-.177-1.5-.553-2.86-1.762-1.057-.944-1.77-2.109-1.98-2.463-.208-.354-.022-.546.155-.723.16-.16.354-.416.531-.624.177-.208.238-.354.354-.592.115-.238.061-.446-.03-.624-.092-.177-.797-1.927-1.092-2.646-.288-.692-.582-.599-.797-.61-.206-.009-.446-.011-.684-.011-.238 0-.624.092-.951.446-.327.354-1.25 1.223-1.25 2.977 0 1.754 1.282 3.454 1.462 3.692.177.238 2.527 3.862 6.13 5.262.857.338 1.525.539 2.047.692.857.269 1.637.231 2.25.141.686-.099 2.093-.854 2.389-1.68.296-.826.296-1.533.208-1.68-.089-.146-.323-.238-.677-.416z"/>
+                                </svg>
+                                <span class="text-sm">WhatsApp</span>
+                            </a>
+
+                            <!-- Telegram Share -->
+                            <a id="share-telegram" href="https://t.me/share/url?url=https%3A%2F%2Fwww.youtube.com%2F%40its.mathtime&text=Master%20mathematics%20with%20MathTime%20by%20Alka%20Ma%27am!" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 bg-[#229ED9] hover:bg-[#1d8dc3] text-white font-medium py-2.5 px-4 rounded-full shadow-md hover:shadow-lg transition duration-300 transform hover:-translate-y-0.5" title="Share on Telegram">
+                                <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                                    <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221l-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.446 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.121l-6.871 4.326-2.962-.924c-.643-.204-.657-.643.136-.953l11.57-4.458c.538-.196 1.006.128.832.943z"/>
+                                </svg>
+                                <span class="text-sm">Telegram</span>
+                            </a>
+
+                            <!-- Facebook Share -->
+                            <a id="share-facebook" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.youtube.com%2F%40its.mathtime" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center w-10 h-10 rounded-full bg-[#1877F2] hover:bg-[#1464cc] text-white shadow-md hover:shadow-lg transition duration-300 transform hover:scale-110" title="Share on Facebook">
+                                <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                                    <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                                </svg>
+                            </a>
+
+                            <!-- X (Twitter) Share -->
+                            <a id="share-twitter" href="https://twitter.com/intent/tweet?text=Master%20mathematics%20the%20smart%20way%20with%20MathTime%20by%20Alka%20Ma%27am!%20&url=https%3A%2F%2Fwww.youtube.com%2F%40its.mathtime" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center w-10 h-10 rounded-full bg-black hover:bg-gray-800 text-white shadow-md hover:shadow-lg transition duration-300 transform hover:scale-110" title="Share on X (Twitter)">
+                                <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+                                    <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                                </svg>
+                            </a>
+
+                            <!-- LinkedIn Share -->
+                            <a id="share-linkedin" href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fwww.youtube.com%2F%40its.mathtime" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center w-10 h-10 rounded-full bg-[#0A66C2] hover:bg-[#084e96] text-white shadow-md hover:shadow-lg transition duration-300 transform hover:scale-110" title="Share on LinkedIn">
+                                <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                                    <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.761 0 5-2.239 5-5v-14c0-2.761-2.239-5-5-5zm-11 19h-3v-9h3v9zm-1.5-10.268c-.966 0-1.75-.784-1.75-1.75s.784-1.75 1.75-1.75 1.75.784 1.75 1.75-.784 1.75-1.75 1.75zm13.5 10.268h-3v-4.604c0-1.099-.021-2.513-1.531-2.513-1.531 0-1.767 1.197-1.767 2.434v4.683h-3v-9h2.881v1.233h.041c.401-.761 1.379-1.563 2.841-1.563 3.039 0 3.6 2.001 3.6 4.599v4.731z"/>
+                                </svg>
+                            </a>
+
+                            <!-- Email Share -->
+                            <a id="share-email" href="mailto:?subject=Helpful%20Math%20Learning%20Resource%20-%20MathTime%20by%20Alka%20Ma%27am&body=Hi%2C%0A%0ACheck%20out%20MathTime%20by%20Alka%20Ma%27am%20for%20clear%2C%20easy-to-understand%20math%20lectures%20and%20classes%3A%20https%3A%2F%2Fwww.youtube.com%2F%40its.mathtime" class="flex items-center justify-center w-10 h-10 rounded-full bg-red-500 hover:bg-red-600 text-white shadow-md hover:shadow-lg transition duration-300 transform hover:scale-110" title="Share via Email">
+                                <svg class="w-5 h-5 fill-none stroke-current" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                    <polyline points="22,6 12,13 2,6"/>
+                                </svg>
+                            </a>
+
+                            <!-- Copy Link Button -->
+                            <button id="copy-website-link" type="button" class="flex items-center gap-2 bg-gray-100 hover:bg-gray-200 text-gray-700 font-medium py-2.5 px-4 rounded-full shadow-sm hover:shadow transition duration-200 active:scale-95" title="Copy website link">
+                                <svg id="copy-icon" class="w-4 h-4 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"></path>
+                                </svg>
+                                <span id="copy-text" class="text-sm">Copy Link</span>
+                            </button>
+                        </div>
+
+                        <!-- Native Mobile Web Share Trigger (auto-shown if supported on mobile) -->
+                        <div id="native-share-container" class="hidden mt-3">
+                            <button id="native-share-btn" type="button" class="inline-flex items-center gap-2 text-sm text-blue-600 hover:text-blue-800 font-semibold transition">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z"></path></svg>
+                                More sharing options
+                            </button>
+                        </div>
+
+                        <div id="share-toast" class="fixed bottom-6 right-6 bg-gray-900 text-white text-sm py-2.5 px-4 rounded-xl shadow-2xl opacity-0 pointer-events-none transition-all duration-300 transform translate-y-3 z-50 flex items-center gap-2">
+                            <svg class="w-4 h-4 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            <span>Website link copied to clipboard!</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>

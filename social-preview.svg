@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="ogBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e1b4b"/>
+      <stop offset="50%" stop-color="#2563eb"/>
+      <stop offset="100%" stop-color="#7c3aed"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#ogBg)"/>
+  
+  <!-- Subtle Math Grid Elements -->
+  <g opacity="0.15" stroke="#ffffff" stroke-width="2">
+    <circle cx="200" cy="200" r="140" fill="none"/>
+    <circle cx="200" cy="200" r="90" fill="none"/>
+    <line x1="200" y1="60" x2="200" y2="340"/>
+    <line x1="60" y1="200" x2="340" y2="200"/>
+    <circle cx="1050" cy="450" r="160" fill="none"/>
+  </g>
+
+  <!-- Brand Content -->
+  <rect x="100" y="80" width="220" height="44" rx="22" fill="rgba(255,255,255,0.15)"/>
+  <text x="210" y="108" font-family="'Inter', sans-serif" font-size="18" font-weight="700" fill="#facc15" text-anchor="middle" letter-spacing="1">CBSE CLASS 7-10</text>
+  
+  <text x="100" y="220" font-family="'Inter', sans-serif" font-size="64" font-weight="900" fill="#ffffff">MathTime by Alka Ma'am</text>
+  <text x="100" y="290" font-family="'Inter', sans-serif" font-size="34" font-weight="600" fill="#93c5fd">Learn Math the Smart, Simple &amp; Fun Way</text>
+
+  <text x="100" y="380" font-family="'Inter', sans-serif" font-size="24" font-weight="400" fill="#e2e8f0">Master Concepts • Video Lectures • Board Exam Tips • Live Classes</text>
+
+  <!-- Teacher Bio Pill -->
+  <rect x="100" y="440" width="560" height="64" rx="16" fill="rgba(0,0,0,0.25)"/>
+  <text x="130" y="480" font-family="'Inter', sans-serif" font-size="20" font-weight="600" fill="#facc15">Alka Sharma (M.Sc., B.Ed., CTET Certified)</text>
+  <text x="560" y="480" font-family="'Inter', sans-serif" font-size="18" font-weight="500" fill="#ffffff">• 15+ Yrs Exp</text>
+</svg>

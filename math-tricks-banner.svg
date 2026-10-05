@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 300" width="600" height="300">
+  <defs>
+    <linearGradient id="bgTricks" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#065f46"/>
+      <stop offset="100%" stop-color="#10b981"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="300" fill="url(#bgTricks)"/>
+  <!-- Decorative Flash Icon / Math Magic -->
+  <polygon points="150,45 100,165 145,165 130,255 200,135 155,135" fill="#facc15" opacity="0.9"/>
+  <!-- Text Content -->
+  <text x="320" y="110" font-family="'Inter', sans-serif" font-size="20" font-weight="600" fill="#a7f3d0" letter-spacing="2">SPEED &amp; ACCURACY</text>
+  <text x="320" y="155" font-family="'Inter', sans-serif" font-size="28" font-weight="800" fill="#ffffff">Mental Math Tricks</text>
+  <text x="320" y="195" font-family="'Inter', sans-serif" font-size="18" font-weight="500" fill="#facc15">Lightning Fast Calculation</text>
+  <rect x="320" y="220" width="130" height="32" rx="16" fill="rgba(255,255,255,0.15)"/>
+  <text x="385" y="242" font-family="'Inter', sans-serif" font-size="14" font-weight="600" fill="#ffffff" text-anchor="middle">Read Guide</text>
+</svg>

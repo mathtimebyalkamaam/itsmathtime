@@ -2,22 +2,31 @@
 const mobileMenuButton = document.getElementById('mobile-menu-button');
 const mobileMenu = document.getElementById('mobile-menu');
 
-mobileMenuButton.addEventListener('click', () => {
-    mobileMenu.classList.toggle('hidden');
-});
+if (mobileMenuButton && mobileMenu) {
+    mobileMenuButton.addEventListener('click', () => {
+        const isHidden = mobileMenu.classList.toggle('hidden');
+        mobileMenuButton.setAttribute('aria-expanded', (!isHidden).toString());
+    });
+}
 
 // Smooth scrolling for navigation links
 document.querySelectorAll('nav a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
 
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
-        });
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+            target.scrollIntoView({
+                behavior: 'smooth'
+            });
+        }
 
         // Close mobile menu after clicking a link
-        if (!mobileMenu.classList.contains('hidden')) {
+        if (mobileMenu && !mobileMenu.classList.contains('hidden')) {
             mobileMenu.classList.add('hidden');
+            if (mobileMenuButton) {
+                mobileMenuButton.setAttribute('aria-expanded', 'false');
+            }
         }
     });
 });
@@ -98,8 +107,130 @@ function setupScrollAnimations() {
     });
 }
 
-// Run animations when the DOM is fully loaded
+// --- Share Website Feature ---
+function setupShareWebsite() {
+    const pageUrl = window.location.href.startsWith('http') 
+        ? window.location.href 
+        : 'https://www.youtube.com/@its.mathtime';
+    const shareTitle = "MathTime by Alka Ma'am – Learn Math the Smart Way";
+    const shareMessage = "Learn math the smart way with MathTime by Alka Ma'am! Check out interactive lessons and video tutorials here:";
+
+    // Dynamic URLs for share buttons
+    const whatsappBtn = document.getElementById('share-whatsapp');
+    if (whatsappBtn) {
+        whatsappBtn.href = `https://api.whatsapp.com/send?text=${encodeURIComponent(shareMessage + ' ' + pageUrl)}`;
+    }
+
+    const telegramBtn = document.getElementById('share-telegram');
+    if (telegramBtn) {
+        telegramBtn.href = `https://t.me/share/url?url=${encodeURIComponent(pageUrl)}&text=${encodeURIComponent(shareMessage)}`;
+    }
+
+    const facebookBtn = document.getElementById('share-facebook');
+    if (facebookBtn) {
+        facebookBtn.href = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(pageUrl)}`;
+    }
+
+    const twitterBtn = document.getElementById('share-twitter');
+    if (twitterBtn) {
+        twitterBtn.href = `https://twitter.com/intent/tweet?text=${encodeURIComponent(shareMessage)}&url=${encodeURIComponent(pageUrl)}`;
+    }
+
+    const linkedinBtn = document.getElementById('share-linkedin');
+    if (linkedinBtn) {
+        linkedinBtn.href = `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(pageUrl)}`;
+    }
+
+    const emailBtn = document.getElementById('share-email');
+    if (emailBtn) {
+        emailBtn.href = `mailto:?subject=${encodeURIComponent(shareTitle)}&body=${encodeURIComponent(shareMessage + '\n\n' + pageUrl)}`;
+    }
+
+    // Copy link button logic
+    const copyBtn = document.getElementById('copy-website-link');
+    const copyText = document.getElementById('copy-text');
+    const copyIcon = document.getElementById('copy-icon');
+    const toast = document.getElementById('share-toast');
+
+    if (copyBtn) {
+        copyBtn.addEventListener('click', async () => {
+            const urlToCopy = window.location.href.startsWith('http') 
+                ? window.location.href 
+                : 'https://www.youtube.com/@its.mathtime';
+
+            try {
+                if (navigator.clipboard && window.isSecureContext) {
+                    await navigator.clipboard.writeText(urlToCopy);
+                } else {
+                    // Fallback for older browsers or non-HTTPS
+                    const textArea = document.createElement('textarea');
+                    textArea.value = urlToCopy;
+                    textArea.style.position = 'fixed';
+                    textArea.style.left = '-999999px';
+                    document.body.appendChild(textArea);
+                    textArea.focus();
+                    textArea.select();
+                    document.execCommand('copy');
+                    textArea.remove();
+                }
+
+                // Visual feedback on button
+                if (copyText) copyText.textContent = 'Copied!';
+                if (copyIcon) {
+                    copyIcon.innerHTML = `<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>`;
+                    copyIcon.classList.add('text-green-600');
+                }
+                copyBtn.classList.add('bg-green-50', 'text-green-700', 'border-green-300');
+
+                // Show toast
+                if (toast) {
+                    toast.classList.remove('opacity-0', 'pointer-events-none', 'translate-y-3');
+                    toast.classList.add('opacity-100', 'translate-y-0');
+                    setTimeout(() => {
+                        toast.classList.remove('opacity-100', 'translate-y-0');
+                        toast.classList.add('opacity-0', 'pointer-events-none', 'translate-y-3');
+                    }, 2500);
+                }
+
+                // Reset button state after 2 seconds
+                setTimeout(() => {
+                    if (copyText) copyText.textContent = 'Copy Link';
+                    if (copyIcon) {
+                        copyIcon.innerHTML = `<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"></path>`;
+                        copyIcon.classList.remove('text-green-600');
+                    }
+                    copyBtn.classList.remove('bg-green-50', 'text-green-700', 'border-green-300');
+                }, 2000);
+            } catch (err) {
+                console.error('Failed to copy link: ', err);
+            }
+        });
+    }
+
+    // Native Web Share API (mobile devices)
+    const nativeContainer = document.getElementById('native-share-container');
+    const nativeBtn = document.getElementById('native-share-btn');
+    if (navigator.share && nativeContainer && nativeBtn) {
+        nativeContainer.classList.remove('hidden');
+        nativeBtn.addEventListener('click', async () => {
+            try {
+                await navigator.share({
+                    title: shareTitle,
+                    text: shareMessage,
+                    url: pageUrl
+                });
+            } catch (err) {
+                if (err.name !== 'AbortError') {
+                    console.log('Share canceled or error:', err);
+                }
+            }
+        });
+    }
+}
+
+// Run animations and features when the DOM is fully loaded
 document.addEventListener('DOMContentLoaded', () => {
     animateOnLoadElements(); // Trigger initial load animations
     setupScrollAnimations(); // Set up scroll animations
+    setupShareWebsite();     // Initialize share buttons and copy functionality
 });
