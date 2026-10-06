@@ -1,27 +1,101 @@
-/* Custom CSS for MathTime by Alka Ma'am */
+html {
+    scroll-behavior: smooth;
+}
 
-/* Inter Font (already linked in HTML, but good to have here for reference) */
+/* Outfit & Inter Font */
 body {
     font-family: 'Inter', sans-serif;
 }
 
-/* Background pattern for Hero Section */
-.bg-pattern {
-    background-image: url('data:image/svg+xml,%3Csvg width="6" height="6" viewBox="0 0 6 6" xmlns="http://www.w3.org/2000/svg"%3E%3Cg fill="%23ffffff" fill-opacity="0.1" fill-rule="evenodd"%3E%3Cpath d="M5 0h1L0 6V5zm1 6v-1L1 0h1L6 5z"/%3E%3C/g%3E%3C/svg%3E');
+h1, h2, h3, h4, .font-heading {
+    font-family: 'Outfit', 'Inter', sans-serif;
 }
 
-/* --- Animation Keyframes --- */
+/* Background pattern for Hero Section fallback */
+.bg-pattern {
+    background-image: url('data:image/svg+xml,%3Csvg width="6" height="6" viewBox="0 0 6 6" xmlns="http://www.w3.org/2000/svg"%3E%3Cg fill="%23ffffff" fill-opacity="0.08"%3E%3Cpath d="M5 0h1L0 6V5zm1 6v-1L1 0h1L6 5z"/%3E%3C/g%3E%3C/svg%3E');
+}
 
-/* Fade In Up */
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
+/* --- Floating Keyframes for Hero Credential Pills --- */
+@keyframes floatSlow {
+    0%, 100% {
+        transform: translateY(0px) rotate(0deg);
     }
-    to {
-        opacity: 1;
-        transform: translateY(0);
+    50% {
+        transform: translateY(-8px) rotate(-0.5deg);
     }
+}
+
+@keyframes floatSlowAlt {
+    0%, 100% {
+        transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+        transform: translateY(8px) rotate(0.5deg);
+    }
+}
+
+@keyframes pulseGlow {
+    0%, 100% {
+        opacity: 0.35;
+        transform: scale(1);
+    }
+    50% {
+        opacity: 0.7;
+        transform: scale(1.08);
+    }
+}
+
+.animate-float-1 {
+    animation: floatSlow 4.5s ease-in-out infinite;
+}
+
+.animate-float-2 {
+    animation: floatSlowAlt 5s ease-in-out infinite 0.6s;
+}
+
+.animate-float-3 {
+    animation: floatSlow 5.5s ease-in-out infinite 1.2s;
+}
+
+.animate-float-4 {
+    animation: floatSlowAlt 6s ease-in-out infinite 1.8s;
+}
+
+.animate-pulse-glow {
+    animation: pulseGlow 4s ease-in-out infinite;
+}
+
+/* Glassmorphism helpers */
+.glass-pill {
+    transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.3s ease;
+}
+
+.glass-pill:hover {
+    transform: translateY(-4px) scale(1.05) !important;
+}
+
+/* Header link indicator */
+.nav-link {
+    position: relative;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 50%;
+    transform: translateX(-50%) scaleX(0);
+    width: 18px;
+    height: 2px;
+    background: #f59e0b;
+    border-radius: 9999px;
+    transition: transform 0.25s ease;
+}
+
+.nav-link:hover::after,
+.nav-link.active-nav::after {
+    transform: translateX(-50%) scaleX(1);
 }
 
 /* Slide In Left */
@@ -185,4 +259,184 @@ img {
 .critical-content {
     display: block;
     content-visibility: auto;
+}
+
+/* --- Phase 2: Video & Playlist Upgrades --- */
+
+/* Interactive Filter Tabs */
+.filter-pill {
+    transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.filter-pill.active {
+    background: linear-gradient(135deg, #2563eb, #4f46e5) !important;
+    color: #ffffff !important;
+    border-color: transparent !important;
+    box-shadow: 0 8px 20px -4px rgba(37, 99, 235, 0.4);
+    transform: translateY(-2px);
+}
+
+/* Video Facade Thumbnail & Play Pulse */
+.video-facade {
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.video-facade-thumb {
+    transition: transform 0.45s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.video-facade:hover .video-facade-thumb {
+    transform: scale(1.06);
+}
+
+.play-pulse-btn {
+    position: relative;
+    transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.video-facade:hover .play-pulse-btn {
+    transform: scale(1.15);
+}
+
+.play-pulse-btn::before {
+    content: '';
+    position: absolute;
+    inset: -6px;
+    border-radius: 9999px;
+    background: rgba(239, 68, 68, 0.4);
+    animation: playPulse 2s cubic-bezier(0.24, 0, 0.38, 1) infinite;
+    z-index: -1;
+}
+
+@keyframes playPulse {
+    0% {
+        transform: scale(0.95);
+        opacity: 0.8;
+    }
+    50% {
+        transform: scale(1.35);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1.35);
+        opacity: 0;
+    }
+}
+
+/* 3D Tilt Card Effects */
+.tilt-card-wrapper {
+    perspective: 1000px;
+}
+
+.tilt-card {
+    transform-style: preserve-3d;
+    transition: transform 0.15s ease-out, box-shadow 0.3s ease;
+    will-change: transform;
+}
+
+.tilt-card:hover {
+    box-shadow: 0 20px 30px -10px rgba(15, 23, 42, 0.15), 0 10px 15px -5px rgba(15, 23, 42, 0.1);
+}
+
+/* Playlist Cards Modern Aesthetics */
+.playlist-card {
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.playlist-card:hover {
+    transform: translateY(-6px);
+}
+
+/* Filter item transitions */
+.filter-item {
+    transition: opacity 0.35s ease, transform 0.35s ease;
+}
+
+.filter-item.is-filtered-out {
+    opacity: 0;
+    transform: scale(0.95);
+    display: none !important;
+}
+
+/* Video Modal Backdrop */
+#video-modal {
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+#video-modal.active {
+    opacity: 1 !important;
+    visibility: visible !important;
+    pointer-events: auto !important;
+}
+
+#video-modal-dialog {
+    transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+#video-modal.active #video-modal-dialog {
+    transform: scale(1) translateY(0) !important;
+}
+
+/* --- Phase 3: Gallery Lightbox & Contact System --- */
+
+/* Gallery Card Hover Effects */
+.gallery-card {
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s ease;
+}
+
+.gallery-card img {
+    transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.gallery-card:hover img {
+    transform: scale(1.07);
+}
+
+.gallery-overlay {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.gallery-card:hover .gallery-overlay {
+    opacity: 1;
+}
+
+/* Gallery Lightbox Modal */
+#gallery-lightbox {
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+#gallery-lightbox.active {
+    opacity: 1 !important;
+    visibility: visible !important;
+    pointer-events: auto !important;
+}
+
+#lightbox-img {
+    transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.2s ease;
+}
+
+/* Contact Form Input Styling */
+.form-input {
+    transition: border-color 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+}
+
+.form-input:focus {
+    outline: none;
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
+}
+
+/* --- Back to Top Floating Button --- */
+#back-to-top {
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.5), 0 8px 10px -6px rgba(0, 0, 0, 0.4);
+}
+
+#progress-circle {
+    transition: stroke-dashoffset 0.1s linear;
 }

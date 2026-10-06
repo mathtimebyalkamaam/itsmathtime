@@ -14,8 +14,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MathTime by Alka Ma'am – Learn Math the Smart Way</title>
 
-    <!-- Favicon -->
+    <!-- Favicon & Touch Icons -->
     <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="logo-icon-square.png" type="image/png">
+    <link rel="apple-touch-icon" href="logo-icon-square.png">
 
     <!-- Canonical URL -->
     <link rel="canonical" href="https://mathtimebyalkamaam.github.io/itsmathtime/">
@@ -33,7 +35,7 @@
     <!-- Google Fonts with Preconnect -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
@@ -48,14 +50,14 @@
     <meta property="og:url" content="https://mathtimebyalkamaam.github.io/itsmathtime/">
     <meta property="og:title" content="MathTime by Alka Ma'am – Learn Math the Smart Way">
     <meta property="og:description" content="Official website of MathTime by Alka Ma'am. Learn Class 7, 8, 9, 10 Math, Board Exam Tips and Strategies. Engaging video lectures and live classes for students.">
-    <meta property="og:image" content="https://mathtimebyalkamaam.github.io/itsmathtime/social-preview.svg">
+    <meta property="og:image" content="https://mathtimebyalkamaam.github.io/itsmathtime/logo.png">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://mathtimebyalkamaam.github.io/itsmathtime/">
     <meta property="twitter:title" content="MathTime by Alka Ma'am – Learn Math the Smart Way">
     <meta property="twitter:description" content="Official website of MathTime by Alka Ma'am. Learn Class 7, 8, 9, 10 Math, Board Exam Tips and Strategies. Engaging video lectures and live classes for students.">
-    <meta property="twitter:image" content="https://mathtimebyalkamaam.github.io/itsmathtime/social-preview.svg">
+    <meta property="twitter:image" content="https://mathtimebyalkamaam.github.io/itsmathtime/logo.png">
 
     <!-- Structured Data (JSON-LD) with E-E-A-T, VideoObject, Breadcrumb & BlogPosting Schemas -->
     <script type="application/ld+json">
@@ -67,7 +69,7 @@
           "@id": "https://mathtimebyalkamaam.github.io/itsmathtime/#organization",
           "name": "MathTime by Alka Ma'am",
           "url": "https://mathtimebyalkamaam.github.io/itsmathtime/",
-          "logo": "https://mathtimebyalkamaam.github.io/itsmathtime/alka%20pics/intro%20pic1.jpg",
+          "logo": "https://mathtimebyalkamaam.github.io/itsmathtime/logo.png",
           "description": "Online mathematics education platform by Alka Sharma, offering engaging video lectures, live classes, and study strategies for CBSE Class 7, 8, 9, 10 and board exams.",
           "email": "info.onesharma@gmail.com",
           "contactPoint": {
@@ -218,119 +220,449 @@
 </head>
 <body class="text-gray-800">
 
-    <!-- Header -->
-    <header class="bg-gradient-to-r from-blue-600 to-purple-600 text-white shadow-lg py-4 sticky top-0 z-50">
-        <div class="container mx-auto flex justify-between items-center px-4">
-            <a href="#home" class="text-2xl font-bold tracking-tight animate-on-load fade-in">MathTime by Alka Ma'am</a>
-            <nav class="hidden md:flex space-x-6 animate-on-load fade-in" style="animation-delay: 0.2s;">
-                <a href="#home" class="hover:text-blue-200 transition duration-300">Home</a>
-                <a href="#about" class="hover:text-blue-200 transition duration-300">About</a>
-                <a href="#videos" class="hover:text-blue-200 transition duration-300">Videos</a>
-                <a href="#playlists" class="hover:text-blue-200 transition duration-300">Playlists</a>
-                <a href="#gallery" class="hover:text-blue-200 transition duration-300">Gallery</a>
-                <a href="#blog" class="hover:text-blue-200 transition duration-300">Blog</a>
-                <a href="#contact" class="hover:text-blue-200 transition duration-300">Contact</a>
+    <!-- Announcement Bar -->
+    <div class="bg-gradient-to-r from-indigo-950 via-blue-950 to-slate-950 text-indigo-200 text-xs py-2 px-4 text-center border-b border-indigo-800/30 relative z-50">
+        <div class="container mx-auto flex items-center justify-center gap-2 flex-wrap">
+            <span class="inline-flex items-center px-2 py-0.5 rounded-full text-[10px] font-bold bg-amber-400 text-gray-950 uppercase tracking-wider">New</span>
+            <span>CBSE Classes 7, 8, 9 &amp; 10 NCERT Video Solutions &amp; Board Exam Tips are Live!</span>
+            <a href="#playlists" class="underline text-amber-300 hover:text-white font-medium ml-1 inline-flex items-center gap-1 transition-colors">
+                Explore Playlists <span aria-hidden="true">&rarr;</span>
+            </a>
+        </div>
+    </div>
+
+    <!-- Floating Glass Header -->
+    <header id="main-header" class="sticky top-0 z-50 transition-all duration-300 py-3.5 bg-slate-900/85 backdrop-blur-xl border-b border-white/10 shadow-xl shadow-slate-950/20 text-white">
+        <!-- Scroll Progress Bar -->
+        <div id="scroll-progress-bar" class="absolute top-0 left-0 h-[2.5px] bg-gradient-to-r from-blue-500 via-indigo-400 to-amber-400 w-0 z-50 transition-all duration-75"></div>
+
+        <div class="container mx-auto flex justify-between items-center px-4 sm:px-6">
+            <!-- Brand Logo -->
+            <a href="#home" class="flex items-center gap-3 group py-0.5" aria-label="MathTime by Alka Ma'am Home">
+                <img src="logo-transparent.png" alt="MathTime by Alka Ma'am" class="h-10 sm:h-12 w-auto object-contain group-hover:scale-105 transition-transform duration-300">
+            </a>
+
+            <!-- Desktop Navigation -->
+            <nav class="hidden lg:flex items-center space-x-1 font-medium text-sm text-slate-300">
+                <a href="#home" class="nav-link px-3.5 py-1.5 rounded-full hover:text-white hover:bg-white/10 transition-all duration-200 active-nav">Home</a>
+                <a href="#about" class="nav-link px-3.5 py-1.5 rounded-full hover:text-white hover:bg-white/10 transition-all duration-200">About</a>
+                <a href="#videos" class="nav-link px-3.5 py-1.5 rounded-full hover:text-white hover:bg-white/10 transition-all duration-200">Videos</a>
+                <a href="#playlists" class="nav-link px-3.5 py-1.5 rounded-full hover:text-white hover:bg-white/10 transition-all duration-200">Playlists</a>
+                <a href="#gallery" class="nav-link px-3.5 py-1.5 rounded-full hover:text-white hover:bg-white/10 transition-all duration-200">Gallery</a>
+                <a href="#blog" class="nav-link px-3.5 py-1.5 rounded-full hover:text-white hover:bg-white/10 transition-all duration-200">Blog</a>
+                <a href="#contact" class="nav-link px-3.5 py-1.5 rounded-full hover:text-white hover:bg-white/10 transition-all duration-200">Contact</a>
             </nav>
+
+            <!-- Header Action CTA -->
+            <div class="hidden sm:flex items-center gap-3">
+                <a href="https://www.youtube.com/@its.mathtime?sub_confirmation=1" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-4 py-2 rounded-full text-xs font-bold tracking-wide uppercase bg-gradient-to-r from-red-600 to-rose-600 hover:from-red-500 hover:to-rose-500 text-white shadow-lg shadow-red-600/30 hover:shadow-red-500/50 hover:scale-105 active:scale-95 transition-all duration-300">
+                    <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+                        <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                    </svg>
+                    <span>Subscribe</span>
+                </a>
+            </div>
+
             <!-- Mobile Menu Button -->
-            <button id="mobile-menu-button" aria-label="Toggle navigation menu" aria-expanded="false" class="md:hidden text-white focus:outline-none animate-on-load fade-in" style="animation-delay: 0.4s;">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <button id="mobile-menu-button" aria-label="Toggle navigation menu" aria-expanded="false" class="lg:hidden p-2 rounded-xl text-slate-300 hover:text-white hover:bg-white/10 focus:outline-none transition-colors">
+                <svg id="hamburger-icon" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+                <svg id="close-icon" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
                 </svg>
             </button>
         </div>
-        <!-- Mobile Menu -->
-        <div id="mobile-menu" class="md:hidden bg-blue-700 px-4 pt-2 pb-4 hidden">
-            <nav class="flex flex-col space-y-2">
-                <a href="#home" class="block py-2 px-3 rounded-md hover:bg-blue-600 transition duration-300">Home</a>
-                <a href="#about" class="block py-2 px-3 rounded-md hover:bg-blue-600 transition duration-300">About</a>
-                <a href="#videos" class="block py-2 px-3 rounded-md hover:bg-blue-600 transition duration-300">Videos</a>
-                <a href="#playlists" class="block py-2 px-3 rounded-md hover:bg-blue-600 transition duration-300">Playlists</a>
-                <a href="#gallery" class="block py-2 px-3 rounded-md hover:bg-blue-600 transition duration-300">Gallery</a>
-                <a href="#blog" class="block py-2 px-3 rounded-md hover:bg-blue-600 transition duration-300">Blog</a>
-                <a href="#contact" class="block py-2 px-3 rounded-md hover:bg-blue-600 transition duration-300">Contact</a>
+
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobile-menu" class="hidden lg:hidden border-t border-white/10 px-4 pt-3 pb-5 bg-slate-900/95 backdrop-blur-2xl transition-all">
+            <nav class="flex flex-col space-y-1 text-base font-medium">
+                <a href="#home" class="block py-2.5 px-3 rounded-lg text-slate-200 hover:text-white hover:bg-white/10 transition duration-200">Home</a>
+                <a href="#about" class="block py-2.5 px-3 rounded-lg text-slate-200 hover:text-white hover:bg-white/10 transition duration-200">About</a>
+                <a href="#videos" class="block py-2.5 px-3 rounded-lg text-slate-200 hover:text-white hover:bg-white/10 transition duration-200">Videos</a>
+                <a href="#playlists" class="block py-2.5 px-3 rounded-lg text-slate-200 hover:text-white hover:bg-white/10 transition duration-200">Playlists</a>
+                <a href="#gallery" class="block py-2.5 px-3 rounded-lg text-slate-200 hover:text-white hover:bg-white/10 transition duration-200">Gallery</a>
+                <a href="#blog" class="block py-2.5 px-3 rounded-lg text-slate-200 hover:text-white hover:bg-white/10 transition duration-200">Blog</a>
+                <a href="#contact" class="block py-2.5 px-3 rounded-lg text-slate-200 hover:text-white hover:bg-white/10 transition duration-200">Contact</a>
+                <div class="pt-2">
+                    <a href="https://www.youtube.com/@its.mathtime?sub_confirmation=1" target="_blank" class="flex items-center justify-center gap-2 py-3 px-4 rounded-xl bg-gradient-to-r from-red-600 to-rose-600 text-white font-bold text-sm shadow-md">
+                        <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                        Subscribe to YouTube Channel
+                    </a>
+                </div>
             </nav>
         </div>
     </header>
 
     <main>
-        <!-- Hero Section -->
-        <section id="home" class="relative bg-gradient-to-br from-blue-500 to-purple-500 text-white py-20 md:py-32 overflow-hidden">
-            <div class="absolute inset-0 bg-pattern opacity-10"></div> <!-- Optional background pattern -->
-            <div class="container mx-auto flex flex-col md:flex-row items-center justify-center px-4 relative z-10">
-                <div class="md:w-1/2 text-center md:text-left mb-10 md:mb-0 hero-animate-text">
-                    <h1 class="text-4xl md:text-5xl font-extrabold leading-tight mb-4">
-                        Learn Math the Smart Way with <span class="text-yellow-300">Alka Ma'am</span>
-                    </h1>
-                    <p class="text-lg md:text-xl mb-8 opacity-90">
-                        Making complex math concepts simple, engaging, and fun for every student.
-                    </p>
-                    <div class="flex flex-col sm:flex-row justify-center md:justify-start space-y-4 sm:space-y-0 sm:space-x-4 hero-animate-buttons">
-                        <a href="https://www.youtube.com/@its.mathtime" target="_blank" class="inline-block bg-white text-blue-600 font-semibold py-3 px-8 rounded-full shadow-lg hover:bg-gray-100 transition duration-300 transform hover:scale-105">
-                            Watch Now
-                        </a>
-                        <a href="https://www.youtube.com/@its.mathtime?sub_confirmation=1" target="_blank" class="inline-block bg-purple-700 text-white font-semibold py-3 px-8 rounded-full shadow-lg hover:bg-purple-800 transition duration-300 transform hover:scale-105">
-                            Subscribe
-                        </a>
-                        <button class="inline-block bg-yellow-400 text-gray-800 font-semibold py-3 px-8 rounded-full shadow-lg hover:bg-yellow-500 transition duration-300 transform hover:scale-105" id="live-class-button">
-                            Join Live Class
-                        </button>
+        <!-- Modern Hero Section -->
+        <section id="home" class="relative min-h-[92vh] flex items-center bg-gradient-to-b from-[#0a0f1d] via-[#101828] to-[#0f172a] text-white pt-12 pb-20 overflow-hidden">
+            <!-- Math Particles Canvas (Interactive physics) -->
+            <canvas id="math-particles-canvas" class="absolute inset-0 w-full h-full pointer-events-none z-0"></canvas>
+
+            <!-- Ambient Glow Mesh Background -->
+            <div class="absolute -top-32 -left-32 w-96 h-96 bg-blue-600/20 rounded-full blur-3xl pointer-events-none"></div>
+            <div class="absolute top-1/3 -right-32 w-96 h-96 bg-purple-600/20 rounded-full blur-3xl pointer-events-none"></div>
+            <div class="absolute -bottom-32 left-1/3 w-96 h-96 bg-amber-500/10 rounded-full blur-3xl pointer-events-none"></div>
+
+            <div class="container mx-auto px-4 sm:px-6 relative z-10">
+                <div class="flex flex-col lg:flex-row items-center justify-between gap-12 lg:gap-8">
+                    <!-- Left Column: Copy & CTAs -->
+                    <div class="lg:w-7/12 text-center lg:text-left hero-animate-text">
+                        <!-- Micro-Badge -->
+                        <div class="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full bg-slate-800/80 border border-white/10 text-slate-200 text-xs sm:text-sm font-medium mb-6 shadow-sm shadow-blue-500/10 backdrop-blur-md">
+                            <img src="logo-icon-square.png" alt="MathTime Logo Emblem" class="w-5 h-5 object-contain">
+                            <span class="text-emerald-400 font-bold">MathTime</span>
+                            <span class="text-slate-500">&bull;</span>
+                            <span>#1 Mathematics Mentor for Classes 7 to 10 &bull; CBSE</span>
+                        </div>
+
+                        <!-- Main Headline -->
+                        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-[1.15] mb-6 font-heading tracking-tight">
+                            Learn Math the Smart Way with 
+                            <span class="bg-gradient-to-r from-amber-300 via-yellow-200 to-amber-400 bg-clip-text text-transparent underline decoration-amber-400/30 decoration-wavy">
+                                Alka Ma'am
+                            </span>
+                        </h1>
+
+                        <!-- Subtitle -->
+                        <p class="text-base sm:text-lg lg:text-xl text-slate-300 mb-8 max-w-xl mx-auto lg:mx-0 leading-relaxed font-normal">
+                            Demystifying complex concepts, mastering NCERT exercises, and scoring top marks in school and CBSE board exams with clarity, step-by-step logic, and fun.
+                        </p>
+
+                        <!-- CTA Button Suite -->
+                        <div class="flex flex-col sm:flex-row justify-center lg:justify-start gap-4 hero-animate-buttons mb-8">
+                            <a href="#videos" class="inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-full bg-gradient-to-r from-blue-600 via-indigo-600 to-blue-500 hover:from-blue-500 hover:to-indigo-500 text-white font-semibold text-base shadow-xl shadow-blue-600/30 hover:shadow-blue-500/50 hover:scale-105 active:scale-95 transition-all duration-300">
+                                <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z"/></svg>
+                                <span>Explore Lessons</span>
+                            </a>
+                            <a href="https://www.youtube.com/@its.mathtime?sub_confirmation=1" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-full bg-white/10 hover:bg-white/15 border border-white/20 text-white font-semibold text-base backdrop-blur-md hover:scale-105 active:scale-95 transition-all duration-300">
+                                <svg class="w-5 h-5 text-red-500 fill-current" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                                <span>YouTube Channel</span>
+                            </a>
+                            <button class="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-full bg-amber-400/15 hover:bg-amber-400/25 border border-amber-400/40 text-amber-300 font-semibold text-base hover:scale-105 active:scale-95 transition-all duration-300" id="live-class-button">
+                                <span class="w-2.5 h-2.5 rounded-full bg-amber-400 animate-pulse"></span>
+                                <span>Join Live Class</span>
+                            </button>
+                        </div>
+
+                        <!-- Trust Proof Strip -->
+                        <div class="flex items-center justify-center lg:justify-start gap-4 text-xs sm:text-sm text-slate-300">
+                            <div class="flex text-amber-400 text-sm">★★★★★</div>
+                            <span class="text-slate-400">&bull;</span>
+                            <span class="font-medium text-slate-200">CTET Certified Educator</span>
+                            <span class="text-slate-400">&bull;</span>
+                            <span class="text-emerald-400 font-medium">100% Free Learning</span>
+                        </div>
+                    </div>
+
+                    <!-- Right Column: Alka Ma'am Portrait with Floating Credential Pills -->
+                    <div class="lg:w-5/12 flex justify-center hero-animate-image">
+                        <div class="relative w-full max-w-[340px] sm:max-w-[380px] mx-auto py-8">
+                            <!-- Ambient Glow behind portrait -->
+                            <div class="absolute inset-4 bg-gradient-to-tr from-blue-600/40 via-purple-600/30 to-amber-400/20 rounded-full blur-2xl -z-10 animate-pulse-glow"></div>
+
+                            <!-- Portrait Frame with Gradient Border -->
+                            <div class="relative p-1.5 rounded-3xl bg-gradient-to-b from-white/30 via-white/10 to-transparent backdrop-blur-md shadow-2xl shadow-indigo-950/60 border border-white/20">
+                                <img src="alka pics/intro pic1.jpg" alt="Alka Sharma Profile Photo" width="360" height="420" fetchpriority="high" class="rounded-[22px] w-full h-[380px] sm:h-[420px] object-cover object-top">
+                                
+                                <!-- Bottom Gradient Overlay with Name -->
+                                <div class="absolute bottom-1.5 inset-x-1.5 p-4 rounded-b-[22px] bg-gradient-to-t from-slate-950/90 via-slate-950/50 to-transparent text-center">
+                                    <div class="text-white font-bold text-lg font-heading">Alka Sharma</div>
+                                    <div class="text-xs text-amber-300 font-medium">M.Sc. Mathematics &bull; CTET &bull; B.Ed.</div>
+                                </div>
+                            </div>
+
+                            <!-- Floating Pill 1: Top-Left (M.Sc. & CTET) -->
+                            <div class="absolute -top-1 -left-4 sm:-left-8 glass-pill animate-float-1 shadow-xl">
+                                <div class="flex items-center gap-2 px-3.5 py-2 rounded-2xl bg-slate-900/85 backdrop-blur-xl border border-white/20 text-white text-xs sm:text-sm font-semibold shadow-lg">
+                                    <span class="text-lg">🎓</span>
+                                    <div>
+                                        <div class="text-white leading-none font-bold">M.Sc. &amp; CTET</div>
+                                        <div class="text-[10px] text-blue-300 font-normal leading-tight">Certified Educator</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Floating Pill 2: Top-Right (15+ Years) -->
+                            <div class="absolute top-12 -right-4 sm:-right-8 glass-pill animate-float-2 shadow-xl">
+                                <div class="flex items-center gap-2 px-3.5 py-2 rounded-2xl bg-slate-900/85 backdrop-blur-xl border border-amber-400/30 text-white text-xs sm:text-sm font-semibold shadow-lg">
+                                    <span class="text-lg">⭐</span>
+                                    <div>
+                                        <div class="text-amber-300 leading-none font-bold">15+ Years</div>
+                                        <div class="text-[10px] text-slate-300 font-normal leading-tight">Teaching Experience</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Floating Pill 3: Bottom-Left (Classes 7 to 10) -->
+                            <div class="absolute bottom-6 -left-4 sm:-left-6 glass-pill animate-float-3 shadow-xl">
+                                <div class="flex items-center gap-2 px-3.5 py-2 rounded-2xl bg-slate-900/85 backdrop-blur-xl border border-indigo-400/30 text-white text-xs sm:text-sm font-semibold shadow-lg">
+                                    <span class="text-lg">📐</span>
+                                    <div>
+                                        <div class="text-indigo-300 leading-none font-bold">Classes 7–10</div>
+                                        <div class="text-[10px] text-slate-300 font-normal leading-tight">CBSE &amp; Foundation</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="md:w-1/2 flex justify-center md:justify-end hero-animate-image">
-                    <img src="alka pics/intro pic1.jpg" alt="Alka Sharma Profile Photo" width="320" height="320" fetchpriority="high" class="rounded-full w-64 h-64 md:w-80 md:h-80 object-cover object-top shadow-xl border-4 border-white">
+
+                <!-- Attached Trust Metrics Strip -->
+                <div class="mt-16 pt-8 border-t border-white/10 grid grid-cols-2 md:grid-cols-4 gap-6 text-center animate-on-scroll fade-in-up">
+                    <div class="p-4 rounded-2xl bg-white/[0.03] border border-white/5 backdrop-blur-sm">
+                        <div class="text-3xl sm:text-4xl font-extrabold text-amber-300 font-heading">15+</div>
+                        <div class="text-xs sm:text-sm text-slate-400 mt-1 font-medium">Years Classroom Teaching</div>
+                    </div>
+                    <div class="p-4 rounded-2xl bg-white/[0.03] border border-white/5 backdrop-blur-sm">
+                        <div class="text-3xl sm:text-4xl font-extrabold text-blue-400 font-heading">500+</div>
+                        <div class="text-xs sm:text-sm text-slate-400 mt-1 font-medium">Free Video Lectures &amp; Shorts</div>
+                    </div>
+                    <div class="p-4 rounded-2xl bg-white/[0.03] border border-white/5 backdrop-blur-sm">
+                        <div class="text-3xl sm:text-4xl font-extrabold text-emerald-400 font-heading">15+</div>
+                        <div class="text-xs sm:text-sm text-slate-400 mt-1 font-medium">National Workshops Attended</div>
+                    </div>
+                    <div class="p-4 rounded-2xl bg-white/[0.03] border border-white/5 backdrop-blur-sm">
+                        <div class="text-3xl sm:text-4xl font-extrabold text-purple-400 font-heading">100%</div>
+                        <div class="text-xs sm:text-sm text-slate-400 mt-1 font-medium">Conceptual Clarity Focus</div>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <!-- About Section -->
-        <section id="about" class="py-16 md:py-24 bg-white">
-            <div class="container mx-auto px-4 text-center">
-                <h2 class="text-3xl md:text-4xl font-bold mb-8 text-blue-700 section-title animate-on-scroll">About Alka Sharma</h2>
-                <div class="max-w-3xl mx-auto text-lg leading-relaxed text-gray-700 animate-on-scroll fade-in-up text-justify">
-                    <p class="mb-4">
-                        Hello! I'm Alka Sharma, your dedicated mathematics educator and the face behind <strong>MathTime by Alka Ma'am</strong>. With an M.Sc. in Mathematics, B.Ed., and CTET certification, I bring 15 years of proven experience to the classroom. My passion is to demystify complex topics and build a strong foundation for lifelong learning, believing that every student can excel in mathematics.
-                    </p>
-                    <p class="mb-4">
-                        As a results-oriented professional, my teaching style focuses on clarity, conceptual understanding, and practical application. I am known for my effective communication, fostering a positive learning environment, and consistently maintaining excellent relations with students, parents, faculty, and administrators. I break down difficult problems into easy-to-understand steps, using real-world examples to make learning relatable and enjoyable.
-                    </p>
-                    <p>
-                        Committed to continuous development and adapting to evolving educational needs, I've attended over 15 professional workshops across India. Whether you're preparing for board exams, competitive tests, or just want to improve your math skills, you'll find a supportive and engaging environment here. Join our growing community on YouTube and let's make math your favorite subject!
-                    </p>
+        <!-- About Section (Modern Showcase & Bento Grid) -->
+        <section id="about" class="py-20 md:py-28 bg-gradient-to-b from-slate-50 via-white to-slate-50 relative overflow-hidden">
+            <!-- Subtle Radial Gradient Ambience -->
+            <div class="absolute top-0 right-0 w-96 h-96 bg-blue-500/5 rounded-full blur-3xl pointer-events-none"></div>
+            <div class="absolute bottom-0 left-0 w-96 h-96 bg-indigo-500/5 rounded-full blur-3xl pointer-events-none"></div>
 
-                    <!-- Qualifications & Highlights -->
-                    <div class="mt-8 pt-6 border-t border-gray-200 text-gray-800 text-base animate-on-scroll fade-in-up" style="animation-delay: 0.2s;">
-                        <h3 class="text-xl font-semibold mb-4 text-blue-700">Qualifications & Highlights</h3>
-                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
-                            <!-- Qualification Card 1: M.Sc. Mathematics -->
-                            <div class="bg-blue-50 rounded-lg shadow-md p-6 transform hover:scale-105 transition duration-300 animate-on-scroll fade-in-up" style="animation-delay: 0.3s;">
-                                <h4 class="text-lg font-bold text-blue-800 mb-2">M.Sc. Mathematics</h4>
-                                <p class="text-gray-700 text-sm">Advanced academic foundation in mathematical sciences.</p>
+            <div class="container mx-auto px-4 sm:px-6 relative z-10">
+                <!-- Section Header -->
+                <div class="text-center max-w-3xl mx-auto mb-16">
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-100 text-blue-700 text-xs font-semibold uppercase tracking-wider mb-4 border border-blue-200 shadow-sm">
+                        <span>✨</span>
+                        <span>Meet Your Educator &amp; Mentor</span>
+                    </div>
+                    <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 font-heading section-title animate-on-scroll">
+                        About Alka Sharma
+                    </h2>
+                    <p class="text-slate-600 text-base sm:text-lg mt-3 leading-relaxed">
+                        Demystifying complex concepts, breaking math fear, and building lifelong confidence through 15+ years of dedicated teaching excellence.
+                    </p>
+                </div>
+
+                <!-- 2-Column Masterpiece Layout -->
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center mb-20">
+                    <!-- Left Column: Educator Visual Spotlight Card (5 cols) -->
+                    <div class="lg:col-span-5 animate-on-scroll fade-in-up">
+                        <div class="relative bg-white rounded-3xl p-6 sm:p-7 shadow-xl shadow-slate-200/70 border border-slate-200/80">
+                            <!-- Image Frame with Ambient Glow -->
+                            <div class="relative rounded-2xl overflow-hidden aspect-[4/5] bg-slate-900 shadow-inner group">
+                                <img src="alka pics/intro pic1.jpg" alt="Alka Sharma - Mathematics Educator" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                                <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent"></div>
+                                
+                                <!-- Floating Verified Badge -->
+                                <div class="absolute top-3.5 left-3.5 flex items-center gap-1.5 px-3 py-1 rounded-full bg-slate-900/85 backdrop-blur-md border border-white/20 text-white text-xs font-bold shadow-lg">
+                                    <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                                    <span>CTET Certified Educator</span>
+                                </div>
+
+                                <!-- Bottom Image Overlay Info -->
+                                <div class="absolute bottom-4 left-4 right-4 text-white flex items-center justify-between">
+                                    <div>
+                                        <div class="text-lg font-bold font-heading">Alka Sharma</div>
+                                        <div class="text-xs text-amber-300 font-medium">M.Sc. Mathematics &bull; B.Ed.</div>
+                                    </div>
+                                    <div class="p-1 rounded-xl bg-slate-900/80 backdrop-blur-md border border-white/20 shadow-lg">
+                                        <img src="logo-icon-square.png" alt="MathTime Official Emblem" class="w-8 h-8 object-contain">
+                                    </div>
+                                </div>
                             </div>
-                            <!-- Qualification Card 2: B.Ed. -->
-                            <div class="bg-purple-50 rounded-lg shadow-md p-6 transform hover:scale-105 transition duration-300 animate-on-scroll fade-in-up" style="animation-delay: 0.4s;">
-                                <h4 class="text-lg font-bold text-purple-800 mb-2">B.Ed.</h4>
-                                <p class="text-gray-700 text-sm">Professional training in educational methodologies and pedagogy.</p>
+
+                            <!-- Inspiring Philosophy Callout -->
+                            <div class="mt-5 p-4 rounded-2xl bg-slate-50 border border-slate-200/60 text-slate-700">
+                                <div class="flex items-start gap-2.5">
+                                    <span class="text-2xl leading-none text-blue-600 font-serif">“</span>
+                                    <p class="text-xs sm:text-sm italic text-slate-600 leading-relaxed">
+                                        Mathematics is not about memorizing formulas. It is about unlocking logic, identifying patterns, and empowering every child to say: <em>‘I can solve this!’</em>
+                                    </p>
+                                </div>
                             </div>
-                            <!-- Qualification Card 3: B.Sc. -->
-                            <div class="bg-green-50 rounded-lg shadow-md p-6 transform hover:scale-105 transition duration-300 animate-on-scroll fade-in-up" style="animation-delay: 0.5s;">
-                                <h4 class="text-lg font-bold text-green-800 mb-2">B.Sc.</h4>
-                                <p class="text-gray-700 text-sm">Strong foundational knowledge in core scientific principles.</p>
+
+                            <!-- Badges Row -->
+                            <div class="mt-4 pt-4 border-t border-slate-100 flex items-center justify-between text-xs text-slate-600 font-medium">
+                                <span class="flex items-center gap-1">
+                                    <span class="text-amber-500">⭐</span> 15+ Yrs Teaching
+                                </span>
+                                <span class="flex items-center gap-1">
+                                    <span class="text-blue-500">📐</span> Classes 4–10 CBSE
+                                </span>
+                                <span class="flex items-center gap-1">
+                                    <span class="text-emerald-500">🏆</span> Board Specialist
+                                </span>
                             </div>
-                            <!-- Qualification Card 4: CTET Certified -->
-                            <div class="bg-yellow-50 rounded-lg shadow-md p-6 transform hover:scale-105 transition duration-300 animate-on-scroll fade-in-up" style="animation-delay: 0.6s;">
-                                <h4 class="text-lg font-bold text-yellow-800 mb-2">CTET Certified</h4>
-                                <p class="text-gray-700 text-sm">Certified for teaching eligibility, ensuring high standards of instruction.</p>
+                        </div>
+                    </div>
+
+                    <!-- Right Column: Narrative & Teaching Methodology (7 cols) -->
+                    <div class="lg:col-span-7 space-y-6 animate-on-scroll fade-in-up">
+                        <div>
+                            <span class="text-xs uppercase font-bold text-blue-600 tracking-wider">Concept-First Pedagogy</span>
+                            <h3 class="text-2xl sm:text-3xl font-extrabold text-slate-900 mt-1 mb-4 font-heading leading-tight">
+                                Helping Students Fall in Love with Math, One Concept at a Time
+                            </h3>
+                            <p class="text-slate-600 text-base leading-relaxed mb-4">
+                                Hello! I'm <strong>Alka Sharma</strong>, creator of <strong>MathTime by Alka Ma'am</strong>. With an M.Sc. in Mathematics, B.Ed., and CTET qualification, I bring 15 years of proven classroom expertise dedicated to simplifying mathematical concepts and turning math anxiety into genuine confidence.
+                            </p>
+                        </div>
+
+                        <!-- 3 Core Teaching Pillars -->
+                        <div class="space-y-4">
+                            <!-- Pillar 1 -->
+                            <div class="flex items-start gap-4 p-4 rounded-2xl bg-white border border-slate-200/80 shadow-sm hover:shadow-md transition">
+                                <div class="w-11 h-11 rounded-xl bg-blue-50 border border-blue-200 flex items-center justify-center text-blue-600 shrink-0 font-bold text-lg">
+                                    💡
+                                </div>
+                                <div>
+                                    <h4 class="text-base font-bold text-slate-900 font-heading">Concept-First, Never Rote Learning</h4>
+                                    <p class="text-xs sm:text-sm text-slate-600 mt-1 leading-relaxed">
+                                        Breaking down intimidating theorems and algebraic rules into relatable everyday analogies. Students master the <em>"Why"</em> before solving the <em>"How"</em>.
+                                    </p>
+                                </div>
                             </div>
-                            <!-- Qualification Card 5: 20 Years of Experience -->
-                            <div class="bg-red-50 rounded-lg shadow-md p-6 transform hover:scale-105 transition duration-300 animate-on-scroll fade-in-up" style="animation-delay: 0.7s;">
-                                <h4 class="text-lg font-bold text-red-800 mb-2">15 Years of Experience</h4>
-                                <p class="text-gray-700 text-sm">Proven ability to teach, motivate, guide, and discipline students effectively.</p>
+
+                            <!-- Pillar 2 -->
+                            <div class="flex items-start gap-4 p-4 rounded-2xl bg-white border border-slate-200/80 shadow-sm hover:shadow-md transition">
+                                <div class="w-11 h-11 rounded-xl bg-emerald-50 border border-emerald-200 flex items-center justify-center text-emerald-600 shrink-0 font-bold text-lg">
+                                    🌱
+                                </div>
+                                <div>
+                                    <h4 class="text-base font-bold text-slate-900 font-heading">Encouraging &amp; Supportive Environment</h4>
+                                    <p class="text-xs sm:text-sm text-slate-600 mt-1 leading-relaxed">
+                                        Patience is paramount. Every doubt is valid, and mistakes are celebrated as milestones toward mastery. Students build psychological comfort in asking questions.
+                                    </p>
+                                </div>
                             </div>
-                            <!-- Qualification Card 6: Professional Development -->
-                            <div class="bg-indigo-50 rounded-lg shadow-md p-6 transform hover:scale-105 transition duration-300 animate-on-scroll fade-in-up" style="animation-delay: 0.8s;">
-                                <h4 class="text-lg font-bold text-indigo-800 mb-2">Professional Development</h4>
-                                <p class="text-gray-700 text-sm">Attended 15+ workshops across India, committed to continuous learning.</p>
+
+                            <!-- Pillar 3 -->
+                            <div class="flex items-start gap-4 p-4 rounded-2xl bg-white border border-slate-200/80 shadow-sm hover:shadow-md transition">
+                                <div class="w-11 h-11 rounded-xl bg-purple-50 border border-purple-200 flex items-center justify-center text-purple-600 shrink-0 font-bold text-lg">
+                                    🎯
+                                </div>
+                                <div>
+                                    <h4 class="text-base font-bold text-slate-900 font-heading">Proven Board Exam &amp; Foundation Focus</h4>
+                                    <p class="text-xs sm:text-sm text-slate-600 mt-1 leading-relaxed">
+                                        From NCERT step-by-step proofs to speed arithmetic tricks and board exam paper presentation strategies that help students secure top marks.
+                                    </p>
+                                </div>
                             </div>
+                        </div>
+
+                        <!-- Action Triggers -->
+                        <div class="pt-2 flex flex-wrap items-center gap-4">
+                            <a href="#videos" class="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-blue-600 hover:bg-blue-700 text-white font-bold text-sm shadow-lg shadow-blue-600/30 transition transform hover:-translate-y-0.5">
+                                <span>Explore Free Video Lessons</span> &rarr;
+                            </a>
+                            <a href="#contact" class="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-800 font-bold text-sm border border-slate-200 transition">
+                                <span>Inquire for Mentorship</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Interactive Qualifications & Pedagogical Bento Grid -->
+                <div class="pt-10 border-t border-slate-200/80 animate-on-scroll fade-in-up">
+                    <div class="text-center max-w-2xl mx-auto mb-10">
+                        <span class="text-xs uppercase font-bold text-indigo-600 tracking-wider">Academic Credentials</span>
+                        <h3 class="text-2xl sm:text-3xl font-extrabold text-slate-900 font-heading mt-1">
+                            Qualifications &amp; Professional Highlights
+                        </h3>
+                    </div>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <!-- Bento 1: M.Sc. Mathematics -->
+                        <div class="tilt-card bg-white rounded-2xl p-6 border border-slate-200/80 shadow-md hover:shadow-xl transition-all group">
+                            <div class="flex items-center justify-between mb-4">
+                                <div class="w-12 h-12 rounded-xl bg-blue-50 border border-blue-200 text-blue-700 flex items-center justify-center font-bold text-xl group-hover:scale-110 transition-transform">
+                                    🎓
+                                </div>
+                                <span class="px-2.5 py-0.5 rounded-full text-[11px] font-bold bg-blue-50 text-blue-700 border border-blue-200">Post-Graduate</span>
+                            </div>
+                            <h4 class="text-lg font-bold text-slate-900 font-heading mb-1.5">M.Sc. Mathematics</h4>
+                            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+                                Advanced academic foundation in pure &amp; applied mathematical sciences, algebra, and analytical thinking.
+                            </p>
+                        </div>
+
+                        <!-- Bento 2: B.Ed. -->
+                        <div class="tilt-card bg-white rounded-2xl p-6 border border-slate-200/80 shadow-md hover:shadow-xl transition-all group">
+                            <div class="flex items-center justify-between mb-4">
+                                <div class="w-12 h-12 rounded-xl bg-purple-50 border border-purple-200 text-purple-700 flex items-center justify-center font-bold text-xl group-hover:scale-110 transition-transform">
+                                    📜
+                                </div>
+                                <span class="px-2.5 py-0.5 rounded-full text-[11px] font-bold bg-purple-50 text-purple-700 border border-purple-200">Education Degree</span>
+                            </div>
+                            <h4 class="text-lg font-bold text-slate-900 font-heading mb-1.5">B.Ed. (Pedagogy)</h4>
+                            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+                                Professional qualification in modern educational methodologies, learning psychology, and instructional design.
+                            </p>
+                        </div>
+
+                        <!-- Bento 3: CTET Certified -->
+                        <div class="tilt-card bg-white rounded-2xl p-6 border border-slate-200/80 shadow-md hover:shadow-xl transition-all group">
+                            <div class="flex items-center justify-between mb-4">
+                                <div class="w-12 h-12 rounded-xl bg-emerald-50 border border-emerald-200 text-emerald-700 flex items-center justify-center font-bold text-xl group-hover:scale-110 transition-transform">
+                                    ⭐
+                                </div>
+                                <span class="px-2.5 py-0.5 rounded-full text-[11px] font-bold bg-emerald-50 text-emerald-700 border border-emerald-200">Central Standard</span>
+                            </div>
+                            <h4 class="text-lg font-bold text-slate-900 font-heading mb-1.5">CTET Certified</h4>
+                            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+                                Certified under Central Teacher Eligibility Test, meeting benchmark national pedagogical criteria.
+                            </p>
+                        </div>
+
+                        <!-- Bento 4: 15 Years of Experience -->
+                        <div class="tilt-card bg-white rounded-2xl p-6 border border-slate-200/80 shadow-md hover:shadow-xl transition-all group">
+                            <div class="flex items-center justify-between mb-4">
+                                <div class="w-12 h-12 rounded-xl bg-amber-50 border border-amber-200 text-amber-700 flex items-center justify-center font-bold text-xl group-hover:scale-110 transition-transform">
+                                    ⏱️
+                                </div>
+                                <span class="px-2.5 py-0.5 rounded-full text-[11px] font-bold bg-amber-50 text-amber-700 border border-amber-200">Classroom Veteran</span>
+                            </div>
+                            <h4 class="text-lg font-bold text-slate-900 font-heading mb-1.5">15+ Years Classroom Mastery</h4>
+                            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+                                Proven ability to inspire students, resolve deep-seated learning blocks, and prepare learners for academic triumphs.
+                            </p>
+                        </div>
+
+                        <!-- Bento 5: Professional Workshops -->
+                        <div class="tilt-card bg-white rounded-2xl p-6 border border-slate-200/80 shadow-md hover:shadow-xl transition-all group">
+                            <div class="flex items-center justify-between mb-4">
+                                <div class="w-12 h-12 rounded-xl bg-cyan-50 border border-cyan-200 text-cyan-700 flex items-center justify-center font-bold text-xl group-hover:scale-110 transition-transform">
+                                    🌐
+                                </div>
+                                <span class="px-2.5 py-0.5 rounded-full text-[11px] font-bold bg-cyan-50 text-cyan-700 border border-cyan-200">National Reach</span>
+                            </div>
+                            <h4 class="text-lg font-bold text-slate-900 font-heading mb-1.5">15+ National Workshops</h4>
+                            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+                                Regularly attended professional educator symposiums across India to integrate innovative curriculum standards.
+                            </p>
+                        </div>
+
+                        <!-- Bento 6: Interactive Digital Board -->
+                        <div class="tilt-card bg-white rounded-2xl p-6 border border-slate-200/80 shadow-md hover:shadow-xl transition-all group">
+                            <div class="flex items-center justify-between mb-4">
+                                <div class="w-12 h-12 rounded-xl bg-rose-50 border border-rose-200 text-rose-700 flex items-center justify-center font-bold text-xl group-hover:scale-110 transition-transform">
+                                    💻
+                                </div>
+                                <span class="px-2.5 py-0.5 rounded-full text-[11px] font-bold bg-rose-50 text-rose-700 border border-rose-200">Modern EdTech</span>
+                            </div>
+                            <h4 class="text-lg font-bold text-slate-900 font-heading mb-1.5">Interactive Digital Teaching</h4>
+                            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+                                Utilizing clear digital whiteboards, geometry step demonstrations, and structured video lessons for seamless learning.
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -338,186 +670,675 @@
         </section>
 
         <!-- Featured YouTube Videos Section -->
-        <section id="videos" class="py-16 md:py-24 bg-gray-50">
-            <div class="container mx-auto px-4">
-                <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-blue-700 section-title animate-on-scroll">Featured YouTube Videos</h2>
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    <!-- Video 1 Placeholder -->
-                    <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition duration-300 animate-on-scroll scale-in">
-                        <div class="video-container">
-                            <iframe src="https://www.youtube.com/embed/tsyPRZcVJ48" title="Estimating Sums In Addition and Subtraction Video Lesson" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </div>
-                        <div class="p-6">
-                            <h3 class="text-xl font-semibold mb-2">Estimating Sums In Addition and Subtraction ┃IN JUST 7 MINS┃</h3>
-                            <p class="text-gray-600 text-sm mb-4">A foundational lesson for beginners.</p>
-                            <a href="https://www.youtube.com/watch?v=tsyPRZcVJ48" target="_blank" class="text-blue-600 hover:underline font-medium">Watch on YouTube &rarr;</a>
+        <section id="videos" class="py-16 md:py-24 bg-slate-50 relative">
+            <div class="container mx-auto px-4 sm:px-6">
+                <!-- Section Header -->
+                <div class="text-center max-w-3xl mx-auto mb-10">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-100 text-blue-700 text-xs font-semibold uppercase tracking-wider mb-3">
+                        Video Lessons &bull; High Clarity
+                    </div>
+                    <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 font-heading section-title animate-on-scroll">
+                        Featured Video Lessons
+                    </h2>
+                    <p class="text-slate-600 text-base sm:text-lg mt-3">
+                        Master tough concepts step-by-step with Alka Ma'am. Watch foundational lessons, chapter breakthroughs, and lightning-fast calculations.
+                    </p>
+                </div>
+
+                <!-- Interactive Filter Tabs -->
+                <div class="flex flex-wrap items-center justify-center gap-2 sm:gap-3 mb-12 animate-on-scroll fade-in-up">
+                    <button class="filter-pill active px-5 py-2.5 rounded-full text-xs sm:text-sm font-semibold border border-slate-200 bg-white text-slate-700 shadow-sm cursor-pointer" data-filter="all">
+                        ✨ All Lessons
+                    </button>
+                    <button class="filter-pill px-5 py-2.5 rounded-full text-xs sm:text-sm font-semibold border border-slate-200 bg-white text-slate-700 shadow-sm cursor-pointer" data-filter="class9-10">
+                        📘 Classes 9 &amp; 10
+                    </button>
+                    <button class="filter-pill px-5 py-2.5 rounded-full text-xs sm:text-sm font-semibold border border-slate-200 bg-white text-slate-700 shadow-sm cursor-pointer" data-filter="class8">
+                        📗 Class 8 Math
+                    </button>
+                    <button class="filter-pill px-5 py-2.5 rounded-full text-xs sm:text-sm font-semibold border border-slate-200 bg-white text-slate-700 shadow-sm cursor-pointer" data-filter="junior">
+                        📙 Classes 4 to 7
+                    </button>
+                    <button class="filter-pill px-5 py-2.5 rounded-full text-xs sm:text-sm font-semibold border border-slate-200 bg-white text-slate-700 shadow-sm cursor-pointer" data-filter="tricks">
+                        ⚡ Speed Math &amp; Tricks
+                    </button>
+                </div>
+
+                <!-- Video Cards Grid -->
+                <div id="video-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Video Card 1 (Junior / Estimation) -->
+                    <div class="filter-item tilt-card-wrapper animate-on-scroll fade-in-up" data-category="junior">
+                        <div class="tilt-card bg-white rounded-2xl shadow-md hover:shadow-xl border border-slate-200/80 overflow-hidden flex flex-col h-full">
+                            <!-- Facade Thumbnail -->
+                            <div class="video-facade relative aspect-video bg-slate-900 group" data-video-id="tsyPRZcVJ48" data-video-title="Estimating Sums In Addition and Subtraction ┃IN JUST 7 MINS┃">
+                                <img src="https://img.youtube.com/vi/tsyPRZcVJ48/hqdefault.jpg" alt="Estimating Sums In Addition and Subtraction" loading="lazy" class="video-facade-thumb w-full h-full object-cover">
+                                <div class="absolute inset-0 bg-slate-950/25 group-hover:bg-slate-950/10 transition-colors"></div>
+                                <div class="absolute inset-0 flex items-center justify-center">
+                                    <div class="play-pulse-btn w-14 h-14 rounded-full bg-red-600 text-white flex items-center justify-center shadow-2xl shadow-red-600/50">
+                                        <svg class="w-6 h-6 fill-current translate-x-0.5" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                                    </div>
+                                </div>
+                                <span class="absolute bottom-3 right-3 px-2 py-0.5 rounded text-[11px] font-bold bg-black/80 text-white backdrop-blur-sm">7:00</span>
+                                <span class="absolute top-3 left-3 px-2.5 py-1 rounded-full text-xs font-semibold bg-blue-600/90 text-white backdrop-blur-sm">Class 5–7</span>
+                            </div>
+                            <!-- Card Body -->
+                            <div class="p-6 flex flex-col flex-grow justify-between">
+                                <div>
+                                    <div class="text-xs font-bold uppercase tracking-wider text-blue-600 mb-2">Foundation Math</div>
+                                    <h3 class="text-lg font-bold text-slate-900 leading-snug mb-2 font-heading">
+                                        Estimating Sums In Addition and Subtraction
+                                    </h3>
+                                    <p class="text-slate-600 text-sm mb-4 leading-relaxed">
+                                        Master the fundamentals of rounding off numbers and estimating sums in just 7 minutes.
+                                    </p>
+                                </div>
+                                <div class="pt-4 border-t border-slate-100 flex items-center justify-between">
+                                    <button class="open-video-btn text-blue-600 hover:text-blue-800 font-semibold text-sm flex items-center gap-1 transition" data-video-id="tsyPRZcVJ48" data-video-title="Estimating Sums In Addition and Subtraction">
+                                        <span>Watch Lesson</span> &rarr;
+                                    </button>
+                                    <a href="https://www.youtube.com/watch?v=tsyPRZcVJ48" target="_blank" rel="noopener noreferrer" class="text-xs text-slate-400 hover:text-red-600 flex items-center gap-1 transition" title="Open directly on YouTube">
+                                        <span>YouTube</span> ↗
+                                    </a>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <!-- Video 2 Placeholder -->
-                    <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition duration-300 animate-on-scroll scale-in">
-                        <div class="video-container">
-                            <iframe src="https://www.youtube.com/embed/6BI1CzRtA3s" title="Multiples & Factors - FINDING HCF by listing all FACTORS Video Lesson" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </div>
-                        <div class="p-6">
-                            <h3 class="text-xl font-semibold mb-2">Multiples & Factors - FINDING HCF by listing all FACTORS ┃IN JUST 8MINS┃</h3>
-                            <p class="text-gray-600 text-sm mb-4">Understanding the basics of HCF</p>
-                            <a href="https://www.youtube.com/watch?v=6BI1CzRtA3s&t=2s" target="_blank" class="text-blue-600 hover:underline font-medium">Watch on YouTube &rarr;</a>
+
+                    <!-- Video Card 2 (Class 8 / Factors) -->
+                    <div class="filter-item tilt-card-wrapper animate-on-scroll fade-in-up" data-category="class8 junior">
+                        <div class="tilt-card bg-white rounded-2xl shadow-md hover:shadow-xl border border-slate-200/80 overflow-hidden flex flex-col h-full">
+                            <!-- Facade Thumbnail -->
+                            <div class="video-facade relative aspect-video bg-slate-900 group" data-video-id="6BI1CzRtA3s" data-video-title="Multiples &amp; Factors - FINDING HCF by listing all FACTORS ┃IN JUST 8MINS┃">
+                                <img src="https://img.youtube.com/vi/6BI1CzRtA3s/hqdefault.jpg" alt="Multiples and Factors - FINDING HCF" loading="lazy" class="video-facade-thumb w-full h-full object-cover">
+                                <div class="absolute inset-0 bg-slate-950/25 group-hover:bg-slate-950/10 transition-colors"></div>
+                                <div class="absolute inset-0 flex items-center justify-center">
+                                    <div class="play-pulse-btn w-14 h-14 rounded-full bg-red-600 text-white flex items-center justify-center shadow-2xl shadow-red-600/50">
+                                        <svg class="w-6 h-6 fill-current translate-x-0.5" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                                    </div>
+                                </div>
+                                <span class="absolute bottom-3 right-3 px-2 py-0.5 rounded text-[11px] font-bold bg-black/80 text-white backdrop-blur-sm">8:00</span>
+                                <span class="absolute top-3 left-3 px-2.5 py-1 rounded-full text-xs font-semibold bg-purple-600/90 text-white backdrop-blur-sm">Class 6–8</span>
+                            </div>
+                            <!-- Card Body -->
+                            <div class="p-6 flex flex-col flex-grow justify-between">
+                                <div>
+                                    <div class="text-xs font-bold uppercase tracking-wider text-purple-600 mb-2">Multiples &amp; Factors</div>
+                                    <h3 class="text-lg font-bold text-slate-900 leading-snug mb-2 font-heading">
+                                        Multiples &amp; Factors - Finding HCF Easily
+                                    </h3>
+                                    <p class="text-slate-600 text-sm mb-4 leading-relaxed">
+                                        Clear and straightforward methodology for calculating Highest Common Factor (HCF) by listing all factors.
+                                    </p>
+                                </div>
+                                <div class="pt-4 border-t border-slate-100 flex items-center justify-between">
+                                    <button class="open-video-btn text-blue-600 hover:text-blue-800 font-semibold text-sm flex items-center gap-1 transition" data-video-id="6BI1CzRtA3s" data-video-title="Multiples & Factors - FINDING HCF">
+                                        <span>Watch Lesson</span> &rarr;
+                                    </button>
+                                    <a href="https://www.youtube.com/watch?v=6BI1CzRtA3s" target="_blank" rel="noopener noreferrer" class="text-xs text-slate-400 hover:text-red-600 flex items-center gap-1 transition" title="Open directly on YouTube">
+                                        <span>YouTube</span> ↗
+                                    </a>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <!-- Video 3 Placeholder -->
-                    <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition duration-300 animate-on-scroll scale-in">
-                        <div class="video-container">
-                            <iframe src="https://www.youtube.com/embed/BBVCpXWtxTU" title="HCF & LCM BY SHORT DIVISION METHOD Video Lesson" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                    <!-- Video Card 3 (Speed Math / Short Division) -->
+                    <div class="filter-item tilt-card-wrapper animate-on-scroll fade-in-up" data-category="tricks junior">
+                        <div class="tilt-card bg-white rounded-2xl shadow-md hover:shadow-xl border border-slate-200/80 overflow-hidden flex flex-col h-full">
+                            <!-- Facade Thumbnail -->
+                            <div class="video-facade relative aspect-video bg-slate-900 group" data-video-id="BBVCpXWtxTU" data-video-title="HCF &amp; LCM BY SHORT DIVISION METHOD">
+                                <img src="https://img.youtube.com/vi/BBVCpXWtxTU/hqdefault.jpg" alt="HCF and LCM by Short Division Method" loading="lazy" class="video-facade-thumb w-full h-full object-cover">
+                                <div class="absolute inset-0 bg-slate-950/25 group-hover:bg-slate-950/10 transition-colors"></div>
+                                <div class="absolute inset-0 flex items-center justify-center">
+                                    <div class="play-pulse-btn w-14 h-14 rounded-full bg-red-600 text-white flex items-center justify-center shadow-2xl shadow-red-600/50">
+                                        <svg class="w-6 h-6 fill-current translate-x-0.5" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                                    </div>
+                                </div>
+                                <span class="absolute bottom-3 right-3 px-2 py-0.5 rounded text-[11px] font-bold bg-amber-500 text-slate-950">Quick Short</span>
+                                <span class="absolute top-3 left-3 px-2.5 py-1 rounded-full text-xs font-semibold bg-emerald-600/90 text-white backdrop-blur-sm">Speed Math</span>
+                            </div>
+                            <!-- Card Body -->
+                            <div class="p-6 flex flex-col flex-grow justify-between">
+                                <div>
+                                    <div class="text-xs font-bold uppercase tracking-wider text-emerald-600 mb-2">Short Division Trick</div>
+                                    <h3 class="text-lg font-bold text-slate-900 leading-snug mb-2 font-heading">
+                                        HCF &amp; LCM by Short Division Method
+                                    </h3>
+                                    <p class="text-slate-600 text-sm mb-4 leading-relaxed">
+                                        Lightning-fast mental math technique to calculate both HCF and LCM simultaneously for school and competitive tests.
+                                    </p>
+                                </div>
+                                <div class="pt-4 border-t border-slate-100 flex items-center justify-between">
+                                    <button class="open-video-btn text-blue-600 hover:text-blue-800 font-semibold text-sm flex items-center gap-1 transition" data-video-id="BBVCpXWtxTU" data-video-title="HCF & LCM BY SHORT DIVISION METHOD">
+                                        <span>Watch Short</span> &rarr;
+                                    </button>
+                                    <a href="https://www.youtube.com/shorts/BBVCpXWtxTU" target="_blank" rel="noopener noreferrer" class="text-xs text-slate-400 hover:text-red-600 flex items-center gap-1 transition" title="Open directly on YouTube">
+                                        <span>YouTube</span> ↗
+                                    </a>
+                                </div>
+                            </div>
                         </div>
-                        <div class="p-6">
-                            <h3 class="text-xl font-semibold mb-2">HCF & LCM BY SHORT DIVISION METHOD</h3>
-                            <p class="text-gray-600 text-sm mb-4">#class4 #class5 #viral #shorts #easy #factors #multiples</p>
-                            <a href="https://www.youtube.com/shorts/BBVCpXWtxTU" target="_blank" class="text-blue-600 hover:underline font-medium">Watch on YouTube &rarr;</a>
+                    </div>
+
+                    <!-- Video Card 4 (Class 9 / Number System) -->
+                    <div class="filter-item tilt-card-wrapper animate-on-scroll fade-in-up" data-category="class9-10">
+                        <div class="tilt-card bg-white rounded-2xl shadow-md hover:shadow-xl border border-slate-200/80 overflow-hidden flex flex-col h-full">
+                            <!-- Track Preview Cover -->
+                            <div class="relative aspect-video bg-gradient-to-br from-blue-900 to-indigo-950 p-6 flex flex-col justify-between text-white group cursor-pointer" onclick="window.open('https://www.youtube.com/playlist?list=PLYwX6eCZ2uRguq6bT_Kxs0WMfJxw0Zbo_', '_blank')">
+                                <div class="flex justify-between items-start">
+                                    <span class="px-2.5 py-1 rounded-full text-xs font-bold bg-blue-500/30 text-blue-300 border border-blue-400/30 backdrop-blur-sm">Class 9 CBSE</span>
+                                    <span class="text-xs text-amber-300 font-semibold">Playlist</span>
+                                </div>
+                                <div>
+                                    <div class="text-2xl font-black font-heading">&radic;2 &bull; &pi; &bull; Real Numbers</div>
+                                    <div class="text-xs text-blue-200 mt-1">Number System Complete Chapter</div>
+                                </div>
+                                <div class="flex items-center gap-2 text-xs font-semibold text-white/90 group-hover:text-amber-300 transition-colors">
+                                    <span>Watch Chapter Lectures</span> &rarr;
+                                </div>
+                            </div>
+                            <!-- Card Body -->
+                            <div class="p-6 flex flex-col flex-grow justify-between">
+                                <div>
+                                    <div class="text-xs font-bold uppercase tracking-wider text-blue-600 mb-2">Class 9 Chapter 1</div>
+                                    <h3 class="text-lg font-bold text-slate-900 leading-snug mb-2 font-heading">
+                                        Number System – Real Numbers &amp; Exponents
+                                    </h3>
+                                    <p class="text-slate-600 text-sm mb-4 leading-relaxed">
+                                        Irrational numbers on number line, real number operations, laws of exponents, and NCERT exercise solutions.
+                                    </p>
+                                </div>
+                                <div class="pt-4 border-t border-slate-100 flex items-center justify-between">
+                                    <a href="https://www.youtube.com/playlist?list=PLYwX6eCZ2uRguq6bT_Kxs0WMfJxw0Zbo_" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:text-blue-800 font-semibold text-sm flex items-center gap-1 transition">
+                                        <span>View Playlist</span> &rarr;
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Video Card 5 (Class 9 / Coordinate Geometry) -->
+                    <div class="filter-item tilt-card-wrapper animate-on-scroll fade-in-up" data-category="class9-10">
+                        <div class="tilt-card bg-white rounded-2xl shadow-md hover:shadow-xl border border-slate-200/80 overflow-hidden flex flex-col h-full">
+                            <!-- Track Preview Cover -->
+                            <div class="relative aspect-video bg-gradient-to-br from-indigo-900 to-purple-950 p-6 flex flex-col justify-between text-white group cursor-pointer" onclick="window.open('https://www.youtube.com/playlist?list=PLYwX6eCZ2uRgx_o4x7HuHbURvrGtwXfLX', '_blank')">
+                                <div class="flex justify-between items-start">
+                                    <span class="px-2.5 py-1 rounded-full text-xs font-bold bg-purple-500/30 text-purple-300 border border-purple-400/30 backdrop-blur-sm">Class 9 CBSE</span>
+                                    <span class="text-xs text-amber-300 font-semibold">Playlist</span>
+                                </div>
+                                <div>
+                                    <div class="text-2xl font-black font-heading">(x, y) &bull; Cartesian Plane</div>
+                                    <div class="text-xs text-purple-200 mt-1">Coordinate Geometry Fundamentals</div>
+                                </div>
+                                <div class="flex items-center gap-2 text-xs font-semibold text-white/90 group-hover:text-amber-300 transition-colors">
+                                    <span>Watch Chapter Lectures</span> &rarr;
+                                </div>
+                            </div>
+                            <!-- Card Body -->
+                            <div class="p-6 flex flex-col flex-grow justify-between">
+                                <div>
+                                    <div class="text-xs font-bold uppercase tracking-wider text-purple-600 mb-2">Class 9 Chapter 3</div>
+                                    <h3 class="text-lg font-bold text-slate-900 leading-snug mb-2 font-heading">
+                                        Coordinate Geometry – Quadrants &amp; Coordinates
+                                    </h3>
+                                    <p class="text-slate-600 text-sm mb-4 leading-relaxed">
+                                        Master the Cartesian plane, plotting points, quadrants, abscissa, and ordinate with visual clarity.
+                                    </p>
+                                </div>
+                                <div class="pt-4 border-t border-slate-100 flex items-center justify-between">
+                                    <a href="https://www.youtube.com/playlist?list=PLYwX6eCZ2uRgx_o4x7HuHbURvrGtwXfLX" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:text-blue-800 font-semibold text-sm flex items-center gap-1 transition">
+                                        <span>View Playlist</span> &rarr;
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Video Card 6 (Class 8 / Algebraic Expressions) -->
+                    <div class="filter-item tilt-card-wrapper animate-on-scroll fade-in-up" data-category="class8">
+                        <div class="tilt-card bg-white rounded-2xl shadow-md hover:shadow-xl border border-slate-200/80 overflow-hidden flex flex-col h-full">
+                            <!-- Track Preview Cover -->
+                            <div class="relative aspect-video bg-gradient-to-br from-emerald-900 to-teal-950 p-6 flex flex-col justify-between text-white group cursor-pointer" onclick="window.open('https://www.youtube.com/playlist?list=PLYwX6eCZ2uRjsXZyTnj1gp29m4nfXvn5U', '_blank')">
+                                <div class="flex justify-between items-start">
+                                    <span class="px-2.5 py-1 rounded-full text-xs font-bold bg-emerald-500/30 text-emerald-300 border border-emerald-400/30 backdrop-blur-sm">Class 8 CBSE</span>
+                                    <span class="text-xs text-amber-300 font-semibold">Playlist</span>
+                                </div>
+                                <div>
+                                    <div class="text-2xl font-black font-heading">(a + b)&sup2; &bull; Identities</div>
+                                    <div class="text-xs text-emerald-200 mt-1">Algebraic Expressions Mastery</div>
+                                </div>
+                                <div class="flex items-center gap-2 text-xs font-semibold text-white/90 group-hover:text-amber-300 transition-colors">
+                                    <span>Watch Chapter Lectures</span> &rarr;
+                                </div>
+                            </div>
+                            <!-- Card Body -->
+                            <div class="p-6 flex flex-col flex-grow justify-between">
+                                <div>
+                                    <div class="text-xs font-bold uppercase tracking-wider text-emerald-600 mb-2">Class 8 Chapter 9</div>
+                                    <h3 class="text-lg font-bold text-slate-900 leading-snug mb-2 font-heading">
+                                        Algebraic Expressions &amp; Standard Identities
+                                    </h3>
+                                    <p class="text-slate-600 text-sm mb-4 leading-relaxed">
+                                        Terms, factors, coefficients, addition, subtraction, multiplication, and algebraic identities solved step-by-step.
+                                    </p>
+                                </div>
+                                <div class="pt-4 border-t border-slate-100 flex items-center justify-between">
+                                    <a href="https://www.youtube.com/playlist?list=PLYwX6eCZ2uRjsXZyTnj1gp29m4nfXvn5U" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:text-blue-800 font-semibold text-sm flex items-center gap-1 transition">
+                                        <span>View Playlist</span> &rarr;
+                                    </a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
+
+                <!-- Section Footer CTA -->
                 <div class="text-center mt-12 animate-on-scroll fade-in-up">
-                    <a href="https://www.youtube.com/@its.mathtime" target="_blank" class="inline-block bg-blue-600 text-white font-semibold py-3 px-8 rounded-full shadow-lg hover:bg-blue-700 transition duration-300 transform hover:scale-105">
-                        Explore More Videos on YouTube
+                    <a href="https://www.youtube.com/@its.mathtime?sub_confirmation=1" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 bg-gradient-to-r from-red-600 to-rose-600 hover:from-red-500 hover:to-rose-500 text-white font-semibold py-3.5 px-8 rounded-full shadow-lg shadow-red-600/30 hover:scale-105 active:scale-95 transition-all duration-300">
+                        <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                        <span>Subscribe on YouTube for 500+ Lessons</span>
                     </a>
                 </div>
             </div>
         </section>
 
-        <!-- Playlists/Topics Section -->
-        <section id="playlists" class="py-16 md:py-24 bg-white">
-            <div class="container mx-auto px-4">
-                <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-blue-700 section-title animate-on-scroll">Explore Our Math Playlists</h2>
+        <!-- Curated Math Playlists Section -->
+        <section id="playlists" class="py-16 md:py-24 bg-white relative">
+            <div class="container mx-auto px-4 sm:px-6">
+                <!-- Section Header -->
+                <div class="text-center max-w-3xl mx-auto mb-14">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-purple-100 text-purple-700 text-xs font-semibold uppercase tracking-wider mb-3">
+                        Organized Syllabus Tracks
+                    </div>
+                    <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 font-heading section-title animate-on-scroll">
+                        Explore Math Playlists by Class
+                    </h2>
+                    <p class="text-slate-600 text-base sm:text-lg mt-3">
+                        Choose your grade and follow structured chapter-wise video series designed for high scores and zero exam stress.
+                    </p>
+                </div>
+
+                <!-- Playlists Grid -->
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    <!-- Class 9 Math - Number System -->
-                    <div class="bg-gradient-to-br from-blue-100 to-blue-200 rounded-lg shadow-md p-6 transform hover:scale-105 transition duration-300 animate-on-scroll fade-in-up">
-                        <h3 class="text-2xl font-semibold mb-3 text-blue-800">Class 9: Number System</h3>
-                        <p class="text-gray-700 mb-4">In-depth coverage of Number System concepts, theorems, and solutions.</p>
-                        <a href="https://www.youtube.com/playlist?list=PLYwX6eCZ2uRguq6bT_Kxs0WMfJxw0Zbo_" target="_blank" class="text-blue-600 hover:underline font-medium">View Playlist &rarr;</a>
+                    <!-- Playlist 1: Class 9 Number System -->
+                    <div class="playlist-card tilt-card bg-white rounded-2xl border-t-4 border-blue-600 shadow-md hover:shadow-xl p-6 flex flex-col justify-between border-x border-b border-slate-200 animate-on-scroll fade-in-up">
+                        <div>
+                            <div class="flex items-center justify-between mb-4">
+                                <span class="px-3 py-1 rounded-full text-xs font-bold bg-blue-50 text-blue-700 border border-blue-200">CBSE Class 9</span>
+                                <span class="text-xs text-slate-500 font-medium flex items-center gap-1">
+                                    <svg class="w-4 h-4 text-blue-600" fill="currentColor" viewBox="0 0 20 20"><path d="M2 6a2 2 0 012-2h6a2 2 0 012 2v8a2 2 0 01-2 2H4a2 2 0 01-2-2V6zM14.553 7.106A1 1 0 0014 8v4a1 1 0 00.553.894l2 1A1 1 0 0018 13V7a1 1 0 00-1.447-.894l-2 1z"/></svg>
+                                    Full Chapter
+                                </span>
+                            </div>
+                            <h3 class="text-xl font-bold text-slate-900 mb-2 font-heading">Class 9: Number System</h3>
+                            <p class="text-slate-600 text-sm mb-4 leading-relaxed">
+                                Complete coverage of rational and irrational numbers, laws of exponents, and NCERT exercise problem solutions.
+                            </p>
+                            <div class="flex flex-wrap gap-1.5 mb-6">
+                                <span class="text-[11px] font-medium px-2 py-0.5 rounded bg-slate-100 text-slate-600">Rational Numbers</span>
+                                <span class="text-[11px] font-medium px-2 py-0.5 rounded bg-slate-100 text-slate-600">Real Numbers</span>
+                                <span class="text-[11px] font-medium px-2 py-0.5 rounded bg-slate-100 text-slate-600">NCERT</span>
+                            </div>
+                        </div>
+                        <a href="https://www.youtube.com/playlist?list=PLYwX6eCZ2uRguq6bT_Kxs0WMfJxw0Zbo_" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-between w-full p-3 rounded-xl bg-slate-50 hover:bg-blue-50 text-blue-700 font-semibold text-sm transition group">
+                            <span>Open Playlist</span>
+                            <span class="group-hover:translate-x-1 transition-transform">&rarr;</span>
+                        </a>
                     </div>
-                    <!-- Class 9 Math - Coordinate Geometry -->
-                    <div class="bg-gradient-to-br from-purple-100 to-purple-200 rounded-lg shadow-md p-6 transform hover:scale-105 transition duration-300 animate-on-scroll fade-in-up">
-                        <h3 class="text-2xl font-semibold mb-3 text-purple-800">Class 9: Coordinate Geometry</h3>
-                        <p class="text-gray-700 mb-4">Fully explained Coordinate Geometry fundamentals and exercises.</p>
-                        <a href="https://www.youtube.com/playlist?list=PLYwX6eCZ2uRgx_o4x7HuHbURvrGtwXfLX" target="_blank" class="text-purple-600 hover:underline font-medium">View Playlist &rarr;</a>
+
+                    <!-- Playlist 2: Class 9 Coordinate Geometry -->
+                    <div class="playlist-card tilt-card bg-white rounded-2xl border-t-4 border-purple-600 shadow-md hover:shadow-xl p-6 flex flex-col justify-between border-x border-b border-slate-200 animate-on-scroll fade-in-up">
+                        <div>
+                            <div class="flex items-center justify-between mb-4">
+                                <span class="px-3 py-1 rounded-full text-xs font-bold bg-purple-50 text-purple-700 border border-purple-200">CBSE Class 9</span>
+                                <span class="text-xs text-slate-500 font-medium flex items-center gap-1">
+                                    <svg class="w-4 h-4 text-purple-600" fill="currentColor" viewBox="0 0 20 20"><path d="M2 6a2 2 0 012-2h6a2 2 0 012 2v8a2 2 0 01-2 2H4a2 2 0 01-2-2V6zM14.553 7.106A1 1 0 0014 8v4a1 1 0 00.553.894l2 1A1 1 0 0018 13V7a1 1 0 00-1.447-.894l-2 1z"/></svg>
+                                    Full Chapter
+                                </span>
+                            </div>
+                            <h3 class="text-xl font-bold text-slate-900 mb-2 font-heading">Class 9: Coordinate Geometry</h3>
+                            <p class="text-slate-600 text-sm mb-4 leading-relaxed">
+                                Complete Cartesian system concepts, plotting coordinates, quadrants analysis, and step-by-step problem exercises.
+                            </p>
+                            <div class="flex flex-wrap gap-1.5 mb-6">
+                                <span class="text-[11px] font-medium px-2 py-0.5 rounded bg-slate-100 text-slate-600">Cartesian Plane</span>
+                                <span class="text-[11px] font-medium px-2 py-0.5 rounded bg-slate-100 text-slate-600">Coordinates</span>
+                                <span class="text-[11px] font-medium px-2 py-0.5 rounded bg-slate-100 text-slate-600">Exercises</span>
+                            </div>
+                        </div>
+                        <a href="https://www.youtube.com/playlist?list=PLYwX6eCZ2uRgx_o4x7HuHbURvrGtwXfLX" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-between w-full p-3 rounded-xl bg-slate-50 hover:bg-purple-50 text-purple-700 font-semibold text-sm transition group">
+                            <span>Open Playlist</span>
+                            <span class="group-hover:translate-x-1 transition-transform">&rarr;</span>
+                        </a>
                     </div>
-                    <!-- Class 8 Math - Algebraic Expressions -->
-                    <div class="bg-gradient-to-br from-indigo-100 to-indigo-200 rounded-lg shadow-md p-6 transform hover:scale-105 transition duration-300 animate-on-scroll fade-in-up">
-                        <h3 class="text-2xl font-semibold mb-3 text-indigo-800">Class 8: Algebraic Expressions</h3>
-                        <p class="text-gray-700 mb-4">Fully explained Algebraic Expressions, identities, and practice problems.</p>
-                        <a href="https://www.youtube.com/playlist?list=PLYwX6eCZ2uRjsXZyTnj1gp29m4nfXvn5U" target="_blank" class="text-indigo-600 hover:underline font-medium">View Playlist &rarr;</a>
+
+                    <!-- Playlist 3: Class 8 Algebraic Expressions -->
+                    <div class="playlist-card tilt-card bg-white rounded-2xl border-t-4 border-indigo-600 shadow-md hover:shadow-xl p-6 flex flex-col justify-between border-x border-b border-slate-200 animate-on-scroll fade-in-up">
+                        <div>
+                            <div class="flex items-center justify-between mb-4">
+                                <span class="px-3 py-1 rounded-full text-xs font-bold bg-indigo-50 text-indigo-700 border border-indigo-200">CBSE Class 8</span>
+                                <span class="text-xs text-slate-500 font-medium flex items-center gap-1">
+                                    <svg class="w-4 h-4 text-indigo-600" fill="currentColor" viewBox="0 0 20 20"><path d="M2 6a2 2 0 012-2h6a2 2 0 012 2v8a2 2 0 01-2 2H4a2 2 0 01-2-2V6zM14.553 7.106A1 1 0 0014 8v4a1 1 0 00.553.894l2 1A1 1 0 0018 13V7a1 1 0 00-1.447-.894l-2 1z"/></svg>
+                                    Full Chapter
+                                </span>
+                            </div>
+                            <h3 class="text-xl font-bold text-slate-900 mb-2 font-heading">Class 8: Algebraic Expressions</h3>
+                            <p class="text-slate-600 text-sm mb-4 leading-relaxed">
+                                Detailed explanations of algebraic expressions, polynomial operations, standard identities, and practice questions.
+                            </p>
+                            <div class="flex flex-wrap gap-1.5 mb-6">
+                                <span class="text-[11px] font-medium px-2 py-0.5 rounded bg-slate-100 text-slate-600">Polynomials</span>
+                                <span class="text-[11px] font-medium px-2 py-0.5 rounded bg-slate-100 text-slate-600">Identities</span>
+                                <span class="text-[11px] font-medium px-2 py-0.5 rounded bg-slate-100 text-slate-600">NCERT</span>
+                            </div>
+                        </div>
+                        <a href="https://www.youtube.com/playlist?list=PLYwX6eCZ2uRjsXZyTnj1gp29m4nfXvn5U" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-between w-full p-3 rounded-xl bg-slate-50 hover:bg-indigo-50 text-indigo-700 font-semibold text-sm transition group">
+                            <span>Open Playlist</span>
+                            <span class="group-hover:translate-x-1 transition-transform">&rarr;</span>
+                        </a>
                     </div>
-                    <!-- Class 8 Math - Linear Equations -->
-                    <div class="bg-gradient-to-br from-pink-100 to-pink-200 rounded-lg shadow-md p-6 transform hover:scale-105 transition duration-300 animate-on-scroll fade-in-up">
-                        <h3 class="text-2xl font-semibold mb-3 text-pink-800">Class 8: Linear Equations</h3>
-                        <p class="text-gray-700 mb-4">Master Linear Equations in one Variable with step-by-step guidance.</p>
-                        <a href="https://www.youtube.com/playlist?list=PLYwX6eCZ2uRg_-Q6oCM3Ap7Np1vmnwvAq" target="_blank" class="text-pink-600 hover:underline font-medium">View Playlist &rarr;</a>
+
+                    <!-- Playlist 4: Class 8 Linear Equations -->
+                    <div class="playlist-card tilt-card bg-white rounded-2xl border-t-4 border-rose-600 shadow-md hover:shadow-xl p-6 flex flex-col justify-between border-x border-b border-slate-200 animate-on-scroll fade-in-up">
+                        <div>
+                            <div class="flex items-center justify-between mb-4">
+                                <span class="px-3 py-1 rounded-full text-xs font-bold bg-rose-50 text-rose-700 border border-rose-200">CBSE Class 8</span>
+                                <span class="text-xs text-slate-500 font-medium flex items-center gap-1">
+                                    <svg class="w-4 h-4 text-rose-600" fill="currentColor" viewBox="0 0 20 20"><path d="M2 6a2 2 0 012-2h6a2 2 0 012 2v8a2 2 0 01-2 2H4a2 2 0 01-2-2V6zM14.553 7.106A1 1 0 0014 8v4a1 1 0 00.553.894l2 1A1 1 0 0018 13V7a1 1 0 00-1.447-.894l-2 1z"/></svg>
+                                    Full Chapter
+                                </span>
+                            </div>
+                            <h3 class="text-xl font-bold text-slate-900 mb-2 font-heading">Class 8: Linear Equations</h3>
+                            <p class="text-slate-600 text-sm mb-4 leading-relaxed">
+                                Master Linear Equations in One Variable with intuitive step-by-step solving techniques and real-world word problems.
+                            </p>
+                            <div class="flex flex-wrap gap-1.5 mb-6">
+                                <span class="text-[11px] font-medium px-2 py-0.5 rounded bg-slate-100 text-slate-600">Linear Equations</span>
+                                <span class="text-[11px] font-medium px-2 py-0.5 rounded bg-slate-100 text-slate-600">Word Problems</span>
+                                <span class="text-[11px] font-medium px-2 py-0.5 rounded bg-slate-100 text-slate-600">Algebra</span>
+                            </div>
+                        </div>
+                        <a href="https://www.youtube.com/playlist?list=PLYwX6eCZ2uRg_-Q6oCM3Ap7Np1vmnwvAq" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-between w-full p-3 rounded-xl bg-slate-50 hover:bg-rose-50 text-rose-700 font-semibold text-sm transition group">
+                            <span>Open Playlist</span>
+                            <span class="group-hover:translate-x-1 transition-transform">&rarr;</span>
+                        </a>
                     </div>
-                    <!-- Class 4-7 Math -->
-                    <div class="bg-gradient-to-br from-green-100 to-green-200 rounded-lg shadow-md p-6 transform hover:scale-105 transition duration-300 animate-on-scroll fade-in-up">
-                        <h3 class="text-2xl font-semibold mb-3 text-green-800">Junior Math: Classes 4 to 7</h3>
-                        <p class="text-gray-700 mb-4">Core building blocks, final exam preparation, and mental math tricks.</p>
-                        <a href="https://www.youtube.com/playlist?list=PLYwX6eCZ2uRipTTWe5H13aFiZg5KYdHEe" target="_blank" class="text-green-600 hover:underline font-medium">View Playlist &rarr;</a>
+
+                    <!-- Playlist 5: Junior Math Classes 4 to 7 -->
+                    <div class="playlist-card tilt-card bg-white rounded-2xl border-t-4 border-emerald-600 shadow-md hover:shadow-xl p-6 flex flex-col justify-between border-x border-b border-slate-200 animate-on-scroll fade-in-up">
+                        <div>
+                            <div class="flex items-center justify-between mb-4">
+                                <span class="px-3 py-1 rounded-full text-xs font-bold bg-emerald-50 text-emerald-700 border border-emerald-200">Classes 4–7</span>
+                                <span class="text-xs text-slate-500 font-medium flex items-center gap-1">
+                                    <svg class="w-4 h-4 text-emerald-600" fill="currentColor" viewBox="0 0 20 20"><path d="M2 6a2 2 0 012-2h6a2 2 0 012 2v8a2 2 0 01-2 2H4a2 2 0 01-2-2V6zM14.553 7.106A1 1 0 0014 8v4a1 1 0 00.553.894l2 1A1 1 0 0018 13V7a1 1 0 00-1.447-.894l-2 1z"/></svg>
+                                    Foundation
+                                </span>
+                            </div>
+                            <h3 class="text-xl font-bold text-slate-900 mb-2 font-heading">Junior Math: Classes 4 to 7</h3>
+                            <p class="text-slate-600 text-sm mb-4 leading-relaxed">
+                                Core building blocks including factors, multiples, fractions, decimals, arithmetic operations, and school exam preparation.
+                            </p>
+                            <div class="flex flex-wrap gap-1.5 mb-6">
+                                <span class="text-[11px] font-medium px-2 py-0.5 rounded bg-slate-100 text-slate-600">Fractions</span>
+                                <span class="text-[11px] font-medium px-2 py-0.5 rounded bg-slate-100 text-slate-600">Decimals</span>
+                                <span class="text-[11px] font-medium px-2 py-0.5 rounded bg-slate-100 text-slate-600">LCM &amp; HCF</span>
+                            </div>
+                        </div>
+                        <a href="https://www.youtube.com/playlist?list=PLYwX6eCZ2uRipTTWe5H13aFiZg5KYdHEe" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-between w-full p-3 rounded-xl bg-slate-50 hover:bg-emerald-50 text-emerald-700 font-semibold text-sm transition group">
+                            <span>Open Playlist</span>
+                            <span class="group-hover:translate-x-1 transition-transform">&rarr;</span>
+                        </a>
                     </div>
-                    <!-- Percentage & Applications -->
-                    <div class="bg-gradient-to-br from-yellow-100 to-yellow-200 rounded-lg shadow-md p-6 transform hover:scale-105 transition duration-300 animate-on-scroll fade-in-up">
-                        <h3 class="text-2xl font-semibold mb-3 text-yellow-800">Classes 5-7: Percentages & Applications</h3>
-                        <p class="text-gray-700 mb-4">Learn with fun - Percentage and practical everyday applications.</p>
-                        <a href="https://www.youtube.com/playlist?list=PLYwX6eCZ2uRglr_vw-BjDOttRUPuIEifp" target="_blank" class="text-yellow-600 hover:underline font-medium">View Playlist &rarr;</a>
+
+                    <!-- Playlist 6: Percentages & Applications -->
+                    <div class="playlist-card tilt-card bg-white rounded-2xl border-t-4 border-amber-500 shadow-md hover:shadow-xl p-6 flex flex-col justify-between border-x border-b border-slate-200 animate-on-scroll fade-in-up">
+                        <div>
+                            <div class="flex items-center justify-between mb-4">
+                                <span class="px-3 py-1 rounded-full text-xs font-bold bg-amber-50 text-amber-700 border border-amber-200">Classes 5–7</span>
+                                <span class="text-xs text-slate-500 font-medium flex items-center gap-1">
+                                    <svg class="w-4 h-4 text-amber-600" fill="currentColor" viewBox="0 0 20 20"><path d="M2 6a2 2 0 012-2h6a2 2 0 012 2v8a2 2 0 01-2 2H4a2 2 0 01-2-2V6zM14.553 7.106A1 1 0 0014 8v4a1 1 0 00.553.894l2 1A1 1 0 0018 13V7a1 1 0 00-1.447-.894l-2 1z"/></svg>
+                                    Application
+                                </span>
+                            </div>
+                            <h3 class="text-xl font-bold text-slate-900 mb-2 font-heading">Percentages &amp; Practical Applications</h3>
+                            <p class="text-slate-600 text-sm mb-4 leading-relaxed">
+                                Learn percentage conversion, profit and loss basics, ratios, and everyday practical calculations made simple and engaging.
+                            </p>
+                            <div class="flex flex-wrap gap-1.5 mb-6">
+                                <span class="text-[11px] font-medium px-2 py-0.5 rounded bg-slate-100 text-slate-600">Percentages</span>
+                                <span class="text-[11px] font-medium px-2 py-0.5 rounded bg-slate-100 text-slate-600">Ratios</span>
+                                <span class="text-[11px] font-medium px-2 py-0.5 rounded bg-slate-100 text-slate-600">Practical Math</span>
+                            </div>
+                        </div>
+                        <a href="https://www.youtube.com/playlist?list=PLYwX6eCZ2uRglr_vw-BjDOttRUPuIEifp" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-between w-full p-3 rounded-xl bg-slate-50 hover:bg-amber-50 text-amber-700 font-semibold text-sm transition group">
+                            <span>Open Playlist</span>
+                            <span class="group-hover:translate-x-1 transition-transform">&rarr;</span>
+                        </a>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- Gallery Section -->
-        <section id="gallery" class="py-16 md:py-24 bg-gray-50">
-            <div class="container mx-auto px-4">
-                <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-blue-700 section-title animate-on-scroll">Our Gallery</h2>
-                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <section id="gallery" class="py-16 md:py-24 bg-slate-50 relative">
+            <div class="container mx-auto px-4 sm:px-6">
+                <!-- Section Header -->
+                <div class="text-center max-w-3xl mx-auto mb-14">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-100 text-blue-700 text-xs font-semibold uppercase tracking-wider mb-3">
+                        Interactive Learning Environment
+                    </div>
+                    <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 font-heading section-title animate-on-scroll">
+                        Teaching &amp; Classroom Gallery
+                    </h2>
+                    <p class="text-slate-600 text-base sm:text-lg mt-3">
+                        A real glimpse into Alka Ma'am's engaging online lectures, concept demonstrations, and dedicated student mentorship sessions. Click any photo to view full screen.
+                    </p>
+                </div>
+
+                <!-- Gallery Grid -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
                     <!-- Gallery Item 1 -->
-                    <div class="bg-white rounded-lg shadow-md overflow-hidden transform hover:scale-105 transition duration-300 animate-on-scroll scale-in">
-                        <img src="alka pics/1.jpg" alt="Alka Ma'am teaching online class" loading="lazy" width="400" height="192" class="w-full h-48 object-cover">
-                        <div class="p-4 text-center text-gray-700">Engaging Online Session</div>
+                    <div class="gallery-card tilt-card bg-white rounded-2xl shadow-md hover:shadow-xl border border-slate-200/80 overflow-hidden animate-on-scroll scale-in" data-full-img="alka pics/1.jpg" data-caption="Engaging Online Lecture Session – Alka Ma'am connecting with students">
+                        <div class="relative h-60 w-full bg-slate-900 overflow-hidden">
+                            <img src="alka pics/1.jpg" alt="Alka Ma'am teaching online class" loading="lazy" width="400" height="240" class="w-full h-full object-cover">
+                            <div class="gallery-overlay absolute inset-0 bg-slate-950/40 backdrop-blur-[2px] flex items-center justify-center transition-all">
+                                <span class="p-3 rounded-full bg-white/90 text-slate-900 shadow-xl transform scale-90 group-hover:scale-100 transition">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7"></path></svg>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="p-4 bg-white flex items-center justify-between">
+                            <span class="text-sm font-semibold text-slate-800">Engaging Online Session</span>
+                            <span class="text-[11px] font-medium text-blue-600 bg-blue-50 px-2.5 py-0.5 rounded-full">Interactive</span>
+                        </div>
                     </div>
+
                     <!-- Gallery Item 2 -->
-                    <div class="bg-white rounded-lg shadow-md overflow-hidden transform hover:scale-105 transition duration-300 animate-on-scroll scale-in">
-                        <img src="alka pics/2.jpg" alt="Alka Ma'am explaining concepts" loading="lazy" width="400" height="192" class="w-full h-48 object-cover">
-                        <div class="p-4 text-center text-gray-700">Clarity in Concepts</div>
+                    <div class="gallery-card tilt-card bg-white rounded-2xl shadow-md hover:shadow-xl border border-slate-200/80 overflow-hidden animate-on-scroll scale-in" data-full-img="alka pics/2.jpg" data-caption="Clarity in Concepts – Step-by-step breakdown of difficult problems">
+                        <div class="relative h-60 w-full bg-slate-900 overflow-hidden">
+                            <img src="alka pics/2.jpg" alt="Alka Ma'am explaining concepts" loading="lazy" width="400" height="240" class="w-full h-full object-cover">
+                            <div class="gallery-overlay absolute inset-0 bg-slate-950/40 backdrop-blur-[2px] flex items-center justify-center transition-all">
+                                <span class="p-3 rounded-full bg-white/90 text-slate-900 shadow-xl transform scale-90 group-hover:scale-100 transition">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7"></path></svg>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="p-4 bg-white flex items-center justify-between">
+                            <span class="text-sm font-semibold text-slate-800">Clarity in Concepts</span>
+                            <span class="text-[11px] font-medium text-purple-600 bg-purple-50 px-2.5 py-0.5 rounded-full">Methodology</span>
+                        </div>
                     </div>
+
                     <!-- Gallery Item 3 -->
-                    <div class="bg-white rounded-lg shadow-md overflow-hidden transform hover:scale-105 transition duration-300 animate-on-scroll scale-in">
-                        <img src="alka pics/3.jpg" alt="Alka Ma'am conducting online class" loading="lazy" width="400" height="192" class="w-full h-48 object-cover">
-                        <div class="p-4 text-center text-gray-700">Interactive Learning</div>
+                    <div class="gallery-card tilt-card bg-white rounded-2xl shadow-md hover:shadow-xl border border-slate-200/80 overflow-hidden animate-on-scroll scale-in" data-full-img="alka pics/3.jpg" data-caption="Interactive Learning – Fostering questions and curiosity in math">
+                        <div class="relative h-60 w-full bg-slate-900 overflow-hidden">
+                            <img src="alka pics/3.jpg" alt="Alka Ma'am conducting online class" loading="lazy" width="400" height="240" class="w-full h-full object-cover">
+                            <div class="gallery-overlay absolute inset-0 bg-slate-950/40 backdrop-blur-[2px] flex items-center justify-center transition-all">
+                                <span class="p-3 rounded-full bg-white/90 text-slate-900 shadow-xl transform scale-90 group-hover:scale-100 transition">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7"></path></svg>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="p-4 bg-white flex items-center justify-between">
+                            <span class="text-sm font-semibold text-slate-800">Interactive Learning</span>
+                            <span class="text-[11px] font-medium text-emerald-600 bg-emerald-50 px-2.5 py-0.5 rounded-full">Engagement</span>
+                        </div>
                     </div>
+
                     <!-- Gallery Item 4 -->
-                    <div class="bg-white rounded-lg shadow-md overflow-hidden transform hover:scale-105 transition duration-300 animate-on-scroll scale-in">
-                        <img src="alka pics/4.jpg" alt="Alka Ma'am on video call with students" loading="lazy" width="400" height="192" class="w-full h-48 object-cover">
-                        <div class="p-4 text-center text-gray-700">Personalized Guidance</div>
+                    <div class="gallery-card tilt-card bg-white rounded-2xl shadow-md hover:shadow-xl border border-slate-200/80 overflow-hidden animate-on-scroll scale-in" data-full-img="alka pics/4.jpg" data-caption="Personalized Guidance – Addressing individual student doubts with patience">
+                        <div class="relative h-60 w-full bg-slate-900 overflow-hidden">
+                            <img src="alka pics/4.jpg" alt="Alka Ma'am on video call with students" loading="lazy" width="400" height="240" class="w-full h-full object-cover">
+                            <div class="gallery-overlay absolute inset-0 bg-slate-950/40 backdrop-blur-[2px] flex items-center justify-center transition-all">
+                                <span class="p-3 rounded-full bg-white/90 text-slate-900 shadow-xl transform scale-90 group-hover:scale-100 transition">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7"></path></svg>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="p-4 bg-white flex items-center justify-between">
+                            <span class="text-sm font-semibold text-slate-800">Personalized Guidance</span>
+                            <span class="text-[11px] font-medium text-indigo-600 bg-indigo-50 px-2.5 py-0.5 rounded-full">Mentorship</span>
+                        </div>
                     </div>
+
                     <!-- Gallery Item 5 -->
-                    <div class="bg-white rounded-lg shadow-md overflow-hidden transform hover:scale-105 transition duration-300 animate-on-scroll scale-in">
-                        <img src="alka pics/5.jpg" alt="Alka Ma'am teaching from home" loading="lazy" width="400" height="192" class="w-full h-48 object-cover">
-                        <div class="p-4 text-center text-gray-700">Accessible Education</div>
+                    <div class="gallery-card tilt-card bg-white rounded-2xl shadow-md hover:shadow-xl border border-slate-200/80 overflow-hidden animate-on-scroll scale-in" data-full-img="alka pics/5.jpg" data-caption="Accessible Education – Bringing quality math instruction directly home">
+                        <div class="relative h-60 w-full bg-slate-900 overflow-hidden">
+                            <img src="alka pics/5.jpg" alt="Alka Ma'am teaching from home" loading="lazy" width="400" height="240" class="w-full h-full object-cover">
+                            <div class="gallery-overlay absolute inset-0 bg-slate-950/40 backdrop-blur-[2px] flex items-center justify-center transition-all">
+                                <span class="p-3 rounded-full bg-white/90 text-slate-900 shadow-xl transform scale-90 group-hover:scale-100 transition">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7"></path></svg>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="p-4 bg-white flex items-center justify-between">
+                            <span class="text-sm font-semibold text-slate-800">Accessible Education</span>
+                            <span class="text-[11px] font-medium text-rose-600 bg-rose-50 px-2.5 py-0.5 rounded-full">Digital Classroom</span>
+                        </div>
                     </div>
+
                     <!-- Gallery Item 6 -->
-                    <div class="bg-white rounded-lg shadow-md overflow-hidden transform hover:scale-105 transition duration-300 animate-on-scroll scale-in">
-                        <img src="alka pics/6.jpg" alt="Alka Ma'am demonstrating math problems" loading="lazy" width="400" height="192" class="w-full h-48 object-cover">
-                        <div class="p-4 text-center text-gray-700">Problem Solving Focus</div>
+                    <div class="gallery-card tilt-card bg-white rounded-2xl shadow-md hover:shadow-xl border border-slate-200/80 overflow-hidden animate-on-scroll scale-in" data-full-img="alka pics/6.jpg" data-caption="Problem Solving Focus – Building analytical thinking and logic">
+                        <div class="relative h-60 w-full bg-slate-900 overflow-hidden">
+                            <img src="alka pics/6.jpg" alt="Alka Ma'am demonstrating math problems" loading="lazy" width="400" height="240" class="w-full h-full object-cover">
+                            <div class="gallery-overlay absolute inset-0 bg-slate-950/40 backdrop-blur-[2px] flex items-center justify-center transition-all">
+                                <span class="p-3 rounded-full bg-white/90 text-slate-900 shadow-xl transform scale-90 group-hover:scale-100 transition">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7"></path></svg>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="p-4 bg-white flex items-center justify-between">
+                            <span class="text-sm font-semibold text-slate-800">Problem Solving Focus</span>
+                            <span class="text-[11px] font-medium text-amber-600 bg-amber-50 px-2.5 py-0.5 rounded-full">Techniques</span>
+                        </div>
                     </div>
-                    <!-- Gallery Item 8 -->
-                    <div class="bg-white rounded-lg shadow-md overflow-hidden transform hover:scale-105 transition duration-300 animate-on-scroll scale-in">
-                        <img src="alka pics/8.jpg" alt="Alka Ma'am with digital whiteboard" loading="lazy" width="400" height="192" class="w-full h-48 object-cover">
-                        <div class="p-4 text-center text-gray-700">Modern Teaching Tools</div>
+
+                    <!-- Gallery Item 7 (8.jpg) -->
+                    <div class="gallery-card tilt-card bg-white rounded-2xl shadow-md hover:shadow-xl border border-slate-200/80 overflow-hidden animate-on-scroll scale-in" data-full-img="alka pics/8.jpg" data-caption="Modern Teaching Tools – Digital graphics and visual mathematics">
+                        <div class="relative h-60 w-full bg-slate-900 overflow-hidden">
+                            <img src="alka pics/8.jpg" alt="Alka Ma'am with digital whiteboard" loading="lazy" width="400" height="240" class="w-full h-full object-cover">
+                            <div class="gallery-overlay absolute inset-0 bg-slate-950/40 backdrop-blur-[2px] flex items-center justify-center transition-all">
+                                <span class="p-3 rounded-full bg-white/90 text-slate-900 shadow-xl transform scale-90 group-hover:scale-100 transition">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7"></path></svg>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="p-4 bg-white flex items-center justify-between">
+                            <span class="text-sm font-semibold text-slate-800">Modern Teaching Tools</span>
+                            <span class="text-[11px] font-medium text-cyan-600 bg-cyan-50 px-2.5 py-0.5 rounded-full">Digital Board</span>
+                        </div>
                     </div>
-                    <!-- Gallery Item 9 -->
-                    <div class="bg-white rounded-lg shadow-md overflow-hidden transform hover:scale-105 transition duration-300 animate-on-scroll scale-in">
-                        <img src="alka pics/9.jpg" alt="Alka Ma'am inspiring students" loading="lazy" width="400" height="192" class="w-full h-48 object-cover">
-                        <div class="p-4 text-center text-gray-700">Inspiring Future Mathematicians</div>
+
+                    <!-- Gallery Item 8 (9.jpg) -->
+                    <div class="gallery-card tilt-card bg-white rounded-2xl shadow-md hover:shadow-xl border border-slate-200/80 overflow-hidden animate-on-scroll scale-in" data-full-img="alka pics/9.jpg" data-caption="Inspiring Future Mathematicians – Building love for numbers and logic">
+                        <div class="relative h-60 w-full bg-slate-900 overflow-hidden">
+                            <img src="alka pics/9.jpg" alt="Alka Ma'am inspiring students" loading="lazy" width="400" height="240" class="w-full h-full object-cover">
+                            <div class="gallery-overlay absolute inset-0 bg-slate-950/40 backdrop-blur-[2px] flex items-center justify-center transition-all">
+                                <span class="p-3 rounded-full bg-white/90 text-slate-900 shadow-xl transform scale-90 group-hover:scale-100 transition">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7"></path></svg>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="p-4 bg-white flex items-center justify-between">
+                            <span class="text-sm font-semibold text-slate-800">Inspiring Young Minds</span>
+                            <span class="text-[11px] font-medium text-teal-600 bg-teal-50 px-2.5 py-0.5 rounded-full">Motivation</span>
+                        </div>
                     </div>
-                    <!-- Gallery Item 10 -->
-                    <div class="bg-white rounded-lg shadow-md overflow-hidden transform hover:scale-105 transition duration-300 animate-on-scroll scale-in">
-                        <img src="alka pics/10.jpg" alt="Alka Ma'am focused on teaching" loading="lazy" width="400" height="192" class="w-full h-48 object-cover">
-                        <div class="p-4 text-center text-gray-700">Dedicated Instruction</div>
+
+                    <!-- Gallery Item 9 (10.jpg) -->
+                    <div class="gallery-card tilt-card bg-white rounded-2xl shadow-md hover:shadow-xl border border-slate-200/80 overflow-hidden animate-on-scroll scale-in" data-full-img="alka pics/10.jpg" data-caption="Dedicated Instruction – 15+ years of disciplined teaching excellence">
+                        <div class="relative h-60 w-full bg-slate-900 overflow-hidden">
+                            <img src="alka pics/10.jpg" alt="Alka Ma'am focused on teaching" loading="lazy" width="400" height="240" class="w-full h-full object-cover">
+                            <div class="gallery-overlay absolute inset-0 bg-slate-950/40 backdrop-blur-[2px] flex items-center justify-center transition-all">
+                                <span class="p-3 rounded-full bg-white/90 text-slate-900 shadow-xl transform scale-90 group-hover:scale-100 transition">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7"></path></svg>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="p-4 bg-white flex items-center justify-between">
+                            <span class="text-sm font-semibold text-slate-800">Dedicated Instruction</span>
+                            <span class="text-[11px] font-medium text-blue-600 bg-blue-50 px-2.5 py-0.5 rounded-full">Excellence</span>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Blog Section (Optional) -->
-        <section id="blog" class="py-16 md:py-24 bg-white">
-            <div class="container mx-auto px-4">
-                <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-blue-700 section-title animate-on-scroll">From the Blog</h2>
+        <!-- Blog Section -->
+        <section id="blog" class="py-16 md:py-24 bg-white relative">
+            <div class="container mx-auto px-4 sm:px-6">
+                <div class="text-center max-w-3xl mx-auto mb-14">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-100 text-amber-800 text-xs font-semibold uppercase tracking-wider mb-3">
+                        Study Tips &amp; Strategies
+                    </div>
+                    <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 font-heading section-title animate-on-scroll">
+                        From the Math Blog
+                    </h2>
+                    <p class="text-slate-600 text-base sm:text-lg mt-3">
+                        Curated articles and actionable exam advice by Alka Ma'am to help students conquer math anxiety and score top marks.
+                    </p>
+                </div>
+
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     <!-- Blog Post 1 -->
-                    <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition duration-300 animate-on-scroll fade-in-up">
+                    <div class="bg-white rounded-2xl shadow-md hover:shadow-xl border border-slate-200 overflow-hidden flex flex-col justify-between tilt-card animate-on-scroll fade-in-up">
                         <img src="geometry-banner.svg" alt="5 Secret Tips to Master Practical Geometry" loading="lazy" width="600" height="300" class="w-full h-48 object-cover">
-                        <div class="p-6">
-                            <h3 class="text-xl font-semibold mb-2">5 Secret Tips to Master Practical Geometry</h3>
-                            <p class="text-gray-600 text-sm mb-4">A Must-Know Guide for Class 8, 9, and 10 Students.</p>
-                            <a href="https://itsmathtime1.blogspot.com/2025/07/5-secret-tips-to-master-practical.html" target="_blank" rel="noopener noreferrer" class="block w-full bg-blue-600 text-white text-center font-semibold py-2 px-4 rounded-md hover:bg-blue-700 transition duration-300">
-                                Read Blog
+                        <div class="p-6 flex flex-col flex-grow justify-between">
+                            <div>
+                                <span class="text-xs font-bold text-blue-600 uppercase tracking-wider">Geometry Guide</span>
+                                <h3 class="text-xl font-bold text-slate-900 mt-2 mb-2 font-heading">5 Secret Tips to Master Practical Geometry</h3>
+                                <p class="text-slate-600 text-sm mb-4 leading-relaxed">A Must-Know Guide for Class 8, 9, and 10 Students tackling constructions and proofs.</p>
+                            </div>
+                            <a href="https://itsmathtime1.blogspot.com/2025/07/5-secret-tips-to-master-practical.html" target="_blank" rel="noopener noreferrer" class="block w-full py-2.5 px-4 rounded-xl bg-blue-600 hover:bg-blue-700 text-white font-semibold text-center text-sm transition duration-300 shadow-md">
+                                Read Full Article &rarr;
                             </a>
                         </div>
                     </div>
                     <!-- Blog Post 2 -->
-                    <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition duration-300 animate-on-scroll fade-in-up">
+                    <div class="bg-white rounded-2xl shadow-md hover:shadow-xl border border-slate-200 overflow-hidden flex flex-col justify-between tilt-card animate-on-scroll fade-in-up">
                         <img src="exams-banner.svg" alt="How to Prepare for Board Exams" loading="lazy" width="600" height="300" class="w-full h-48 object-cover">
-                        <div class="p-6">
-                            <h3 class="text-xl font-semibold mb-2">How to Prepare for Board Exams?</h3>
-                            <p class="text-gray-600 text-sm mb-4">Expert Advice from Math Time by Alka Ma'am - Your Gateway to Mathematics Excellence.</p>
-                            <a href="https://itsmathtime2.blogspot.com/2025/07/how-to-prepare-for-board-exams.html" target="_blank" rel="noopener noreferrer" class="block w-full bg-blue-600 text-white text-center font-semibold py-2 px-4 rounded-md hover:bg-blue-700 transition duration-300">
-                                Read Blog
+                        <div class="p-6 flex flex-col flex-grow justify-between">
+                            <div>
+                                <span class="text-xs font-bold text-purple-600 uppercase tracking-wider">Board Exam Prep</span>
+                                <h3 class="text-xl font-bold text-slate-900 mt-2 mb-2 font-heading">How to Prepare for Board Exams?</h3>
+                                <p class="text-slate-600 text-sm mb-4 leading-relaxed">Expert advice from Math Time by Alka Ma'am - Your Gateway to Mathematics Board Excellence.</p>
+                            </div>
+                            <a href="https://itsmathtime2.blogspot.com/2025/07/how-to-prepare-for-board-exams.html" target="_blank" rel="noopener noreferrer" class="block w-full py-2.5 px-4 rounded-xl bg-blue-600 hover:bg-blue-700 text-white font-semibold text-center text-sm transition duration-300 shadow-md">
+                                Read Full Article &rarr;
                             </a>
                         </div>
                     </div>
                     <!-- Blog Post 3 -->
-                    <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition duration-300 animate-on-scroll fade-in-up">
+                    <div class="bg-white rounded-2xl shadow-md hover:shadow-xl border border-slate-200 overflow-hidden flex flex-col justify-between tilt-card animate-on-scroll fade-in-up">
                         <img src="math-tricks-banner.svg" alt="Math tricks you will love to Show-Off" loading="lazy" width="600" height="300" class="w-full h-48 object-cover">
-                        <div class="p-6">
-                            <h3 class="text-xl font-semibold mb-2">Math tricks you will love to Show-Off</h3>
-                            <p class="text-gray-600 text-sm mb-4">Master mental math with these incredible tricks for Class 8-10 students. Impress friends and teachers with lightning-fast calculations!</p>
-                            <a href="https://itsmathtime3.blogspot.com/2025/07/math-tricks-you-will-love-to-show-off.html" target="_blank" rel="noopener noreferrer" class="block w-full bg-blue-600 text-white text-center font-semibold py-2 px-4 rounded-md hover:bg-blue-700 transition duration-300">
-                                Read Blog
+                        <div class="p-6 flex flex-col flex-grow justify-between">
+                            <div>
+                                <span class="text-xs font-bold text-emerald-600 uppercase tracking-wider">Mental Math</span>
+                                <h3 class="text-xl font-bold text-slate-900 mt-2 mb-2 font-heading">Math Tricks You Will Love to Show-Off</h3>
+                                <p class="text-slate-600 text-sm mb-4 leading-relaxed">Master mental math with these incredible tricks for Class 8-10 students for lightning speed.</p>
+                            </div>
+                            <a href="https://itsmathtime3.blogspot.com/2025/07/math-tricks-you-will-love-to-show-off.html" target="_blank" rel="noopener noreferrer" class="block w-full py-2.5 px-4 rounded-xl bg-blue-600 hover:bg-blue-700 text-white font-semibold text-center text-sm transition duration-300 shadow-md">
+                                Read Full Article &rarr;
                             </a>
                         </div>
                     </div>
@@ -525,126 +1346,396 @@
             </div>
         </section>
 
-        <!-- Contact Section -->
-        <section id="contact" class="py-16 md:py-24 bg-gradient-to-br from-blue-600 to-purple-600 text-white">
-            <div class="container mx-auto px-4 text-center">
-                <h2 class="text-3xl md:text-4xl font-bold mb-12 section-title animate-on-scroll">Get in Touch</h2>
-                <div class="max-w-xl mx-auto bg-white p-8 rounded-lg shadow-xl text-gray-800 animate-on-scroll scale-in">
-                    <p class="mb-6 text-lg">Have a question or want to collaborate? Send me a message at <a href="mailto:info.onesharma@gmail.com" class="text-blue-600 hover:underline">info.onesharma@gmail.com</a>!</p>
-                    <form id="contact-form" class="space-y-6">
-                        <div class="animate-on-scroll fade-in-up">
-                            <input type="text" id="name" name="name" placeholder="Your Name" class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+        <!-- Modern Contact & Inquiry Section -->
+        <section id="contact" class="py-16 md:py-24 bg-gradient-to-br from-slate-900 via-indigo-950 to-slate-900 text-white relative overflow-hidden">
+            <!-- Subtle background decorative glow -->
+            <div class="absolute -top-40 -right-40 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl pointer-events-none"></div>
+            <div class="absolute -bottom-40 -left-40 w-96 h-96 bg-purple-500/10 rounded-full blur-3xl pointer-events-none"></div>
+
+            <div class="container mx-auto px-4 sm:px-6 relative z-10">
+                <!-- Section Header -->
+                <div class="text-center max-w-3xl mx-auto mb-14">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/20 text-blue-300 border border-blue-400/30 text-xs font-semibold uppercase tracking-wider mb-3 backdrop-blur-md">
+                        Get in Touch
+                    </div>
+                    <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white font-heading section-title animate-on-scroll">
+                        Connect with Alka Ma'am
+                    </h2>
+                    <p class="text-slate-300 text-base sm:text-lg mt-3">
+                        Have a question regarding upcoming live class batches, doubt consultations, or study guidance? Send a direct message below.
+                    </p>
+                </div>
+
+                <!-- 2-Column Contact Container -->
+                <div class="max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+                    <!-- Left Column: Direct Info & Quick Connect -->
+                    <div class="lg:col-span-5 space-y-6 animate-on-scroll fade-in-up">
+                        <div class="bg-white/[0.05] border border-white/10 rounded-3xl p-6 sm:p-8 backdrop-blur-xl">
+                            <div class="mb-5 pb-5 border-b border-white/10">
+                                <img src="logo-transparent.png" alt="MathTime by Alka Ma'am" class="h-10 w-auto object-contain">
+                            </div>
+                            <h3 class="text-xl font-bold text-white mb-4 font-heading">Direct Channels</h3>
+                            
+                            <!-- Email Item -->
+                            <div class="flex items-start gap-4 mb-6">
+                                <div class="w-10 h-10 rounded-xl bg-blue-500/20 border border-blue-400/30 flex items-center justify-center text-blue-400 shrink-0">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                                </div>
+                                <div>
+                                    <div class="text-xs text-slate-400 uppercase font-semibold">Official Email</div>
+                                    <a href="mailto:info.onesharma@gmail.com" class="text-blue-300 hover:text-white font-medium text-sm sm:text-base break-all transition">
+                                        info.onesharma@gmail.com
+                                    </a>
+                                </div>
+                            </div>
+
+                            <!-- YouTube Item -->
+                            <div class="flex items-start gap-4 mb-6">
+                                <div class="w-10 h-10 rounded-xl bg-red-500/20 border border-red-400/30 flex items-center justify-center text-red-400 shrink-0">
+                                    <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                                </div>
+                                <div>
+                                    <div class="text-xs text-slate-400 uppercase font-semibold">YouTube Learning Hub</div>
+                                    <a href="https://www.youtube.com/@its.mathtime" target="_blank" rel="noopener noreferrer" class="text-red-300 hover:text-white font-medium text-sm sm:text-base transition">
+                                        youtube.com/@its.mathtime
+                                    </a>
+                                </div>
+                            </div>
+
+                            <!-- Guidance & Doubts Channel -->
+                            <div class="flex items-start gap-4 mb-6">
+                                <div class="w-10 h-10 rounded-xl bg-indigo-500/20 border border-indigo-400/30 flex items-center justify-center text-indigo-400 shrink-0">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
+                                </div>
+                                <div>
+                                    <div class="text-xs text-slate-400 uppercase font-semibold">Student Guidance &amp; Batches</div>
+                                    <span class="text-slate-200 text-sm font-medium">CBSE Classes 4 to 10 &bull; Doubt Clearing</span>
+                                </div>
+                            </div>
+
+                            <div class="pt-4 border-t border-white/10 flex items-center gap-2 text-xs text-amber-300 font-medium">
+                                <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
+                                <span>Typically replies within 24–48 hours</span>
+                            </div>
                         </div>
-                        <div class="animate-on-scroll fade-in-up" style="animation-delay: 0.1s;">
-                            <input type="email" id="email" name="email" placeholder="Your Email" class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                    </div>
+
+                    <!-- Right Column: Interactive Working Contact Form -->
+                    <div class="lg:col-span-7 animate-on-scroll fade-in-up">
+                        <div class="bg-white rounded-3xl p-6 sm:p-10 shadow-2xl text-slate-800 border border-slate-100">
+                            <h3 class="text-2xl font-bold text-slate-900 mb-2 font-heading">Send a Message</h3>
+                            <p class="text-slate-600 text-sm mb-6">Fill in your details below and we will get back to your email.</p>
+
+                            <form id="contact-form" class="space-y-5">
+                                <!-- Hidden input for destination -->
+                                <input type="hidden" name="to_email" value="info.onesharma@gmail.com">
+                                <input type="hidden" name="subject" value="New Student Inquiry - MathTime by Alka Ma'am">
+
+                                <!-- Name Field -->
+                                <div>
+                                    <label for="name" class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-1.5">Student / Parent Name *</label>
+                                    <input type="text" id="name" name="name" placeholder="e.g. Rahul Sharma" class="form-input w-full p-3.5 border border-slate-300 rounded-xl text-sm focus:border-blue-600" required>
+                                </div>
+
+                                <!-- Email Field -->
+                                <div>
+                                    <label for="email" class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-1.5">Email Address *</label>
+                                    <input type="email" id="email" name="email" placeholder="e.g. rahul@example.com" class="form-input w-full p-3.5 border border-slate-300 rounded-xl text-sm focus:border-blue-600" required>
+                                </div>
+
+                                <!-- Inquiry Topic / Grade Field -->
+                                <div>
+                                    <label for="grade-interest" class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-1.5">Grade / Subject Interest *</label>
+                                    <select id="grade-interest" name="grade_interest" class="form-input w-full p-3.5 border border-slate-300 rounded-xl text-sm bg-white focus:border-blue-600" required>
+                                        <option value="" disabled selected>Select Class or Category</option>
+                                        <option value="Class 10 CBSE Board Prep">Class 10 CBSE Board Exam Prep</option>
+                                        <option value="Class 9 CBSE Mathematics">Class 9 CBSE Mathematics</option>
+                                        <option value="Class 8 Mathematics">Class 8 Mathematics</option>
+                                        <option value="Junior Math (Classes 4-7)">Junior Math (Classes 4 to 7)</option>
+                                        <option value="Live Class Batch Inquiry">Live Class Batch Inquiry</option>
+                                        <option value="General Question or Doubt">General Question or Doubt</option>
+                                    </select>
+                                </div>
+
+                                <!-- Message Field -->
+                                <div>
+                                    <label for="message" class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-1.5">Your Message / Doubt Details *</label>
+                                    <textarea id="message" name="message" rows="4" placeholder="How can Alka Ma'am help you?" class="form-input w-full p-3.5 border border-slate-300 rounded-xl text-sm focus:border-blue-600" required></textarea>
+                                </div>
+
+                                <!-- Submit Button with Loading State -->
+                                <button type="submit" id="submit-btn" class="w-full py-4 px-6 rounded-xl bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white font-bold text-sm tracking-wide shadow-lg shadow-blue-600/30 hover:scale-[1.01] active:scale-[0.99] transition-all flex items-center justify-center gap-2">
+                                    <span id="btn-text">Send Message to Alka Ma'am</span>
+                                    <svg id="btn-spinner" class="w-4 h-4 text-white animate-spin hidden" fill="none" viewBox="0 0 24 24"><circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle><path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v8H4z"></path></svg>
+                                </button>
+                            </form>
+
+                            <!-- Success / Error Message Box -->
+                            <div id="form-message" class="mt-4 p-4 rounded-xl text-sm hidden font-medium text-center"></div>
                         </div>
-                        <div class="animate-on-scroll fade-in-up" style="animation-delay: 0.2s;">
-                            <textarea id="message" name="message" rows="5" placeholder="Your Message" class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" required></textarea>
-                        </div>
-                        <button type="submit" class="w-full bg-blue-600 text-white font-semibold py-3 rounded-md hover:bg-blue-700 transition duration-300 transform hover:scale-105 shadow-md animate-on-scroll fade-in-up" style="animation-delay: 0.3s;">
-                            Send Message
+                    </div>
+                </div>
+
+                <!-- Viral Share Bar (Separated & Sleek) -->
+                <div class="mt-16 pt-10 border-t border-white/10 text-center max-w-3xl mx-auto animate-on-scroll fade-in-up">
+                    <div class="inline-flex items-center justify-center p-2 bg-blue-500/20 text-blue-300 rounded-full mb-3">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z"></path></svg>
+                    </div>
+                    <h3 class="text-xl sm:text-2xl font-bold mb-2 font-heading text-white">Share MathTime with Classmates</h3>
+                    <p class="text-slate-300 text-sm max-w-lg mx-auto mb-6">
+                        Empower your school friends to conquer math fear and excel in exams together!
+                    </p>
+
+                    <!-- Share Buttons Row -->
+                    <div class="flex flex-wrap justify-center items-center gap-3">
+                        <a id="share-whatsapp" href="https://api.whatsapp.com/send?text=Learn%20math%20the%20smart%20way%20with%20MathTime%20by%20Alka%20Ma%27am!%20Check%20out%20interactive%20lessons%20and%20classes%20here%3A%20https%3A%2F%2Fwww.youtube.com%2F%40its.mathtime" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 bg-[#25D366] hover:bg-[#1ebe5b] text-white font-medium py-2.5 px-4 rounded-full shadow-md hover:scale-105 transition" title="Share on WhatsApp">
+                            <svg class="w-4 h-4 fill-current" viewBox="0 0 32 32"><path d="M16 3C9.373 3 4 8.373 4 15c0 2.646.865 5.093 2.338 7.093L4 29l7.093-2.338C10.907 27.135 13.354 28 16 28c6.627 0 12-5.373 12-13S22.627 3 16 3zm0 22c-2.093 0-4.093-.646-5.75-1.75l-.406-.25-4.25 1.406 1.406-4.25-.25-.406C6.646 19.093 6 17.093 6 15c0-5.514 4.486-10 10-10s10 4.486 10 10-4.486 10-10 10z"/></svg>
+                            <span class="text-xs sm:text-sm">WhatsApp</span>
+                        </a>
+
+                        <a id="share-telegram" href="https://t.me/share/url?url=https%3A%2F%2Fwww.youtube.com%2F%40its.mathtime&text=Master%20mathematics%20with%20MathTime%20by%20Alka%20Ma%27am!" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 bg-[#229ED9] hover:bg-[#1d8dc3] text-white font-medium py-2.5 px-4 rounded-full shadow-md hover:scale-105 transition" title="Share on Telegram">
+                            <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221l-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.446 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.121l-6.871 4.326-2.962-.924c-.643-.204-.657-.643.136-.953l11.57-4.458c.538-.196 1.006.128.832.943z"/></svg>
+                            <span class="text-xs sm:text-sm">Telegram</span>
+                        </a>
+
+                        <!-- Copy Link Button -->
+                        <button id="copy-website-link" type="button" class="flex items-center gap-2 bg-white/10 hover:bg-white/20 text-white font-medium py-2.5 px-4 rounded-full border border-white/20 shadow-sm transition active:scale-95 cursor-pointer" title="Copy website link">
+                            <svg id="copy-icon" class="w-4 h-4 text-slate-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"></path></svg>
+                            <span id="copy-text" class="text-xs sm:text-sm">Copy Link</span>
                         </button>
-                    </form>
-                    <div id="form-message" class="mt-4 text-sm text-green-600 hidden"></div>
+                    </div>
 
-                    <div class="border-t border-gray-200 mt-10 pt-8 animate-on-scroll fade-in-up">
-                        <div class="inline-flex items-center justify-center p-2 bg-blue-50 text-blue-600 rounded-full mb-3">
-                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z"></path>
-                            </svg>
-                        </div>
-                        <h3 class="text-xl md:text-2xl font-bold mb-3 text-gray-800">Share This Website</h3>
-                        <p class="text-gray-600 text-sm md:text-base max-w-md mx-auto mb-6 leading-relaxed">
-                            Empower your friends and classmates to conquer math fear! If you find these lessons helpful, share MathTime with your study groups and friends to make learning simple, interactive, and fun for everyone.
-                        </p>
-
-                        <!-- Share Buttons Row -->
-                        <div class="flex flex-wrap justify-center items-center gap-3 mb-4">
-                            <!-- WhatsApp Share -->
-                            <a id="share-whatsapp" href="https://api.whatsapp.com/send?text=Learn%20math%20the%20smart%20way%20with%20MathTime%20by%20Alka%20Ma%27am!%20Check%20out%20interactive%20lessons%20and%20classes%20here%3A%20https%3A%2F%2Fwww.youtube.com%2F%40its.mathtime" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 bg-[#25D366] hover:bg-[#1ebe5b] text-white font-medium py-2.5 px-4 rounded-full shadow-md hover:shadow-lg transition duration-300 transform hover:-translate-y-0.5" title="Share on WhatsApp">
-                                <svg class="w-5 h-5 fill-current" viewBox="0 0 32 32">
-                                    <path d="M16 3C9.373 3 4 8.373 4 15c0 2.646.865 5.093 2.338 7.093L4 29l7.093-2.338C10.907 27.135 13.354 28 16 28c6.627 0 12-5.373 12-13S22.627 3 16 3zm0 22c-2.093 0-4.093-.646-5.75-1.75l-.406-.25-4.25 1.406 1.406-4.25-.25-.406C6.646 19.093 6 17.093 6 15c0-5.514 4.486-10 10-10s10 4.486 10 10-4.486 10-10 10zm5.25-7.25c-.354-.177-2.093-1.031-2.417-1.146-.323-.115-.56-.177-.797.177-.238.354-.917 1.146-1.125 1.385-.208.238-.416.269-.77.092-.354-.177-1.5-.553-2.86-1.762-1.057-.944-1.77-2.109-1.98-2.463-.208-.354-.022-.546.155-.723.16-.16.354-.416.531-.624.177-.208.238-.354.354-.592.115-.238.061-.446-.03-.624-.092-.177-.797-1.927-1.092-2.646-.288-.692-.582-.599-.797-.61-.206-.009-.446-.011-.684-.011-.238 0-.624.092-.951.446-.327.354-1.25 1.223-1.25 2.977 0 1.754 1.282 3.454 1.462 3.692.177.238 2.527 3.862 6.13 5.262.857.338 1.525.539 2.047.692.857.269 1.637.231 2.25.141.686-.099 2.093-.854 2.389-1.68.296-.826.296-1.533.208-1.68-.089-.146-.323-.238-.677-.416z"/>
-                                </svg>
-                                <span class="text-sm">WhatsApp</span>
-                            </a>
-
-                            <!-- Telegram Share -->
-                            <a id="share-telegram" href="https://t.me/share/url?url=https%3A%2F%2Fwww.youtube.com%2F%40its.mathtime&text=Master%20mathematics%20with%20MathTime%20by%20Alka%20Ma%27am!" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 bg-[#229ED9] hover:bg-[#1d8dc3] text-white font-medium py-2.5 px-4 rounded-full shadow-md hover:shadow-lg transition duration-300 transform hover:-translate-y-0.5" title="Share on Telegram">
-                                <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
-                                    <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221l-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.446 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.121l-6.871 4.326-2.962-.924c-.643-.204-.657-.643.136-.953l11.57-4.458c.538-.196 1.006.128.832.943z"/>
-                                </svg>
-                                <span class="text-sm">Telegram</span>
-                            </a>
-
-                            <!-- Facebook Share -->
-                            <a id="share-facebook" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.youtube.com%2F%40its.mathtime" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center w-10 h-10 rounded-full bg-[#1877F2] hover:bg-[#1464cc] text-white shadow-md hover:shadow-lg transition duration-300 transform hover:scale-110" title="Share on Facebook">
-                                <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
-                                    <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
-                                </svg>
-                            </a>
-
-                            <!-- X (Twitter) Share -->
-                            <a id="share-twitter" href="https://twitter.com/intent/tweet?text=Master%20mathematics%20the%20smart%20way%20with%20MathTime%20by%20Alka%20Ma%27am!%20&url=https%3A%2F%2Fwww.youtube.com%2F%40its.mathtime" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center w-10 h-10 rounded-full bg-black hover:bg-gray-800 text-white shadow-md hover:shadow-lg transition duration-300 transform hover:scale-110" title="Share on X (Twitter)">
-                                <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
-                                    <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
-                                </svg>
-                            </a>
-
-                            <!-- LinkedIn Share -->
-                            <a id="share-linkedin" href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fwww.youtube.com%2F%40its.mathtime" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center w-10 h-10 rounded-full bg-[#0A66C2] hover:bg-[#084e96] text-white shadow-md hover:shadow-lg transition duration-300 transform hover:scale-110" title="Share on LinkedIn">
-                                <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
-                                    <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.761 0 5-2.239 5-5v-14c0-2.761-2.239-5-5-5zm-11 19h-3v-9h3v9zm-1.5-10.268c-.966 0-1.75-.784-1.75-1.75s.784-1.75 1.75-1.75 1.75.784 1.75 1.75-.784 1.75-1.75 1.75zm13.5 10.268h-3v-4.604c0-1.099-.021-2.513-1.531-2.513-1.531 0-1.767 1.197-1.767 2.434v4.683h-3v-9h2.881v1.233h.041c.401-.761 1.379-1.563 2.841-1.563 3.039 0 3.6 2.001 3.6 4.599v4.731z"/>
-                                </svg>
-                            </a>
-
-                            <!-- Email Share -->
-                            <a id="share-email" href="mailto:?subject=Helpful%20Math%20Learning%20Resource%20-%20MathTime%20by%20Alka%20Ma%27am&body=Hi%2C%0A%0ACheck%20out%20MathTime%20by%20Alka%20Ma%27am%20for%20clear%2C%20easy-to-understand%20math%20lectures%20and%20classes%3A%20https%3A%2F%2Fwww.youtube.com%2F%40its.mathtime" class="flex items-center justify-center w-10 h-10 rounded-full bg-red-500 hover:bg-red-600 text-white shadow-md hover:shadow-lg transition duration-300 transform hover:scale-110" title="Share via Email">
-                                <svg class="w-5 h-5 fill-none stroke-current" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
-                                    <polyline points="22,6 12,13 2,6"/>
-                                </svg>
-                            </a>
-
-                            <!-- Copy Link Button -->
-                            <button id="copy-website-link" type="button" class="flex items-center gap-2 bg-gray-100 hover:bg-gray-200 text-gray-700 font-medium py-2.5 px-4 rounded-full shadow-sm hover:shadow transition duration-200 active:scale-95" title="Copy website link">
-                                <svg id="copy-icon" class="w-4 h-4 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"></path>
-                                </svg>
-                                <span id="copy-text" class="text-sm">Copy Link</span>
-                            </button>
-                        </div>
-
-                        <!-- Native Mobile Web Share Trigger (auto-shown if supported on mobile) -->
-                        <div id="native-share-container" class="hidden mt-3">
-                            <button id="native-share-btn" type="button" class="inline-flex items-center gap-2 text-sm text-blue-600 hover:text-blue-800 font-semibold transition">
-                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z"></path></svg>
-                                More sharing options
-                            </button>
-                        </div>
-
-                        <div id="share-toast" class="fixed bottom-6 right-6 bg-gray-900 text-white text-sm py-2.5 px-4 rounded-xl shadow-2xl opacity-0 pointer-events-none transition-all duration-300 transform translate-y-3 z-50 flex items-center gap-2">
-                            <svg class="w-4 h-4 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                            <span>Website link copied to clipboard!</span>
-                        </div>
+                    <div id="share-toast" class="fixed bottom-6 right-6 bg-slate-900 text-white text-sm py-3 px-5 rounded-2xl shadow-2xl opacity-0 pointer-events-none transition-all duration-300 transform translate-y-3 z-50 flex items-center gap-2 border border-white/10">
+                        <svg class="w-4 h-4 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                        <span>Website link copied to clipboard!</span>
                     </div>
                 </div>
             </div>
         </section>
     </main>
 
-    <!-- Footer -->
-    <footer class="bg-gray-800 text-white py-8 animate-on-scroll fade-in">
-        <div class="container mx-auto px-4 text-center text-sm">
-            <p>&copy; 2025 MathTime by Alka Ma'am. All rights reserved.</p>
-            <p class="mt-2">Designed with <span class="text-red-500">&hearts;</span> for students everywhere.</p>
-            <div class="mt-4 flex justify-center space-x-4">
-                <a href="privacy-policy.html" class="hover:text-blue-300 transition duration-300">Privacy Policy</a>
-                <a href="terms-of-service.html" class="hover:text-blue-300 transition duration-300">Terms of Service</a>
-                <!-- Sitemap link (usually a separate XML file) -->
-                <a href="sitemap.html" class="hover:text-blue-300 transition duration-300">Sitemap</a>
+    <!-- Modern 4-Column Educational Footer -->
+    <footer class="bg-slate-950 text-slate-300 pt-16 pb-12 border-t border-white/10 relative overflow-hidden">
+        <!-- Background Subtle Glow Orbs -->
+        <div class="absolute -top-32 left-1/4 w-80 h-80 bg-blue-600/10 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="absolute -bottom-32 right-1/4 w-80 h-80 bg-amber-500/10 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="container mx-auto px-4 sm:px-6 relative z-10">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 lg:gap-8 mb-12">
+                <!-- Column 1: Brand & Educator Profile (lg:col-span-4) -->
+                <div class="lg:col-span-4 space-y-4">
+                    <a href="#home" class="inline-block group py-1" aria-label="MathTime by Alka Ma'am">
+                        <img src="logo-transparent.png" alt="MathTime by Alka Ma'am" class="h-11 sm:h-12 w-auto object-contain group-hover:scale-105 transition-transform duration-300">
+                    </a>
+
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Dedicated mathematics education platform demystifying complex concepts for CBSE &amp; foundation students. Empowering young learners to build unstoppable confidence in math.
+                    </p>
+
+                    <!-- Credentials Badges -->
+                    <div class="flex flex-wrap gap-2 pt-1">
+                        <span class="px-2.5 py-1 rounded-lg text-xs font-semibold bg-white/5 border border-white/10 text-slate-300">🎓 M.Sc. Math</span>
+                        <span class="px-2.5 py-1 rounded-lg text-xs font-semibold bg-white/5 border border-white/10 text-slate-300">📜 B.Ed.</span>
+                        <span class="px-2.5 py-1 rounded-lg text-xs font-semibold bg-white/5 border border-white/10 text-slate-300">⭐ CTET Certified</span>
+                        <span class="px-2.5 py-1 rounded-lg text-xs font-semibold bg-amber-400/10 border border-amber-400/20 text-amber-300">15+ Yrs Exp</span>
+                    </div>
+
+                    <!-- YouTube Verified Hub -->
+                    <div class="pt-2">
+                        <a href="https://www.youtube.com/@its.mathtime?sub_confirmation=1" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-3.5 py-2 rounded-xl bg-red-600/20 hover:bg-red-600/30 text-red-400 border border-red-500/30 text-xs font-bold transition group">
+                            <svg class="w-4 h-4 fill-current text-red-500 group-hover:scale-110 transition-transform" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                            <span>Subscribe on YouTube</span>
+                            <span class="text-[11px] text-red-300/80">&bull; Free Lessons</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Column 2: Curriculum & Playlists (lg:col-span-3) -->
+                <div class="lg:col-span-3 space-y-3">
+                    <h4 class="text-white font-bold text-sm uppercase tracking-wider font-heading flex items-center gap-2">
+                        <span class="w-2 h-2 rounded-full bg-blue-400"></span>
+                        Curriculum &amp; Classes
+                    </h4>
+                    <ul class="space-y-2 text-sm">
+                        <li>
+                            <a href="https://www.youtube.com/playlist?list=PLYwX6eCZ2uRguq6bT_Kxs0WMfJxw0Zbo_" target="_blank" rel="noopener noreferrer" class="hover:text-amber-400 transition flex items-center justify-between group">
+                                <span>Class 9: Number System</span>
+                                <span class="text-xs text-slate-500 group-hover:text-amber-400">&rarr;</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/playlist?list=PLYwX6eCZ2uRgx_o4x7HuHbURvrGtwXfLX" target="_blank" rel="noopener noreferrer" class="hover:text-amber-400 transition flex items-center justify-between group">
+                                <span>Class 9: Coordinate Geometry</span>
+                                <span class="text-xs text-slate-500 group-hover:text-amber-400">&rarr;</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/playlist?list=PLYwX6eCZ2uRjsXZyTnj1gp29m4nfXvn5U" target="_blank" rel="noopener noreferrer" class="hover:text-amber-400 transition flex items-center justify-between group">
+                                <span>Class 8: Algebraic Expressions</span>
+                                <span class="text-xs text-slate-500 group-hover:text-amber-400">&rarr;</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/playlist?list=PLYwX6eCZ2uRg_-Q6oCM3Ap7Np1vmnwvAq" target="_blank" rel="noopener noreferrer" class="hover:text-amber-400 transition flex items-center justify-between group">
+                                <span>Class 8: Linear Equations</span>
+                                <span class="text-xs text-slate-500 group-hover:text-amber-400">&rarr;</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/playlist?list=PLYwX6eCZ2uRipTTWe5H13aFiZg5KYdHEe" target="_blank" rel="noopener noreferrer" class="hover:text-amber-400 transition flex items-center justify-between group">
+                                <span>Junior Math (Classes 4–7)</span>
+                                <span class="text-xs text-slate-500 group-hover:text-amber-400">&rarr;</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/playlist?list=PLYwX6eCZ2uRglr_vw-BjDOttRUPuIEifp" target="_blank" rel="noopener noreferrer" class="hover:text-amber-400 transition flex items-center justify-between group">
+                                <span>Percentages &amp; Applications</span>
+                                <span class="text-xs text-slate-500 group-hover:text-amber-400">&rarr;</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Column 3: Quick Navigation & Study Resources (lg:col-span-2) -->
+                <div class="lg:col-span-2 space-y-3">
+                    <h4 class="text-white font-bold text-sm uppercase tracking-wider font-heading flex items-center gap-2">
+                        <span class="w-2 h-2 rounded-full bg-emerald-400"></span>
+                        Study Guides
+                    </h4>
+                    <ul class="space-y-2 text-sm">
+                        <li>
+                            <a href="#about" class="hover:text-amber-400 transition">About Alka Ma'am</a>
+                        </li>
+                        <li>
+                            <a href="#videos" class="hover:text-amber-400 transition">Video Lessons</a>
+                        </li>
+                        <li>
+                            <a href="#gallery" class="hover:text-amber-400 transition">Classroom Gallery</a>
+                        </li>
+                        <li>
+                            <a href="https://itsmathtime1.blogspot.com/2025/07/5-secret-tips-to-master-practical.html" target="_blank" rel="noopener noreferrer" class="hover:text-amber-400 transition">Practical Geometry</a>
+                        </li>
+                        <li>
+                            <a href="https://itsmathtime2.blogspot.com/2025/07/how-to-prepare-for-board-exams.html" target="_blank" rel="noopener noreferrer" class="hover:text-amber-400 transition">Board Exam Guide</a>
+                        </li>
+                        <li>
+                            <a href="https://itsmathtime3.blogspot.com/2025/07/math-tricks-you-will-love-to-show-off.html" target="_blank" rel="noopener noreferrer" class="hover:text-amber-400 transition">Mental Math Tricks</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Column 4: Contact & Direct Connect (lg:col-span-3) -->
+                <div class="lg:col-span-3 space-y-3">
+                    <h4 class="text-white font-bold text-sm uppercase tracking-wider font-heading flex items-center gap-2">
+                        <span class="w-2 h-2 rounded-full bg-purple-400"></span>
+                        Connect Directly
+                    </h4>
+                    <p class="text-slate-400 text-xs leading-relaxed">
+                        Inquiries regarding live tuition batches, student mentorship, or questions:
+                    </p>
+                    <div class="space-y-2.5 pt-1">
+                        <a href="mailto:info.onesharma@gmail.com" class="flex items-center gap-2.5 text-xs text-slate-300 hover:text-white transition group">
+                            <span class="w-7 h-7 rounded-lg bg-white/5 border border-white/10 flex items-center justify-center text-blue-400 group-hover:bg-blue-500/20">
+                                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                            </span>
+                            <span class="break-all font-medium">info.onesharma@gmail.com</span>
+                        </a>
+
+                        <a href="https://www.youtube.com/@its.mathtime" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2.5 text-xs text-slate-300 hover:text-white transition group">
+                            <span class="w-7 h-7 rounded-lg bg-white/5 border border-white/10 flex items-center justify-center text-red-400 group-hover:bg-red-500/20">
+                                <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                            </span>
+                            <span class="font-medium">YouTube Channel</span>
+                        </a>
+
+                        <a href="#contact" class="flex items-center gap-2.5 text-xs text-slate-300 hover:text-white transition group">
+                            <span class="w-7 h-7 rounded-lg bg-white/5 border border-white/10 flex items-center justify-center text-amber-400 group-hover:bg-amber-500/20">
+                                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"></path></svg>
+                            </span>
+                            <span class="font-medium">Online Inquiry Form</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom Sub-Footer Bar -->
+            <div class="pt-8 mt-4 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
+                <div class="flex items-center gap-2 flex-wrap text-center sm:text-left">
+                    <span>&copy; 2026 MathTime by Alka Ma'am. All rights reserved.</span>
+                    <span class="hidden sm:inline">&bull;</span>
+                    <span>Designed with <span class="text-rose-500">&hearts;</span> for math learners.</span>
+                </div>
+                <div class="flex items-center gap-4">
+                    <a href="privacy-policy.html" class="hover:text-slate-300 transition">Privacy Policy</a>
+                    <span class="text-slate-700">&bull;</span>
+                    <a href="terms-of-service.html" class="hover:text-slate-300 transition">Terms of Service</a>
+                    <span class="text-slate-700">&bull;</span>
+                    <a href="sitemap.html" class="hover:text-slate-300 transition">Sitemap</a>
+                </div>
             </div>
         </div>
     </footer>
+
+    <!-- Back to Top Floating Button with Circular Progress -->
+    <button id="back-to-top" type="button" aria-label="Back to top of page" class="fixed bottom-6 right-6 z-40 p-1.5 rounded-full bg-slate-900/90 text-amber-400 hover:text-white border border-white/20 shadow-2xl backdrop-blur-md opacity-0 pointer-events-none transition-all duration-300 hover:scale-110 active:scale-95 cursor-pointer group" title="Back to top">
+        <svg class="w-11 h-11 -rotate-90" viewBox="0 0 36 36">
+            <path class="text-white/10" stroke-width="3" stroke="currentColor" fill="none" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+            <path id="progress-circle" class="text-amber-400 transition-all duration-100" stroke-dasharray="100, 100" stroke-dashoffset="100" stroke-width="3" stroke-linecap="round" stroke="currentColor" fill="none" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+        </svg>
+        <div class="absolute inset-0 flex items-center justify-center">
+            <svg class="w-4 h-4 text-white group-hover:-translate-y-0.5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 15l7-7 7 7"></path></svg>
+        </div>
+    </button>
+
+    <!-- Full-Screen Photo Lightbox Modal -->
+    <div id="gallery-lightbox" class="fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-6 bg-slate-950/90 backdrop-blur-xl opacity-0 pointer-events-none transition-all duration-300" role="dialog" aria-modal="true" aria-label="Photo Viewer">
+        <!-- Close Button -->
+        <button id="lightbox-close" type="button" aria-label="Close photo viewer" class="absolute top-5 right-5 z-20 p-2.5 rounded-full bg-slate-900/80 hover:bg-white text-white hover:text-slate-900 border border-white/20 transition-all shadow-xl cursor-pointer">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+        </button>
+
+        <!-- Previous Button -->
+        <button id="lightbox-prev" type="button" aria-label="Previous photo" class="absolute left-4 sm:left-8 z-20 p-3 rounded-full bg-slate-900/80 hover:bg-white text-white hover:text-slate-900 border border-white/20 transition-all shadow-xl cursor-pointer">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+        </button>
+
+        <!-- Next Button -->
+        <button id="lightbox-next" type="button" aria-label="Next photo" class="absolute right-4 sm:right-8 z-20 p-3 rounded-full bg-slate-900/80 hover:bg-white text-white hover:text-slate-900 border border-white/20 transition-all shadow-xl cursor-pointer">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+        </button>
+
+        <!-- Lightbox Content Container -->
+        <div class="relative max-w-4xl w-full flex flex-col items-center">
+            <div class="relative overflow-hidden rounded-2xl shadow-2xl border border-white/10 bg-slate-900 max-h-[75vh]">
+                <img id="lightbox-img" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'%3E%3C/svg%3E" alt="Gallery Image" class="w-auto max-h-[75vh] object-contain transition-all duration-300">
+            </div>
+            <!-- Caption & Counter -->
+            <div class="mt-4 flex items-center justify-between w-full px-2 text-white text-sm sm:text-base">
+                <span id="lightbox-caption" class="font-medium font-heading">Engaging Online Session</span>
+                <span id="lightbox-counter" class="text-xs text-slate-400 font-semibold px-2.5 py-1 rounded-full bg-white/10 backdrop-blur-sm">1 / 9</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Video Player Modal -->
+    <div id="video-modal" class="fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-6 bg-slate-950/85 backdrop-blur-md opacity-0 pointer-events-none transition-all duration-300" role="dialog" aria-modal="true" aria-labelledby="modal-video-title">
+        <div id="video-modal-dialog" class="relative w-full max-w-4xl bg-slate-900 rounded-3xl overflow-hidden shadow-2xl border border-white/10 transform scale-95 transition-transform duration-300">
+            <!-- Modal Header -->
+            <div class="flex items-center justify-between px-6 py-4 border-b border-white/10 bg-slate-950/60">
+                <div class="flex items-center gap-2 truncate pr-4">
+                    <span class="w-2.5 h-2.5 rounded-full bg-red-500 animate-pulse"></span>
+                    <h3 id="modal-video-title" class="text-white font-semibold text-sm sm:text-base truncate font-heading">Math Video Lesson</h3>
+                </div>
+                <button id="close-video-modal" type="button" aria-label="Close video player" class="p-2 rounded-full text-slate-400 hover:text-white hover:bg-white/10 transition-colors">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+                </button>
+            </div>
+            <!-- Modal Iframe Container -->
+            <div class="relative w-full aspect-video bg-black">
+                <iframe id="modal-video-iframe" class="w-full h-full" src="about:blank" title="Video Player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
 
     <!-- Custom JavaScript -->
     <script src="script.js"></script>
