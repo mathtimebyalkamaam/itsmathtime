@@ -1,23 +1,101 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:video="http://www.google.com/schemas/sitemap-video/1.1"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://mathtimebyalkamaam.github.io/itsmathtime/</loc>
-    <lastmod>2025-07-16T12:00:00+00:00</lastmod>
+    <lastmod>2026-10-07T12:00:00+00:00</lastmod>
     <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://mathtimebyalkamaam.github.io/itsmathtime/logo.png</image:loc>
+      <image:title>MathTime by Alka Ma'am Emblem</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://mathtimebyalkamaam.github.io/itsmathtime/social-preview.svg</image:loc>
+      <image:title>MathTime CBSE Math Education Banner</image:title>
+    </image:image>
+    <!-- Video 1 -->
+    <video:video>
+      <video:thumbnail_loc>https://img.youtube.com/vi/tsyPRZcVJ48/hqdefault.jpg</video:thumbnail_loc>
+      <video:title>Estimating Sums In Addition and Subtraction ┃IN JUST 7 MINS┃</video:title>
+      <video:description>Learn estimating sums in addition and subtraction with Alka Ma'am in just 7 minutes. Clear foundational math tutorial for CBSE students.</video:description>
+      <video:player_loc>https://www.youtube.com/embed/tsyPRZcVJ48</video:player_loc>
+      <video:duration>420</video:duration>
+      <video:publication_date>2024-01-01T08:00:00+05:30</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+      <video:uploader info="https://mathtimebyalkamaam.github.io/itsmathtime/">Alka Sharma</video:uploader>
+    </video:video>
+    <!-- Video 2 -->
+    <video:video>
+      <video:thumbnail_loc>https://img.youtube.com/vi/6BI1CzRtA3s/hqdefault.jpg</video:thumbnail_loc>
+      <video:title>Multiples &amp; Factors - FINDING HCF by listing all FACTORS ┃IN JUST 8MINS┃</video:title>
+      <video:description>Understand multiples, factors, and how to find HCF by listing all factors in 8 minutes with Alka Ma'am.</video:description>
+      <video:player_loc>https://www.youtube.com/embed/6BI1CzRtA3s</video:player_loc>
+      <video:duration>480</video:duration>
+      <video:publication_date>2024-01-01T08:00:00+05:30</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+      <video:uploader info="https://mathtimebyalkamaam.github.io/itsmathtime/">Alka Sharma</video:uploader>
+    </video:video>
+    <!-- Video 3 -->
+    <video:video>
+      <video:thumbnail_loc>https://img.youtube.com/vi/BBVCpXWtxTU/hqdefault.jpg</video:thumbnail_loc>
+      <video:title>HCF &amp; LCM BY SHORT DIVISION METHOD</video:title>
+      <video:description>Quick short division ladder technique to calculate HCF and LCM simultaneously for school students.</video:description>
+      <video:player_loc>https://www.youtube.com/embed/BBVCpXWtxTU</video:player_loc>
+      <video:duration>58</video:duration>
+      <video:publication_date>2024-01-01T08:00:00+05:30</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+      <video:uploader info="https://mathtimebyalkamaam.github.io/itsmathtime/">Alka Sharma</video:uploader>
+    </video:video>
   </url>
   <url>
-    <loc>https://mathtimebyalkamaam.github.io/itsmathtime/privacy-policy.html</loc>
-    <lastmod>2025-07-16T12:00:00+00:00</lastmod>
+    <loc>https://mathtimebyalkamaam.github.io/itsmathtime/class-10-math.html</loc>
+    <lastmod>2026-10-07T12:00:00+00:00</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://mathtimebyalkamaam.github.io/itsmathtime/class-9-math.html</loc>
+    <lastmod>2026-10-07T12:00:00+00:00</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://mathtimebyalkamaam.github.io/itsmathtime/class-8-math.html</loc>
+    <lastmod>2026-10-07T12:00:00+00:00</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://mathtimebyalkamaam.github.io/itsmathtime/math-tricks.html</loc>
+    <lastmod>2026-10-07T12:00:00+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://mathtimebyalkamaam.github.io/itsmathtime/terms-of-service.html</loc>
-    <lastmod>2025-07-16T12:00:00+00:00</lastmod>
-    <priority>0.8</priority>
+    <loc>https://mathtimebyalkamaam.github.io/itsmathtime/class-10-math-tips.html</loc>
+    <lastmod>2026-10-07T12:00:00+00:00</lastmod>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://mathtimebyalkamaam.github.io/itsmathtime/class-11-math-tips.html</loc>
+    <lastmod>2026-10-07T12:00:00+00:00</lastmod>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://mathtimebyalkamaam.github.io/itsmathtime/class-12-math-tips.html</loc>
+    <lastmod>2026-10-07T12:00:00+00:00</lastmod>
+    <priority>0.85</priority>
   </url>
   <url>
     <loc>https://mathtimebyalkamaam.github.io/itsmathtime/sitemap.html</loc>
-    <lastmod>2025-07-16T12:00:00+00:00</lastmod>
+    <lastmod>2026-10-07T12:00:00+00:00</lastmod>
     <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mathtimebyalkamaam.github.io/itsmathtime/privacy-policy.html</loc>
+    <lastmod>2026-10-07T12:00:00+00:00</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://mathtimebyalkamaam.github.io/itsmathtime/terms-of-service.html</loc>
+    <lastmod>2026-10-07T12:00:00+00:00</lastmod>
+    <priority>0.5</priority>
   </url>
 </urlset>

@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 300" width="600" height="300">
+  <defs>
+    <linearGradient id="bgC12" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="50%" stop-color="#4c0519"/>
+      <stop offset="100%" stop-color="#e11d48"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="300" fill="url(#bgC12)"/>
+  <!-- Decorative Calculus Integral & Matrix Graphic -->
+  <path d="M 60 170 Q 140 40 220 170" fill="none" stroke="#f43f5e" stroke-width="3"/>
+  <rect x="90" y="110" width="18" height="60" fill="rgba(255,255,255,0.15)"/>
+  <rect x="115" y="80" width="18" height="90" fill="rgba(255,255,255,0.2)"/>
+  <rect x="140" y="70" width="18" height="100" fill="rgba(255,255,255,0.25)"/>
+  <rect x="165" y="80" width="18" height="90" fill="rgba(255,255,255,0.2)"/>
+  <text x="140" y="225" font-family="'Outfit', sans-serif" font-size="24" font-weight="900" fill="#fb7185" text-anchor="middle">∫ f(x) dx</text>
+  <text x="140" y="255" font-family="'Outfit', sans-serif" font-size="14" font-weight="700" fill="#facc15" text-anchor="middle">A⁻¹ = adj(A) / |A|</text>
+  <!-- Text Content -->
+  <rect x="290" y="55" width="170" height="28" rx="14" fill="rgba(244,63,94,0.2)" stroke="rgba(244,63,94,0.5)" stroke-width="1"/>
+  <text x="375" y="74" font-family="'Inter', sans-serif" font-size="12" font-weight="700" fill="#fecdd3" text-anchor="middle" letter-spacing="1">CBSE CLASS 12 BOARD</text>
+  <text x="290" y="125" font-family="'Outfit', sans-serif" font-size="30" font-weight="800" fill="#ffffff">Class 12 Board Tactics</text>
+  <text x="290" y="165" font-family="'Inter', sans-serif" font-size="16" font-weight="500" fill="#fda4af">Integration &amp; Matrix Speed Hacks</text>
+  <text x="290" y="195" font-family="'Inter', sans-serif" font-size="14" font-weight="400" fill="#cbd5e1">Animated Area Strips &amp; Vectors</text>
+  <rect x="290" y="225" width="170" height="36" rx="18" fill="#e11d48"/>
+  <text x="375" y="248" font-family="'Inter', sans-serif" font-size="14" font-weight="700" fill="#ffffff" text-anchor="middle">Read Board Guide &rarr;</text>
+</svg>

@@ -2,37 +2,105 @@
 <html lang="en">
 <head>
     <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-F63R3HSRKQ"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-F63R3HSRKQ');
-</script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-F63R3HSRKQ"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-F63R3HSRKQ');
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy – MathTime by Alka Ma'am</title>
-
-    <meta name="description" content="Privacy Policy for MathTime by Alka Ma'am. Understand how your personal information and privacy are handled.">
-    <link rel="canonical" href="https://mathtimebyalkamaam.github.io/itsmathtime/privacy-policy.html">
-
-    <!-- Favicon & Touch Icons -->
+    <title>Class 11 Math Survival Guide: 6 Mental Math & Calculus/Trig Hacks | MathTime</title>
+    
+    <!-- Favicon -->
     <link rel="icon" href="favicon.svg" type="image/svg+xml">
     <link rel="icon" href="logo-icon-square.png" type="image/png">
-    <link rel="apple-touch-icon" href="logo-icon-square.png">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://mathtimebyalkamaam.github.io/itsmathtime/class-11-math-tips.html">
 
-    <!-- Static Compiled Tailwind CSS (Fast FCP) -->
+    <!-- CSS: Tailwind & Styles -->
     <link rel="stylesheet" href="tailwind.min.css">
-    <!-- Tailwind CSS CDN Fallback -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Inter Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
-    <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- KaTeX for Pure Mathematical LaTeX Rendering -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" onload="renderMathInElement(document.body, {delimiters: [{left: '$$', right: '$$', display: true}, {left: '$', right: '$', display: false}]});"></script>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Conquer the Class 11 CBSE Math leap with Alka Ma'am. 6 high-yield shortcuts for Trigonometric Functions, Limits, Derivatives, and Binomial Theorem with animated diagrams.">
+    <meta name="keywords" content="Class 11 Math tips, CBSE Class 11 mathematics tricks, ASTC rule trigonometry, calculus limits derivatives shortcut, binomial theorem cheat code, Alka Sharma MathTime">
+    <meta name="author" content="Alka Sharma">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://mathtimebyalkamaam.github.io/itsmathtime/class-11-math-tips.html">
+    <meta property="og:title" content="Class 11 Math Survival Blueprint: 6 Calculus & Trig Hacks">
+    <meta property="og:description" content="Zero lecture fluff. High-yield formulas, pure LaTeX intuition, and animated SVG diagrams to survive the toughest school transition.">
+    <meta property="og:image" content="https://mathtimebyalkamaam.github.io/itsmathtime/social-preview.svg">
+
+    <!-- Schema Markup -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BlogPosting",
+          "headline": "Class 11 Math Survival Blueprint: 6 Calculus & Trig Hacks to Master the Hardest Year",
+          "description": "Essential hacks and intuitive shortcuts for CBSE Class 11 Mathematics students facing the transition from Class 10.",
+          "author": {
+            "@type": "Person",
+            "name": "Alka Sharma",
+            "jobTitle": "Senior Mathematics Educator (M.Sc., B.Ed., CTET)"
+          },
+          "publisher": {
+            "@type": "Organization",
+            "name": "MathTime by Alka Ma'am",
+            "url": "https://mathtimebyalkamaam.github.io/itsmathtime/"
+          },
+          "datePublished": "2026-10-07",
+          "url": "https://mathtimebyalkamaam.github.io/itsmathtime/class-11-math-tips.html"
+        },
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://mathtimebyalkamaam.github.io/itsmathtime/" },
+            { "@type": "ListItem", "position": 2, "name": "Class 10 Tips", "item": "https://mathtimebyalkamaam.github.io/itsmathtime/class-10-math-tips.html" },
+            { "@type": "ListItem", "position": 3, "name": "Class 11 Survival Guide", "item": "https://mathtimebyalkamaam.github.io/itsmathtime/class-11-math-tips.html" }
+          ]
+        }
+      ]
+    }
+    </script>
+
+    <style>
+        /* Rotating Radius Vector Animation for Trigonometry Unit Circle */
+        @keyframes rotate-radius {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+        .anim-rotate-vector {
+            transform-origin: 200px 150px;
+            animation: rotate-radius 12s linear infinite;
+        }
+        /* Secant Line Sloping to Tangent Animation */
+        @keyframes secant-pivot {
+            0% { transform: rotate(28deg); }
+            50% { transform: rotate(0deg); }
+            100% { transform: rotate(28deg); }
+        }
+        .anim-secant-pivot {
+            transform-origin: 180px 180px;
+            animation: secant-pivot 4s ease-in-out infinite;
+        }
+    </style>
 </head>
-<body class="text-gray-800">
+<body class="bg-slate-900 text-slate-100 font-sans antialiased selection:bg-amber-400 selection:text-slate-950">
 
     <!-- Announcement Bar -->
     <div class="bg-gradient-to-r from-indigo-950 via-slate-900 to-indigo-950 text-indigo-200 text-xs py-2 px-4 text-center border-b border-indigo-800/40 relative z-50">
@@ -43,8 +111,8 @@
                 <a href="class-10-math-tips.html" class="inline-flex items-center px-2.5 py-0.5 rounded-full text-[11px] font-semibold bg-blue-500/20 text-blue-300 border border-blue-400/30 hover:bg-blue-500/30 hover:text-white transition-all">
                     Class 10 Hacks &rarr;
                 </a>
-                <a href="class-11-math-tips.html" class="inline-flex items-center px-2.5 py-0.5 rounded-full text-[11px] font-semibold bg-purple-500/20 text-purple-300 border border-purple-400/30 hover:bg-purple-500/30 hover:text-white transition-all">
-                    Class 11 Survival &rarr;
+                <a href="class-11-math-tips.html" class="inline-flex items-center px-2.5 py-0.5 rounded-full text-[11px] font-semibold bg-purple-500/30 text-purple-200 border border-purple-400/50">
+                    Class 11 (Current)
                 </a>
                 <a href="class-12-math-tips.html" class="inline-flex items-center px-2.5 py-0.5 rounded-full text-[11px] font-semibold bg-rose-500/20 text-rose-300 border border-rose-400/30 hover:bg-rose-500/30 hover:text-white transition-all">
                     Class 12 Tactics &rarr;
@@ -71,7 +139,7 @@
                 
                 <!-- Curriculum Dropdown -->
                 <div class="relative group header-dropdown">
-                    <button type="button" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle nav-link px-3 py-1.5 rounded-full hover:text-white hover:bg-white/10 transition-all duration-200 flex items-center gap-1.5 cursor-pointer text-slate-200 group-hover:text-amber-300 focus:outline-none">
+                    <button type="button" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle nav-link px-3 py-1.5 rounded-full hover:text-white hover:bg-white/10 transition-all duration-200 flex items-center gap-1.5 cursor-pointer text-slate-200 group-hover:text-white focus:outline-none">
                         <span>Curriculum</span>
                         <svg class="w-3.5 h-3.5 transition-transform duration-200 group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"></path></svg>
                     </button>
@@ -111,7 +179,7 @@
 
                 <!-- Tips & Hacks Dropdown (Prominent with Badge) -->
                 <div class="relative group header-dropdown">
-                    <button type="button" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle nav-link px-3 py-1.5 rounded-full hover:text-white hover:bg-white/10 transition-all duration-200 flex items-center gap-1.5 text-slate-200 group-hover:text-amber-300 cursor-pointer focus:outline-none">
+                    <button type="button" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle nav-link px-3 py-1.5 rounded-full hover:text-white hover:bg-white/10 transition-all duration-200 flex items-center gap-1.5 text-amber-300 group-hover:text-amber-300 cursor-pointer focus:outline-none">
                         <span>Tips &amp; Hacks</span>
                         <span class="px-1.5 py-0.5 rounded-full text-[10px] font-bold bg-amber-400 text-slate-950 uppercase tracking-wide">New</span>
                         <svg class="w-3.5 h-3.5 transition-transform duration-200 group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"></path></svg>
@@ -128,10 +196,13 @@
                                 <div class="text-xs text-slate-300 leading-tight">7 secret exam tricks &amp; proof traps</div>
                             </div>
                         </a>
-                        <a href="class-11-math-tips.html" class="flex items-start gap-3 p-2.5 rounded-xl hover:bg-white/10 transition group/item">
+                        <a href="class-11-math-tips.html" class="flex items-start gap-3 p-2.5 rounded-xl bg-white/10 transition group/item">
                             <span class="w-9 h-9 rounded-lg bg-purple-500/20 text-purple-300 border border-purple-400/40 flex items-center justify-center font-bold text-sm shrink-0 mt-0.5">11</span>
                             <div>
-                                <div class="text-sm font-bold text-white group-hover/item:text-purple-300 transition-colors">Class 11 Survival Guide</div>
+                                <div class="text-sm font-bold text-amber-300 transition-colors flex items-center gap-1.5">
+                                    <span>Class 11 Survival Guide</span>
+                                    <span class="px-1.5 py-0.5 rounded text-[9px] font-extrabold bg-purple-400/25 text-purple-300 uppercase">Active</span>
+                                </div>
                                 <div class="text-xs text-slate-300 leading-tight">Calculus, ASTC &amp; binomial hacks</div>
                             </div>
                         </a>
@@ -190,8 +261,9 @@
                 <div class="pt-3 pb-1 px-3 text-[11px] font-bold uppercase tracking-wider text-slate-400 flex items-center gap-1.5">
                     <span>📚</span> <span>CBSE Curriculum Hubs</span>
                 </div>
-                <a href="class-10-math.html" class="block py-2 px-3 rounded-lg text-slate-200 hover:text-white hover:bg-white/10 transition duration-200">
-                    📘 CBSE Class 10 Board Hub
+                <a href="class-10-math.html" class="flex items-center justify-between py-2 px-3 rounded-lg text-amber-300 hover:text-white hover:bg-white/10 transition duration-200 font-semibold">
+                    <span>📘 CBSE Class 10 Board Hub</span>
+                    <span class="text-xs text-amber-400">&rarr;</span>
                 </a>
                 <a href="class-9-math.html" class="block py-2 px-3 rounded-lg text-slate-200 hover:text-white hover:bg-white/10 transition duration-200">
                     📗 CBSE Class 9 Math Guide
@@ -209,193 +281,319 @@
                     <span>🎯 Class 10 Board Hacks (7 Secret Tricks)</span>
                     <span class="text-xs text-blue-400">&rarr;</span>
                 </a>
-                <a href="class-11-math-tips.html" class="flex items-center justify-between py-2 px-3 rounded-lg text-purple-300 hover:text-white hover:bg-white/10 transition duration-200 font-medium">
-                    <span>⚡ Class 11 Survival Guide (Calculus Hacks)</span>
-                    <span class="text-xs text-purple-400">&rarr;</span>
+                <a href="class-11-math-tips.html" class="flex items-center justify-between py-2 px-3 rounded-lg bg-white/10 text-amber-300 font-semibold">
+                    <span>⚡ Class 11 Survival Guide (Active)</span>
+                    <span class="text-xs text-amber-300">&bull;</span>
                 </a>
                 <a href="class-12-math-tips.html" class="flex items-center justify-between py-2 px-3 rounded-lg text-rose-300 hover:text-white hover:bg-white/10 transition duration-200 font-medium">
-                    <span>🔥 Class 12 Board Tactics (95%+ Strategy)</span>
+                    <span>🔥 Class 12 Board Tactics (Integrals &amp; 3D)</span>
                     <span class="text-xs text-rose-400">&rarr;</span>
                 </a>
-
-                <!-- Mobile Section: Shortcuts & Extras -->
-                <div class="pt-3 pb-1 px-3 text-[11px] font-bold uppercase tracking-wider text-slate-400 flex items-center gap-1.5">
-                    <span>⚡</span> <span>Shortcuts &amp; Quick Links</span>
-                </div>
-                <a href="math-tricks.html" class="block py-2 px-3 rounded-lg text-amber-300 hover:text-white hover:bg-white/10 transition duration-200">
-                    ⚡ Vedic &amp; Speed Math Tricks
+                <a href="math-tricks.html" class="flex items-center justify-between py-2 px-3 rounded-lg text-amber-300 hover:text-white hover:bg-white/10 transition duration-200 font-medium">
+                    <span>💡 Speed Math &amp; Mental Tricks</span>
+                    <span class="text-xs text-amber-400">&rarr;</span>
                 </a>
-                <a href="index.html#videos" class="block py-2 px-3 rounded-lg text-slate-200 hover:text-white hover:bg-white/10 transition duration-200">Featured Video Lectures</a>
-                <a href="index.html#playlists" class="block py-2 px-3 rounded-lg text-slate-200 hover:text-white hover:bg-white/10 transition duration-200">Chapter Playlists</a>
-                <a href="index.html#faq" class="block py-2 px-3 rounded-lg text-slate-200 hover:text-white hover:bg-white/10 transition duration-200">Common FAQs</a>
+
+                <div class="pt-3 border-t border-white/10"></div>
+                <a href="index.html#videos" class="block py-2 px-3 rounded-lg text-slate-200 hover:text-white hover:bg-white/10 transition duration-200">Video Lessons</a>
+                <a href="index.html#playlists" class="block py-2 px-3 rounded-lg text-slate-200 hover:text-white hover:bg-white/10 transition duration-200">Playlists</a>
+                <a href="index.html#faq" class="block py-2 px-3 rounded-lg text-slate-200 hover:text-white hover:bg-white/10 transition duration-200">FAQ</a>
                 <a href="index.html#contact" class="block py-2 px-3 rounded-lg text-slate-200 hover:text-white hover:bg-white/10 transition duration-200">Contact Alka Ma'am</a>
                 
-                <div class="pt-4 border-t border-white/10 mt-2">
-                    <a href="https://www.youtube.com/@its.mathtime?sub_confirmation=1" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center gap-2 w-full py-2.5 rounded-xl font-bold uppercase text-xs bg-gradient-to-r from-red-600 to-rose-600 text-white shadow-lg">
+                <div class="pt-4">
+                    <a href="https://www.youtube.com/@its.mathtime?sub_confirmation=1" target="_blank" class="flex items-center justify-center gap-2 py-3 px-4 rounded-xl bg-gradient-to-r from-red-600 to-rose-600 text-white font-bold text-sm shadow-md">
                         <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
-                        <span>Subscribe on YouTube</span>
+                        Subscribe on YouTube (200+ Lessons)
                     </a>
                 </div>
             </nav>
         </div>
     </header>
 
-    <main class="py-16 md:py-24 bg-gray-50">
-        <div class="container mx-auto px-4 max-w-3xl">
-            <h1 class="text-4xl font-bold text-center mb-8 text-blue-700">Privacy Policy</h1>
-            <div class="bg-white p-8 rounded-lg shadow-lg text-gray-700 leading-relaxed text-justify">
-                <p class="mb-4"><strong>Last updated:</strong> July 25, 2025</p>
-
-                <p class="mb-4">This Privacy Policy describes Our policies and procedures on the collection, use and disclosure of Your information when You use the Service and tells You about Your privacy rights and how the law protects You.</p>
-
-                <h2 class="text-2xl font-semibold mb-4 text-blue-600">Interpretation and Definitions</h2>
-                <h3 class="text-xl font-semibold mb-2 text-blue-500">Interpretation</h3>
-                <p class="mb-4">The words of which the initial letter is capitalized have meanings defined under the following conditions. The following definitions shall have the same meaning regardless of whether they appear in singular or in plural.</p>
-
-                <h3 class="text-xl font-semibold mb-2 text-blue-500">Definitions</h3>
-                <p class="mb-2">For the purposes of this Privacy Policy:</p>
-                <ul class="list-disc list-inside mb-4 pl-4">
-                    <li><strong>Account</strong> means a unique account created for You to access our Service or parts of our Service.</li>
-                    <li><strong>Affiliate</strong> means an entity that controls, is controlled by or is under common control with a party, where "control" means ownership of 50% or more of the shares, equity interest or other securities entitled to vote for election of directors or other managing authority.</li>
-                    <li><strong>Company</strong> (referred to as either "the Company", "We", "Us" or "Our" in this Agreement) refers to MathTime by Alka Ma'am.</li>
-                    <li><strong>Cookies</strong> are small files that are placed on Your computer, mobile device or any other device by a website, containing the details of Your browsing history on that website among its many uses.</li>
-                    <li><strong>Country</strong> refers to: India</li>
-                    <li><strong>Device</strong> means any device that can access the Service such as a computer, a cellphone or a digital tablet.</li>
-                    <li><strong>Personal Data</strong> is any information that relates to an identified or identifiable individual.</li>
-                    <li><strong>Service</strong> refers to the Website.</li>
-                    <li><strong>Service Provider</strong> means any natural or legal person who processes the data on behalf of the Company. It refers to third-party companies or individuals employed by the Company to facilitate the Service, to provide the Service on behalf of the Company, to perform services related to the Service or to assist the Company in analyzing how the Service is used.</li>
-                    <li><strong>Usage Data</strong> refers to data collected automatically, either generated by the use of the Service or from the Service infrastructure itself (for example, the duration of a page visit).</li>
-                    <li><strong>Website</strong> refers to MathTime by Alka Ma'am, accessible from <a href="https://www.youtube.com/@its.mathtime" class="text-blue-600 hover:underline">https://www.youtube.com/@its.mathtime</a></li>
-                    <li><strong>You</strong> means the individual accessing or using the Service, or the company, or other legal entity on behalf of which such individual is accessing or using the Service, as applicable.</li>
-                </ul>
-
-                <h2 class="text-2xl font-semibold mb-4 text-blue-600">Collecting and Using Your Personal Data</h2>
-                <h3 class="text-xl font-semibold mb-2 text-blue-500">Types of Data Collected</h3>
-                <h4 class="text-lg font-semibold mb-2 text-blue-400">Personal Data</h4>
-                <p class="mb-4">While using Our Service, We may ask You to provide Us with certain personally identifiable information that can be used to contact or identify You. Personally identifiable information may include, but is not limited to:</p>
-                <ul class="list-disc list-inside mb-4 pl-4">
-                    <li>Email address</li>
-                    <li>First name and last name</li>
-                    <li>Usage Data</li>
-                </ul>
-
-                <h4 class="text-lg font-semibold mb-2 text-blue-400">Usage Data</h4>
-                <p class="mb-4">Usage Data is collected automatically when using the Service.</p>
-                <p class="mb-4">Usage Data may include information such as Your Device's Internet Protocol address (e.g. IP address), browser type, browser version, the pages of our Service that You visit, the time and date of Your visit, the time spent on those pages, unique device identifiers and other diagnostic data.</p>
-                <p class="mb-4">When You access the Service by or through a mobile device, We may collect certain information automatically, including, but not limited to, the type of mobile device You use, Your mobile device unique ID, the IP address of Your mobile device, Your mobile operating system, the type of mobile Internet browser You use, unique device identifiers and other diagnostic data.</p>
-                <p class="mb-4">We may also collect information that Your browser sends whenever You visit our Service or when You access the Service by or through a mobile device.</p>
-
-                <h4 class="text-lg font-semibold mb-2 text-blue-400">Tracking Technologies and Cookies</h4>
-                <p class="mb-4">We use Cookies and similar tracking technologies to track the activity on Our Service and store certain information. Tracking technologies used are beacons, tags, and scripts to collect and track information and to improve and analyze Our Service. The technologies We use may include:</p>
-                <ul class="list-disc list-inside mb-4 pl-4">
-                    <li><strong>Cookies or Browser Cookies.</strong> A cookie is a small file placed on Your Device. You can instruct Your browser to refuse all Cookies or to indicate when a Cookie is being sent. However, if You do not accept Cookies, You may not be able to use some parts of our Service. Unless you have adjusted Your browser setting so that it will refuse Cookies, our Service may use Cookies.</li>
-                    <li><strong>Web Beacons.</strong> Certain sections of our Service and our emails may contain small electronic files known as web beacons (also referred to as clear gifs, pixel tags, and single-pixel gifs) that permit the Company, for example, to count users who have visited those pages or opened an email and for other related website statistics (for example, recording the popularity of a certain section and verifying system and server integrity).</li>
-                </ul>
-                <p class="mb-4">Cookies can be "Persistent" or "Session" Cookies. Persistent Cookies remain on Your personal computer or mobile device when You go offline, while Session Cookies are deleted as soon as You close Your web browser. Learn more about cookies on the <a href="https://www.privacypolicies.com/blog/cookies/" target="_blank" class="text-blue-600 hover:underline">Privacy Policies website</a> article.</p>
-                <p class="mb-4">We use both Session and Persistent Cookies for the purposes set out below:</p>
-                <ul class="list-disc list-inside mb-4 pl-4">
-                    <li>
-                        <p><strong>Necessary / Essential Cookies</strong></p>
-                        <p>Type: Session Cookies</p>
-                        <p>Administered by: Us</p>
-                        <p>Purpose: These Cookies are essential to provide You with services available through the Website and to enable You to use some of its features. They help to authenticate users and prevent fraudulent use of user accounts. Without these Cookies, the services that You have asked for cannot be provided, and We only use these Cookies to provide You with those services.</p>
-                    </li>
-                    <li>
-                        <p><strong>Cookies Policy / Notice Acceptance Cookies</strong></p>
-                        <p>Type: Persistent Cookies</p>
-                        <p>Administered by: Us</p>
-                        <p>Purpose: These Cookies identify if users have accepted the use of cookies on the Website.</p>
-                    </li>
-                    <li>
-                        <p><strong>Functionality Cookies</strong></p>
-                        <p>Type: Persistent Cookies</p>
-                        <p>Administered by: Us</p>
-                        <p>Purpose: These Cookies allow us to remember choices You make when You use the Website, such as remembering your login details or language preference. The purpose of these Cookies is to provide You with a more personal experience and to avoid You having to re-enter your preferences every time You use the Website.</p>
-                    </li>
-                </ul>
-
-                <h3 class="text-xl font-semibold mb-2 text-blue-500">Use of Your Personal Data</h3>
-                <p class="mb-4">The Company may use Personal Data for the following purposes:</p>
-                <ul class="list-disc list-inside mb-4 pl-4">
-                    <li><strong>To provide and maintain our Service</strong>, including to monitor the usage of our Service.</li>
-                    <li><strong>To manage Your Account:</strong> to manage Your registration as a user of the Service. The Personal Data You provide can give You access to different functionalities of the Service that are available to You as a registered user.</li>
-                    <li><strong>For the performance of a contract:</strong> the development, compliance and undertaking of the purchase contract for the products, items or services You have purchased or of any other contract with Us through the Service.</li>
-                    <li><strong>To contact You:</strong> To contact You by email, telephone calls, SMS, or other equivalent forms of electronic communication, such as a mobile application's push notifications regarding updates or informative communications related to the functionalities, products or contracted services, including the security updates, when necessary or reasonable for their implementation.</li>
-                    <li><strong>To provide You</strong> with news, special offers and general information about other goods, services and events which we offer that are similar to those that you have already purchased or enquired about unless You have opted not to receive such information.</li>
-                    <li><strong>To manage Your requests:</strong> To attend and manage Your requests to Us.</li>
-                    <li><strong>For business transfers:</strong> We may use Your information to evaluate or conduct a merger, divestiture, restructuring, reorganization, dissolution, or other sale or transfer of some or all of Our assets, whether as a going concern or as part of bankruptcy, liquidation, or similar proceeding, in which Personal Data held by Us about our Service users is among the assets transferred.</li>
-                    <li><strong>For other purposes</strong>: We may use Your information for other purposes, such as data analysis, identifying usage trends, determining the effectiveness of our promotional campaigns and to evaluate and improve our Service, products, services, marketing and your experience.</li>
-                </ul>
-
-                <h3 class="text-xl font-semibold mb-2 text-blue-500">Sharing Your Personal Data</h3>
-                <p class="mb-4">We may share Your personal information in the following situations:</p>
-                <ul class="list-disc list-inside mb-4 pl-4">
-                    <li><strong>With Service Providers:</strong> We may share Your personal information with Service Providers to monitor and analyze the use of our Service, to contact You.</li>
-                    <li><strong>For business transfers:</strong> We may share or transfer Your personal information in connection with, or during negotiations of, any merger, sale of Company assets, financing, or acquisition of all or a portion of Our business to another company.</li>
-                    <li><strong>With Affiliates:</strong> We may share Your information with Our affiliates, in which case we will require those affiliates to honor this Privacy Policy. Affiliates include Our parent company and any other subsidiaries, joint venture partners or other companies that We control or that are under common control with Us.</li>
-                    <li><strong>With business partners:</strong> We may share Your information with Our business partners to offer You certain products, services or promotions.</li>
-                    <li><strong>With other users:</strong> when You share personal information or otherwise interact in the public areas with other users, such information may be viewed by all users and may be publicly distributed outside.</li>
-                    <li><strong>With Your consent</strong>: We may disclose Your personal information for any other purpose with Your consent.</li>
-                </ul>
-
-                <h2 class="text-2xl font-semibold mb-4 text-blue-600">Retention of Your Personal Data</h2>
-                <p class="mb-4">The Company will retain Your Personal Data only for as long as is necessary for the purposes set out in this Privacy Policy. We will retain and use Your Personal Data to the extent necessary to comply with our legal obligations (for example, if we are required to retain your data to comply with applicable laws), resolve disputes, and enforce our legal agreements and policies.</p>
-                <p class="mb-4">The Company will also retain Usage Data for internal analysis purposes. Usage Data is generally retained for a shorter period of time, except when this data is used to strengthen the security or to improve the functionality of Our Service, or We are legally obligated to retain this data for longer time periods.</p>
-
-                <h2 class="text-2xl font-semibold mb-4 text-blue-600">Transfer of Your Personal Data</h2>
-                <p class="mb-4">Your information, including Personal Data, is processed at the Company's operating offices and in any other places where the parties involved in the processing are located. It means that this information may be transferred to — and maintained on — computers located outside of Your state, province, country or other governmental jurisdiction where the data protection laws may differ than those from Your jurisdiction.</p>
-                <p class="mb-4">Your consent to this Privacy Policy followed by Your submission of such information represents Your agreement to that transfer.</p>
-                <p class="mb-4">The Company will take all steps reasonably necessary to ensure that Your data is treated securely and in accordance with this Privacy Policy and no transfer of Your Personal Data will take place to an organization or a country unless there are adequate controls in place including the security of Your data and other personal information.</p>
-
-                <h2 class="text-2xl font-semibold mb-4 text-blue-600">Delete Your Personal Data</h2>
-                <p class="mb-4">You have the right to delete or request that We assist in deleting the Personal Data that We have collected about You.</p>
-                <p class="mb-4">Our Service may give You the ability to delete certain information about You from within the Service.</p>
-                <p class="mb-4">You may update, amend, or delete Your information at any time by signing in to Your Account, if you have one, and visiting the account settings section that allows you to manage Your personal information. You may also contact Us to request access to, correct, or delete any personal information that You have provided to Us.</p>
-                <p class="mb-4">Please note, however, that We may need to retain certain information when we have a legal obligation or lawful basis to do so.</p>
-
-                <h2 class="text-2xl font-semibold mb-4 text-blue-600">Disclosure of Your Personal Data</h2>
-                <h3 class="text-xl font-semibold mb-2 text-blue-500">Business Transactions</h3>
-                <p class="mb-4">If the Company is involved in a merger, acquisition or asset sale, Your Personal Data may be transferred. We will provide notice before Your Personal Data is transferred and becomes subject to a different Privacy Policy.</p>
-
-                <h3 class="text-xl font-semibold mb-2 text-blue-500">Law enforcement</h3>
-                <p class="mb-4">Under certain circumstances, the Company may be required to disclose Your Personal Data if required to do so by law or in response to valid requests by public authorities (e.g. a court or a government agency).</p>
-
-                <h3 class="text-xl font-semibold mb-2 text-blue-500">Other legal requirements</h3>
-                <p class="mb-4">The Company may disclose Your Personal Data in the good faith belief that such action is necessary to:</p>
-                <ul class="list-disc list-inside mb-4 pl-4">
-                    <li>Comply with a legal obligation</li>
-                    <li>Protect and defend the rights or property of the Company</li>
-                    <li>Prevent or investigate possible wrongdoing in connection with the Service</li>
-                    <li>Protect the personal safety of Users of the Service or the public</li>
-                    <li>Protect against legal liability</li>
-                </ul>
-
-                <h2 class="text-2xl font-semibold mb-4 text-blue-600">Security of Your Personal Data</h2>
-                <p class="mb-4">The security of Your Personal Data is important to Us, but remember that no method of transmission over the Internet, or method of electronic storage is 100% secure. While We strive to use commercially acceptable means to protect Your Personal Data, We cannot guarantee its absolute security.</p>
-
-                <h2 class="text-2xl font-semibold mb-4 text-blue-600">Children's Privacy</h2>
-                <p class="mb-4">Our Service does not address anyone under the age of 13. We do not knowingly collect personally identifiable information from anyone under the age of 13. If You are a parent or guardian and You are aware that Your child has provided Us with Personal Data, please contact Us. If We become aware that We have collected Personal Data from anyone under the age of 13 without verification of parental consent, We take steps to remove that information from Our servers.</p>
-                <p class="mb-4">If We need to rely on consent as a legal basis for processing Your information and Your country requires consent from a parent, We may require Your parent's consent before We collect and use that information.</p>
-
-                <h2 class="text-2xl font-semibold mb-4 text-blue-600">Links to Other Websites</h2>
-                <p class="mb-4">Our Service may contain links to other websites that are not operated by Us. If You click on a third party link, You will be directed to that third party's site. We strongly advise You to review the Privacy Policy of every site You visit.</p>
-                <p class="mb-4">We have no control over and assume no responsibility for the content, privacy policies or practices of any third party sites or services.</p>
-
-                <h2 class="text-2xl font-semibold mb-4 text-blue-600">Changes to this Privacy Policy</h2>
-                <p class="mb-4">We may update Our Privacy Policy from time to time. We will notify You of any changes by posting the new Privacy Policy on this page.</p>
-                <p class="mb-4">We will let You know via email and/or a prominent notice on Our Service, prior to the change becoming effective and update the "Last updated" date at the top of this Privacy Policy.</p>
-                <p class="mb-4">You are advised to review this Privacy Policy periodically for any changes. Changes to this Privacy Policy are effective when they are posted on this page.</p>
-
-                <h2 class="text-2xl font-semibold mb-4 text-blue-600">Contact Us</h2>
-                <p class="mb-4">If you have any questions about this Privacy Policy, You can contact us:</p>
-                <ul class="list-disc list-inside mb-4 pl-4">
-                    <li>By email: info.onesharma@gmail.com</li>
-                </ul>
+    <!-- Main Article Container -->
+    <main class="py-12 md:py-20">
+        <article class="container mx-auto px-4 sm:px-6 max-w-4xl">
+            
+            <!-- Breadcrumb Navigation -->
+            <div class="flex items-center gap-2 text-xs text-slate-400 mb-6 flex-wrap">
+                <a href="index.html" class="hover:text-slate-200">Home</a>
+                <span>&rsaquo;</span>
+                <span class="text-slate-400">Senior Secondary</span>
+                <span>&rsaquo;</span>
+                <span class="text-amber-300 font-medium">Class 11 Survival Blueprint</span>
             </div>
-        </div>
+
+            <!-- Blog Header -->
+            <header class="mb-12">
+                <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-purple-500/10 text-purple-300 border border-purple-400/30 text-xs font-bold uppercase tracking-wider mb-4">
+                    <span>⚡ The Class 10 to 11 Bridge Series</span>
+                </div>
+                <h1 class="text-3xl sm:text-4xl lg:text-5xl font-black font-heading text-white leading-tight tracking-tight mb-6">
+                    Class 11 Math Survival Blueprint: 6 Calculus &amp; Trig Hacks to Conquer the Hardest Year
+                </h1>
+                
+                <!-- Author & Meta Strip -->
+                <div class="flex items-center gap-4 py-4 border-y border-white/10 text-xs sm:text-sm text-slate-400">
+                    <div class="flex items-center gap-2.5">
+                        <img src="alka pics/intro pic1.jpg" alt="Alka Sharma" class="w-10 h-10 rounded-full object-cover object-top border border-purple-400/50">
+                        <div>
+                            <div class="text-white font-bold">Alka Sharma (Alka Ma'am)</div>
+                            <div class="text-xs text-slate-400">Senior Mathematics Educator &bull; M.Sc., B.Ed., CTET</div>
+                        </div>
+                    </div>
+                    <span class="text-slate-600">&bull;</span>
+                    <span>9 Min Read</span>
+                    <span class="text-slate-600">&bull;</span>
+                    <span class="text-purple-300 font-medium">CBSE / NCERT Syllabus</span>
+                </div>
+            </header>
+
+            <!-- Warm Human Empathy Intro -->
+            <div class="prose prose-invert max-w-none text-slate-300 space-y-6 text-base sm:text-lg leading-relaxed mb-12">
+                <p>
+                    Every year in July, I see brilliant students who scored 95% in Class 10 Board exams sit in front of me with panic in their eyes: 
+                    <em>"Ma'am, in Class 10 trigonometry had only 3 identities. In Class 11, there are 48! What is happening?"</em>
+                </p>
+                <p>
+                    Take a deep breath. <strong>Class 11 Math is not difficult; it is just abstract.</strong> The problem is that school teachers often teach formulas as dry lists to memorize rather than visual geometric facts. Once you understand the fundamental mental models, the formulas derive themselves. Here are the 6 golden survival tricks to turn Class 11 into your strongest foundation for Class 12 and entrance tests.
+                </p>
+            </div>
+
+            <!-- Trick 1: ASTC Rule with Animated Unit Circle -->
+            <section class="mb-14 p-6 sm:p-8 rounded-3xl bg-slate-800/60 border border-white/10 shadow-xl">
+                <div class="flex items-center gap-3 mb-4">
+                    <span class="w-8 h-8 rounded-xl bg-purple-500/20 text-purple-400 border border-purple-400/30 flex items-center justify-center font-bold text-sm">1</span>
+                    <h2 class="text-xl sm:text-2xl font-bold text-white font-heading">Stop Memorizing 48 Formulas: The "ASTC" &amp; Angle Multiplier Rule</h2>
+                </div>
+                <p class="text-slate-300 text-sm sm:text-base mb-6 leading-relaxed">
+                    How do you quickly evaluate $\sin(180^\circ + \theta)$, $\cos(270^\circ - \theta)$, or $\tan(360^\circ - \theta)$ without checking a cheat sheet? You only need two questions:
+                </p>
+
+                <!-- Animated Unit Circle SVG Diagram -->
+                <div class="p-6 rounded-2xl bg-slate-950 border border-purple-500/30 flex flex-col items-center justify-center mb-6">
+                    <svg viewBox="0 0 400 300" class="w-full max-w-md h-auto">
+                        <!-- Coordinate Axes -->
+                        <line x1="50" y1="150" x2="350" y2="150" stroke="#475569" stroke-width="2"/>
+                        <line x1="200" y1="20" x2="200" y2="280" stroke="#475569" stroke-width="2"/>
+                        <text x="355" y="155" fill="#94a3b8" font-size="12">X</text>
+                        <text x="195" y="15" fill="#94a3b8" font-size="12">Y</text>
+
+                        <!-- Unit Circle -->
+                        <circle cx="200" cy="150" r="100" fill="none" stroke="#6366f1" stroke-width="2.5" stroke-dasharray="5 3"/>
+
+                        <!-- Quadrant Labels: ASTC Rule -->
+                        <text x="260" y="80" fill="#38bdf8" font-size="16" font-weight="black">Q1: ALL (+)</text>
+                        <text x="70" y="80" fill="#a855f7" font-size="16" font-weight="black">Q2: SIN (+)</text>
+                        <text x="70" y="230" fill="#f59e0b" font-size="16" font-weight="black">Q3: TAN (+)</text>
+                        <text x="260" y="230" fill="#10b981" font-size="16" font-weight="black">Q4: COS (+)</text>
+
+                        <!-- Rotating Radius Vector Group -->
+                        <g class="anim-rotate-vector">
+                            <line x1="200" y1="150" x2="280" y2="90" stroke="#fbbf24" stroke-width="3"/>
+                            <circle cx="280" cy="90" r="5" fill="#f43f5e"/>
+                        </g>
+                    </svg>
+                    <p class="text-xs text-amber-300 mt-2 font-mono text-center">
+                        Mnemonic: <strong>A</strong>ll <strong>S</strong>ilver <strong>T</strong>ea <strong>C</strong>ups (I: All, II: Sin, III: Tan, IV: Cos)
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
+                    <div class="p-4 rounded-xl bg-slate-900 border border-white/10">
+                        <strong class="text-blue-400 block mb-1">Step 1: Check the Sign (Which Quadrant?)</strong>
+                        <p class="text-slate-400 text-xs leading-relaxed">
+                            Example: $\cos(270^\circ - \theta)$. $270^\circ - \theta$ lies in Quadrant III. In Q3, only $\tan$ is positive. So $\cos$ must be negative $\implies$ Prefix a <strong>minus sign ($-$)</strong>.
+                        </p>
+                    </div>
+                    <div class="p-4 rounded-xl bg-slate-900 border border-white/10">
+                        <strong class="text-purple-400 block mb-1">Step 2: Check the Angle Base ($90^\circ$ Multiplier)</strong>
+                        <p class="text-slate-400 text-xs leading-relaxed">
+                            Write the angle as $n \times 90^\circ$. If $n$ is <strong>ODD</strong> ($90^\circ, 270^\circ$), flip the function: $\sin \leftrightarrow \cos, \tan \leftrightarrow \cot$. If $n$ is <strong>EVEN</strong> ($180^\circ, 360^\circ$), function remains the same!
+                        </p>
+                    </div>
+                </div>
+
+                <div class="mt-4 p-3 rounded-xl bg-purple-950/40 border border-purple-500/30 text-xs font-mono text-center text-purple-200">
+                    &check; Result: $\cos(270^\circ - \theta) = \cos(3 \times 90^\circ - \theta) \implies -\sin\theta$. Solved in 2 seconds!
+                </div>
+            </section>
+
+            <!-- Trick 2: Derivative Secant to Tangent Animation -->
+            <section class="mb-14 p-6 sm:p-8 rounded-3xl bg-slate-800/60 border border-white/10 shadow-xl">
+                <div class="flex items-center gap-3 mb-4">
+                    <span class="w-8 h-8 rounded-xl bg-blue-500/20 text-blue-400 border border-blue-400/30 flex items-center justify-center font-bold text-sm">2</span>
+                    <h2 class="text-xl sm:text-2xl font-bold text-white font-heading">Calculus Demystified: The Secant Line Pivoting into a Tangent</h2>
+                </div>
+                <p class="text-slate-300 text-sm sm:text-base mb-6 leading-relaxed">
+                    What does $\frac{dy}{dx}$ or $f'(x) = \lim_{h \to 0} \frac{f(x+h) - f(x)}{h}$ actually mean? 
+                    It is simply the slope of a secant line connecting two points $(x, f(x))$ and $(x+h, f(x+h))$, when the distance $h$ shrinks to zero!
+                </p>
+
+                <!-- Animated SVG Calculus Derivative Slope Diagram -->
+                <div class="p-6 rounded-2xl bg-slate-950 border border-blue-500/30 flex flex-col items-center justify-center mb-6">
+                    <svg viewBox="0 0 450 260" class="w-full max-w-md h-auto">
+                        <!-- Curve y = f(x) -->
+                        <path d="M 50 220 Q 200 200 380 40" fill="none" stroke="#38bdf8" stroke-width="3"/>
+                        <text x="390" y="50" fill="#38bdf8" font-size="13" font-weight="bold">y = f(x)</text>
+
+                        <!-- Fixed Point P(x, f(x)) -->
+                        <circle cx="180" cy="180" r="5" fill="#f59e0b"/>
+                        <text x="140" y="200" fill="#f59e0b" font-size="12" font-weight="bold">P(x, f(x))</text>
+
+                        <!-- Moving Point Q(x+h, f(x+h)) -->
+                        <circle cx="280" cy="120" r="4" fill="#a855f7"/>
+                        <text x="290" y="115" fill="#a855f7" font-size="12">Q(x+h, f(x+h))</text>
+
+                        <!-- True Tangent Line (Fixed Slope) -->
+                        <line x1="80" y1="235" x2="330" y2="95" stroke="#10b981" stroke-width="2" stroke-dasharray="4 2"/>
+                        <text x="310" y="85" fill="#10b981" font-size="11" font-weight="bold">Tangent Slope = f'(x)</text>
+
+                        <!-- Secant Line that animates and pivots -->
+                        <line x1="80" y1="235" x2="350" y2="80" stroke="#f43f5e" stroke-width="2.5" class="anim-secant-pivot"/>
+                    </svg>
+                    <p class="text-xs text-slate-400 mt-2 text-center">
+                        As $h \to 0$, Secant Line (Red) pivots into the instantaneous Tangent Line (Green).
+                    </p>
+                </div>
+
+                <div class="p-4 rounded-2xl bg-slate-900 border border-white/10 text-xs sm:text-sm">
+                    $$f'(x) = \lim_{h \to 0} \frac{f(x+h) - f(x)}{h}$$
+                    <p class="text-slate-300 mt-2">
+                        Whenever CBSE asks for <strong>First Principle Derivative</strong> of $\sin x$, expand $\sin(x+h) - \sin x = 2\cos\left(x + \frac{h}{2}\right)\sin\left(\frac{h}{2}\right)$. Using standard limit $\lim_{\theta \to 0}\frac{\sin\theta}{\theta} = 1$, the expression yields $\cos x$ naturally!
+                    </p>
+                </div>
+            </section>
+
+            <!-- Trick 3: Limits 0/0 Form Rapid Factoring -->
+            <section class="mb-14 p-6 sm:p-8 rounded-3xl bg-slate-800/60 border border-white/10 shadow-xl">
+                <div class="flex items-center gap-3 mb-4">
+                    <span class="w-8 h-8 rounded-xl bg-emerald-500/20 text-emerald-400 border border-emerald-400/30 flex items-center justify-center font-bold text-sm">3</span>
+                    <h2 class="text-xl sm:text-2xl font-bold text-white font-heading">The Standard Limit Cheat Formula: Never Factor Higher Powers</h2>
+                </div>
+                <p class="text-slate-300 text-sm sm:text-base mb-4 leading-relaxed">
+                    Whenever you see $\frac{0}{0}$ form with higher exponents like $\lim_{x \to 2}\frac{x^5 - 32}{x - 2}$ or $\lim_{x \to 3}\frac{x^7 - 2187}{x^4 - 81}$, <strong>do NOT spend 5 minutes doing polynomial long division!</strong>
+                </p>
+                <div class="p-4 rounded-2xl bg-slate-900 border border-emerald-500/30 text-sm mb-4">
+                    <p class="text-emerald-400 font-bold mb-1">Standard Formula (CBSE Approved):</p>
+                    $$\lim_{x \to a}\frac{x^n - a^n}{x - a} = n a^{n-1}$$
+                </div>
+                <p class="text-sm text-slate-300 leading-relaxed mb-3">
+                    For numerator and denominator with different powers $\lim_{x \to a}\frac{x^m - a^m}{x^n - a^n}$, simply divide both by $(x - a)$:
+                </p>
+                <div class="p-3 rounded-xl bg-slate-950 font-mono text-xs sm:text-sm text-amber-300 text-center">
+                    $$\lim_{x \to a}\frac{x^m - a^m}{x^n - a^n} = \frac{m a^{m-1}}{n a^{n-1}} = \frac{m}{n} a^{m - n}$$
+                </div>
+            </section>
+
+            <!-- Trick 4: Binomial Theorem Term Independent of x -->
+            <section class="mb-14 p-6 sm:p-8 rounded-3xl bg-slate-800/60 border border-white/10 shadow-xl">
+                <div class="flex items-center gap-3 mb-4">
+                    <span class="w-8 h-8 rounded-xl bg-amber-500/20 text-amber-400 border border-amber-400/30 flex items-center justify-center font-bold text-sm">4</span>
+                    <h2 class="text-xl sm:text-2xl font-bold text-white font-heading">Binomial Theorem: Find the Term Independent of $x$ in 10 Seconds</h2>
+                </div>
+                <p class="text-slate-300 text-sm sm:text-base mb-4 leading-relaxed">
+                    In school, you are taught to write $T_{r+1} = \binom{n}{r} a^{n-r} b^r$, group all powers of $x$, set the exponent to 0, and solve for $r$. That takes half a page.
+                </p>
+                <div class="p-4 rounded-2xl bg-slate-900 border border-amber-500/30 text-sm mb-4">
+                    <p class="text-amber-300 font-bold mb-2">⚡ The 1-Line $r$ Formula for $\left(x^p \pm \frac{1}{x^q}\right)^n$:</p>
+                    $$r = \frac{n \times p}{p + q}$$
+                </div>
+                <div class="p-4 rounded-xl bg-slate-950 text-xs sm:text-sm text-slate-300 leading-relaxed">
+                    <strong>Example:</strong> Find the constant term in $\left(2x^2 - \frac{1}{x}\right)^9$.<br>
+                    Here $n = 9$, $p = 2$, $q = 1$.<br>
+                    $$r = \frac{9 \times 2}{2 + 1} = \frac{18}{3} = 6$$
+                    The required term is simply $T_{6+1} = T_7 = \binom{9}{6} (2)^{9-6} (-1)^6 = 84 \times 8 = 672$. Done!
+                </div>
+            </section>
+
+            <!-- Trick 5: Permutations vs Combinations Decision Matrix -->
+            <section class="mb-14 p-6 sm:p-8 rounded-3xl bg-slate-800/60 border border-white/10 shadow-xl">
+                <div class="flex items-center gap-3 mb-4">
+                    <span class="w-8 h-8 rounded-xl bg-rose-500/20 text-rose-400 border border-rose-400/30 flex items-center justify-center font-bold text-sm">5</span>
+                    <h2 class="text-xl sm:text-2xl font-bold text-white font-heading">Permutation vs. Combination: The "Order Audit" Rule</h2>
+                </div>
+                <p class="text-slate-300 text-sm sm:text-base mb-4 leading-relaxed">
+                    The biggest hurdle in Chapter 7 is not calculating $n!$, but deciding whether to use $^nP_r$ or $^nC_r$. Ask yourself this single litmus test:
+                </p>
+                <div class="p-4 rounded-2xl bg-slate-900 border border-rose-500/30 text-sm mb-4 space-y-3">
+                    <p class="text-rose-400 font-bold">"If I swap two elements, does the outcome change?"</p>
+                    <ul class="list-disc list-inside space-y-2 text-slate-300 text-xs sm:text-sm">
+                        <li><strong>YES (Order Matters):</strong> Seating people in chairs, forming words with letters, PIN codes $\implies$ <strong>Permutation ($^nP_r$)</strong>.</li>
+                        <li><strong>NO (Order Irrelevant):</strong> Selecting a cricket team of 11, picking 3 committee members, shaking hands $\implies$ <strong>Combination ($^nC_r$)</strong>.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Trick 6: Relations and Functions Arrow Mapping -->
+            <section class="mb-14 p-6 sm:p-8 rounded-3xl bg-slate-800/60 border border-white/10 shadow-xl">
+                <div class="flex items-center gap-3 mb-4">
+                    <span class="w-8 h-8 rounded-xl bg-cyan-500/20 text-cyan-400 border border-cyan-400/30 flex items-center justify-center font-bold text-sm">6</span>
+                    <h2 class="text-xl sm:text-2xl font-bold text-white font-heading">When is a Relation a Function? The "Every Child, One Mother" Analogy</h2>
+                </div>
+                <p class="text-slate-300 text-sm sm:text-base mb-4 leading-relaxed">
+                    Many students struggle to visualize whether a given relation $f: A \to B$ is a function. I share this unforgettable analogy in class:
+                </p>
+                <div class="p-4 rounded-2xl bg-slate-900 border border-cyan-500/30 text-xs sm:text-sm space-y-2 mb-4">
+                    <p class="text-amber-300 font-bold">Let Set $A$ be Children, and Set $B$ be Mothers:</p>
+                    <p class="text-slate-300">&bull; <strong>Condition 1:</strong> Every child must have a mother. (Every $x \in A$ must have an image in $B$).</p>
+                    <p class="text-slate-300">&bull; <strong>Condition 2:</strong> A child cannot have two biological mothers! (One $x$ cannot branch into two different $y$'s).</p>
+                    <p class="text-slate-400 text-xs mt-2">Can multiple children have the same mother? Yes! (Many-to-one is a valid function).</p>
+                </div>
+            </section>
+
+            <!-- Interactive Math Labs Feature Card for Class 11 (labs.itsmathtime.co.in) -->
+            <div class="mb-14 p-6 sm:p-8 rounded-3xl bg-gradient-to-r from-cyan-950/90 via-slate-900 to-indigo-950 border border-cyan-400/40 shadow-2xl">
+                <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 pb-4 border-b border-white/10">
+                    <div class="flex items-center gap-3">
+                        <span class="w-10 h-10 rounded-xl bg-cyan-500/20 text-cyan-300 border border-cyan-400/30 flex items-center justify-center font-bold text-xl">🔬</span>
+                        <div>
+                            <span class="text-[11px] font-bold uppercase tracking-wider text-cyan-400">Deep Concept Clarity &bull; Math You Can Touch</span>
+                            <h3 class="text-xl sm:text-2xl font-bold text-white font-heading">Visualize Class 11 Calculus &amp; Trig in 3D Labs</h3>
+                        </div>
+                    </div>
+                    <a href="https://labs.itsmathtime.co.in" target="_blank" rel="noopener noreferrer" class="px-5 py-2.5 rounded-full bg-gradient-to-r from-cyan-400 to-blue-500 hover:from-cyan-300 hover:to-blue-400 text-slate-950 font-extrabold text-xs shadow-lg transition-all hover:scale-105 active:scale-95 flex items-center gap-1.5 shrink-0">
+                        <span>Launch 50 Labs</span>
+                        <span>↗</span>
+                    </a>
+                </div>
+                <p class="text-xs sm:text-sm text-slate-300 mt-4 leading-relaxed">
+                    Tired of rote-memorizing limits, tangents, and trigonometric ASTC quadrants? Touch, slide, and watch mathematical laws as living systems at <strong class="text-cyan-300">labs.itsmathtime.co.in</strong>. Watch secants collapse into instantaneous derivative slopes in real time!
+                </p>
+                <div class="mt-4 flex items-center gap-3 text-xs text-slate-400 flex-wrap">
+                    <span class="text-cyan-300">✓ Unit Circle Harmonics</span>
+                    <span>&bull;</span>
+                    <span class="text-purple-300">✓ Limiting Tangent Secants ($dy/dx$)</span>
+                    <span>&bull;</span>
+                    <span class="text-amber-300">✓ 100% Free &bull; Zero Installation</span>
+                </div>
+            </div>
+
+            <!-- Bottom CTA -->
+            <div class="p-8 rounded-3xl bg-gradient-to-r from-purple-900 via-indigo-950 to-slate-900 border border-purple-500/30 text-center text-white shadow-2xl">
+                <h3 class="text-2xl font-bold font-heading mb-3">Watch Class 11 &amp; 12 Speed Concept Shorts</h3>
+                <p class="text-slate-300 text-sm max-w-xl mx-auto mb-6 leading-relaxed">
+                    Alka Ma'am posts 60-second animated math tricks, trigonometry identity proofs, and calculus intuition shorts on YouTube.
+                </p>
+                <div class="flex flex-wrap justify-center gap-4">
+                    <a href="https://www.youtube.com/@its.mathtime/shorts" target="_blank" rel="noopener noreferrer" class="px-8 py-3.5 rounded-full bg-gradient-to-r from-rose-600 to-red-600 hover:from-rose-500 hover:to-red-500 text-white font-bold text-sm shadow-xl shadow-rose-600/30 transition">
+                        Watch YouTube Shorts &rarr;
+                    </a>
+                    <a href="class-12-math-tips.html" class="px-6 py-3.5 rounded-full bg-white/10 hover:bg-white/20 border border-white/20 text-white font-semibold text-sm transition">
+                        Next: Class 12 Board Tactics &rarr;
+                    </a>
+                </div>
+            </div>
+
+            <!-- Inter-article Navigation -->
+            <div class="mt-12 pt-8 border-t border-white/10 flex justify-between items-center text-sm">
+                <a href="class-10-math-tips.html" class="text-slate-400 hover:text-white transition">&larr; Class 10 Hacks</a>
+                <a href="class-12-math-tips.html" class="text-amber-400 hover:text-amber-300 font-semibold transition">Class 12 Board Tactics &rarr;</a>
+            </div>
+
+        </article>
     </main>
 
-    <!-- Footer -->
+    <!-- Modern 4-Column Educational Footer -->
     <footer class="bg-slate-950 text-slate-300 pt-16 pb-12 border-t border-white/10 relative overflow-hidden">
         <!-- Background Subtle Glow Orbs -->
         <div class="absolute -top-32 left-1/4 w-80 h-80 bg-blue-600/10 rounded-full blur-3xl pointer-events-none"></div>
@@ -439,7 +637,7 @@
                     </h4>
                     <ul class="space-y-2 text-sm">
                         <li>
-                            <a href="class-10-math.html" class="hover:text-amber-400 transition flex items-center justify-between group">
+                            <a href="class-10-math.html" class="hover:text-amber-400 transition font-medium text-amber-300 flex items-center justify-between group">
                                 <span>Class 10 CBSE</span>
                                 <span class="text-xs text-slate-500 group-hover:text-amber-400">&rarr;</span>
                             </a>
@@ -457,7 +655,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="math-tricks.html" class="hover:text-amber-400 transition flex items-center justify-between group">
+                            <a href="math-tricks.html" class="hover:text-amber-400 transition font-medium text-amber-300 flex items-center justify-between group">
                                 <span>Speed Math</span>
                                 <span class="text-xs text-slate-500 group-hover:text-amber-400">&rarr;</span>
                             </a>
@@ -569,7 +767,7 @@
                     <span>Free high-quality math education for school students.</span>
                 </div>
                 <div class="flex items-center gap-3 sm:gap-4 flex-wrap justify-center">
-                    <a href="privacy-policy.html" class="text-amber-400 font-medium">Privacy Policy</a>
+                    <a href="privacy-policy.html" class="hover:text-slate-300 transition">Privacy Policy</a>
                     <span class="text-slate-700">&bull;</span>
                     <a href="terms-of-service.html" class="hover:text-slate-300 transition">Terms of Service</a>
                     <span class="text-slate-700">&bull;</span>

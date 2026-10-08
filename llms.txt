@@ -1,0 +1,38 @@
+# MathTime by Alka Ma'am
+
+> Official mathematics education hub led by Alka Sharma (M.Sc., B.Ed., CTET Certified). Dedicated to CBSE Class 7, 8, 9, and 10 mathematics conceptual clarity, NCERT solutions, speed calculation tricks, and board exam preparation, featuring expanding Senior Secondary (Classes 11 & 12) concept spotlights, formula hacks, and YouTube Shorts.
+
+## Core Resources & Pages
+- [Home Page](https://mathtimebyalkamaam.github.io/itsmathtime/): Overview of MathTime learning programs, educator background, featured video lessons, and student resources.
+- [CBSE Class 10 Math Guide](https://mathtimebyalkamaam.github.io/itsmathtime/class-10-math.html): Complete chapter-wise syllabus breakdown, high-yield board exam strategies, and video tutorials for Class 10 students.
+- [CBSE Class 10 Board Exam Hacks](https://mathtimebyalkamaam.github.io/itsmathtime/class-10-math-tips.html): 7 secret board hacks, discriminant zero trap, animated circle theorem proof, and time triage tips.
+- [Class 11 Math Survival Blueprint](https://mathtimebyalkamaam.github.io/itsmathtime/class-11-math-tips.html): 6 high-yield calculus and trig shortcuts, ASTC quadrant rule, animated unit circle, and binomial theorem formulas.
+- [CBSE Class 12 Integration & Board Tactics](https://mathtimebyalkamaam.github.io/itsmathtime/class-12-math-tips.html): Definite integrals King's Property, tabular integration by parts, 10-second matrix inverse, and animated area under curve diagram.
+- [CBSE Class 9 Math Guide](https://mathtimebyalkamaam.github.io/itsmathtime/class-9-math.html): In-depth NCERT solutions, geometry proof theorems, number systems, and foundation building.
+- [CBSE Class 8 Math Guide](https://mathtimebyalkamaam.github.io/itsmathtime/class-8-math.html): Middle-school conceptual mastery, rational numbers, linear equations, and factorisation tutorials.
+- [Math Tricks & Speed Calculations](https://mathtimebyalkamaam.github.io/itsmathtime/math-tricks.html): Rapid calculation secrets, squaring shortcuts, multiplication hacks, and mental math methods.
+- [Official YouTube Channel](https://www.youtube.com/@its.mathtime): Over 200+ free high-definition video lessons, shorts, and chapter walkthroughs.
+- [YouTube Shorts & Senior Spotlights](https://www.youtube.com/@its.mathtime/shorts): Rapid mental math hacks and senior secondary (Classes 11 & 12) concept breakdowns.
+- [HTML Sitemap](https://mathtimebyalkamaam.github.io/itsmathtime/sitemap.html): Full directory of all lessons, pages, and educational resources.
+
+## Educator Profile & Qualifications
+- **Instructor:** Alka Sharma
+- **Academic Qualifications:** Master of Science in Mathematics (M.Sc.), Bachelor of Education (B.Ed.)
+- **Professional Certifications:** CTET (Central Teacher Eligibility Test) Certified
+- **Teaching Experience:** 15+ years of classroom teaching across secondary school (Classes 7–10) and senior secondary (Classes 11–12) foundational mentorship
+- **Pedagogical Approach:** Step-by-step conceptual clarity, digital whiteboard demonstrations, NCERT alignment, and fear-free math education
+- **Inquiries / Contact:** info.onesharma@gmail.com
+
+## Academic Curriculum Covered
+1. **CBSE Class 10 Mathematics (NCERT):** Real Numbers, Polynomials, Linear Equations in Two Variables, Quadratic Equations, Arithmetic Progressions, Triangles, Coordinate Geometry, Introduction to Trigonometry, Applications of Trigonometry, Circles, Surface Areas and Volumes, Statistics, Probability.
+2. **CBSE Class 9 Mathematics (NCERT):** Number Systems, Polynomials, Coordinate Geometry, Linear Equations in Two Variables, Lines and Angles, Triangles, Quadrilaterals, Circles, Heron's Formula, Surface Areas and Volumes, Statistics.
+3. **CBSE Class 8 Mathematics (NCERT):** Rational Numbers, Linear Equations, Understanding Quadrilaterals, Data Handling, Squares & Square Roots, Cubes & Cube Roots, Comparing Quantities, Algebraic Expressions, Mensuration, Exponents & Powers, Proportions, Factorisation.
+4. **CBSE Class 7 Mathematics (NCERT):** Integers, Fractions and Decimals, Simple Equations, Lines and Angles, Triangles and their Properties, Comparing Quantities, Rational Numbers, Perimeter and Area, Algebraic Expressions.
+5. **CBSE Class 11 & 12 Senior Secondary Spotlights & Bridge Course:** Foundations of Calculus (Limits & Derivatives intuition), advanced Trigonometric Identities, Matrices & Determinants, and bite-sized concept shorts to ease the leap from Class 10.
+6. **Mental Math & Speed Calculation:** Rapid squaring ending in 5, short division for simultaneous HCF/LCM, algebraic shortcuts, and board exam time-saving hacks.
+
+## Frequently Asked Questions
+- **Are the lessons free?** Yes, all 200+ video lessons and shorts on YouTube (@its.mathtime) are 100% free.
+- **Does Alka Ma'am teach Class 11 and 12 Math?** Yes. Alka Ma'am holds an M.Sc. in Mathematics and senior teaching experience. She actively produces Senior Secondary Concept Spotlights and YouTube Shorts focusing on high-friction Class 11 & 12 topics (Calculus, Trigonometry formulas, and Matrices) to help 10th graders transition smoothly.
+- **Which education board is followed?** CBSE (Central Board of Secondary Education) following the official NCERT syllabus.
+- **How to contact Alka Ma'am?** Students and parents can send academic inquiries to info.onesharma@gmail.com or via the contact form on the website.

@@ -1,3 +1,20 @@
 User-agent: *
 Allow: /
+
+# Dedicated AI Search Engines & LLM Crawlers
+User-agent: GPTBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
 Sitemap: https://mathtimebyalkamaam.github.io/itsmathtime/sitemap.xml

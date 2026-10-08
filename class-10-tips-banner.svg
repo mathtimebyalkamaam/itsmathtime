@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 300" width="600" height="300">
+  <defs>
+    <linearGradient id="bgC10" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="50%" stop-color="#1e1b4b"/>
+      <stop offset="100%" stop-color="#2563eb"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="300" fill="url(#bgC10)"/>
+  <!-- Decorative Geometry & Equations -->
+  <circle cx="140" cy="150" r="85" stroke="rgba(255,255,255,0.25)" stroke-width="2" fill="none" stroke-dasharray="6 4"/>
+  <line x1="140" y1="150" x2="225" y2="150" stroke="#facc15" stroke-width="2.5"/>
+  <circle cx="140" cy="150" r="4" fill="#facc15"/>
+  <text x="140" y="80" font-family="'Outfit', sans-serif" font-size="28" font-weight="900" fill="#38bdf8" text-anchor="middle">D = b² - 4ac</text>
+  <text x="140" y="240" font-family="'Outfit', sans-serif" font-size="20" font-weight="700" fill="#a78bfa" text-anchor="middle">sin²θ + cos²θ = 1</text>
+  <!-- Text Content -->
+  <rect x="290" y="55" width="165" height="28" rx="14" fill="rgba(250,204,21,0.2)" stroke="rgba(250,204,21,0.5)" stroke-width="1"/>
+  <text x="372" y="74" font-family="'Inter', sans-serif" font-size="12" font-weight="700" fill="#fef08a" text-anchor="middle" letter-spacing="1">CBSE CLASS 10 BOARD</text>
+  <text x="290" y="125" font-family="'Outfit', sans-serif" font-size="30" font-weight="800" fill="#ffffff">7 Secret Board Hacks</text>
+  <text x="290" y="165" font-family="'Inter', sans-serif" font-size="16" font-weight="500" fill="#93c5fd">Proof Traps &amp; Rapid Shortcuts</text>
+  <text x="290" y="195" font-family="'Inter', sans-serif" font-size="14" font-weight="400" fill="#cbd5e1">Interactive LaTeX &amp; Animated Circles</text>
+  <rect x="290" y="225" width="170" height="36" rx="18" fill="#2563eb"/>
+  <text x="375" y="248" font-family="'Inter', sans-serif" font-size="14" font-weight="700" fill="#ffffff" text-anchor="middle">Read Masterclass &rarr;</text>
+</svg>

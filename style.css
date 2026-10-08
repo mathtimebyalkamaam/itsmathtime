@@ -440,3 +440,250 @@ img {
 #progress-circle {
     transition: stroke-dashoffset 0.1s linear;
 }
+
+/* --- Header Dropdown Menu - High Visibility, Solid Opaque & Contrast Optimized --- */
+.header-dropdown-menu {
+    background-color: #0b1120 !important; /* 100% Solid Opaque Dark Surface */
+    background: linear-gradient(180deg, #111a2e 0%, #090e1a 100%) !important;
+    border: 1px solid rgba(255, 255, 255, 0.22) !important;
+    border-radius: 1rem !important;
+    box-shadow: 0 25px 50px -10px rgba(0, 0, 0, 0.95),
+                0 0 0 1px rgba(99, 102, 241, 0.3),
+                0 12px 28px -4px rgba(0, 0, 0, 0.8) !important;
+    padding: 0.65rem !important;
+    min-width: 17.5rem !important;
+    z-index: 1000 !important;
+    transition: opacity 0.2s cubic-bezier(0.16, 1, 0.3, 1), transform 0.2s cubic-bezier(0.16, 1, 0.3, 1), visibility 0.2s !important;
+    transform: translateY(6px);
+}
+
+/* Invisible bridge between button and dropdown to prevent hover gaps */
+.header-dropdown-menu::before {
+    content: '';
+    position: absolute;
+    top: -12px;
+    left: 0;
+    right: 0;
+    height: 14px;
+}
+
+.header-dropdown:hover .header-dropdown-menu,
+.header-dropdown:focus-within .header-dropdown-menu,
+.header-dropdown-menu.dropdown-open {
+    opacity: 1 !important;
+    visibility: visible !important;
+    pointer-events: auto !important;
+    transform: translateY(0) !important;
+}
+
+/* Dropdown interactive links */
+.header-dropdown-menu a {
+    display: flex !important;
+    align-items: center !important;
+    gap: 0.85rem !important;
+    padding: 0.65rem 0.85rem !important;
+    border-radius: 0.75rem !important;
+    text-decoration: none !important;
+    transition: all 0.18s ease-in-out !important;
+    border: 1px solid transparent !important;
+}
+
+.header-dropdown-menu a:hover {
+    background-color: rgba(255, 255, 255, 0.1) !important;
+    border-color: rgba(255, 255, 255, 0.16) !important;
+    transform: translateX(3px) !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.35) !important;
+}
+
+/* Dropdown badges (e.g. 10, 9, 8, 11, 12, ⚡) */
+.header-dropdown-menu a > span:first-child {
+    width: 2.25rem !important;
+    height: 2.25rem !important;
+    min-width: 2.25rem !important;
+    border-radius: 0.65rem !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    font-weight: 800 !important;
+    font-size: 0.875rem !important;
+    flex-shrink: 0 !important;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4) !important;
+}
+
+/* Vibrant, high-contrast badge colors */
+.header-dropdown-menu a span.bg-blue-500\/20 {
+    background-color: rgba(37, 99, 235, 0.35) !important;
+    color: #93c5fd !important;
+    border: 1px solid rgba(147, 197, 253, 0.5) !important;
+}
+
+.header-dropdown-menu a span.bg-emerald-500\/20 {
+    background-color: rgba(5, 150, 105, 0.35) !important;
+    color: #6ee7b7 !important;
+    border: 1px solid rgba(110, 231, 183, 0.5) !important;
+}
+
+.header-dropdown-menu a span.bg-purple-500\/20 {
+    background-color: rgba(147, 51, 234, 0.35) !important;
+    color: #d8b4fe !important;
+    border: 1px solid rgba(216, 180, 254, 0.5) !important;
+}
+
+.header-dropdown-menu a span.bg-rose-500\/20 {
+    background-color: rgba(225, 29, 72, 0.35) !important;
+    color: #fda4af !important;
+    border: 1px solid rgba(253, 164, 175, 0.5) !important;
+}
+
+.header-dropdown-menu a span.bg-amber-500\/20 {
+    background-color: rgba(217, 119, 6, 0.35) !important;
+    color: #fde047 !important;
+    border: 1px solid rgba(253, 224, 71, 0.5) !important;
+}
+
+/* Dropdown item titles - large, bold, crystal-clear white */
+.header-dropdown-menu a div > div:first-child,
+.header-dropdown-menu a .item-title {
+    font-size: 0.875rem !important; /* 14px */
+    font-weight: 700 !important;
+    color: #ffffff !important;
+    letter-spacing: -0.01em !important;
+    line-height: 1.25 !important;
+}
+
+/* Dropdown item subtitles/descriptions - clear high contrast slate-200 */
+.header-dropdown-menu a div > div:nth-child(2),
+.header-dropdown-menu a .item-desc {
+    font-size: 0.775rem !important; /* 12.4px */
+    color: #cbd5e1 !important; /* High contrast, easy to read for human eyes */
+    font-weight: 400 !important;
+    line-height: 1.35 !important;
+    margin-top: 0.2rem !important;
+}
+
+.header-dropdown-menu a:hover div > div:first-child {
+    color: #ffffff !important;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.25) !important;
+}
+
+.header-dropdown-menu a:hover div > div:nth-child(2) {
+    color: #f1f5f9 !important; /* bright highlight on hover */
+}
+
+/* Dropdown dividers */
+.header-dropdown-menu div[class*="border-t"],
+.header-dropdown-menu .dropdown-divider {
+    border-top: 1px solid rgba(255, 255, 255, 0.16) !important;
+    margin: 0.4rem 0.2rem !important;
+}
+
+/* Active and Hover indicator on header toggle buttons */
+.header-dropdown:hover .dropdown-toggle,
+.header-dropdown:focus-within .dropdown-toggle {
+    color: #ffffff !important;
+    background-color: rgba(255, 255, 255, 0.12) !important;
+}
+
+/* Micro-pills inside dropdown items like Hot, Active, New */
+.header-dropdown-menu span[class*="bg-blue-400"],
+.header-dropdown-menu span[class*="bg-purple-400"],
+.header-dropdown-menu span[class*="bg-rose-400"] {
+    padding: 0.15rem 0.45rem !important;
+    font-size: 0.65rem !important;
+    font-weight: 800 !important;
+    letter-spacing: 0.04em !important;
+    border-radius: 9999px !important;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3) !important;
+}
+
+/* ==========================================================================
+   Interactive Math Labs & Deep Concept Clarity Section
+   Domain: labs.itsmathtime.co.in
+   ========================================================================== */
+.lab-section-bg {
+    background: radial-gradient(circle at 15% 20%, rgba(37, 99, 235, 0.15) 0%, transparent 40%),
+                radial-gradient(circle at 85% 80%, rgba(147, 51, 234, 0.15) 0%, transparent 40%),
+                radial-gradient(circle at 50% 50%, rgba(14, 165, 233, 0.08) 0%, transparent 60%),
+                #070b15;
+}
+
+.lab-grid-pattern {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+                      linear-gradient(90deg, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+    background-size: 32px 32px;
+}
+
+.lab-card {
+    background: rgba(15, 23, 42, 0.75);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.5);
+    transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.lab-card:hover {
+    transform: translateY(-5px);
+    border-color: rgba(56, 189, 248, 0.4);
+    box-shadow: 0 25px 50px -12px rgba(14, 165, 233, 0.25), 0 0 30px rgba(56, 189, 248, 0.1);
+}
+
+.lab-interactive-screen {
+    background: #090e1a;
+    border: 1px solid rgba(56, 189, 248, 0.2);
+    box-shadow: inset 0 2px 12px rgba(0, 0, 0, 0.8), 0 0 30px rgba(14, 165, 233, 0.15);
+}
+
+.lab-slider {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: 6px;
+    border-radius: 9999px;
+    background: #1e293b;
+    outline: none;
+    transition: background 0.2s;
+}
+
+.lab-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #38bdf8;
+    cursor: pointer;
+    box-shadow: 0 0 12px #38bdf8, 0 0 2px #fff;
+    border: 2px solid #ffffff;
+    transition: transform 0.15s, background-color 0.15s;
+}
+
+.lab-slider::-webkit-slider-thumb:hover {
+    transform: scale(1.2);
+    background: #0284c7;
+}
+
+.lab-slider::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #38bdf8;
+    cursor: pointer;
+    box-shadow: 0 0 12px #38bdf8, 0 0 2px #fff;
+    border: 2px solid #ffffff;
+    transition: transform 0.15s, background-color 0.15s;
+}
+
+@keyframes pulse-glow-cyan {
+    0%, 100% {
+        box-shadow: 0 0 20px rgba(14, 165, 233, 0.35);
+    }
+    50% {
+        box-shadow: 0 0 35px rgba(14, 165, 233, 0.7);
+    }
+}
+
+.animate-lab-pulse {
+    animation: pulse-glow-cyan 3s infinite ease-in-out;
+}
+

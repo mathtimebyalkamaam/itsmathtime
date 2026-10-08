@@ -22,7 +22,9 @@
     <link rel="icon" href="logo-icon-square.png" type="image/png">
     <link rel="apple-touch-icon" href="logo-icon-square.png">
 
-    <!-- Tailwind CSS CDN -->
+    <!-- Static Compiled Tailwind CSS (Fast FCP) -->
+    <link rel="stylesheet" href="tailwind.min.css">
+    <!-- Tailwind CSS CDN Fallback -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Inter Font -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -32,38 +34,208 @@
 </head>
 <body class="text-gray-800">
 
-    <!-- Header -->
-    <header class="bg-gradient-to-r from-blue-600 to-purple-600 text-white shadow-lg py-3.5 sticky top-0 z-50">
-        <div class="container mx-auto flex justify-between items-center px-4">
-            <a href="index.html" class="flex items-center gap-2" aria-label="MathTime by Alka Ma'am">
-                <img src="logo-transparent.png" alt="MathTime by Alka Ma'am" class="h-9 w-auto object-contain">
+    <!-- Announcement Bar -->
+    <div class="bg-gradient-to-r from-indigo-950 via-slate-900 to-indigo-950 text-indigo-200 text-xs py-2 px-4 text-center border-b border-indigo-800/40 relative z-50">
+        <div class="container mx-auto flex items-center justify-center gap-2 sm:gap-3 flex-wrap">
+            <span class="inline-flex items-center px-2 py-0.5 rounded-full text-[10px] font-bold bg-amber-400 text-slate-950 uppercase tracking-wider">New 2026</span>
+            <span class="font-medium text-slate-300">Board Exam Hacks &amp; High-Yield Guides:</span>
+            <div class="inline-flex items-center gap-1.5 sm:gap-2 flex-wrap">
+                <a href="class-10-math-tips.html" class="inline-flex items-center px-2.5 py-0.5 rounded-full text-[11px] font-semibold bg-blue-500/20 text-blue-300 border border-blue-400/30 hover:bg-blue-500/30 hover:text-white transition-all">
+                    Class 10 Hacks &rarr;
+                </a>
+                <a href="class-11-math-tips.html" class="inline-flex items-center px-2.5 py-0.5 rounded-full text-[11px] font-semibold bg-purple-500/20 text-purple-300 border border-purple-400/30 hover:bg-purple-500/30 hover:text-white transition-all">
+                    Class 11 Survival &rarr;
+                </a>
+                <a href="class-12-math-tips.html" class="inline-flex items-center px-2.5 py-0.5 rounded-full text-[11px] font-semibold bg-rose-500/20 text-rose-300 border border-rose-400/30 hover:bg-rose-500/30 hover:text-white transition-all">
+                    Class 12 Tactics &rarr;
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Floating Glass Header -->
+    <header id="main-header" class="sticky top-0 z-50 transition-all duration-300 py-3.5 bg-slate-900/90 backdrop-blur-xl border-b border-white/10 shadow-xl shadow-slate-950/20 text-white">
+        <!-- Scroll Progress Bar -->
+        <div id="scroll-progress-bar" class="absolute top-0 left-0 h-[2.5px] bg-gradient-to-r from-blue-500 via-indigo-400 to-amber-400 w-0 z-50 transition-all duration-75"></div>
+
+        <div class="container mx-auto flex justify-between items-center px-4 sm:px-6">
+            <!-- Brand Logo -->
+            <a href="index.html" class="flex items-center gap-3 group py-0.5" aria-label="MathTime by Alka Ma'am Home">
+                <img src="logo-transparent.png" alt="MathTime by Alka Ma'am" class="h-10 sm:h-12 w-auto object-contain group-hover:scale-105 transition-transform duration-300">
             </a>
-            <nav class="hidden md:flex space-x-6">
-                <a href="index.html#home" class="hover:text-blue-200 transition duration-300">Home</a>
-                <a href="index.html#about" class="hover:text-blue-200 transition duration-300">About</a>
-                <a href="index.html#videos" class="hover:text-blue-200 transition duration-300">Videos</a>
-                <a href="index.html#playlists" class="hover:text-blue-200 transition duration-300">Playlists</a>
-                <a href="index.html#gallery" class="hover:text-blue-200 transition duration-300">Gallery</a>
-                <a href="index.html#blog" class="hover:text-blue-200 transition duration-300">Blog</a>
-                <a href="index.html#contact" class="hover:text-blue-200 transition duration-300">Contact</a>
+
+            <!-- Desktop Navigation -->
+            <nav class="hidden lg:flex items-center space-x-1 font-medium text-sm text-slate-300" aria-label="Main Navigation">
+                <a href="index.html" class="nav-link px-3 py-1.5 rounded-full hover:text-white hover:bg-white/10 transition-all duration-200">Home</a>
+                <a href="index.html#about" class="nav-link px-3 py-1.5 rounded-full hover:text-white hover:bg-white/10 transition-all duration-200">About</a>
+                
+                <!-- Curriculum Dropdown -->
+                <div class="relative group header-dropdown">
+                    <button type="button" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle nav-link px-3 py-1.5 rounded-full hover:text-white hover:bg-white/10 transition-all duration-200 flex items-center gap-1.5 cursor-pointer text-slate-200 group-hover:text-amber-300 focus:outline-none">
+                        <span>Curriculum</span>
+                        <svg class="w-3.5 h-3.5 transition-transform duration-200 group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    <!-- Dropdown Menu -->
+                    <div class="header-dropdown-menu absolute top-full left-0 mt-2 w-72 sm:w-80 rounded-2xl bg-[#0b1120] border border-white/20 shadow-2xl p-2.5 opacity-0 invisible group-hover:opacity-100 group-hover:visible group-focus-within:opacity-100 group-focus-within:visible pointer-events-none group-hover:pointer-events-auto group-focus-within:pointer-events-auto z-50">
+                        <a href="class-10-math.html" class="flex items-start gap-3 p-2.5 rounded-xl hover:bg-white/10 transition group/item">
+                            <span class="w-9 h-9 rounded-lg bg-blue-500/20 text-blue-300 border border-blue-400/40 flex items-center justify-center font-bold text-sm shrink-0 mt-0.5">10</span>
+                            <div>
+                                <div class="text-sm font-bold text-white group-hover/item:text-blue-300 transition-colors">Class 10 CBSE Hub</div>
+                                <div class="text-xs text-slate-300 leading-tight">NCERT syllabus, PYQs &amp; theorems</div>
+                            </div>
+                        </a>
+                        <a href="class-9-math.html" class="flex items-start gap-3 p-2.5 rounded-xl hover:bg-white/10 transition group/item">
+                            <span class="w-9 h-9 rounded-lg bg-emerald-500/20 text-emerald-300 border border-emerald-400/40 flex items-center justify-center font-bold text-sm shrink-0 mt-0.5">9</span>
+                            <div>
+                                <div class="text-sm font-bold text-white group-hover/item:text-emerald-300 transition-colors">Class 9 Math Guide</div>
+                                <div class="text-xs text-slate-300 leading-tight">Number systems &amp; geometry base</div>
+                            </div>
+                        </a>
+                        <a href="class-8-math.html" class="flex items-start gap-3 p-2.5 rounded-xl hover:bg-white/10 transition group/item">
+                            <span class="w-9 h-9 rounded-lg bg-purple-500/20 text-purple-300 border border-purple-400/40 flex items-center justify-center font-bold text-sm shrink-0 mt-0.5">8</span>
+                            <div>
+                                <div class="text-sm font-bold text-white group-hover/item:text-purple-300 transition-colors">Class 8 Math Guide</div>
+                                <div class="text-xs text-slate-300 leading-tight">Linear equations &amp; algebra basics</div>
+                            </div>
+                        </a>
+                        <div class="my-1 border-t border-white/15"></div>
+                        <a href="math-tricks.html" class="flex items-start gap-3 p-2.5 rounded-xl hover:bg-white/10 transition group/item">
+                            <span class="w-9 h-9 rounded-lg bg-amber-500/20 text-amber-300 border border-amber-400/40 flex items-center justify-center font-bold text-base shrink-0 mt-0.5">⚡</span>
+                            <div>
+                                <div class="text-sm font-bold text-white group-hover/item:text-amber-300 transition-colors">Speed Math Tricks</div>
+                                <div class="text-xs text-slate-300 leading-tight">Mental math &amp; rapid calculation</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Tips & Hacks Dropdown (Prominent with Badge) -->
+                <div class="relative group header-dropdown">
+                    <button type="button" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle nav-link px-3 py-1.5 rounded-full hover:text-white hover:bg-white/10 transition-all duration-200 flex items-center gap-1.5 text-slate-200 group-hover:text-amber-300 cursor-pointer focus:outline-none">
+                        <span>Tips &amp; Hacks</span>
+                        <span class="px-1.5 py-0.5 rounded-full text-[10px] font-bold bg-amber-400 text-slate-950 uppercase tracking-wide">New</span>
+                        <svg class="w-3.5 h-3.5 transition-transform duration-200 group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    <!-- Dropdown Menu -->
+                    <div class="header-dropdown-menu absolute top-full left-0 mt-2 w-72 sm:w-80 rounded-2xl bg-[#0b1120] border border-white/20 shadow-2xl p-2.5 opacity-0 invisible group-hover:opacity-100 group-hover:visible group-focus-within:opacity-100 group-focus-within:visible pointer-events-none group-hover:pointer-events-auto group-focus-within:pointer-events-auto z-50">
+                        <a href="class-10-math-tips.html" class="flex items-start gap-3 p-2.5 rounded-xl hover:bg-white/10 transition group/item">
+                            <span class="w-9 h-9 rounded-lg bg-blue-500/20 text-blue-300 border border-blue-400/40 flex items-center justify-center font-bold text-sm shrink-0 mt-0.5">10</span>
+                            <div>
+                                <div class="text-sm font-bold text-white group-hover/item:text-blue-300 transition-colors flex items-center gap-1.5">
+                                    <span>Class 10 Board Hacks</span>
+                                    <span class="px-1.5 py-0.5 rounded text-[9px] font-extrabold bg-blue-400/25 text-blue-300 uppercase">Hot</span>
+                                </div>
+                                <div class="text-xs text-slate-300 leading-tight">7 secret exam tricks &amp; proof traps</div>
+                            </div>
+                        </a>
+                        <a href="class-11-math-tips.html" class="flex items-start gap-3 p-2.5 rounded-xl hover:bg-white/10 transition group/item">
+                            <span class="w-9 h-9 rounded-lg bg-purple-500/20 text-purple-300 border border-purple-400/40 flex items-center justify-center font-bold text-sm shrink-0 mt-0.5">11</span>
+                            <div>
+                                <div class="text-sm font-bold text-white group-hover/item:text-purple-300 transition-colors">Class 11 Survival Guide</div>
+                                <div class="text-xs text-slate-300 leading-tight">Calculus, ASTC &amp; binomial hacks</div>
+                            </div>
+                        </a>
+                        <a href="class-12-math-tips.html" class="flex items-start gap-3 p-2.5 rounded-xl hover:bg-white/10 transition group/item">
+                            <span class="w-9 h-9 rounded-lg bg-rose-500/20 text-rose-300 border border-rose-400/40 flex items-center justify-center font-bold text-sm shrink-0 mt-0.5">12</span>
+                            <div>
+                                <div class="text-sm font-bold text-white group-hover/item:text-rose-300 transition-colors">Class 12 Board Tactics</div>
+                                <div class="text-xs text-slate-300 leading-tight">Integration shortcuts &amp; 95%+ strategy</div>
+                            </div>
+                        </a>
+                        <div class="my-1 border-t border-white/15"></div>
+                        <a href="math-tricks.html" class="flex items-start gap-3 p-2.5 rounded-xl hover:bg-white/10 transition group/item">
+                            <span class="w-9 h-9 rounded-lg bg-amber-500/20 text-amber-300 border border-amber-400/40 flex items-center justify-center font-bold text-base shrink-0 mt-0.5">⚡</span>
+                            <div>
+                                <div class="text-sm font-bold text-white group-hover/item:text-amber-300 transition-colors">Speed Calculation Hacks</div>
+                                <div class="text-xs text-slate-300 leading-tight">Mental math &amp; rapid squaring</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <a href="index.html#videos" class="nav-link px-3 py-1.5 rounded-full hover:text-white hover:bg-white/10 transition-all duration-200">Videos</a>
+                <a href="index.html#playlists" class="nav-link px-3 py-1.5 rounded-full hover:text-white hover:bg-white/10 transition-all duration-200">Playlists</a>
+                <a href="index.html#faq" class="nav-link px-3 py-1.5 rounded-full hover:text-white hover:bg-white/10 transition-all duration-200">FAQ</a>
+                <a href="index.html#contact" class="nav-link px-3 py-1.5 rounded-full hover:text-white hover:bg-white/10 transition-all duration-200">Contact</a>
             </nav>
+
+            <!-- Header Action CTA -->
+            <div class="hidden sm:flex items-center gap-3">
+                <a href="https://www.youtube.com/@its.mathtime?sub_confirmation=1" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-4 py-2 rounded-full text-xs font-bold tracking-wide uppercase bg-gradient-to-r from-red-600 to-rose-600 hover:from-red-500 hover:to-rose-500 text-white shadow-lg shadow-red-600/30 hover:shadow-red-500/50 hover:scale-105 active:scale-95 transition-all duration-300">
+                    <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+                        <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                    </svg>
+                    <span>Subscribe</span>
+                </a>
+            </div>
+
             <!-- Mobile Menu Button -->
-            <button id="mobile-menu-button" class="md:hidden text-white focus:outline-none">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <button id="mobile-menu-button" aria-label="Toggle navigation menu" aria-expanded="false" class="lg:hidden p-2 rounded-xl text-slate-300 hover:text-white hover:bg-white/10 focus:outline-none transition-colors">
+                <svg id="hamburger-icon" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+                <svg id="close-icon" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
                 </svg>
             </button>
         </div>
-        <!-- Mobile Menu -->
-        <div id="mobile-menu" class="md:hidden bg-blue-700 px-4 pt-2 pb-4 hidden">
-            <nav class="flex flex-col space-y-2">
-                <a href="index.html#home" class="block py-2 px-3 rounded-md hover:bg-blue-600 transition duration-300">Home</a>
-                <a href="index.html#about" class="block py-2 px-3 rounded-md hover:bg-blue-600 transition duration-300">About</a>
-                <a href="index.html#videos" class="block py-2 px-3 rounded-md hover:bg-blue-600 transition duration-300">Videos</a>
-                <a href="index.html#playlists" class="block py-2 px-3 rounded-md hover:bg-blue-600 transition duration-300">Playlists</a>
-                <a href="index.html#gallery" class="block py-2 px-3 rounded-md hover:bg-blue-600 transition duration-300">Gallery</a>
-                <a href="index.html#blog" class="block py-2 px-3 rounded-md hover:bg-blue-600 transition duration-300">Blog</a>
-                <a href="index.html#contact" class="block py-2 px-3 rounded-md hover:bg-blue-600 transition duration-300">Contact</a>
+
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobile-menu" class="hidden lg:hidden border-t border-white/10 px-4 pt-3 pb-6 bg-slate-900/98 backdrop-blur-2xl transition-all max-h-[85vh] overflow-y-auto">
+            <nav class="flex flex-col space-y-1 text-sm font-medium">
+                <a href="index.html" class="block py-2 px-3 rounded-lg text-slate-200 hover:text-white hover:bg-white/10 transition duration-200">Home</a>
+                <a href="index.html#about" class="block py-2 px-3 rounded-lg text-slate-200 hover:text-white hover:bg-white/10 transition duration-200">About Alka Ma'am</a>
+                
+                <!-- Mobile Section: CBSE Class Guides -->
+                <div class="pt-3 pb-1 px-3 text-[11px] font-bold uppercase tracking-wider text-slate-400 flex items-center gap-1.5">
+                    <span>📚</span> <span>CBSE Curriculum Hubs</span>
+                </div>
+                <a href="class-10-math.html" class="block py-2 px-3 rounded-lg text-slate-200 hover:text-white hover:bg-white/10 transition duration-200">
+                    📘 CBSE Class 10 Board Hub
+                </a>
+                <a href="class-9-math.html" class="block py-2 px-3 rounded-lg text-slate-200 hover:text-white hover:bg-white/10 transition duration-200">
+                    📗 CBSE Class 9 Math Guide
+                </a>
+                <a href="class-8-math.html" class="block py-2 px-3 rounded-lg text-slate-200 hover:text-white hover:bg-white/10 transition duration-200">
+                    📙 CBSE Class 8 Math Guide
+                </a>
+                
+                <!-- Mobile Section: Tips & Board Hacks -->
+                <div class="pt-4 pb-1 px-3 text-[11px] font-bold uppercase tracking-wider text-amber-400 flex items-center justify-between">
+                    <span>⚡ Board Tips &amp; Survival Hacks (2026)</span>
+                    <span class="px-1.5 py-0.2 rounded-full text-[9px] font-bold bg-amber-400 text-slate-950">New</span>
+                </div>
+                <a href="class-10-math-tips.html" class="flex items-center justify-between py-2 px-3 rounded-lg text-blue-300 hover:text-white hover:bg-white/10 transition duration-200 font-medium">
+                    <span>🎯 Class 10 Board Hacks (7 Secret Tricks)</span>
+                    <span class="text-xs text-blue-400">&rarr;</span>
+                </a>
+                <a href="class-11-math-tips.html" class="flex items-center justify-between py-2 px-3 rounded-lg text-purple-300 hover:text-white hover:bg-white/10 transition duration-200 font-medium">
+                    <span>⚡ Class 11 Survival Guide (Calculus Hacks)</span>
+                    <span class="text-xs text-purple-400">&rarr;</span>
+                </a>
+                <a href="class-12-math-tips.html" class="flex items-center justify-between py-2 px-3 rounded-lg text-rose-300 hover:text-white hover:bg-white/10 transition duration-200 font-medium">
+                    <span>🔥 Class 12 Board Tactics (95%+ Strategy)</span>
+                    <span class="text-xs text-rose-400">&rarr;</span>
+                </a>
+
+                <!-- Mobile Section: Shortcuts & Extras -->
+                <div class="pt-3 pb-1 px-3 text-[11px] font-bold uppercase tracking-wider text-slate-400 flex items-center gap-1.5">
+                    <span>⚡</span> <span>Shortcuts &amp; Quick Links</span>
+                </div>
+                <a href="math-tricks.html" class="block py-2 px-3 rounded-lg text-amber-300 hover:text-white hover:bg-white/10 transition duration-200">
+                    ⚡ Vedic &amp; Speed Math Tricks
+                </a>
+                <a href="index.html#videos" class="block py-2 px-3 rounded-lg text-slate-200 hover:text-white hover:bg-white/10 transition duration-200">Featured Video Lectures</a>
+                <a href="index.html#playlists" class="block py-2 px-3 rounded-lg text-slate-200 hover:text-white hover:bg-white/10 transition duration-200">Chapter Playlists</a>
+                <a href="index.html#faq" class="block py-2 px-3 rounded-lg text-slate-200 hover:text-white hover:bg-white/10 transition duration-200">Common FAQs</a>
+                <a href="index.html#contact" class="block py-2 px-3 rounded-lg text-slate-200 hover:text-white hover:bg-white/10 transition duration-200">Contact Alka Ma'am</a>
+                
+                <div class="pt-4 border-t border-white/10 mt-2">
+                    <a href="https://www.youtube.com/@its.mathtime?sub_confirmation=1" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center gap-2 w-full py-2.5 rounded-xl font-bold uppercase text-xs bg-gradient-to-r from-red-600 to-rose-600 text-white shadow-lg">
+                        <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                        <span>Subscribe on YouTube</span>
+                    </a>
+                </div>
             </nav>
         </div>
     </header>
@@ -156,17 +328,201 @@
     </main>
 
     <!-- Footer -->
-    <footer class="bg-gray-800 text-white py-8">
-        <div class="container mx-auto px-4 text-center text-sm">
-            <p>&copy; 2025 MathTime by Alka Ma'am. All rights reserved.</p>
-            <p class="mt-2">Designed with <span class="text-red-500">&hearts;</span> for students everywhere.</p>
-            <div class="mt-4 flex justify-center space-x-4">
-                <a href="privacy-policy.html" class="hover:text-blue-300 transition duration-300">Privacy Policy</a>
-                <a href="terms-of-service.html" class="hover:text-blue-300 transition duration-300">Terms of Service</a>
-                <a href="sitemap.html" class="hover:text-blue-300 transition duration-300">Sitemap</a>
+    <footer class="bg-slate-950 text-slate-300 pt-16 pb-12 border-t border-white/10 relative overflow-hidden">
+        <!-- Background Subtle Glow Orbs -->
+        <div class="absolute -top-32 left-1/4 w-80 h-80 bg-blue-600/10 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="absolute -bottom-32 right-1/4 w-80 h-80 bg-amber-500/10 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="container mx-auto px-4 sm:px-6 relative z-10">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 lg:gap-8 mb-12">
+                <!-- Column 1: Brand & Educator Profile (lg:col-span-4) -->
+                <div class="lg:col-span-4 space-y-4">
+                    <a href="index.html#home" class="inline-block group py-1" aria-label="MathTime by Alka Ma'am">
+                        <img src="logo-transparent.png" alt="MathTime by Alka Ma'am" class="h-11 sm:h-12 w-auto object-contain group-hover:scale-105 transition-transform duration-300">
+                    </a>
+
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Dedicated mathematics education platform demystifying complex concepts for CBSE &amp; foundation students. Empowering young learners to build unstoppable confidence in math.
+                    </p>
+
+                    <!-- Credentials Badges -->
+                    <div class="flex flex-wrap gap-2 pt-1">
+                        <span class="px-2.5 py-1 rounded-lg text-xs font-semibold bg-white/5 border border-white/10 text-slate-300">🎓 M.Sc. Math</span>
+                        <span class="px-2.5 py-1 rounded-lg text-xs font-semibold bg-white/5 border border-white/10 text-slate-300">📜 B.Ed.</span>
+                        <span class="px-2.5 py-1 rounded-lg text-xs font-semibold bg-white/5 border border-white/10 text-slate-300">⭐ CTET Certified</span>
+                        <span class="px-2.5 py-1 rounded-lg text-xs font-semibold bg-amber-400/10 border border-amber-400/20 text-amber-300">15+ Yrs Exp</span>
+                    </div>
+
+                    <!-- YouTube Verified Hub -->
+                    <div class="pt-2">
+                        <a href="https://www.youtube.com/@its.mathtime?sub_confirmation=1" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-3.5 py-2 rounded-xl bg-red-600/20 hover:bg-red-600/30 text-red-400 border border-red-500/30 text-xs font-bold transition group">
+                            <svg class="w-4 h-4 fill-current text-red-500 group-hover:scale-110 transition-transform" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                            <span>Subscribe on YouTube</span>
+                            <span class="text-[11px] text-red-300/80">&bull; 200+ Lessons</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Column 2: CBSE Curriculum Hubs (lg:col-span-2) -->
+                <div class="lg:col-span-2 space-y-3">
+                    <h4 class="text-white font-bold text-sm uppercase tracking-wider font-heading flex items-center gap-2">
+                        <span class="w-2 h-2 rounded-full bg-blue-400"></span>
+                        Curriculum
+                    </h4>
+                    <ul class="space-y-2 text-sm">
+                        <li>
+                            <a href="class-10-math.html" class="hover:text-amber-400 transition flex items-center justify-between group">
+                                <span>Class 10 CBSE</span>
+                                <span class="text-xs text-slate-500 group-hover:text-amber-400">&rarr;</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="class-9-math.html" class="hover:text-amber-400 transition flex items-center justify-between group">
+                                <span>Class 9 Guide</span>
+                                <span class="text-xs text-slate-500 group-hover:text-amber-400">&rarr;</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="class-8-math.html" class="hover:text-amber-400 transition flex items-center justify-between group">
+                                <span>Class 8 Guide</span>
+                                <span class="text-xs text-slate-500 group-hover:text-amber-400">&rarr;</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="math-tricks.html" class="hover:text-amber-400 transition flex items-center justify-between group">
+                                <span>Speed Math</span>
+                                <span class="text-xs text-slate-500 group-hover:text-amber-400">&rarr;</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="index.html#formulas" class="hover:text-amber-400 transition flex items-center justify-between group">
+                                <span>Formula Tables</span>
+                                <span class="text-xs text-slate-500 group-hover:text-amber-400">&rarr;</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="index.html#reviews" class="hover:text-amber-400 transition flex items-center justify-between group">
+                                <span>Student Reviews</span>
+                                <span class="text-xs text-slate-500 group-hover:text-amber-400">&rarr;</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Column 3: Board Tips & Hacks Blogs 2026 (lg:col-span-3) -->
+                <div class="lg:col-span-3 space-y-3">
+                    <h4 class="text-white font-bold text-sm uppercase tracking-wider font-heading flex items-center gap-2">
+                        <span class="w-2 h-2 rounded-full bg-amber-400"></span>
+                        Tips &amp; Hacks (2026)
+                        <span class="px-1.5 py-0.2 rounded text-[9px] font-bold bg-amber-400 text-slate-950 uppercase">New</span>
+                    </h4>
+                    <ul class="space-y-2.5 text-sm">
+                        <li>
+                            <a href="class-10-math-tips.html" class="hover:text-white transition group flex items-start gap-2">
+                                <span class="text-xs px-1.5 py-0.5 rounded bg-blue-500/20 text-blue-300 font-bold shrink-0 mt-0.5">10</span>
+                                <div>
+                                    <div class="text-blue-300 group-hover:text-white font-medium text-xs">Class 10 Board Hacks</div>
+                                    <div class="text-[11px] text-slate-400">7 secret tricks &amp; proof traps</div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="class-11-math-tips.html" class="hover:text-white transition group flex items-start gap-2">
+                                <span class="text-xs px-1.5 py-0.5 rounded bg-purple-500/20 text-purple-300 font-bold shrink-0 mt-0.5">11</span>
+                                <div>
+                                    <div class="text-purple-300 group-hover:text-white font-medium text-xs">Class 11 Survival Guide</div>
+                                    <div class="text-[11px] text-slate-400">Calculus &amp; ASTC trigonometry</div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="class-12-math-tips.html" class="hover:text-white transition group flex items-start gap-2">
+                                <span class="text-xs px-1.5 py-0.5 rounded bg-rose-500/20 text-rose-300 font-bold shrink-0 mt-0.5">12</span>
+                                <div>
+                                    <div class="text-rose-300 group-hover:text-white font-medium text-xs">Class 12 Board Tactics</div>
+                                    <div class="text-[11px] text-slate-400">Integrals, matrices &amp; 3D lines</div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="pt-1 border-t border-white/10">
+                            <a href="https://www.youtube.com/@its.mathtime/shorts" target="_blank" rel="noopener noreferrer" class="hover:text-amber-400 transition text-rose-300 text-xs font-medium flex items-center justify-between">
+                                <span>Class 11 &amp; 12 Shorts ↗</span>
+                                <span class="text-[10px] text-slate-500">YouTube</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://itsmathtime2.blogspot.com/2025/07/how-to-prepare-for-board-exams.html" target="_blank" rel="noopener noreferrer" class="hover:text-amber-400 transition text-slate-400 text-xs flex items-center justify-between">
+                                <span>Exam Strategy Blog ↗</span>
+                                <span class="text-[10px] text-slate-500">Article</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Column 4: Contact & Direct Connect (lg:col-span-3) -->
+                <div class="lg:col-span-3 space-y-3">
+                    <h4 class="text-white font-bold text-sm uppercase tracking-wider font-heading flex items-center gap-2">
+                        <span class="w-2 h-2 rounded-full bg-purple-400"></span>
+                        Connect Directly
+                    </h4>
+                    <p class="text-slate-400 text-xs leading-relaxed">
+                        Inquiries regarding live tuition batches, student mentorship, or syllabus doubts:
+                    </p>
+                    <div class="space-y-2.5 pt-1">
+                        <a href="mailto:info.onesharma@gmail.com" class="flex items-center gap-2.5 text-xs text-slate-300 hover:text-white transition group">
+                            <span class="w-7 h-7 rounded-lg bg-white/5 border border-white/10 flex items-center justify-center text-blue-400 group-hover:bg-blue-500/20">
+                                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                            </span>
+                            <span class="break-all font-medium">info.onesharma@gmail.com</span>
+                        </a>
+
+                        <a href="https://www.youtube.com/@its.mathtime" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2.5 text-xs text-slate-300 hover:text-white transition group">
+                            <span class="w-7 h-7 rounded-lg bg-white/5 border border-white/10 flex items-center justify-center text-red-400 group-hover:bg-red-500/20">
+                                <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                            </span>
+                            <span class="font-medium">YouTube Channel (@its.mathtime)</span>
+                        </a>
+
+                        <a href="index.html#contact" class="flex items-center gap-2.5 text-xs text-slate-300 hover:text-white transition group">
+                            <span class="w-7 h-7 rounded-lg bg-white/5 border border-white/10 flex items-center justify-center text-amber-400 group-hover:bg-amber-500/20">
+                                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"></path></svg>
+                            </span>
+                            <span class="font-medium">Online Inquiry Form</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom Sub-Footer Bar -->
+            <div class="pt-8 mt-4 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
+                <div class="flex items-center gap-2 flex-wrap text-center sm:text-left">
+                    <span>&copy; 2026 MathTime by Alka Ma'am. All rights reserved.</span>
+                    <span class="hidden sm:inline">&bull;</span>
+                    <span>Free high-quality math education for school students.</span>
+                </div>
+                <div class="flex items-center gap-3 sm:gap-4 flex-wrap justify-center">
+                    <a href="privacy-policy.html" class="hover:text-slate-300 transition">Privacy Policy</a>
+                    <span class="text-slate-700">&bull;</span>
+                    <a href="terms-of-service.html" class="text-amber-400 font-medium">Terms of Service</a>
+                    <span class="text-slate-700">&bull;</span>
+                    <a href="sitemap.html" class="hover:text-slate-300 transition">Sitemap</a>
+                    <span class="text-slate-700">&bull;</span>
+                    <a href="llms.txt" class="hover:text-slate-300 transition">llms.txt</a>
+                </div>
             </div>
         </div>
     </footer>
+
+    <!-- Back to Top Floating Button with Circular Progress -->
+    <button id="back-to-top" type="button" aria-label="Back to top of page" class="fixed bottom-6 right-6 z-40 p-1.5 rounded-full bg-slate-900/90 text-amber-400 hover:text-white border border-white/20 shadow-2xl backdrop-blur-md opacity-0 pointer-events-none transition-all duration-300 hover:scale-110 active:scale-95 cursor-pointer group" title="Back to top">
+        <svg class="w-11 h-11 -rotate-90" viewBox="0 0 36 36">
+            <path class="text-white/10" stroke-width="3" stroke="currentColor" fill="none" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+            <path id="progress-circle" class="text-amber-400 transition-all duration-100" stroke-dasharray="100, 100" stroke-dashoffset="100" stroke-width="3" stroke-linecap="round" stroke="currentColor" fill="none" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+        </svg>
+        <div class="absolute inset-0 flex items-center justify-center">
+            <svg class="w-4 h-4 text-white group-hover:-translate-y-0.5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 15l7-7 7 7"></path></svg>
+        </div>
+    </button>
 
     <!-- Custom JavaScript -->
     <script src="script.js"></script>

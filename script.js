@@ -788,11 +788,224 @@ function setupBackToTop() {
     });
 }
 
+// --- Header Dropdown Engine (Click & Touch Toggle + Keyboard Accessibility) ---
+function setupHeaderDropdowns() {
+    const dropdowns = document.querySelectorAll('.header-dropdown');
+    if (!dropdowns.length) return;
+
+    dropdowns.forEach(dropdown => {
+        const toggleBtn = dropdown.querySelector('.dropdown-toggle');
+        const menu = dropdown.querySelector('.header-dropdown-menu');
+        if (!toggleBtn || !menu) return;
+
+        toggleBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            const isOpen = menu.classList.contains('dropdown-open');
+            // Close other open dropdowns
+            dropdowns.forEach(other => {
+                if (other !== dropdown) {
+                    other.querySelector('.header-dropdown-menu')?.classList.remove('dropdown-open');
+                    other.querySelector('.dropdown-toggle')?.setAttribute('aria-expanded', 'false');
+                }
+            });
+            if (isOpen) {
+                menu.classList.remove('dropdown-open');
+                toggleBtn.setAttribute('aria-expanded', 'false');
+            } else {
+                menu.classList.add('dropdown-open');
+                toggleBtn.setAttribute('aria-expanded', 'true');
+            }
+        });
+    });
+
+    // Close on outside click
+    document.addEventListener('click', () => {
+        dropdowns.forEach(dropdown => {
+            dropdown.querySelector('.header-dropdown-menu')?.classList.remove('dropdown-open');
+            dropdown.querySelector('.dropdown-toggle')?.setAttribute('aria-expanded', 'false');
+        });
+    });
+
+    // Close on Escape key
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') {
+            dropdowns.forEach(dropdown => {
+                dropdown.querySelector('.header-dropdown-menu')?.classList.remove('dropdown-open');
+                dropdown.querySelector('.dropdown-toggle')?.setAttribute('aria-expanded', 'false');
+            });
+        }
+    });
+}
+
+// --- Interactive Math Lab Showcase (labs.itsmathtime.co.in simulation widget) ---
+function setupInteractiveLabDemo() {
+    const slider = document.getElementById('lab-angle-slider');
+    if (!slider) return;
+
+    const angleVal = document.getElementById('lab-angle-val');
+    const sinVal = document.getElementById('lab-sin-val');
+    const cosVal = document.getElementById('lab-cos-val');
+    const tanVal = document.getElementById('lab-tan-val');
+    const quadrantBadge = document.getElementById('lab-quadrant-badge');
+    const astcRule = document.getElementById('lab-astc-rule');
+
+    const vectorLine = document.getElementById('lab-vector-line');
+    const pointP = document.getElementById('lab-point-p');
+    const cosLine = document.getElementById('lab-cos-line');
+    const sinLine = document.getElementById('lab-sin-line');
+    const angleArc = document.getElementById('lab-angle-arc');
+    const waveDot = document.getElementById('lab-wave-dot');
+    const playBtn = document.getElementById('lab-play-btn');
+
+    const cx = 110;
+    const cy = 110;
+    const r = 85;
+
+    let isPlaying = false;
+    let animFrame = null;
+
+    function updateLab(deg) {
+        const rad = (deg * Math.PI) / 180;
+        const sin = Math.sin(rad);
+        const cos = Math.cos(rad);
+        const tan = Math.abs(cos) < 0.0001 ? (sin > 0 ? Infinity : -Infinity) : sin / cos;
+
+        const px = cx + r * cos;
+        const py = cy - r * sin;
+
+        // Update readouts
+        if (angleVal) angleVal.textContent = `${deg}° (${(rad / Math.PI).toFixed(2)}π rad)`;
+        if (sinVal) sinVal.textContent = sin >= 0 ? `+${sin.toFixed(3)}` : sin.toFixed(3);
+        if (cosVal) cosVal.textContent = cos >= 0 ? `+${cos.toFixed(3)}` : cos.toFixed(3);
+        if (tanVal) tanVal.textContent = Number.isFinite(tan) ? (tan >= 0 ? `+${tan.toFixed(3)}` : tan.toFixed(3)) : 'Undefined';
+
+        // Quadrant & ASTC Rule
+        let q = 'I';
+        let rule = 'All (A) positive';
+        let colorClass = 'bg-emerald-500/20 text-emerald-300 border-emerald-400/40';
+
+        if (deg > 90 && deg <= 180) {
+            q = 'II';
+            rule = 'Sine (S) positive';
+            colorClass = 'bg-blue-500/20 text-blue-300 border-blue-400/40';
+        } else if (deg > 180 && deg <= 270) {
+            q = 'III';
+            rule = 'Tan (T) positive';
+            colorClass = 'bg-amber-500/20 text-amber-300 border-amber-400/40';
+        } else if (deg > 270 && deg <= 360) {
+            q = 'IV';
+            rule = 'Cos (C) positive';
+            colorClass = 'bg-purple-500/20 text-purple-300 border-purple-400/40';
+        }
+
+        if (quadrantBadge) {
+            quadrantBadge.textContent = `Quadrant ${q}`;
+            quadrantBadge.className = `px-2 py-0.5 rounded text-[11px] font-bold border ${colorClass}`;
+        }
+        if (astcRule) astcRule.textContent = rule;
+
+        // Update SVG vector
+        if (vectorLine) {
+            vectorLine.setAttribute('x1', cx);
+            vectorLine.setAttribute('y1', cy);
+            vectorLine.setAttribute('x2', px.toFixed(1));
+            vectorLine.setAttribute('y2', py.toFixed(1));
+        }
+
+        if (pointP) {
+            pointP.setAttribute('cx', px.toFixed(1));
+            pointP.setAttribute('cy', py.toFixed(1));
+        }
+
+        if (cosLine) {
+            cosLine.setAttribute('x1', cx);
+            cosLine.setAttribute('y1', cy);
+            cosLine.setAttribute('x2', px.toFixed(1));
+            cosLine.setAttribute('y2', cy);
+        }
+
+        if (sinLine) {
+            sinLine.setAttribute('x1', px.toFixed(1));
+            sinLine.setAttribute('y1', cy);
+            sinLine.setAttribute('x2', px.toFixed(1));
+            sinLine.setAttribute('y2', py.toFixed(1));
+        }
+
+        if (angleArc) {
+            const arcR = 26;
+            const arcX = cx + arcR * Math.cos(rad);
+            const arcY = cy - arcR * Math.sin(rad);
+            const largeArc = deg > 180 ? 1 : 0;
+            angleArc.setAttribute('d', `M ${cx + arcR} ${cy} A ${arcR} ${arcR} 0 ${largeArc} 0 ${arcX.toFixed(1)} ${arcY.toFixed(1)}`);
+        }
+
+        // Update wave tracking dot on right panel (viewBox 0 0 240 140)
+        if (waveDot) {
+            const waveX = (deg / 360) * 220 + 10;
+            const waveY = 70 - sin * 52;
+            waveDot.setAttribute('cx', waveX.toFixed(1));
+            waveDot.setAttribute('cy', waveY.toFixed(1));
+        }
+    }
+
+    slider.addEventListener('input', (e) => {
+        if (isPlaying) stopAutoPlay();
+        updateLab(parseInt(e.target.value, 10));
+    });
+
+    // Preset angle pills
+    document.querySelectorAll('[data-lab-angle]').forEach(btn => {
+        btn.addEventListener('click', () => {
+            if (isPlaying) stopAutoPlay();
+            const val = parseInt(btn.getAttribute('data-lab-angle'), 10);
+            slider.value = val;
+            updateLab(val);
+        });
+    });
+
+    function step() {
+        let current = parseInt(slider.value, 10);
+        current = (current + 1) % 360;
+        slider.value = current;
+        updateLab(current);
+        if (isPlaying) {
+            animFrame = requestAnimationFrame(step);
+        }
+    }
+
+    function startAutoPlay() {
+        isPlaying = true;
+        if (playBtn) playBtn.innerHTML = `<span>⏸ Pause Rotation</span>`;
+        animFrame = requestAnimationFrame(step);
+    }
+
+    function stopAutoPlay() {
+        isPlaying = false;
+        if (playBtn) playBtn.innerHTML = `<span>▶ Auto Rotate (Living System)</span>`;
+        if (animFrame) cancelAnimationFrame(animFrame);
+    }
+
+    if (playBtn) {
+        playBtn.addEventListener('click', () => {
+            if (isPlaying) {
+                stopAutoPlay();
+            } else {
+                startAutoPlay();
+            }
+        });
+    }
+
+    // Initial render
+    updateLab(parseInt(slider.value, 10) || 45);
+}
+
 // Run animations and features when the DOM is fully loaded
 document.addEventListener('DOMContentLoaded', () => {
     animateOnLoadElements();     // Trigger initial load animations
     setupScrollAnimations();     // Set up scroll animations
     setupHeaderScrollAndSpy();   // Sticky header compression, reading progress & spy
+    setupHeaderDropdowns();      // Header dropdowns click, touch & esc key toggle
+    setupInteractiveLabDemo();   // Live interactive math lab sandbox widget
     setupMathParticles();        // Mathematical floating symbols canvas physics
     setupShareWebsite();         // Initialize share buttons and copy functionality
     setupVideoFilters();         // Interactive grade & category filter pills

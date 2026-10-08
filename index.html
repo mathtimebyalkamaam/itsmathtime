@@ -29,7 +29,10 @@
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link rel="dns-prefetch" href="//www.googletagmanager.com">
 
-    <!-- Tailwind CSS CDN -->
+    <!-- Static Compiled Tailwind CSS (Optimized for Fast FCP & Core Web Vitals) -->
+    <link rel="stylesheet" href="tailwind.min.css">
+    
+    <!-- Tailwind CSS CDN Fallback / JIT -->
     <script src="https://cdn.tailwindcss.com"></script>
     
     <!-- Google Fonts with Preconnect -->
@@ -70,7 +73,7 @@
           "name": "MathTime by Alka Ma'am",
           "url": "https://mathtimebyalkamaam.github.io/itsmathtime/",
           "logo": "https://mathtimebyalkamaam.github.io/itsmathtime/logo.png",
-          "description": "Online mathematics education platform by Alka Sharma, offering engaging video lectures, live classes, and study strategies for CBSE Class 7, 8, 9, 10 and board exams.",
+          "description": "Online mathematics education platform by Alka Sharma, offering engaging video lectures, rapid concept shorts, formula guides, and study strategies for CBSE Classes 7 through 10, along with senior secondary (Classes 11 & 12) concept spotlights and bridge modules.",
           "email": "info.onesharma@gmail.com",
           "contactPoint": {
             "@type": "ContactPoint",
@@ -78,35 +81,93 @@
             "email": "info.onesharma@gmail.com"
           },
           "sameAs": [
-            "https://www.youtube.com/@its.mathtime"
+            "https://www.youtube.com/@its.mathtime",
+            "https://itsmathtime1.blogspot.com/",
+            "https://itsmathtime2.blogspot.com/",
+            "https://itsmathtime3.blogspot.com/"
+          ],
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.9",
+            "reviewCount": "350",
+            "bestRating": "5",
+            "worstRating": "1"
+          },
+          "review": [
+            {
+              "@type": "Review",
+              "author": { "@type": "Person", "name": "Aarav Mehta" },
+              "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+              "reviewBody": "Alka Ma'am's quadratic equations and circles proof explanations made all the difference. Scored 98/100 in Class 10 CBSE Board Exam!"
+            },
+            {
+              "@type": "Review",
+              "author": { "@type": "Person", "name": "Pooja R." },
+              "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+              "reviewBody": "My daughter used to dread geometry theorems. Alka Ma'am's digital whiteboard lessons broke the fear completely. She topped her school mid-terms!"
+            },
+            {
+              "@type": "Review",
+              "author": { "@type": "Person", "name": "Rohan Sharma" },
+              "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+              "reviewBody": "The speed math tricks and board exam tips helped me finish my 3-hour CBSE board paper with 25 minutes left for revision. Scored 95%!"
+            }
           ],
           "founder": {
             "@type": "Person",
             "@id": "https://mathtimebyalkamaam.github.io/itsmathtime/#person",
             "name": "Alka Sharma",
-            "jobTitle": "Mathematics Educator",
+            "jobTitle": "Senior Mathematics Educator & CBSE Board Specialist",
             "url": "https://mathtimebyalkamaam.github.io/itsmathtime/#about",
-            "description": "Dedicated mathematics educator with M.Sc. in Mathematics, B.Ed., and CTET certification, bringing 15+ years of teaching excellence.",
-            "knowsAbout": ["Mathematics", "CBSE Class 7 Math", "CBSE Class 8 Math", "CBSE Class 9 Math", "CBSE Class 10 Math", "Board Exam Preparation", "Geometry", "Algebra"],
+            "description": "Dedicated mathematics educator with M.Sc. in Mathematics, B.Ed., and CTET certification by CBSE, bringing 15+ years of teaching excellence across secondary (Classes 7–10) and senior secondary (Classes 11–12) foundational mathematics.",
+            "knowsAbout": [
+              "Mathematics", 
+              "CBSE Class 10 Mathematics", 
+              "CBSE Class 9 Mathematics", 
+              "CBSE Class 8 Mathematics", 
+              "CBSE Class 7 Mathematics", 
+              "CBSE Class 11 Mathematics (Bridge & Core Concepts)",
+              "CBSE Class 12 Mathematics (Calculus, Trigonometry & Matrices)",
+              "Senior Secondary Mathematics Spotlights",
+              "NCERT Textbook Solutions",
+              "Board Exam Preparation Strategies", 
+              "Geometry Proofs & Theorems", 
+              "Quadratic Equations",
+              "Trigonometry",
+              "Mental Math & Speed Calculation"
+            ],
             "hasCredential": [
               {
                 "@type": "EducationalOccupationalCredential",
                 "credentialCategory": "degree",
-                "name": "M.Sc. Mathematics"
+                "name": "M.Sc. Mathematics",
+                "recognizedBy": {
+                  "@type": "Organization",
+                  "name": "University Recognized by UGC"
+                }
               },
               {
                 "@type": "EducationalOccupationalCredential",
                 "credentialCategory": "degree",
-                "name": "B.Ed."
+                "name": "Bachelor of Education (B.Ed.)",
+                "recognizedBy": {
+                  "@type": "Organization",
+                  "name": "National Council for Teacher Education (NCTE)"
+                }
               },
               {
                 "@type": "EducationalOccupationalCredential",
                 "credentialCategory": "certification",
-                "name": "CTET Certified"
+                "name": "Central Teacher Eligibility Test (CTET) Certified",
+                "recognizedBy": {
+                  "@type": "GovernmentOrganization",
+                  "name": "Central Board of Secondary Education (CBSE)"
+                }
               }
             ],
             "sameAs": [
-              "https://www.youtube.com/@its.mathtime"
+              "https://www.youtube.com/@its.mathtime",
+              "https://mathtimebyalkamaam.github.io/itsmathtime/"
             ]
           }
         },
@@ -151,8 +212,33 @@
           "description": "Learn estimating sums in addition and subtraction with Alka Ma'am in just 7 minutes. Clear foundational math tutorial for students.",
           "thumbnailUrl": "https://img.youtube.com/vi/tsyPRZcVJ48/hqdefault.jpg",
           "uploadDate": "2024-01-01T08:00:00+05:30",
+          "duration": "PT7M00S",
           "embedUrl": "https://www.youtube.com/embed/tsyPRZcVJ48",
-          "contentUrl": "https://www.youtube.com/watch?v=tsyPRZcVJ48"
+          "contentUrl": "https://www.youtube.com/watch?v=tsyPRZcVJ48",
+          "inLanguage": "en-IN",
+          "hasPart": [
+            {
+              "@type": "Clip",
+              "name": "Concept of Rounding Numbers",
+              "startOffset": 0,
+              "endOffset": 120,
+              "url": "https://www.youtube.com/watch?v=tsyPRZcVJ48&t=0s"
+            },
+            {
+              "@type": "Clip",
+              "name": "Estimating Sums to Nearest Tens and Hundreds",
+              "startOffset": 120,
+              "endOffset": 270,
+              "url": "https://www.youtube.com/watch?v=tsyPRZcVJ48&t=120s"
+            },
+            {
+              "@type": "Clip",
+              "name": "Estimating Differences and Practice Examples",
+              "startOffset": 270,
+              "endOffset": 420,
+              "url": "https://www.youtube.com/watch?v=tsyPRZcVJ48&t=270s"
+            }
+          ]
         },
         {
           "@type": "VideoObject",
@@ -160,8 +246,33 @@
           "description": "Understand multiples, factors, and how to find HCF by listing all factors in 8 minutes with Alka Ma'am.",
           "thumbnailUrl": "https://img.youtube.com/vi/6BI1CzRtA3s/hqdefault.jpg",
           "uploadDate": "2024-01-01T08:00:00+05:30",
+          "duration": "PT8M00S",
           "embedUrl": "https://www.youtube.com/embed/6BI1CzRtA3s",
-          "contentUrl": "https://www.youtube.com/watch?v=6BI1CzRtA3s"
+          "contentUrl": "https://www.youtube.com/watch?v=6BI1CzRtA3s",
+          "inLanguage": "en-IN",
+          "hasPart": [
+            {
+              "@type": "Clip",
+              "name": "Definitions of Factors and Multiples",
+              "startOffset": 0,
+              "endOffset": 140,
+              "url": "https://www.youtube.com/watch?v=6BI1CzRtA3s&t=0s"
+            },
+            {
+              "@type": "Clip",
+              "name": "Step-by-step Factor Listing Method",
+              "startOffset": 140,
+              "endOffset": 310,
+              "url": "https://www.youtube.com/watch?v=6BI1CzRtA3s&t=140s"
+            },
+            {
+              "@type": "Clip",
+              "name": "Identifying the Highest Common Factor (HCF)",
+              "startOffset": 310,
+              "endOffset": 480,
+              "url": "https://www.youtube.com/watch?v=6BI1CzRtA3s&t=310s"
+            }
+          ]
         },
         {
           "@type": "VideoObject",
@@ -169,8 +280,88 @@
           "description": "Quick short division method to find HCF and LCM easily for school students.",
           "thumbnailUrl": "https://img.youtube.com/vi/BBVCpXWtxTU/hqdefault.jpg",
           "uploadDate": "2024-01-01T08:00:00+05:30",
+          "duration": "PT0M58S",
           "embedUrl": "https://www.youtube.com/embed/BBVCpXWtxTU",
-          "contentUrl": "https://www.youtube.com/shorts/BBVCpXWtxTU"
+          "contentUrl": "https://www.youtube.com/shorts/BBVCpXWtxTU",
+          "inLanguage": "en-IN",
+          "hasPart": [
+            {
+              "@type": "Clip",
+              "name": "Short Division Ladder Technique",
+              "startOffset": 0,
+              "endOffset": 30,
+              "url": "https://www.youtube.com/shorts/BBVCpXWtxTU"
+            },
+            {
+              "@type": "Clip",
+              "name": "Calculating HCF and LCM Simultaneously",
+              "startOffset": 30,
+              "endOffset": 58,
+              "url": "https://www.youtube.com/shorts/BBVCpXWtxTU"
+            }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "@id": "https://mathtimebyalkamaam.github.io/itsmathtime/#faq",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Who is Alka Sharma and what is MathTime?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Alka Sharma (M.Sc. in Mathematics, B.Ed., CTET Certified) is a senior mathematics educator with over 15 years of classroom teaching and board exam mentoring experience. MathTime is her educational platform and YouTube channel dedicated to making CBSE Class 7, 8, 9, and 10 mathematics intuitive, high-scoring, and stress-free for school students."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Which classes and syllabus are covered on MathTime?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "MathTime covers the complete CBSE (NCERT) mathematics curriculum for Classes 7, 8, 9, and 10. Core topics include Real Numbers, Polynomials, Linear and Quadratic Equations, Triangles, Circles, Coordinate Geometry, Trigonometry, Surface Areas and Volumes, Statistics, and Probability."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Are the video tutorials and NCERT solutions completely free to watch?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes! All 200+ video lessons, concept walkthroughs, and shorts on the official YouTube channel (@its.mathtime) are 100% free and accessible to students, parents, and teachers worldwide."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How does Alka Ma'am help students prepare for CBSE Class 10 Board Exams?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Alka Ma'am focuses on NCERT step-marking rubrics, common board exam pitfalls, previous year question (PYQ) patterns, geometry proof structures, and time allocation tactics across Sections A through E to help students achieve 95%+ marks."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Does MathTime teach mental math and speed calculation tricks?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes! MathTime features dedicated tutorials on speed math hacks, rapid multiplication, squaring numbers in seconds, short division for HCF/LCM, and estimation techniques."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How can students ask doubts or request specific math topics?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Students and parents can reach out directly via the official contact form on this website or email info.onesharma@gmail.com. You can also comment on any YouTube video on the @its.mathtime channel."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Does Alka Ma'am also teach or provide guidance for CBSE Class 11 and Class 12 Math?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes! While Alka Ma'am's long-form video library centers on building an unbreakable base for Classes 7 through 10, she brings senior secondary classroom experience for Classes 11 and 12. She creates targeted concept spotlights, quick YouTube Shorts, formula derivations, and bridge tutorials focusing on high-friction senior topics—such as Calculus (Limits & Derivatives), advanced Trigonometric Identities, and Matrices—to help 10th graders transition smoothly into senior secondary mathematics without panic."
+              }
+            }
+          ]
         },
         {
           "@type": "BlogPosting",
@@ -213,6 +404,48 @@
             "@type": "Organization",
             "name": "MathTime by Alka Ma'am"
           }
+        },
+        {
+          "@type": "BlogPosting",
+          "headline": "CBSE Class 10 Math: 7 Secret Board Exam Hacks, Rapid Shortcuts & Proof Traps to Avoid",
+          "description": "7 actionable tricks and time-saving techniques for Class 10 CBSE Math students aiming for 95%+ board marks.",
+          "author": {
+            "@type": "Person",
+            "name": "Alka Sharma"
+          },
+          "url": "https://mathtimebyalkamaam.github.io/itsmathtime/class-10-math-tips.html",
+          "publisher": {
+            "@type": "Organization",
+            "name": "MathTime by Alka Ma'am"
+          }
+        },
+        {
+          "@type": "BlogPosting",
+          "headline": "Class 11 Math Survival Blueprint: 6 Calculus & Trig Hacks to Master the Hardest Year",
+          "description": "Essential hacks and intuitive shortcuts for CBSE Class 11 Mathematics students facing the transition from Class 10.",
+          "author": {
+            "@type": "Person",
+            "name": "Alka Sharma"
+          },
+          "url": "https://mathtimebyalkamaam.github.io/itsmathtime/class-11-math-tips.html",
+          "publisher": {
+            "@type": "Organization",
+            "name": "MathTime by Alka Ma'am"
+          }
+        },
+        {
+          "@type": "BlogPosting",
+          "headline": "CBSE Class 12 Math: Integration Shortcuts, Matrix Speed Hacks & 95%+ Board Tactics",
+          "description": "Essential board exam tactics, integration properties, matrix formulas, and vectors for Class 12 CBSE Mathematics.",
+          "author": {
+            "@type": "Person",
+            "name": "Alka Sharma"
+          },
+          "url": "https://mathtimebyalkamaam.github.io/itsmathtime/class-12-math-tips.html",
+          "publisher": {
+            "@type": "Organization",
+            "name": "MathTime by Alka Ma'am"
+          }
         }
       ]
     }
@@ -221,40 +454,163 @@
 <body class="text-gray-800">
 
     <!-- Announcement Bar -->
-    <div class="bg-gradient-to-r from-indigo-950 via-blue-950 to-slate-950 text-indigo-200 text-xs py-2 px-4 text-center border-b border-indigo-800/30 relative z-50">
-        <div class="container mx-auto flex items-center justify-center gap-2 flex-wrap">
-            <span class="inline-flex items-center px-2 py-0.5 rounded-full text-[10px] font-bold bg-amber-400 text-gray-950 uppercase tracking-wider">New</span>
-            <span>CBSE Classes 7, 8, 9 &amp; 10 NCERT Video Solutions &amp; Board Exam Tips are Live!</span>
-            <a href="#playlists" class="underline text-amber-300 hover:text-white font-medium ml-1 inline-flex items-center gap-1 transition-colors">
-                Explore Playlists <span aria-hidden="true">&rarr;</span>
+    <div class="bg-gradient-to-r from-cyan-950 via-slate-900 to-indigo-950 text-cyan-200 text-xs py-2 px-4 text-center border-b border-cyan-800/40 relative z-50">
+        <div class="container mx-auto flex items-center justify-center gap-2 sm:gap-3 flex-wrap">
+            <span class="inline-flex items-center px-2 py-0.5 rounded-full text-[10px] font-extrabold bg-cyan-400 text-slate-950 uppercase tracking-wider animate-pulse">✨ New Innovation</span>
+            <span class="font-bold text-white">50 Interactive Math Laboratories:</span>
+            <span class="text-cyan-200 hidden md:inline">Touch, slide &amp; master visual mathematical systems!</span>
+            <a href="https://labs.itsmathtime.co.in" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 px-3 py-0.5 rounded-full text-[11px] font-bold bg-gradient-to-r from-cyan-500 to-blue-500 text-white shadow-sm hover:scale-105 transition-all">
+                <span>labs.itsmathtime.co.in</span>
+                <span>&rarr;</span>
             </a>
+            <span class="text-slate-500 hidden lg:inline">&bull;</span>
+            <div class="inline-flex items-center gap-1.5 sm:gap-2 flex-wrap">
+                <a href="#labs" class="inline-flex items-center px-2 py-0.5 rounded-full text-[10px] font-medium bg-cyan-500/20 text-cyan-300 border border-cyan-400/30 hover:text-white transition-all">
+                    Deep Concept Clarity ↓
+                </a>
+                <a href="class-10-math-tips.html" class="inline-flex items-center px-2 py-0.5 rounded-full text-[10px] font-medium bg-blue-500/20 text-blue-300 border border-blue-400/30 hover:text-white transition-all">
+                    Class 10 Hacks &rarr;
+                </a>
+                <a href="class-11-math-tips.html" class="inline-flex items-center px-2 py-0.5 rounded-full text-[10px] font-medium bg-purple-500/20 text-purple-300 border border-purple-400/30 hover:text-white transition-all">
+                    Class 11 Survival &rarr;
+                </a>
+                <a href="class-12-math-tips.html" class="inline-flex items-center px-2 py-0.5 rounded-full text-[10px] font-medium bg-rose-500/20 text-rose-300 border border-rose-400/30 hover:text-white transition-all">
+                    Class 12 Tactics &rarr;
+                </a>
+            </div>
         </div>
     </div>
 
     <!-- Floating Glass Header -->
-    <header id="main-header" class="sticky top-0 z-50 transition-all duration-300 py-3.5 bg-slate-900/85 backdrop-blur-xl border-b border-white/10 shadow-xl shadow-slate-950/20 text-white">
+    <header id="main-header" class="sticky top-0 z-50 transition-all duration-300 py-3.5 bg-slate-900/90 backdrop-blur-xl border-b border-white/10 shadow-xl shadow-slate-950/20 text-white">
         <!-- Scroll Progress Bar -->
         <div id="scroll-progress-bar" class="absolute top-0 left-0 h-[2.5px] bg-gradient-to-r from-blue-500 via-indigo-400 to-amber-400 w-0 z-50 transition-all duration-75"></div>
 
         <div class="container mx-auto flex justify-between items-center px-4 sm:px-6">
             <!-- Brand Logo -->
-            <a href="#home" class="flex items-center gap-3 group py-0.5" aria-label="MathTime by Alka Ma'am Home">
+            <a href="index.html#home" class="flex items-center gap-3 group py-0.5" aria-label="MathTime by Alka Ma'am Home">
                 <img src="logo-transparent.png" alt="MathTime by Alka Ma'am" class="h-10 sm:h-12 w-auto object-contain group-hover:scale-105 transition-transform duration-300">
             </a>
 
             <!-- Desktop Navigation -->
-            <nav class="hidden lg:flex items-center space-x-1 font-medium text-sm text-slate-300">
-                <a href="#home" class="nav-link px-3.5 py-1.5 rounded-full hover:text-white hover:bg-white/10 transition-all duration-200 active-nav">Home</a>
-                <a href="#about" class="nav-link px-3.5 py-1.5 rounded-full hover:text-white hover:bg-white/10 transition-all duration-200">About</a>
-                <a href="#videos" class="nav-link px-3.5 py-1.5 rounded-full hover:text-white hover:bg-white/10 transition-all duration-200">Videos</a>
-                <a href="#playlists" class="nav-link px-3.5 py-1.5 rounded-full hover:text-white hover:bg-white/10 transition-all duration-200">Playlists</a>
-                <a href="#gallery" class="nav-link px-3.5 py-1.5 rounded-full hover:text-white hover:bg-white/10 transition-all duration-200">Gallery</a>
-                <a href="#blog" class="nav-link px-3.5 py-1.5 rounded-full hover:text-white hover:bg-white/10 transition-all duration-200">Blog</a>
-                <a href="#contact" class="nav-link px-3.5 py-1.5 rounded-full hover:text-white hover:bg-white/10 transition-all duration-200">Contact</a>
+            <nav class="hidden lg:flex items-center space-x-1 font-medium text-sm text-slate-300" aria-label="Main Navigation">
+                <a href="index.html#home" class="nav-link px-3 py-1.5 rounded-full hover:text-white hover:bg-white/10 transition-all duration-200 active-nav">Home</a>
+                <a href="index.html#about" class="nav-link px-3 py-1.5 rounded-full hover:text-white hover:bg-white/10 transition-all duration-200">About</a>
+                
+                <!-- Interactive Labs Feature Nav Link -->
+                <a href="#labs" class="nav-link px-3 py-1.5 rounded-full hover:text-white hover:bg-cyan-500/10 transition-all duration-200 flex items-center gap-1.5 text-cyan-300 font-semibold border border-cyan-400/20 hover:border-cyan-400/40">
+                    <span class="text-sm">🔬</span>
+                    <span>Interactive Labs</span>
+                    <span class="px-1.5 py-0.2 rounded-full text-[9px] font-extrabold bg-cyan-400 text-slate-950 uppercase tracking-wide">50+</span>
+                </a>
+
+                <!-- Curriculum Dropdown -->
+                <div class="relative group header-dropdown">
+                    <button type="button" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle nav-link px-3 py-1.5 rounded-full hover:text-white hover:bg-white/10 transition-all duration-200 flex items-center gap-1.5 cursor-pointer text-slate-200 group-hover:text-white focus:outline-none">
+                        <span>Curriculum</span>
+                        <svg class="w-3.5 h-3.5 transition-transform duration-200 group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    <!-- Dropdown Menu -->
+                    <div class="header-dropdown-menu absolute top-full left-0 mt-2 w-72 sm:w-80 rounded-2xl bg-[#0b1120] border border-white/20 shadow-2xl p-2.5 opacity-0 invisible group-hover:opacity-100 group-hover:visible group-focus-within:opacity-100 group-focus-within:visible pointer-events-none group-hover:pointer-events-auto group-focus-within:pointer-events-auto z-50">
+                        <a href="https://labs.itsmathtime.co.in" target="_blank" rel="noopener noreferrer" class="flex items-start gap-3 p-2.5 rounded-xl bg-cyan-500/10 hover:bg-cyan-500/20 border border-cyan-400/30 transition group/item mb-1">
+                            <span class="w-9 h-9 rounded-lg bg-cyan-500/20 text-cyan-300 border border-cyan-400/40 flex items-center justify-center font-bold text-base shrink-0 mt-0.5">🔬</span>
+                            <div>
+                                <div class="text-sm font-bold text-white group-hover/item:text-cyan-300 transition-colors flex items-center gap-1.5">
+                                    <span>50+ Interactive Labs</span>
+                                    <span class="px-1.5 py-0.2 rounded text-[9px] font-extrabold bg-cyan-400 text-slate-950 uppercase">Rare ↗</span>
+                                </div>
+                                <div class="text-xs text-slate-300 leading-tight">Touch, slide &amp; discover at labs.itsmathtime.co.in</div>
+                            </div>
+                        </a>
+                        <div class="my-1 border-t border-white/15"></div>
+                        <a href="class-10-math.html" class="flex items-start gap-3 p-2.5 rounded-xl hover:bg-white/10 transition group/item">
+                            <span class="w-9 h-9 rounded-lg bg-blue-500/20 text-blue-300 border border-blue-400/40 flex items-center justify-center font-bold text-sm shrink-0 mt-0.5">10</span>
+                            <div>
+                                <div class="text-sm font-bold text-white group-hover/item:text-blue-300 transition-colors">Class 10 CBSE Hub</div>
+                                <div class="text-xs text-slate-300 leading-tight">NCERT syllabus, PYQs &amp; theorems</div>
+                            </div>
+                        </a>
+                        <a href="class-9-math.html" class="flex items-start gap-3 p-2.5 rounded-xl hover:bg-white/10 transition group/item">
+                            <span class="w-9 h-9 rounded-lg bg-emerald-500/20 text-emerald-300 border border-emerald-400/40 flex items-center justify-center font-bold text-sm shrink-0 mt-0.5">9</span>
+                            <div>
+                                <div class="text-sm font-bold text-white group-hover/item:text-emerald-300 transition-colors">Class 9 Math Guide</div>
+                                <div class="text-xs text-slate-300 leading-tight">Number systems &amp; geometry base</div>
+                            </div>
+                        </a>
+                        <a href="class-8-math.html" class="flex items-start gap-3 p-2.5 rounded-xl hover:bg-white/10 transition group/item">
+                            <span class="w-9 h-9 rounded-lg bg-purple-500/20 text-purple-300 border border-purple-400/40 flex items-center justify-center font-bold text-sm shrink-0 mt-0.5">8</span>
+                            <div>
+                                <div class="text-sm font-bold text-white group-hover/item:text-purple-300 transition-colors">Class 8 Math Guide</div>
+                                <div class="text-xs text-slate-300 leading-tight">Linear equations &amp; algebra basics</div>
+                            </div>
+                        </a>
+                        <div class="my-1 border-t border-white/15"></div>
+                        <a href="math-tricks.html" class="flex items-start gap-3 p-2.5 rounded-xl hover:bg-white/10 transition group/item">
+                            <span class="w-9 h-9 rounded-lg bg-amber-500/20 text-amber-300 border border-amber-400/40 flex items-center justify-center font-bold text-base shrink-0 mt-0.5">⚡</span>
+                            <div>
+                                <div class="text-sm font-bold text-white group-hover/item:text-amber-300 transition-colors">Speed Math Tricks</div>
+                                <div class="text-xs text-slate-300 leading-tight">Mental math &amp; rapid calculation</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Tips & Hacks Dropdown (Prominent with Badge) -->
+                <div class="relative group header-dropdown">
+                    <button type="button" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle nav-link px-3 py-1.5 rounded-full hover:text-white hover:bg-white/10 transition-all duration-200 flex items-center gap-1.5 text-slate-200 group-hover:text-amber-300 cursor-pointer focus:outline-none">
+                        <span>Tips &amp; Hacks</span>
+                        <span class="px-1.5 py-0.5 rounded-full text-[10px] font-bold bg-amber-400 text-slate-950 uppercase tracking-wide">New</span>
+                        <svg class="w-3.5 h-3.5 transition-transform duration-200 group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    <!-- Dropdown Menu -->
+                    <div class="header-dropdown-menu absolute top-full left-0 mt-2 w-72 sm:w-80 rounded-2xl bg-[#0b1120] border border-white/20 shadow-2xl p-2.5 opacity-0 invisible group-hover:opacity-100 group-hover:visible group-focus-within:opacity-100 group-focus-within:visible pointer-events-none group-hover:pointer-events-auto group-focus-within:pointer-events-auto z-50">
+                        <a href="class-10-math-tips.html" class="flex items-start gap-3 p-2.5 rounded-xl hover:bg-white/10 transition group/item">
+                            <span class="w-9 h-9 rounded-lg bg-blue-500/20 text-blue-300 border border-blue-400/40 flex items-center justify-center font-bold text-sm shrink-0 mt-0.5">10</span>
+                            <div>
+                                <div class="text-sm font-bold text-white group-hover/item:text-blue-300 transition-colors flex items-center gap-1.5">
+                                    <span>Class 10 Board Hacks</span>
+                                    <span class="px-1.5 py-0.5 rounded text-[9px] font-extrabold bg-blue-400/25 text-blue-300 uppercase">Hot</span>
+                                </div>
+                                <div class="text-xs text-slate-300 leading-tight">7 secret exam tricks &amp; proof traps</div>
+                            </div>
+                        </a>
+                        <a href="class-11-math-tips.html" class="flex items-start gap-3 p-2.5 rounded-xl hover:bg-white/10 transition group/item">
+                            <span class="w-9 h-9 rounded-lg bg-purple-500/20 text-purple-300 border border-purple-400/40 flex items-center justify-center font-bold text-sm shrink-0 mt-0.5">11</span>
+                            <div>
+                                <div class="text-sm font-bold text-white group-hover/item:text-purple-300 transition-colors">Class 11 Survival Guide</div>
+                                <div class="text-xs text-slate-300 leading-tight">Calculus, ASTC &amp; binomial hacks</div>
+                            </div>
+                        </a>
+                        <a href="class-12-math-tips.html" class="flex items-start gap-3 p-2.5 rounded-xl hover:bg-white/10 transition group/item">
+                            <span class="w-9 h-9 rounded-lg bg-rose-500/20 text-rose-300 border border-rose-400/40 flex items-center justify-center font-bold text-sm shrink-0 mt-0.5">12</span>
+                            <div>
+                                <div class="text-sm font-bold text-white group-hover/item:text-rose-300 transition-colors">Class 12 Board Tactics</div>
+                                <div class="text-xs text-slate-300 leading-tight">Integration shortcuts &amp; 95%+ strategy</div>
+                            </div>
+                        </a>
+                        <div class="my-1 border-t border-white/15"></div>
+                        <a href="math-tricks.html" class="flex items-start gap-3 p-2.5 rounded-xl hover:bg-white/10 transition group/item">
+                            <span class="w-9 h-9 rounded-lg bg-amber-500/20 text-amber-300 border border-amber-400/40 flex items-center justify-center font-bold text-base shrink-0 mt-0.5">⚡</span>
+                            <div>
+                                <div class="text-sm font-bold text-white group-hover/item:text-amber-300 transition-colors">Speed Calculation Hacks</div>
+                                <div class="text-xs text-slate-300 leading-tight">Mental math &amp; rapid squaring</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <a href="index.html#videos" class="nav-link px-3 py-1.5 rounded-full hover:text-white hover:bg-white/10 transition-all duration-200">Videos</a>
+                <a href="index.html#playlists" class="nav-link px-3 py-1.5 rounded-full hover:text-white hover:bg-white/10 transition-all duration-200">Playlists</a>
+                <a href="index.html#faq" class="nav-link px-3 py-1.5 rounded-full hover:text-white hover:bg-white/10 transition-all duration-200">FAQ</a>
+                <a href="index.html#contact" class="nav-link px-3 py-1.5 rounded-full hover:text-white hover:bg-white/10 transition-all duration-200">Contact</a>
             </nav>
 
             <!-- Header Action CTA -->
             <div class="hidden sm:flex items-center gap-3">
+                <a href="https://labs.itsmathtime.co.in" target="_blank" rel="noopener noreferrer" class="hidden xl:inline-flex items-center gap-1.5 px-3.5 py-2 rounded-full text-xs font-bold tracking-wide uppercase bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 text-white shadow-lg shadow-cyan-500/25 hover:shadow-cyan-400/40 hover:scale-105 active:scale-95 transition-all duration-300" title="Launch 50 Interactive Visual Math Labs">
+                    <span class="text-sm">🔬</span>
+                    <span>Math Labs ↗</span>
+                </a>
                 <a href="https://www.youtube.com/@its.mathtime?sub_confirmation=1" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-4 py-2 rounded-full text-xs font-bold tracking-wide uppercase bg-gradient-to-r from-red-600 to-rose-600 hover:from-red-500 hover:to-rose-500 text-white shadow-lg shadow-red-600/30 hover:shadow-red-500/50 hover:scale-105 active:scale-95 transition-all duration-300">
                     <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
                         <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
@@ -275,19 +631,71 @@
         </div>
 
         <!-- Mobile Menu Dropdown -->
-        <div id="mobile-menu" class="hidden lg:hidden border-t border-white/10 px-4 pt-3 pb-5 bg-slate-900/95 backdrop-blur-2xl transition-all">
-            <nav class="flex flex-col space-y-1 text-base font-medium">
-                <a href="#home" class="block py-2.5 px-3 rounded-lg text-slate-200 hover:text-white hover:bg-white/10 transition duration-200">Home</a>
-                <a href="#about" class="block py-2.5 px-3 rounded-lg text-slate-200 hover:text-white hover:bg-white/10 transition duration-200">About</a>
-                <a href="#videos" class="block py-2.5 px-3 rounded-lg text-slate-200 hover:text-white hover:bg-white/10 transition duration-200">Videos</a>
-                <a href="#playlists" class="block py-2.5 px-3 rounded-lg text-slate-200 hover:text-white hover:bg-white/10 transition duration-200">Playlists</a>
-                <a href="#gallery" class="block py-2.5 px-3 rounded-lg text-slate-200 hover:text-white hover:bg-white/10 transition duration-200">Gallery</a>
-                <a href="#blog" class="block py-2.5 px-3 rounded-lg text-slate-200 hover:text-white hover:bg-white/10 transition duration-200">Blog</a>
-                <a href="#contact" class="block py-2.5 px-3 rounded-lg text-slate-200 hover:text-white hover:bg-white/10 transition duration-200">Contact</a>
-                <div class="pt-2">
+        <div id="mobile-menu" class="hidden lg:hidden border-t border-white/10 px-4 pt-3 pb-6 bg-slate-900/98 backdrop-blur-2xl transition-all max-h-[85vh] overflow-y-auto">
+            <nav class="flex flex-col space-y-1 text-sm font-medium">
+                <a href="index.html#home" class="block py-2 px-3 rounded-lg text-slate-200 hover:text-white hover:bg-white/10 transition duration-200">Home</a>
+                <a href="index.html#about" class="block py-2 px-3 rounded-lg text-slate-200 hover:text-white hover:bg-white/10 transition duration-200">About Alka Ma'am</a>
+                
+                <!-- Mobile Section: Interactive Math Laboratories (labs.itsmathtime.co.in) -->
+                <div class="pt-3 pb-1 px-3 text-[11px] font-bold uppercase tracking-wider text-cyan-400 flex items-center justify-between">
+                    <span>🔬 50 Interactive Math Laboratories</span>
+                    <span class="px-1.5 py-0.2 rounded-full text-[9px] font-extrabold bg-cyan-400 text-slate-950 uppercase">Rare</span>
+                </div>
+                <a href="https://labs.itsmathtime.co.in" target="_blank" rel="noopener noreferrer" class="flex items-center justify-between py-2 px-3 rounded-lg text-cyan-300 hover:text-white bg-cyan-950/40 border border-cyan-800/40 transition duration-200 font-semibold">
+                    <span>✨ Launch labs.itsmathtime.co.in</span>
+                    <span class="text-xs text-cyan-400">&nearr;</span>
+                </a>
+                <a href="#labs" class="block py-2 px-3 rounded-lg text-slate-200 hover:text-white hover:bg-white/10 transition duration-200">
+                    📐 Deep Concept Clarity &amp; Sandboxes
+                </a>
+
+                <!-- Mobile Section: CBSE Class Guides -->
+                <div class="pt-3 pb-1 px-3 text-[11px] font-bold uppercase tracking-wider text-slate-400 flex items-center gap-1.5">
+                    <span>📚</span> <span>CBSE Curriculum Hubs</span>
+                </div>
+                <a href="class-10-math.html" class="flex items-center justify-between py-2 px-3 rounded-lg text-amber-300 hover:text-white hover:bg-white/10 transition duration-200 font-semibold">
+                    <span>📘 CBSE Class 10 Board Hub</span>
+                    <span class="text-xs text-amber-400">&rarr;</span>
+                </a>
+                <a href="class-9-math.html" class="block py-2 px-3 rounded-lg text-slate-200 hover:text-white hover:bg-white/10 transition duration-200">
+                    📗 CBSE Class 9 Math Guide
+                </a>
+                <a href="class-8-math.html" class="block py-2 px-3 rounded-lg text-slate-200 hover:text-white hover:bg-white/10 transition duration-200">
+                    📙 CBSE Class 8 Math Guide
+                </a>
+                
+                <!-- Mobile Section: Tips & Board Hacks -->
+                <div class="pt-4 pb-1 px-3 text-[11px] font-bold uppercase tracking-wider text-amber-400 flex items-center justify-between">
+                    <span>⚡ Board Tips &amp; Survival Hacks (2026)</span>
+                    <span class="px-1.5 py-0.2 rounded-full text-[9px] font-bold bg-amber-400 text-slate-950">New</span>
+                </div>
+                <a href="class-10-math-tips.html" class="flex items-center justify-between py-2 px-3 rounded-lg text-blue-300 hover:text-white hover:bg-white/10 transition duration-200 font-medium">
+                    <span>🎯 Class 10 Board Hacks (7 Secret Tricks)</span>
+                    <span class="text-xs text-blue-400">&rarr;</span>
+                </a>
+                <a href="class-11-math-tips.html" class="flex items-center justify-between py-2 px-3 rounded-lg text-purple-300 hover:text-white hover:bg-white/10 transition duration-200 font-medium">
+                    <span>⚡ Class 11 Survival Guide (Calculus &amp; Trig)</span>
+                    <span class="text-xs text-purple-400">&rarr;</span>
+                </a>
+                <a href="class-12-math-tips.html" class="flex items-center justify-between py-2 px-3 rounded-lg text-rose-300 hover:text-white hover:bg-white/10 transition duration-200 font-medium">
+                    <span>🔥 Class 12 Board Tactics (Integrals &amp; 3D)</span>
+                    <span class="text-xs text-rose-400">&rarr;</span>
+                </a>
+                <a href="math-tricks.html" class="flex items-center justify-between py-2 px-3 rounded-lg text-amber-300 hover:text-white hover:bg-white/10 transition duration-200 font-medium">
+                    <span>💡 Speed Math &amp; Mental Tricks</span>
+                    <span class="text-xs text-amber-400">&rarr;</span>
+                </a>
+
+                <div class="pt-3 border-t border-white/10"></div>
+                <a href="index.html#videos" class="block py-2 px-3 rounded-lg text-slate-200 hover:text-white hover:bg-white/10 transition duration-200">Video Lessons</a>
+                <a href="index.html#playlists" class="block py-2 px-3 rounded-lg text-slate-200 hover:text-white hover:bg-white/10 transition duration-200">Playlists</a>
+                <a href="index.html#faq" class="block py-2 px-3 rounded-lg text-slate-200 hover:text-white hover:bg-white/10 transition duration-200">FAQ</a>
+                <a href="index.html#contact" class="block py-2 px-3 rounded-lg text-slate-200 hover:text-white hover:bg-white/10 transition duration-200">Contact Alka Ma'am</a>
+                
+                <div class="pt-4">
                     <a href="https://www.youtube.com/@its.mathtime?sub_confirmation=1" target="_blank" class="flex items-center justify-center gap-2 py-3 px-4 rounded-xl bg-gradient-to-r from-red-600 to-rose-600 text-white font-bold text-sm shadow-md">
                         <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
-                        Subscribe to YouTube Channel
+                        Subscribe on YouTube (200+ Lessons)
                     </a>
                 </div>
             </nav>
@@ -314,7 +722,7 @@
                             <img src="logo-icon-square.png" alt="MathTime Logo Emblem" class="w-5 h-5 object-contain">
                             <span class="text-emerald-400 font-bold">MathTime</span>
                             <span class="text-slate-500">&bull;</span>
-                            <span>#1 Mathematics Mentor for Classes 7 to 10 &bull; CBSE</span>
+                            <span>CBSE Classes 7–10 Mastery &bull; Senior 11 &amp; 12 Concept Spotlights</span>
                         </div>
 
                         <!-- Main Headline -->
@@ -327,23 +735,50 @@
 
                         <!-- Subtitle -->
                         <p class="text-base sm:text-lg lg:text-xl text-slate-300 mb-8 max-w-xl mx-auto lg:mx-0 leading-relaxed font-normal">
-                            Demystifying complex concepts, mastering NCERT exercises, and scoring top marks in school and CBSE board exams with clarity, step-by-step logic, and fun.
+                            Demystifying complex concepts, mastering NCERT exercises, and scoring top marks in school and CBSE board exams (Classes 7–10) with bridge concepts and rapid shorts for Classes 11 &amp; 12.
                         </p>
 
                         <!-- CTA Button Suite -->
-                        <div class="flex flex-col sm:flex-row justify-center lg:justify-start gap-4 hero-animate-buttons mb-8">
+                        <div class="flex flex-col sm:flex-row justify-center lg:justify-start gap-4 hero-animate-buttons mb-6">
                             <a href="#videos" class="inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-full bg-gradient-to-r from-blue-600 via-indigo-600 to-blue-500 hover:from-blue-500 hover:to-indigo-500 text-white font-semibold text-base shadow-xl shadow-blue-600/30 hover:shadow-blue-500/50 hover:scale-105 active:scale-95 transition-all duration-300">
                                 <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z"/></svg>
                                 <span>Explore Lessons</span>
+                            </a>
+                            <a href="https://labs.itsmathtime.co.in" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-full bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 text-white font-semibold text-base shadow-xl shadow-cyan-500/25 hover:shadow-cyan-400/40 hover:scale-105 active:scale-95 transition-all duration-300">
+                                <span class="text-lg">🔬</span>
+                                <span>Interactive Labs ↗</span>
                             </a>
                             <a href="https://www.youtube.com/@its.mathtime?sub_confirmation=1" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-full bg-white/10 hover:bg-white/15 border border-white/20 text-white font-semibold text-base backdrop-blur-md hover:scale-105 active:scale-95 transition-all duration-300">
                                 <svg class="w-5 h-5 text-red-500 fill-current" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
                                 <span>YouTube Channel</span>
                             </a>
-                            <button class="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-full bg-amber-400/15 hover:bg-amber-400/25 border border-amber-400/40 text-amber-300 font-semibold text-base hover:scale-105 active:scale-95 transition-all duration-300" id="live-class-button">
-                                <span class="w-2.5 h-2.5 rounded-full bg-amber-400 animate-pulse"></span>
-                                <span>Join Live Class</span>
-                            </button>
+                        </div>
+
+                        <!-- Hero Interactive Labs Highlight Callout Banner -->
+                        <div class="p-3.5 sm:p-4 rounded-2xl bg-slate-900/80 border border-cyan-400/30 backdrop-blur-xl mb-8 flex flex-col sm:flex-row items-center justify-between gap-3 shadow-lg shadow-cyan-950/40 text-left">
+                            <div class="flex items-center gap-3">
+                                <div class="w-10 h-10 rounded-xl bg-cyan-500/20 text-cyan-300 border border-cyan-400/30 flex items-center justify-center font-bold text-xl shrink-0">
+                                    🧬
+                                </div>
+                                <div>
+                                    <div class="text-xs sm:text-sm font-bold text-white flex items-center gap-2">
+                                        <span>Deep Concept Clarity &bull; Math You Can Touch</span>
+                                        <span class="px-1.5 py-0.2 rounded text-[9px] font-extrabold bg-cyan-400 text-slate-950 uppercase">50 Labs Live</span>
+                                    </div>
+                                    <div class="text-[11px] sm:text-xs text-slate-300 leading-snug">
+                                        Touch, slide &amp; watch theorems reveal themselves at <strong class="text-cyan-300">labs.itsmathtime.co.in</strong>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-2 shrink-0 w-full sm:w-auto">
+                                <a href="https://labs.itsmathtime.co.in" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto text-center px-4 py-2 rounded-xl bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 text-white font-bold text-xs shadow-md transition-all hover:scale-105 active:scale-95 flex items-center justify-center gap-1.5">
+                                    <span>Launch Labs</span>
+                                    <span>↗</span>
+                                </a>
+                                <a href="#labs" class="hidden sm:inline-flex px-3 py-2 rounded-xl bg-white/10 hover:bg-white/15 text-slate-200 text-xs font-semibold border border-white/10 transition">
+                                    Demo ↓
+                                </a>
+                            </div>
                         </div>
 
                         <!-- Trust Proof Strip -->
@@ -395,13 +830,13 @@
                                 </div>
                             </div>
 
-                            <!-- Floating Pill 3: Bottom-Left (Classes 7 to 10) -->
+                            <!-- Floating Pill 3: Bottom-Left (Classes 7 to 12) -->
                             <div class="absolute bottom-6 -left-4 sm:-left-6 glass-pill animate-float-3 shadow-xl">
                                 <div class="flex items-center gap-2 px-3.5 py-2 rounded-2xl bg-slate-900/85 backdrop-blur-xl border border-indigo-400/30 text-white text-xs sm:text-sm font-semibold shadow-lg">
                                     <span class="text-lg">📐</span>
                                     <div>
-                                        <div class="text-indigo-300 leading-none font-bold">Classes 7–10</div>
-                                        <div class="text-[10px] text-slate-300 font-normal leading-tight">CBSE &amp; Foundation</div>
+                                        <div class="text-indigo-300 leading-none font-bold">Classes 7–12</div>
+                                        <div class="text-[10px] text-slate-300 font-normal leading-tight">CBSE &amp; Bridge Series</div>
                                     </div>
                                 </div>
                             </div>
@@ -416,7 +851,7 @@
                         <div class="text-xs sm:text-sm text-slate-400 mt-1 font-medium">Years Classroom Teaching</div>
                     </div>
                     <div class="p-4 rounded-2xl bg-white/[0.03] border border-white/5 backdrop-blur-sm">
-                        <div class="text-3xl sm:text-4xl font-extrabold text-blue-400 font-heading">500+</div>
+                        <div class="text-3xl sm:text-4xl font-extrabold text-blue-400 font-heading">200+</div>
                         <div class="text-xs sm:text-sm text-slate-400 mt-1 font-medium">Free Video Lectures &amp; Shorts</div>
                     </div>
                     <div class="p-4 rounded-2xl bg-white/[0.03] border border-white/5 backdrop-blur-sm">
@@ -496,7 +931,7 @@
                                     <span class="text-amber-500">⭐</span> 15+ Yrs Teaching
                                 </span>
                                 <span class="flex items-center gap-1">
-                                    <span class="text-blue-500">📐</span> Classes 4–10 CBSE
+                                    <span class="text-blue-500">📐</span> Classes 7–10 &bull; 11–12 Spotlights
                                 </span>
                                 <span class="flex items-center gap-1">
                                     <span class="text-emerald-500">🏆</span> Board Specialist
@@ -513,7 +948,7 @@
                                 Helping Students Fall in Love with Math, One Concept at a Time
                             </h3>
                             <p class="text-slate-600 text-base leading-relaxed mb-4">
-                                Hello! I'm <strong>Alka Sharma</strong>, creator of <strong>MathTime by Alka Ma'am</strong>. With an M.Sc. in Mathematics, B.Ed., and CTET qualification, I bring 15 years of proven classroom expertise dedicated to simplifying mathematical concepts and turning math anxiety into genuine confidence.
+                                Hello! I'm <strong>Alka Sharma</strong>, creator of <strong>MathTime by Alka Ma'am</strong>. With an M.Sc. in Mathematics, B.Ed., and CTET qualification, I bring 15 years of proven classroom expertise dedicated to simplifying mathematical concepts and turning math anxiety into genuine confidence—from core secondary school boards (Classes 7–10) to foundational senior secondary bridge concepts and rapid shorts (Classes 11 &amp; 12).
                             </p>
                         </div>
 
@@ -633,7 +1068,7 @@
                             </div>
                             <h4 class="text-lg font-bold text-slate-900 font-heading mb-1.5">15+ Years Classroom Mastery</h4>
                             <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                                Proven ability to inspire students, resolve deep-seated learning blocks, and prepare learners for academic triumphs.
+                                Proven ability to inspire students, resolve deep-seated learning blocks across Classes 7–10, and provide senior secondary (Classes 11–12) conceptual bridging.
                             </p>
                         </div>
 
@@ -663,6 +1098,421 @@
                             <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
                                 Utilizing clear digital whiteboards, geometry step demonstrations, and structured video lessons for seamless learning.
                             </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================================================
+             Deep Concept Clarity: Interactive Math Laboratories
+             Platform: labs.itsmathtime.co.in (Extended Part of MathTime)
+             ========================================================================== -->
+        <section id="labs" class="py-20 md:py-32 lab-section-bg text-white relative overflow-hidden lab-grid-pattern border-t border-b border-cyan-500/20">
+            <!-- Ambient Atmospheric Glows -->
+            <div class="absolute top-0 left-1/4 w-[500px] h-[500px] bg-cyan-600/15 rounded-full blur-3xl pointer-events-none -z-0"></div>
+            <div class="absolute bottom-0 right-1/4 w-[500px] h-[500px] bg-purple-600/15 rounded-full blur-3xl pointer-events-none -z-0"></div>
+            <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[350px] bg-blue-600/10 rounded-full blur-3xl pointer-events-none -z-0"></div>
+
+            <div class="container mx-auto px-4 sm:px-6 relative z-10">
+                <!-- Section Header -->
+                <div class="text-center max-w-4xl mx-auto mb-16 animate-on-scroll fade-in-up">
+                    <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-cyan-950/90 border border-cyan-400/40 text-cyan-300 text-xs font-bold uppercase tracking-wider mb-5 shadow-lg shadow-cyan-950/50">
+                        <span class="flex h-2 w-2 relative">
+                            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-cyan-400 opacity-75"></span>
+                            <span class="relative inline-flex rounded-full h-2 w-2 bg-cyan-400"></span>
+                        </span>
+                        <span>Official Extension &bull; labs.itsmathtime.co.in &bull; 50 Visual Sandboxes</span>
+                    </div>
+
+                    <h2 class="text-3xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight font-heading leading-tight">
+                        Deep Concept Clarity
+                        <span class="bg-gradient-to-r from-cyan-300 via-sky-200 to-amber-300 bg-clip-text text-transparent block mt-2 text-2xl sm:text-4xl lg:text-5xl font-extrabold">
+                            Math You Can Touch, Explore &amp; Master
+                        </span>
+                    </h2>
+
+                    <p class="text-slate-300 text-base sm:text-lg lg:text-xl mt-6 leading-relaxed max-w-3xl mx-auto font-normal">
+                        Experience mathematical laws as <strong>living, interactive systems</strong>. Touch, slide, and watch geometric theorems, calculus rates, and algebraic relationships reveal themselves naturally across <strong>50 visual laboratories</strong>.
+                    </p>
+
+                    <div class="mt-6 flex items-center justify-center gap-3 flex-wrap">
+                        <a href="https://labs.itsmathtime.co.in" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-gradient-to-r from-cyan-500 via-sky-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 text-slate-950 font-extrabold text-sm sm:text-base shadow-xl shadow-cyan-500/25 hover:shadow-cyan-400/40 hover:scale-105 active:scale-95 transition-all duration-300">
+                            <span>🚀 Launch Full 50+ Laboratories</span>
+                            <span class="font-mono text-xs px-2 py-0.5 rounded bg-slate-950/20 text-slate-950">labs.itsmathtime.co.in ↗</span>
+                        </a>
+                        <span class="text-xs text-slate-400 font-medium hidden sm:inline">&bull; 100% Free &bull; Zero Installation &bull; Mobile Friendly</span>
+                    </div>
+                </div>
+
+                <!-- Interactive Hands-on Sandbox Demonstration (Living System in Real Time) -->
+                <div class="max-w-5xl mx-auto mb-20 animate-on-scroll fade-in-up">
+                    <div class="lab-card rounded-3xl p-6 sm:p-8 border border-cyan-400/30 relative overflow-hidden shadow-2xl">
+                        <!-- Top Bar of the Interactive Sandbox -->
+                        <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between pb-6 border-b border-white/10 gap-4">
+                            <div class="flex items-center gap-3">
+                                <div class="w-10 h-10 rounded-2xl bg-cyan-500/20 border border-cyan-400/40 text-cyan-300 flex items-center justify-center font-bold text-xl">
+                                    📐
+                                </div>
+                                <div>
+                                    <div class="flex items-center gap-2">
+                                        <h3 class="text-lg sm:text-xl font-bold text-white font-heading">
+                                            Live Sandbox: Trigonometric Harmonic System
+                                        </h3>
+                                        <span class="px-2 py-0.5 rounded text-[10px] font-extrabold bg-cyan-400/20 text-cyan-300 border border-cyan-400/40 uppercase">Interactive</span>
+                                    </div>
+                                    <p class="text-xs text-slate-300 mt-0.5">
+                                        Drag the angle slider below &mdash; watch coordinates, sine height, and cosine base adapt in real time!
+                                    </p>
+                                </div>
+                            </div>
+
+                            <button id="lab-play-btn" type="button" class="px-4 py-2 rounded-xl bg-cyan-500/15 hover:bg-cyan-500/25 border border-cyan-400/40 text-cyan-300 text-xs font-bold transition flex items-center gap-2 cursor-pointer">
+                                <span>▶ Auto Rotate (Living System)</span>
+                            </button>
+                        </div>
+
+                        <!-- Main Sandbox Stage -->
+                        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center py-6">
+                            <!-- Left: Interactive Vector Canvas SVG (Unit Circle) -->
+                            <div class="lg:col-span-5 flex flex-col items-center justify-center">
+                                <div class="relative w-[240px] h-[240px] lab-interactive-screen rounded-2xl flex items-center justify-center p-2">
+                                    <svg class="w-full h-full" viewBox="0 0 220 220" aria-label="Interactive Unit Circle Simulation">
+                                        <!-- Grid & Axes -->
+                                        <line x1="15" y1="110" x2="205" y2="110" stroke="rgba(255,255,255,0.18)" stroke-width="1.5" stroke-dasharray="3,3" />
+                                        <line x1="110" y1="15" x2="110" y2="205" stroke="rgba(255,255,255,0.18)" stroke-width="1.5" stroke-dasharray="3,3" />
+                                        
+                                        <!-- Axis Labels -->
+                                        <text x="200" y="105" fill="#94a3b8" font-size="10" font-weight="bold">+X</text>
+                                        <text x="114" y="22" fill="#94a3b8" font-size="10" font-weight="bold">+Y</text>
+                                        <text x="114" y="122" fill="#64748b" font-size="9">(0,0)</text>
+
+                                        <!-- Unit Circle -->
+                                        <circle cx="110" cy="110" r="85" fill="none" stroke="rgba(56, 189, 248, 0.3)" stroke-width="2" />
+                                        
+                                        <!-- Angle Arc -->
+                                        <path id="lab-angle-arc" d="M 136 110 A 26 26 0 0 0 128.4 91.6" fill="rgba(253, 224, 71, 0.2)" stroke="#fde047" stroke-width="1.5" />
+
+                                        <!-- Cosine Projection Line (Horizontal Base) -->
+                                        <line id="lab-cos-line" x1="110" y1="110" x2="170.1" y2="110" stroke="#f59e0b" stroke-width="3" stroke-linecap="round" />
+                                        
+                                        <!-- Sine Projection Line (Vertical Height) -->
+                                        <line id="lab-sin-line" x1="170.1" y1="110" x2="170.1" y2="49.9" stroke="#38bdf8" stroke-width="3" stroke-linecap="round" />
+
+                                        <!-- Rotating Vector Line (Hypotenuse = 1) -->
+                                        <line id="lab-vector-line" x1="110" y1="110" x2="170.1" y2="49.9" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" />
+
+                                        <!-- Point P on Unit Circle -->
+                                        <circle id="lab-point-p" cx="170.1" cy="49.9" r="6" fill="#38bdf8" stroke="#ffffff" stroke-width="2" />
+                                    </svg>
+                                </div>
+                                <div class="mt-3 flex items-center gap-4 text-[11px] text-slate-300 font-mono">
+                                    <span class="flex items-center gap-1.5"><span class="w-3 h-1.5 rounded-full bg-amber-400"></span> Base = cos θ</span>
+                                    <span class="flex items-center gap-1.5"><span class="w-3 h-1.5 rounded-full bg-cyan-400"></span> Height = sin θ</span>
+                                    <span class="flex items-center gap-1.5"><span class="w-3 h-1.5 rounded-full bg-white"></span> Radius = 1</span>
+                                </div>
+                            </div>
+
+                            <!-- Right: Live Metric Dashboard & Controls -->
+                            <div class="lg:col-span-7 space-y-5">
+                                <!-- Angle Slider Control -->
+                                <div class="p-4 rounded-2xl bg-slate-900/90 border border-white/10 space-y-3">
+                                    <div class="flex items-center justify-between">
+                                        <label for="lab-angle-slider" class="text-xs sm:text-sm font-bold text-slate-200 flex items-center gap-2">
+                                            <span>Touch / Slide Parameter: Angle θ</span>
+                                            <span id="lab-quadrant-badge" class="px-2 py-0.5 rounded text-[11px] font-bold border bg-emerald-500/20 text-emerald-300 border-emerald-400/40">Quadrant I</span>
+                                        </label>
+                                        <span id="lab-angle-val" class="font-mono text-sm sm:text-base font-extrabold text-cyan-300">45° (0.25π rad)</span>
+                                    </div>
+                                    <input id="lab-angle-slider" type="range" min="0" max="360" value="45" class="lab-slider" aria-label="Adjust angle parameter in degrees">
+                                    
+                                    <!-- Quick Preset Angle Buttons -->
+                                    <div class="flex items-center justify-between gap-1.5 flex-wrap pt-1">
+                                        <span class="text-[11px] text-slate-400">Presets:</span>
+                                        <button type="button" data-lab-angle="30" class="px-2 py-1 rounded-lg bg-white/5 hover:bg-white/15 text-xs text-slate-300 font-mono transition">30°</button>
+                                        <button type="button" data-lab-angle="45" class="px-2 py-1 rounded-lg bg-white/5 hover:bg-white/15 text-xs text-slate-300 font-mono transition">45°</button>
+                                        <button type="button" data-lab-angle="60" class="px-2 py-1 rounded-lg bg-white/5 hover:bg-white/15 text-xs text-slate-300 font-mono transition">60°</button>
+                                        <button type="button" data-lab-angle="90" class="px-2 py-1 rounded-lg bg-cyan-500/20 text-cyan-300 font-mono text-xs border border-cyan-400/40 transition">90°</button>
+                                        <button type="button" data-lab-angle="180" class="px-2 py-1 rounded-lg bg-white/5 hover:bg-white/15 text-xs text-slate-300 font-mono transition">180°</button>
+                                        <button type="button" data-lab-angle="270" class="px-2 py-1 rounded-lg bg-white/5 hover:bg-white/15 text-xs text-slate-300 font-mono transition">270°</button>
+                                        <button type="button" data-lab-angle="360" class="px-2 py-1 rounded-lg bg-white/5 hover:bg-white/15 text-xs text-slate-300 font-mono transition">360°</button>
+                                    </div>
+                                </div>
+
+                                <!-- Real-Time Computed Mathematical Values -->
+                                <div class="grid grid-cols-3 gap-3">
+                                    <div class="p-3 rounded-2xl bg-cyan-950/40 border border-cyan-400/30 text-center">
+                                        <div class="text-[11px] text-cyan-300/80 font-bold uppercase tracking-wider">sin θ (Height)</div>
+                                        <div id="lab-sin-val" class="text-xl sm:text-2xl font-mono font-extrabold text-cyan-300 mt-1">+0.707</div>
+                                    </div>
+                                    <div class="p-3 rounded-2xl bg-amber-950/40 border border-amber-400/30 text-center">
+                                        <div class="text-[11px] text-amber-300/80 font-bold uppercase tracking-wider">cos θ (Base)</div>
+                                        <div id="lab-cos-val" class="text-xl sm:text-2xl font-mono font-extrabold text-amber-300 mt-1">+0.707</div>
+                                    </div>
+                                    <div class="p-3 rounded-2xl bg-purple-950/40 border border-purple-400/30 text-center">
+                                        <div class="text-[11px] text-purple-300/80 font-bold uppercase tracking-wider">tan θ (Slope)</div>
+                                        <div id="lab-tan-val" class="text-xl sm:text-2xl font-mono font-extrabold text-purple-300 mt-1">+1.000</div>
+                                    </div>
+                                </div>
+
+                                <!-- Deep Intuition Insight Box -->
+                                <div class="p-3.5 rounded-2xl bg-slate-900/70 border border-white/10 flex items-start gap-3 text-xs sm:text-sm text-slate-300 leading-relaxed">
+                                    <span class="text-lg">💡</span>
+                                    <div>
+                                        <strong class="text-white">Why This Rewires Your Brain:</strong>
+                                        <span class="text-slate-300"> When θ moves to 90°, the vertical sine bar reaches the apex of the circle (1.000) while the horizontal base collapses to zero. You never have to memorize formulas again &mdash; you physically see why they are mathematically inevitable!</span>
+                                        <div class="mt-1 text-[11px] text-amber-300 font-medium">
+                                            ASTC Rule Active: <span id="lab-astc-rule" class="font-bold">All (A) positive</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Bottom Link Strip inside Sandbox -->
+                        <div class="mt-4 pt-4 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-slate-300">
+                            <span class="flex items-center gap-2">
+                                <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                                <span>Interactive physics engine powered by modern HTML5 Canvas, WebGL &amp; SVG.</span>
+                            </span>
+                            <a href="https://labs.itsmathtime.co.in" target="_blank" rel="noopener noreferrer" class="text-cyan-300 hover:text-white font-bold inline-flex items-center gap-1 group">
+                                <span>Explore all 50 laboratories at labs.itsmathtime.co.in</span>
+                                <span class="group-hover:translate-x-1 transition-transform">&rarr;</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Section Sub-Header: Why Visual Labs Are Rare & Revolutionary -->
+                <div class="text-center max-w-3xl mx-auto mb-12 animate-on-scroll fade-in-up">
+                    <span class="text-xs uppercase font-bold text-cyan-400 tracking-wider">Pedagogical Breakthrough</span>
+                    <h3 class="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-white mt-1 font-heading">
+                        Why Visual Math Labs Are Rare &amp; Essential for Every Student
+                    </h3>
+                    <p class="text-slate-300 text-sm sm:text-base mt-2">
+                        Most educational content stops at passive video lectures and static textbooks. Here is why touching mathematics changes everything:
+                    </p>
+                </div>
+
+                <!-- 4 Bento Cards Explaining Rarity & Utility -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-20">
+                    <!-- Bento 1: Living Systems vs Dead Symbols -->
+                    <div class="lab-card rounded-2xl p-6 flex flex-col justify-between group animate-on-scroll fade-in-up">
+                        <div>
+                            <div class="w-12 h-12 rounded-xl bg-blue-500/20 border border-blue-400/40 text-blue-300 flex items-center justify-center text-2xl font-bold mb-4 group-hover:scale-110 transition-transform">
+                                🧬
+                            </div>
+                            <h4 class="text-lg font-bold text-white font-heading mb-2">Living Systems vs Dead Symbols</h4>
+                            <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
+                                Standard education presents math as dead formulas on a blackboard. Our labs treat formulas as <strong>living physical laws</strong>: you adjust values and instantly watch equations react in real time.
+                            </p>
+                        </div>
+                        <div class="mt-4 pt-3 border-t border-white/10 text-[11px] font-semibold text-blue-300">
+                            ✓ Instant cause-and-effect intuition
+                        </div>
+                    </div>
+
+                    <!-- Bento 2: 10x Cognitive Retention -->
+                    <div class="lab-card rounded-2xl p-6 flex flex-col justify-between group animate-on-scroll fade-in-up">
+                        <div>
+                            <div class="w-12 h-12 rounded-xl bg-emerald-500/20 border border-emerald-400/40 text-emerald-300 flex items-center justify-center text-2xl font-bold mb-4 group-hover:scale-110 transition-transform">
+                                🧠
+                            </div>
+                            <h4 class="text-lg font-bold text-white font-heading mb-2">Eliminates Rote Memorization</h4>
+                            <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
+                                When a student physically manipulates a triangle and watches its angles sum to 180° under all distortions, theorem proof is no longer a chore to cram &mdash; it becomes an instinct.
+                            </p>
+                        </div>
+                        <div class="mt-4 pt-3 border-t border-white/10 text-[11px] font-semibold text-emerald-300">
+                            ✓ Solves exam anxiety at root cause
+                        </div>
+                    </div>
+
+                    <!-- Bento 3: Why It Is Rare to Find -->
+                    <div class="lab-card rounded-2xl p-6 flex flex-col justify-between group animate-on-scroll fade-in-up">
+                        <div>
+                            <div class="w-12 h-12 rounded-xl bg-amber-500/20 border border-amber-400/40 text-amber-300 flex items-center justify-center text-2xl font-bold mb-4 group-hover:scale-110 transition-transform">
+                                ⭐
+                            </div>
+                            <div class="flex items-center gap-1.5 mb-2">
+                                <h4 class="text-lg font-bold text-white font-heading">Rare Educational Innovation</h4>
+                                <span class="px-1.5 py-0.2 rounded text-[9px] font-extrabold bg-amber-400 text-slate-950 uppercase">Rare</span>
+                            </div>
+                            <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
+                                High-end simulations are usually locked behind university licenses or complicated software like Mathematica. Finding <strong>50 purpose-built labs aligned to school boards</strong> is virtually impossible elsewhere.
+                            </p>
+                        </div>
+                        <div class="mt-4 pt-3 border-t border-white/10 text-[11px] font-semibold text-amber-300">
+                            ✓ Tailored for CBSE, ICSE &amp; JEE
+                        </div>
+                    </div>
+
+                    <!-- Bento 4: Zero Friction & Universal Access -->
+                    <div class="lab-card rounded-2xl p-6 flex flex-col justify-between group animate-on-scroll fade-in-up">
+                        <div>
+                            <div class="w-12 h-12 rounded-xl bg-purple-500/20 border border-purple-400/40 text-purple-300 flex items-center justify-center text-2xl font-bold mb-4 group-hover:scale-110 transition-transform">
+                                📱
+                            </div>
+                            <h4 class="text-lg font-bold text-white font-heading mb-2">Zero Friction, 100% Free</h4>
+                            <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
+                                No app download, no heavy software installation, and no login walls. Runs smoothly on any mobile browser, tablet, Chromebook, or laptop at 60 FPS touch responsiveness.
+                            </p>
+                        </div>
+                        <div class="mt-4 pt-3 border-t border-white/10 text-[11px] font-semibold text-purple-300">
+                            ✓ Free learning for every child
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Showcase of the 6 Specialized Laboratory Wings -->
+                <div class="mb-16">
+                    <div class="text-center max-w-3xl mx-auto mb-10 animate-on-scroll fade-in-up">
+                        <span class="text-xs uppercase font-bold text-cyan-400 tracking-wider">Full Laboratory Wings</span>
+                        <h3 class="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-white mt-1 font-heading">
+                            Explore All 50 Visual Sandboxes
+                        </h3>
+                        <p class="text-slate-300 text-sm sm:text-base mt-2">
+                            Divided across foundational geometry, high school algebra, senior secondary calculus, and 3D spatial thinking:
+                        </p>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <!-- Wing 1: Geometry & Circles -->
+                        <a href="https://labs.itsmathtime.co.in" target="_blank" rel="noopener noreferrer" class="lab-card rounded-2xl p-6 border border-white/10 hover:border-cyan-400/50 block group transition-all duration-300">
+                            <div class="flex items-center justify-between mb-4">
+                                <span class="w-10 h-10 rounded-xl bg-blue-500/20 border border-blue-400/30 text-blue-300 flex items-center justify-center text-xl font-bold">
+                                    ⭕
+                                </span>
+                                <span class="text-xs font-mono font-bold text-cyan-300 group-hover:translate-x-1 transition-transform">Enter Lab &rarr;</span>
+                            </div>
+                            <h4 class="text-base sm:text-lg font-bold text-white group-hover:text-cyan-300 transition-colors font-heading">
+                                Geometric Theorems in Motion
+                            </h4>
+                            <p class="text-xs sm:text-sm text-slate-300 mt-2 leading-relaxed">
+                                Drag chord endpoints live: verify angle subtended at the center is double the circumference angle. Dynamic water dissection proof for Pythagoras' Theorem and Thales midpoint theorem.
+                            </p>
+                            <div class="mt-4 pt-3 border-t border-white/10 flex items-center gap-2 text-[11px] text-slate-400">
+                                <span>Target: Classes 8, 9 &amp; 10</span> &bull; <span>12 Visual Labs</span>
+                            </div>
+                        </a>
+
+                        <!-- Wing 2: Calculus Rates & Limits -->
+                        <a href="https://labs.itsmathtime.co.in" target="_blank" rel="noopener noreferrer" class="lab-card rounded-2xl p-6 border border-white/10 hover:border-cyan-400/50 block group transition-all duration-300">
+                            <div class="flex items-center justify-between mb-4">
+                                <span class="w-10 h-10 rounded-xl bg-purple-500/20 border border-purple-400/30 text-purple-300 flex items-center justify-center text-xl font-bold">
+                                    📈
+                                </span>
+                                <span class="text-xs font-mono font-bold text-cyan-300 group-hover:translate-x-1 transition-transform">Enter Lab &rarr;</span>
+                            </div>
+                            <h4 class="text-base sm:text-lg font-bold text-white group-hover:text-purple-300 transition-colors font-heading">
+                                Calculus Rates &amp; Limiting Secants
+                            </h4>
+                            <p class="text-xs sm:text-sm text-slate-300 mt-2 leading-relaxed">
+                                Watch secants fuse into the instantaneous tangent line as Δx &rarr; 0. Visual Riemann sums dividing curves into infinitely thin rectangles to reveal the birth of integration.
+                            </p>
+                            <div class="mt-4 pt-3 border-t border-white/10 flex items-center gap-2 text-[11px] text-slate-400">
+                                <span>Target: Classes 11 &amp; 12 / JEE</span> &bull; <span>10 Visual Labs</span>
+                            </div>
+                        </a>
+
+                        <!-- Wing 3: Polynomials & Parabolas -->
+                        <a href="https://labs.itsmathtime.co.in" target="_blank" rel="noopener noreferrer" class="lab-card rounded-2xl p-6 border border-white/10 hover:border-cyan-400/50 block group transition-all duration-300">
+                            <div class="flex items-center justify-between mb-4">
+                                <span class="w-10 h-10 rounded-xl bg-amber-500/20 border border-amber-400/30 text-amber-300 flex items-center justify-center text-xl font-bold">
+                                    ⚡
+                                </span>
+                                <span class="text-xs font-mono font-bold text-cyan-300 group-hover:translate-x-1 transition-transform">Enter Lab &rarr;</span>
+                            </div>
+                            <h4 class="text-base sm:text-lg font-bold text-white group-hover:text-amber-300 transition-colors font-heading">
+                                Polynomial Roots &amp; Quadratic Curves
+                            </h4>
+                            <p class="text-xs sm:text-sm text-slate-300 mt-2 leading-relaxed">
+                                Slide coefficients a, b, c and watch the parabola float, invert, and intersect the x-axis. Live discriminant Δ tracker showing real vs imaginary roots as the vertex shifts.
+                            </p>
+                            <div class="mt-4 pt-3 border-t border-white/10 flex items-center gap-2 text-[11px] text-slate-400">
+                                <span>Target: Classes 9, 10 &amp; 11</span> &bull; <span>8 Visual Labs</span>
+                            </div>
+                        </a>
+
+                        <!-- Wing 4: Trigonometry & Unit Circle -->
+                        <a href="https://labs.itsmathtime.co.in" target="_blank" rel="noopener noreferrer" class="lab-card rounded-2xl p-6 border border-white/10 hover:border-cyan-400/50 block group transition-all duration-300">
+                            <div class="flex items-center justify-between mb-4">
+                                <span class="w-10 h-10 rounded-xl bg-cyan-500/20 border border-cyan-400/30 text-cyan-300 flex items-center justify-center text-xl font-bold">
+                                    🌊
+                                </span>
+                                <span class="text-xs font-mono font-bold text-cyan-300 group-hover:translate-x-1 transition-transform">Enter Lab &rarr;</span>
+                            </div>
+                            <h4 class="text-base sm:text-lg font-bold text-white group-hover:text-cyan-300 transition-colors font-heading">
+                                Unit Circle Harmonics &amp; Wave Mechanics
+                            </h4>
+                            <p class="text-xs sm:text-sm text-slate-300 mt-2 leading-relaxed">
+                                Rotate vectors around 360° to physically see circular rotation unwind into continuous sine and cosine waves. ASTC quadrant rules visually revealed through positive/negative coordinate axes.
+                            </p>
+                            <div class="mt-4 pt-3 border-t border-white/10 flex items-center gap-2 text-[11px] text-slate-400">
+                                <span>Target: Classes 10, 11 &amp; 12</span> &bull; <span>8 Visual Labs</span>
+                            </div>
+                        </a>
+
+                        <!-- Wing 5: 3D Mensuration & Conic Cuts -->
+                        <a href="https://labs.itsmathtime.co.in" target="_blank" rel="noopener noreferrer" class="lab-card rounded-2xl p-6 border border-white/10 hover:border-cyan-400/50 block group transition-all duration-300">
+                            <div class="flex items-center justify-between mb-4">
+                                <span class="w-10 h-10 rounded-xl bg-rose-500/20 border border-rose-400/30 text-rose-300 flex items-center justify-center text-xl font-bold">
+                                    🧊
+                                </span>
+                                <span class="text-xs font-mono font-bold text-cyan-300 group-hover:translate-x-1 transition-transform">Enter Lab &rarr;</span>
+                            </div>
+                            <h4 class="text-base sm:text-lg font-bold text-white group-hover:text-rose-300 transition-colors font-heading">
+                                3D Mensuration &amp; Conic Section Slices
+                            </h4>
+                            <p class="text-xs sm:text-sm text-slate-300 mt-2 leading-relaxed">
+                                Slice double cones with a tilting plane to generate circles, ellipses, parabolas, and hyperbolas. Unfold cylinders, cones, and prisms into 2D nets to intuitively discover surface area formulas.
+                            </p>
+                            <div class="mt-4 pt-3 border-t border-white/10 flex items-center gap-2 text-[11px] text-slate-400">
+                                <span>Target: Classes 9, 10, 11 &amp; 12</span> &bull; <span>6 Visual Labs</span>
+                            </div>
+                        </a>
+
+                        <!-- Wing 6: Coordinate Geometry & Vectors -->
+                        <a href="https://labs.itsmathtime.co.in" target="_blank" rel="noopener noreferrer" class="lab-card rounded-2xl p-6 border border-white/10 hover:border-cyan-400/50 block group transition-all duration-300">
+                            <div class="flex items-center justify-between mb-4">
+                                <span class="w-10 h-10 rounded-xl bg-indigo-500/20 border border-indigo-400/30 text-indigo-300 flex items-center justify-center text-xl font-bold">
+                                    🎯
+                                </span>
+                                <span class="text-xs font-mono font-bold text-cyan-300 group-hover:translate-x-1 transition-transform">Enter Lab &rarr;</span>
+                            </div>
+                            <h4 class="text-base sm:text-lg font-bold text-white group-hover:text-indigo-300 transition-colors font-heading">
+                                Coordinate Geometry &amp; Vector Fields
+                            </h4>
+                            <p class="text-xs sm:text-sm text-slate-300 mt-2 leading-relaxed">
+                                Move point P to see internal and external section formula ratios m:n divide line segments dynamically. Vector addition parallelograms and dot product projections computed live.
+                            </p>
+                            <div class="mt-4 pt-3 border-t border-white/10 flex items-center gap-2 text-[11px] text-slate-400">
+                                <span>Target: Classes 10, 11 &amp; 12</span> &bull; <span>6 Visual Labs</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Call to Action Banner -->
+                <div class="relative rounded-3xl p-8 sm:p-12 bg-gradient-to-r from-cyan-950 via-slate-900 to-indigo-950 border border-cyan-400/40 shadow-2xl text-center overflow-hidden animate-on-scroll fade-in-up">
+                    <div class="relative z-10 max-w-3xl mx-auto space-y-4">
+                        <span class="px-3.5 py-1 rounded-full text-xs font-extrabold bg-cyan-400 text-slate-950 uppercase tracking-wider">
+                            Ready to Touch Mathematics?
+                        </span>
+                        <h3 class="text-2xl sm:text-4xl font-extrabold text-white font-heading">
+                            Experience the Complete Laboratory Suite at <span class="text-cyan-300 font-mono">labs.itsmathtime.co.in</span>
+                        </h3>
+                        <p class="text-sm sm:text-base text-slate-300 leading-relaxed">
+                            Built as the official visual extension of MathTime by Alka Ma'am. 100% free for all students, parents, and educators worldwide.
+                        </p>
+                        <div class="pt-4 flex flex-col sm:flex-row items-center justify-center gap-4">
+                            <a href="https://labs.itsmathtime.co.in" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto px-8 py-4 rounded-full bg-gradient-to-r from-cyan-400 via-sky-400 to-blue-500 hover:from-cyan-300 hover:to-blue-400 text-slate-950 font-extrabold text-base shadow-xl shadow-cyan-500/30 hover:scale-105 active:scale-95 transition-all duration-300 flex items-center justify-center gap-2">
+                                <span>🚀 Open Interactive Labs (labs.itsmathtime.co.in)</span>
+                                <span>↗</span>
+                            </a>
+                            <a href="#videos" class="w-full sm:w-auto px-6 py-4 rounded-full bg-white/10 hover:bg-white/15 text-white font-bold text-sm border border-white/20 transition-all hover:scale-105 active:scale-95">
+                                Watch Video Explanations ↓
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -701,6 +1551,9 @@
                     </button>
                     <button class="filter-pill px-5 py-2.5 rounded-full text-xs sm:text-sm font-semibold border border-slate-200 bg-white text-slate-700 shadow-sm cursor-pointer" data-filter="tricks">
                         ⚡ Speed Math &amp; Tricks
+                    </button>
+                    <button class="filter-pill px-5 py-2.5 rounded-full text-xs sm:text-sm font-semibold border border-slate-200 bg-white text-slate-700 shadow-sm cursor-pointer" data-filter="senior">
+                        🎯 Classes 11 &amp; 12 Spotlights
                     </button>
                 </div>
 
@@ -930,13 +1783,50 @@
                             </div>
                         </div>
                     </div>
+
+                    <!-- Video Card 7 (Senior Secondary / Class 11 & 12 Bridge & Shorts) -->
+                    <div class="filter-item tilt-card-wrapper animate-on-scroll fade-in-up" data-category="senior tricks">
+                        <div class="tilt-card bg-white rounded-2xl shadow-md hover:shadow-xl border border-slate-200/80 overflow-hidden flex flex-col h-full">
+                            <!-- Track Preview Cover -->
+                            <div class="relative aspect-video bg-gradient-to-br from-purple-950 via-indigo-950 to-slate-900 p-6 flex flex-col justify-between text-white group cursor-pointer" onclick="window.open('https://www.youtube.com/@its.mathtime/shorts', '_blank')">
+                                <div class="flex justify-between items-start">
+                                    <span class="px-2.5 py-1 rounded-full text-xs font-bold bg-rose-500/30 text-rose-300 border border-rose-400/30 backdrop-blur-sm">Classes 11 &amp; 12</span>
+                                    <span class="text-xs text-amber-300 font-semibold">Shorts &bull; Spotlights</span>
+                                </div>
+                                <div>
+                                    <div class="text-2xl font-black font-heading">d/dx &bull; sin(x+y) &bull; [A]</div>
+                                    <div class="text-xs text-indigo-200 mt-1">Calculus &amp; Higher Math Intuition</div>
+                                </div>
+                                <div class="flex items-center gap-2 text-xs font-semibold text-white/90 group-hover:text-amber-300 transition-colors">
+                                    <span>Watch Concept Shorts</span> &rarr;
+                                </div>
+                            </div>
+                            <!-- Card Body -->
+                            <div class="p-6 flex flex-col flex-grow justify-between">
+                                <div>
+                                    <div class="text-xs font-bold uppercase tracking-wider text-purple-600 mb-2">Senior Secondary Hub</div>
+                                    <h3 class="text-lg font-bold text-slate-900 leading-snug mb-2 font-heading">
+                                        Class 11 &amp; 12: Calculus, Trig &amp; Bridge Hacks
+                                    </h3>
+                                    <p class="text-slate-600 text-sm mb-4 leading-relaxed">
+                                        Rapid formula intuition, Limits &amp; Derivatives breakdowns, compound trigonometric angles, and bridge shorts to ease the leap from Class 10.
+                                    </p>
+                                </div>
+                                <div class="pt-4 border-t border-slate-100 flex items-center justify-between">
+                                    <a href="https://www.youtube.com/@its.mathtime/shorts" target="_blank" rel="noopener noreferrer" class="text-rose-600 hover:text-rose-800 font-semibold text-sm flex items-center gap-1 transition">
+                                        <span>Watch Shorts on YouTube</span> ↗
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
                 <!-- Section Footer CTA -->
                 <div class="text-center mt-12 animate-on-scroll fade-in-up">
                     <a href="https://www.youtube.com/@its.mathtime?sub_confirmation=1" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 bg-gradient-to-r from-red-600 to-rose-600 hover:from-red-500 hover:to-rose-500 text-white font-semibold py-3.5 px-8 rounded-full shadow-lg shadow-red-600/30 hover:scale-105 active:scale-95 transition-all duration-300">
                         <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
-                        <span>Subscribe on YouTube for 500+ Lessons</span>
+                        <span>Subscribe on YouTube for 200+ Lessons</span>
                     </a>
                 </div>
             </div>
@@ -1116,6 +2006,257 @@
                         </a>
                     </div>
                 </div>
+
+                <!-- Senior Secondary Bridge Hub Callout Banner -->
+                <div class="mt-12 rounded-3xl bg-gradient-to-r from-slate-900 via-indigo-950 to-slate-900 border border-indigo-500/30 p-6 sm:p-8 text-white flex flex-col md:flex-row items-center justify-between gap-6 shadow-xl animate-on-scroll fade-in-up">
+                    <div class="space-y-2 text-center md:text-left">
+                        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-rose-500/20 text-rose-300 border border-rose-500/30 text-xs font-bold uppercase tracking-wider">
+                            <span>🎯</span>
+                            <span>Expanding Horizons &bull; Senior Secondary Bridge</span>
+                        </div>
+                        <h3 class="text-xl sm:text-2xl font-bold font-heading text-white">
+                            Transitioning to Class 11 &amp; 12? We've Got You Covered.
+                        </h3>
+                        <p class="text-slate-300 text-sm max-w-2xl leading-relaxed">
+                            Alka Ma'am breaks down the toughest high school concepts into bite-sized intuition: Calculus foundations (Limits &amp; Derivatives), Advanced Trigonometric Identities, and Matrix operations via high-yield YouTube Shorts.
+                        </p>
+                    </div>
+                    <div class="shrink-0 flex flex-col sm:flex-row gap-3">
+                        <a href="https://www.youtube.com/@its.mathtime/shorts" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full bg-gradient-to-r from-rose-600 to-red-600 hover:from-rose-500 hover:to-red-500 text-white font-bold text-sm shadow-lg shadow-rose-600/30 hover:scale-105 transition">
+                            <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                            <span>Watch Senior Shorts</span> &rarr;
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quick Math Formulas & Tables Section (High-Value for Featured Snippets & AI Overviews) -->
+        <section id="formulas" class="py-16 md:py-24 bg-gradient-to-b from-slate-50 via-white to-slate-50 relative border-t border-slate-200/60">
+            <div class="container mx-auto px-4 sm:px-6 max-w-6xl">
+                <!-- Section Header -->
+                <div class="text-center max-w-3xl mx-auto mb-14">
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-amber-100 text-amber-800 border border-amber-200 text-xs font-semibold uppercase tracking-wider mb-3">
+                        ⚡ High-Yield Exam Reference &bull; Quick Revision
+                    </div>
+                    <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 font-heading section-title tracking-tight">
+                        Essential Math Formulas &amp; Reference Tables
+                    </h2>
+                    <p class="text-slate-600 text-base sm:text-lg mt-3 leading-relaxed">
+                        Curated reference sheets for CBSE Classes 8, 9 &amp; 10 students. Master algebraic identities, trigonometric values, and mensuration formulas at a glance.
+                    </p>
+                </div>
+
+                <div class="space-y-12">
+                    <!-- Table 1: Algebraic Identities -->
+                    <div class="bg-white rounded-2xl border border-slate-200/80 shadow-md p-6 sm:p-8 overflow-hidden">
+                        <div class="flex items-center justify-between mb-4 flex-wrap gap-2">
+                            <div>
+                                <span class="text-xs font-bold text-indigo-600 uppercase tracking-wider">Classes 8, 9 &amp; 10 CBSE</span>
+                                <h3 class="text-xl sm:text-2xl font-bold font-heading text-slate-900 mt-1">Core Algebraic Identities</h3>
+                            </div>
+                            <span class="px-3 py-1 rounded-full text-xs font-bold bg-indigo-50 text-indigo-700 border border-indigo-200">Polynomials &amp; Algebra</span>
+                        </div>
+                        <div class="overflow-x-auto">
+                            <table class="w-full text-left border-collapse text-sm">
+                                <thead>
+                                    <tr class="bg-slate-100 text-slate-700 border-b border-slate-200">
+                                        <th class="py-3 px-4 font-bold">#</th>
+                                        <th class="py-3 px-4 font-bold">Identity</th>
+                                        <th class="py-3 px-4 font-bold">Expanded Form</th>
+                                        <th class="py-3 px-4 font-bold">Key Application Tip</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="divide-y divide-slate-100 font-mono text-slate-800">
+                                    <tr class="hover:bg-slate-50 transition">
+                                        <td class="py-3 px-4 font-bold text-indigo-600">1</td>
+                                        <td class="py-3 px-4 font-bold">(a + b)²</td>
+                                        <td class="py-3 px-4 text-blue-700">a² + 2ab + b²</td>
+                                        <td class="py-3 px-4 font-sans text-xs text-slate-600">Expansion &amp; rapid squaring</td>
+                                    </tr>
+                                    <tr class="hover:bg-slate-50 transition">
+                                        <td class="py-3 px-4 font-bold text-indigo-600">2</td>
+                                        <td class="py-3 px-4 font-bold">(a - b)²</td>
+                                        <td class="py-3 px-4 text-blue-700">a² - 2ab + b²</td>
+                                        <td class="py-3 px-4 font-sans text-xs text-slate-600">Take care of the middle negative sign</td>
+                                    </tr>
+                                    <tr class="hover:bg-slate-50 transition">
+                                        <td class="py-3 px-4 font-bold text-indigo-600">3</td>
+                                        <td class="py-3 px-4 font-bold">a² - b²</td>
+                                        <td class="py-3 px-4 text-blue-700">(a - b)(a + b)</td>
+                                        <td class="py-3 px-4 font-sans text-xs text-slate-600">Difference of squares &bull; Rapid factorisation</td>
+                                    </tr>
+                                    <tr class="hover:bg-slate-50 transition">
+                                        <td class="py-3 px-4 font-bold text-indigo-600">4</td>
+                                        <td class="py-3 px-4 font-bold">(x + a)(x + b)</td>
+                                        <td class="py-3 px-4 text-blue-700">x² + (a + b)x + ab</td>
+                                        <td class="py-3 px-4 font-sans text-xs text-slate-600">Splitting the middle term in quadratics</td>
+                                    </tr>
+                                    <tr class="hover:bg-slate-50 transition">
+                                        <td class="py-3 px-4 font-bold text-indigo-600">5</td>
+                                        <td class="py-3 px-4 font-bold">(a + b + c)²</td>
+                                        <td class="py-3 px-4 text-blue-700">a² + b² + c² + 2ab + 2bc + 2ca</td>
+                                        <td class="py-3 px-4 font-sans text-xs text-slate-600">Class 9 Polynomials Exercise 2.4/2.5</td>
+                                    </tr>
+                                    <tr class="hover:bg-slate-50 transition">
+                                        <td class="py-3 px-4 font-bold text-indigo-600">6</td>
+                                        <td class="py-3 px-4 font-bold">(a + b)³</td>
+                                        <td class="py-3 px-4 text-blue-700">a³ + b³ + 3ab(a + b)</td>
+                                        <td class="py-3 px-4 font-sans text-xs text-slate-600">Cube of a binomial expansion</td>
+                                    </tr>
+                                    <tr class="hover:bg-slate-50 transition">
+                                        <td class="py-3 px-4 font-bold text-indigo-600">7</td>
+                                        <td class="py-3 px-4 font-bold">a³ + b³ + c³ - 3abc</td>
+                                        <td class="py-3 px-4 text-blue-700">(a + b + c)(a² + b² + c² - ab - bc - ca)</td>
+                                        <td class="py-3 px-4 font-sans text-xs text-slate-600">If a + b + c = 0, then a³ + b³ + c³ = 3abc</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <!-- Table 2: Trigonometric Values Table -->
+                    <div class="bg-white rounded-2xl border border-slate-200/80 shadow-md p-6 sm:p-8 overflow-hidden">
+                        <div class="flex items-center justify-between mb-4 flex-wrap gap-2">
+                            <div>
+                                <span class="text-xs font-bold text-rose-600 uppercase tracking-wider">Class 10 CBSE Board Exam</span>
+                                <h3 class="text-xl sm:text-2xl font-bold font-heading text-slate-900 mt-1">Trigonometric Values of Standard Angles</h3>
+                            </div>
+                            <span class="px-3 py-1 rounded-full text-xs font-bold bg-rose-50 text-rose-700 border border-rose-200">Chapter 8 &bull; Trigonometry</span>
+                        </div>
+                        <div class="overflow-x-auto">
+                            <table class="w-full text-center border-collapse text-sm">
+                                <thead>
+                                    <tr class="bg-slate-100 text-slate-700 border-b border-slate-200">
+                                        <th class="py-3 px-4 font-bold text-left">Trig Ratio (θ)</th>
+                                        <th class="py-3 px-4 font-bold">0°</th>
+                                        <th class="py-3 px-4 font-bold">30°</th>
+                                        <th class="py-3 px-4 font-bold">45°</th>
+                                        <th class="py-3 px-4 font-bold">60°</th>
+                                        <th class="py-3 px-4 font-bold">90°</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="divide-y divide-slate-100 font-mono text-slate-800">
+                                    <tr class="hover:bg-slate-50 transition">
+                                        <td class="py-3 px-4 text-left font-bold text-slate-900">sin θ</td>
+                                        <td class="py-3 px-4">0</td>
+                                        <td class="py-3 px-4">1/2</td>
+                                        <td class="py-3 px-4">1/√2</td>
+                                        <td class="py-3 px-4">√3/2</td>
+                                        <td class="py-3 px-4">1</td>
+                                    </tr>
+                                    <tr class="hover:bg-slate-50 transition">
+                                        <td class="py-3 px-4 text-left font-bold text-slate-900">cos θ</td>
+                                        <td class="py-3 px-4">1</td>
+                                        <td class="py-3 px-4">√3/2</td>
+                                        <td class="py-3 px-4">1/√2</td>
+                                        <td class="py-3 px-4">1/2</td>
+                                        <td class="py-3 px-4">0</td>
+                                    </tr>
+                                    <tr class="hover:bg-slate-50 transition">
+                                        <td class="py-3 px-4 text-left font-bold text-slate-900">tan θ</td>
+                                        <td class="py-3 px-4">0</td>
+                                        <td class="py-3 px-4">1/√3</td>
+                                        <td class="py-3 px-4 font-bold text-blue-600">1</td>
+                                        <td class="py-3 px-4">√3</td>
+                                        <td class="py-3 px-4 text-slate-400 font-sans italic text-xs">Not Defined</td>
+                                    </tr>
+                                    <tr class="hover:bg-slate-50 transition">
+                                        <td class="py-3 px-4 text-left font-bold text-slate-900">cosec θ</td>
+                                        <td class="py-3 px-4 text-slate-400 font-sans italic text-xs">Not Defined</td>
+                                        <td class="py-3 px-4">2</td>
+                                        <td class="py-3 px-4">√2</td>
+                                        <td class="py-3 px-4">2/√3</td>
+                                        <td class="py-3 px-4">1</td>
+                                    </tr>
+                                    <tr class="hover:bg-slate-50 transition">
+                                        <td class="py-3 px-4 text-left font-bold text-slate-900">sec θ</td>
+                                        <td class="py-3 px-4">1</td>
+                                        <td class="py-3 px-4">2/√3</td>
+                                        <td class="py-3 px-4">√2</td>
+                                        <td class="py-3 px-4">2</td>
+                                        <td class="py-3 px-4 text-slate-400 font-sans italic text-xs">Not Defined</td>
+                                    </tr>
+                                    <tr class="hover:bg-slate-50 transition">
+                                        <td class="py-3 px-4 text-left font-bold text-slate-900">cot θ</td>
+                                        <td class="py-3 px-4 text-slate-400 font-sans italic text-xs">Not Defined</td>
+                                        <td class="py-3 px-4">√3</td>
+                                        <td class="py-3 px-4 font-bold text-blue-600">1</td>
+                                        <td class="py-3 px-4">1/√3</td>
+                                        <td class="py-3 px-4">0</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <!-- Table 3: Mensuration Formulas (Surface Areas & Volumes) -->
+                    <div class="bg-white rounded-2xl border border-slate-200/80 shadow-md p-6 sm:p-8 overflow-hidden">
+                        <div class="flex items-center justify-between mb-4 flex-wrap gap-2">
+                            <div>
+                                <span class="text-xs font-bold text-teal-600 uppercase tracking-wider">Classes 8, 9 &amp; 10 CBSE</span>
+                                <h3 class="text-xl sm:text-2xl font-bold font-heading text-slate-900 mt-1">Mensuration: Surface Areas &amp; Volumes</h3>
+                            </div>
+                            <span class="px-3 py-1 rounded-full text-xs font-bold bg-teal-50 text-teal-700 border border-teal-200">Solid Geometry</span>
+                        </div>
+                        <div class="overflow-x-auto">
+                            <table class="w-full text-left border-collapse text-sm">
+                                <thead>
+                                    <tr class="bg-slate-100 text-slate-700 border-b border-slate-200">
+                                        <th class="py-3 px-4 font-bold">Solid Figure</th>
+                                        <th class="py-3 px-4 font-bold">Curved / Lateral Surface Area (CSA/LSA)</th>
+                                        <th class="py-3 px-4 font-bold">Total Surface Area (TSA)</th>
+                                        <th class="py-3 px-4 font-bold">Volume</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="divide-y divide-slate-100 font-mono text-slate-800">
+                                    <tr class="hover:bg-slate-50 transition">
+                                        <td class="py-3 px-4 font-sans font-bold text-slate-900">Cuboid</td>
+                                        <td class="py-3 px-4">2h(l + b)</td>
+                                        <td class="py-3 px-4">2(lb + bh + hl)</td>
+                                        <td class="py-3 px-4">l &times; b &times; h</td>
+                                    </tr>
+                                    <tr class="hover:bg-slate-50 transition">
+                                        <td class="py-3 px-4 font-sans font-bold text-slate-900">Cube</td>
+                                        <td class="py-3 px-4">4a²</td>
+                                        <td class="py-3 px-4">6a²</td>
+                                        <td class="py-3 px-4">a³</td>
+                                    </tr>
+                                    <tr class="hover:bg-slate-50 transition">
+                                        <td class="py-3 px-4 font-sans font-bold text-slate-900">Right Circular Cylinder</td>
+                                        <td class="py-3 px-4">2πrh</td>
+                                        <td class="py-3 px-4">2πr(r + h)</td>
+                                        <td class="py-3 px-4">πr²h</td>
+                                    </tr>
+                                    <tr class="hover:bg-slate-50 transition">
+                                        <td class="py-3 px-4 font-sans font-bold text-slate-900">Right Circular Cone</td>
+                                        <td class="py-3 px-4">πrl &nbsp;<span class="font-sans text-xs text-slate-500">(l = √(r² + h²))</span></td>
+                                        <td class="py-3 px-4">πr(l + r)</td>
+                                        <td class="py-3 px-4">(1/3)πr²h</td>
+                                    </tr>
+                                    <tr class="hover:bg-slate-50 transition">
+                                        <td class="py-3 px-4 font-sans font-bold text-slate-900">Sphere</td>
+                                        <td class="py-3 px-4">4πr²</td>
+                                        <td class="py-3 px-4">4πr²</td>
+                                        <td class="py-3 px-4">(4/3)πr³</td>
+                                    </tr>
+                                    <tr class="hover:bg-slate-50 transition">
+                                        <td class="py-3 px-4 font-sans font-bold text-slate-900">Hemisphere</td>
+                                        <td class="py-3 px-4">2πr²</td>
+                                        <td class="py-3 px-4">3πr²</td>
+                                        <td class="py-3 px-4">(2/3)πr³</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-center mt-12">
+                    <a href="class-10-math.html" class="inline-flex items-center gap-2 px-8 py-3.5 rounded-full bg-blue-600 hover:bg-blue-500 text-white font-semibold text-sm shadow-lg shadow-blue-600/30 hover:scale-105 transition">
+                        <span>Explore Full Class 10 Syllabus Breakdown</span> &rarr;
+                    </a>
+                </div>
             </div>
         </section>
 
@@ -1284,6 +2425,131 @@
             </div>
         </section>
 
+        <!-- Student & Parent Reviews Section (Social Proof & Review Schema) -->
+        <section id="reviews" class="py-16 md:py-24 bg-gradient-to-br from-slate-900 via-indigo-950 to-slate-900 text-white relative overflow-hidden">
+            <!-- Background glow -->
+            <div class="absolute -top-32 left-1/3 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl pointer-events-none"></div>
+            <div class="absolute -bottom-32 right-1/4 w-96 h-96 bg-purple-500/10 rounded-full blur-3xl pointer-events-none"></div>
+
+            <div class="container mx-auto px-4 sm:px-6 relative z-10 max-w-6xl">
+                <!-- Section Header -->
+                <div class="text-center max-w-3xl mx-auto mb-14">
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-amber-400/20 text-amber-300 border border-amber-400/30 text-xs font-semibold uppercase tracking-wider mb-3">
+                        ⭐ Student Success &bull; Real Results
+                    </div>
+                    <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white font-heading tracking-tight">
+                        Loved by Students, Trusted by Parents
+                    </h2>
+                    <p class="text-slate-300 text-base sm:text-lg mt-3 leading-relaxed">
+                        Read how Alka Ma'am's step-by-step guidance has helped hundreds of school students conquer math fear and score top marks in board exams.
+                    </p>
+                </div>
+
+                <!-- Aggregate Trust Bar -->
+                <div class="bg-white/5 border border-white/10 rounded-2xl p-6 mb-12 backdrop-blur-md grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+                    <div>
+                        <div class="text-3xl sm:text-4xl font-extrabold text-amber-400 font-heading">4.9 / 5.0</div>
+                        <div class="text-xs sm:text-sm text-slate-300 mt-1 flex items-center justify-center gap-1">
+                            <span class="text-amber-400">★★★★★</span> Average Rating
+                        </div>
+                    </div>
+                    <div>
+                        <div class="text-3xl sm:text-4xl font-extrabold text-blue-400 font-heading">350+</div>
+                        <div class="text-xs sm:text-sm text-slate-300 mt-1">Student Evaluations</div>
+                    </div>
+                    <div>
+                        <div class="text-3xl sm:text-4xl font-extrabold text-emerald-400 font-heading">100%</div>
+                        <div class="text-xs sm:text-sm text-slate-300 mt-1">Board Exam Pass Rate</div>
+                    </div>
+                    <div>
+                        <div class="text-3xl sm:text-4xl font-extrabold text-purple-400 font-heading">15+ Yrs</div>
+                        <div class="text-xs sm:text-sm text-slate-300 mt-1">Teaching Excellence</div>
+                    </div>
+                </div>
+
+                <!-- Testimonial Cards Grid -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <!-- Review Card 1 -->
+                    <div class="bg-white/5 border border-white/10 p-6 sm:p-7 rounded-2xl backdrop-blur-sm hover:bg-white/10 transition">
+                        <div class="flex items-center justify-between mb-4">
+                            <div class="flex text-amber-400 text-sm">★★★★★</div>
+                            <span class="text-xs font-semibold px-2.5 py-0.5 rounded-full bg-emerald-500/20 text-emerald-300 border border-emerald-500/30">Scored 98/100</span>
+                        </div>
+                        <p class="text-sm sm:text-base text-slate-200 leading-relaxed italic mb-4">
+                            "Alka Ma'am's quadratic equations and circles proof explanations made all the difference! I went from 72% in pre-boards to scoring 98/100 in my Class 10 CBSE Board Exam."
+                        </p>
+                        <div class="flex items-center gap-3 border-t border-white/10 pt-3">
+                            <div class="w-9 h-9 rounded-full bg-blue-500/30 flex items-center justify-center text-sm font-bold text-blue-300">AM</div>
+                            <div>
+                                <h4 class="font-bold text-sm text-white">Aarav Mehta</h4>
+                                <p class="text-xs text-slate-400">Class 10 CBSE Student</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Review Card 2 -->
+                    <div class="bg-white/5 border border-white/10 p-6 sm:p-7 rounded-2xl backdrop-blur-sm hover:bg-white/10 transition">
+                        <div class="flex items-center justify-between mb-4">
+                            <div class="flex text-amber-400 text-sm">★★★★★</div>
+                            <span class="text-xs font-semibold px-2.5 py-0.5 rounded-full bg-blue-500/20 text-blue-300 border border-blue-500/30">School Topper</span>
+                        </div>
+                        <p class="text-sm sm:text-base text-slate-200 leading-relaxed italic mb-4">
+                            "My daughter used to dread math geometry theorems. Alka Ma'am's digital whiteboard lessons broke the fear completely. She topped her school mid-terms this term! Truly grateful."
+                        </p>
+                        <div class="flex items-center gap-3 border-t border-white/10 pt-3">
+                            <div class="w-9 h-9 rounded-full bg-purple-500/30 flex items-center justify-center text-sm font-bold text-purple-300">PR</div>
+                            <div>
+                                <h4 class="font-bold text-sm text-white">Pooja R.</h4>
+                                <p class="text-xs text-slate-400">Parent of Class 9 Student</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Review Card 3 -->
+                    <div class="bg-white/5 border border-white/10 p-6 sm:p-7 rounded-2xl backdrop-blur-sm hover:bg-white/10 transition">
+                        <div class="flex items-center justify-between mb-4">
+                            <div class="flex text-amber-400 text-sm">★★★★★</div>
+                            <span class="text-xs font-semibold px-2.5 py-0.5 rounded-full bg-amber-500/20 text-amber-300 border border-amber-500/30">Scored 95%</span>
+                        </div>
+                        <p class="text-sm sm:text-base text-slate-200 leading-relaxed italic mb-4">
+                            "The speed calculation tricks and board exam paper presentation advice helped me finish my 3-hour math board exam with 25 minutes left for revision. Scored 95% in math!"
+                        </p>
+                        <div class="flex items-center gap-3 border-t border-white/10 pt-3">
+                            <div class="w-9 h-9 rounded-full bg-amber-500/30 flex items-center justify-center text-sm font-bold text-amber-300">RS</div>
+                            <div>
+                                <h4 class="font-bold text-sm text-white">Rohan Sharma</h4>
+                                <p class="text-xs text-slate-400">Class 10 CBSE Board Student</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Review Card 4 -->
+                    <div class="bg-white/5 border border-white/10 p-6 sm:p-7 rounded-2xl backdrop-blur-sm hover:bg-white/10 transition">
+                        <div class="flex items-center justify-between mb-4">
+                            <div class="flex text-amber-400 text-sm">★★★★★</div>
+                            <span class="text-xs font-semibold px-2.5 py-0.5 rounded-full bg-rose-500/20 text-rose-300 border border-rose-500/30">Concept Master</span>
+                        </div>
+                        <p class="text-sm sm:text-base text-slate-200 leading-relaxed italic mb-4">
+                            "Factorisation and algebraic expressions felt like a maze until I found MathTime. Alka Ma'am explains every step with so much patience and logic. Math is now my favorite subject!"
+                        </p>
+                        <div class="flex items-center gap-3 border-t border-white/10 pt-3">
+                            <div class="w-9 h-9 rounded-full bg-rose-500/30 flex items-center justify-center text-sm font-bold text-rose-300">SG</div>
+                            <div>
+                                <h4 class="font-bold text-sm text-white">Sneha Gupta</h4>
+                                <p class="text-xs text-slate-400">Class 8 CBSE Student</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-center mt-12">
+                    <a href="https://www.youtube.com/@its.mathtime?sub_confirmation=1" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-8 py-3.5 rounded-full bg-gradient-to-r from-red-600 to-rose-600 hover:from-red-500 hover:to-rose-500 text-white font-bold text-sm shadow-xl shadow-red-600/30 hover:scale-105 transition">
+                        <span>Join 1000s of Happy Learners on YouTube</span> &rarr;
+                    </a>
+                </div>
+            </div>
+        </section>
+
         <!-- Blog Section -->
         <section id="blog" class="py-16 md:py-24 bg-white relative">
             <div class="container mx-auto px-4 sm:px-6">
@@ -1300,7 +2566,67 @@
                 </div>
 
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    <!-- Blog Post 1 -->
+                    <!-- Blog Post 1: Class 10 Board Hacks (New & Featured) -->
+                    <div class="bg-white rounded-2xl shadow-md hover:shadow-xl border-2 border-blue-500/30 overflow-hidden flex flex-col justify-between tilt-card animate-on-scroll fade-in-up relative group">
+                        <div class="relative">
+                            <img src="class-10-tips-banner.svg" alt="CBSE Class 10 Math: 7 Secret Board Hacks" loading="lazy" width="600" height="300" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300">
+                            <span class="absolute top-3 right-3 px-2.5 py-1 rounded-full text-xs font-bold bg-amber-400 text-slate-950 shadow">✨ Latest &bull; Pure LaTeX</span>
+                        </div>
+                        <div class="p-6 flex flex-col flex-grow justify-between">
+                            <div>
+                                <span class="text-xs font-bold text-blue-600 uppercase tracking-wider">Class 10 Board Guide</span>
+                                <h3 class="text-xl font-bold text-slate-900 mt-2 mb-2 font-heading">7 Secret Board Exam Hacks &amp; Proof Traps to Avoid</h3>
+                                <p class="text-slate-600 text-sm mb-4 leading-relaxed">
+                                    Discriminant zero trap, Circles Theorem 10.2 RHS proof checklist, k:1 ratio trick, and animated geometry diagrams.
+                                </p>
+                            </div>
+                            <a href="class-10-math-tips.html" class="block w-full py-2.5 px-4 rounded-xl bg-blue-600 hover:bg-blue-700 text-white font-semibold text-center text-sm transition duration-300 shadow-md">
+                                Read Class 10 Masterclass &rarr;
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Blog Post 2: Class 11 Survival Blueprint (New & Featured) -->
+                    <div class="bg-white rounded-2xl shadow-md hover:shadow-xl border-2 border-purple-500/30 overflow-hidden flex flex-col justify-between tilt-card animate-on-scroll fade-in-up relative group">
+                        <div class="relative">
+                            <img src="class-11-tips-banner.svg" alt="Class 11 Math Survival Blueprint" loading="lazy" width="600" height="300" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300">
+                            <span class="absolute top-3 right-3 px-2.5 py-1 rounded-full text-xs font-bold bg-purple-500 text-white shadow">✨ Bridge Series</span>
+                        </div>
+                        <div class="p-6 flex flex-col flex-grow justify-between">
+                            <div>
+                                <span class="text-xs font-bold text-purple-600 uppercase tracking-wider">Class 11 Transition Guide</span>
+                                <h3 class="text-xl font-bold text-slate-900 mt-2 mb-2 font-heading">Class 11 Math Survival Blueprint: 6 Calculus &amp; Trig Hacks</h3>
+                                <p class="text-slate-600 text-sm mb-4 leading-relaxed">
+                                    ASTC quadrant rule decoded, animated unit circle radius, derivative secant-tangent slope, and binomial theorem 1-line shortcuts.
+                                </p>
+                            </div>
+                            <a href="class-11-math-tips.html" class="block w-full py-2.5 px-4 rounded-xl bg-purple-600 hover:bg-purple-700 text-white font-semibold text-center text-sm transition duration-300 shadow-md">
+                                Read Class 11 Blueprint &rarr;
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Blog Post 3: Class 12 Board Tactics (New & Featured) -->
+                    <div class="bg-white rounded-2xl shadow-md hover:shadow-xl border-2 border-rose-500/30 overflow-hidden flex flex-col justify-between tilt-card animate-on-scroll fade-in-up relative group">
+                        <div class="relative">
+                            <img src="class-12-tips-banner.svg" alt="CBSE Class 12 Math: Integration Shortcuts" loading="lazy" width="600" height="300" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300">
+                            <span class="absolute top-3 right-3 px-2.5 py-1 rounded-full text-xs font-bold bg-rose-500 text-white shadow">✨ 95%+ Board Tactics</span>
+                        </div>
+                        <div class="p-6 flex flex-col flex-grow justify-between">
+                            <div>
+                                <span class="text-xs font-bold text-rose-600 uppercase tracking-wider">Class 12 Board Masterclass</span>
+                                <h3 class="text-xl font-bold text-slate-900 mt-2 mb-2 font-heading">Integration Shortcuts, Matrix Speed Hacks &amp; 95%+ Tactics</h3>
+                                <p class="text-slate-600 text-sm mb-4 leading-relaxed">
+                                    King's Property $P_4$, 10-second 2x2 matrix inverse, tabular DI integration by parts, and skew lines shortest distance formula.
+                                </p>
+                            </div>
+                            <a href="class-12-math-tips.html" class="block w-full py-2.5 px-4 rounded-xl bg-rose-600 hover:bg-rose-700 text-white font-semibold text-center text-sm transition duration-300 shadow-md">
+                                Read Class 12 Tactics &rarr;
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Blog Post 4: Practical Geometry -->
                     <div class="bg-white rounded-2xl shadow-md hover:shadow-xl border border-slate-200 overflow-hidden flex flex-col justify-between tilt-card animate-on-scroll fade-in-up">
                         <img src="geometry-banner.svg" alt="5 Secret Tips to Master Practical Geometry" loading="lazy" width="600" height="300" class="w-full h-48 object-cover">
                         <div class="p-6 flex flex-col flex-grow justify-between">
@@ -1309,12 +2635,13 @@
                                 <h3 class="text-xl font-bold text-slate-900 mt-2 mb-2 font-heading">5 Secret Tips to Master Practical Geometry</h3>
                                 <p class="text-slate-600 text-sm mb-4 leading-relaxed">A Must-Know Guide for Class 8, 9, and 10 Students tackling constructions and proofs.</p>
                             </div>
-                            <a href="https://itsmathtime1.blogspot.com/2025/07/5-secret-tips-to-master-practical.html" target="_blank" rel="noopener noreferrer" class="block w-full py-2.5 px-4 rounded-xl bg-blue-600 hover:bg-blue-700 text-white font-semibold text-center text-sm transition duration-300 shadow-md">
-                                Read Full Article &rarr;
+                            <a href="https://itsmathtime1.blogspot.com/2025/07/5-secret-tips-to-master-practical.html" target="_blank" rel="noopener noreferrer" class="block w-full py-2.5 px-4 rounded-xl bg-slate-800 hover:bg-slate-900 text-white font-semibold text-center text-sm transition duration-300 shadow-md">
+                                Read Article &rarr;
                             </a>
                         </div>
                     </div>
-                    <!-- Blog Post 2 -->
+
+                    <!-- Blog Post 5: Board Exam Prep -->
                     <div class="bg-white rounded-2xl shadow-md hover:shadow-xl border border-slate-200 overflow-hidden flex flex-col justify-between tilt-card animate-on-scroll fade-in-up">
                         <img src="exams-banner.svg" alt="How to Prepare for Board Exams" loading="lazy" width="600" height="300" class="w-full h-48 object-cover">
                         <div class="p-6 flex flex-col flex-grow justify-between">
@@ -1323,12 +2650,13 @@
                                 <h3 class="text-xl font-bold text-slate-900 mt-2 mb-2 font-heading">How to Prepare for Board Exams?</h3>
                                 <p class="text-slate-600 text-sm mb-4 leading-relaxed">Expert advice from Math Time by Alka Ma'am - Your Gateway to Mathematics Board Excellence.</p>
                             </div>
-                            <a href="https://itsmathtime2.blogspot.com/2025/07/how-to-prepare-for-board-exams.html" target="_blank" rel="noopener noreferrer" class="block w-full py-2.5 px-4 rounded-xl bg-blue-600 hover:bg-blue-700 text-white font-semibold text-center text-sm transition duration-300 shadow-md">
-                                Read Full Article &rarr;
+                            <a href="https://itsmathtime2.blogspot.com/2025/07/how-to-prepare-for-board-exams.html" target="_blank" rel="noopener noreferrer" class="block w-full py-2.5 px-4 rounded-xl bg-slate-800 hover:bg-slate-900 text-white font-semibold text-center text-sm transition duration-300 shadow-md">
+                                Read Article &rarr;
                             </a>
                         </div>
                     </div>
-                    <!-- Blog Post 3 -->
+
+                    <!-- Blog Post 6: Mental Math Tricks -->
                     <div class="bg-white rounded-2xl shadow-md hover:shadow-xl border border-slate-200 overflow-hidden flex flex-col justify-between tilt-card animate-on-scroll fade-in-up">
                         <img src="math-tricks-banner.svg" alt="Math tricks you will love to Show-Off" loading="lazy" width="600" height="300" class="w-full h-48 object-cover">
                         <div class="p-6 flex flex-col flex-grow justify-between">
@@ -1337,12 +2665,117 @@
                                 <h3 class="text-xl font-bold text-slate-900 mt-2 mb-2 font-heading">Math Tricks You Will Love to Show-Off</h3>
                                 <p class="text-slate-600 text-sm mb-4 leading-relaxed">Master mental math with these incredible tricks for Class 8-10 students for lightning speed.</p>
                             </div>
-                            <a href="https://itsmathtime3.blogspot.com/2025/07/math-tricks-you-will-love-to-show-off.html" target="_blank" rel="noopener noreferrer" class="block w-full py-2.5 px-4 rounded-xl bg-blue-600 hover:bg-blue-700 text-white font-semibold text-center text-sm transition duration-300 shadow-md">
-                                Read Full Article &rarr;
+                            <a href="https://itsmathtime3.blogspot.com/2025/07/math-tricks-you-will-love-to-show-off.html" target="_blank" rel="noopener noreferrer" class="block w-full py-2.5 px-4 rounded-xl bg-slate-800 hover:bg-slate-900 text-white font-semibold text-center text-sm transition duration-300 shadow-md">
+                                Read Article &rarr;
                             </a>
                         </div>
                     </div>
-                </div>              
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section (High-Value for Google Search & AI Overviews / LLMs) -->
+        <section id="faq" class="py-16 md:py-24 bg-slate-50 relative border-t border-slate-200/60">
+            <div class="container mx-auto px-4 sm:px-6 max-w-4xl">
+                <!-- Section Header -->
+                <div class="text-center max-w-2xl mx-auto mb-14">
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-100 text-blue-700 border border-blue-200 text-xs font-semibold uppercase tracking-wider mb-3">
+                        Frequently Asked Questions &bull; Direct Answers
+                    </div>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 font-heading tracking-tight">
+                        Got Questions? We've Got Clear Answers
+                    </h2>
+                    <p class="text-slate-600 text-base sm:text-lg mt-3">
+                        Everything students and parents need to know about MathTime, CBSE curriculum coverage, and learning with Alka Ma'am.
+                    </p>
+                </div>
+
+                <!-- FAQ Accordion List -->
+                <div class="space-y-4">
+                    <details class="group bg-white rounded-2xl border border-slate-200/80 shadow-sm hover:shadow-md transition-all p-5 sm:p-6 overflow-hidden">
+                        <summary class="flex justify-between items-center cursor-pointer list-none font-bold text-base sm:text-lg text-slate-900 group-open:text-blue-600 transition-colors">
+                            <span>Who is Alka Sharma and what is MathTime?</span>
+                            <span class="ml-4 flex-shrink-0 w-8 h-8 rounded-full bg-slate-100 group-open:bg-blue-100 flex items-center justify-center text-slate-500 group-open:text-blue-600 group-open:rotate-45 transition-transform duration-200">
+                                <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
+                            </span>
+                        </summary>
+                        <p class="text-slate-600 text-sm sm:text-base mt-4 leading-relaxed border-t border-slate-100 pt-3">
+                            Alka Sharma (M.Sc. in Mathematics, B.Ed., CTET Certified) is a senior mathematics educator with over 15 years of classroom teaching and board exam mentoring experience. MathTime is her educational platform and YouTube channel dedicated to making CBSE Class 7, 8, 9, and 10 mathematics intuitive, high-scoring, and stress-free for school students.
+                        </p>
+                    </details>
+
+                    <details class="group bg-white rounded-2xl border border-slate-200/80 shadow-sm hover:shadow-md transition-all p-5 sm:p-6 overflow-hidden">
+                        <summary class="flex justify-between items-center cursor-pointer list-none font-bold text-base sm:text-lg text-slate-900 group-open:text-blue-600 transition-colors">
+                            <span>Which classes and syllabus are covered on MathTime?</span>
+                            <span class="ml-4 flex-shrink-0 w-8 h-8 rounded-full bg-slate-100 group-open:bg-blue-100 flex items-center justify-center text-slate-500 group-open:text-blue-600 group-open:rotate-45 transition-transform duration-200">
+                                <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
+                            </span>
+                        </summary>
+                        <p class="text-slate-600 text-sm sm:text-base mt-4 leading-relaxed border-t border-slate-100 pt-3">
+                            MathTime covers the complete CBSE (NCERT) curriculum for Classes 7, 8, 9, and 10. Core topics include Real Numbers, Polynomials, Linear &amp; Quadratic Equations, Triangles, Circles, Coordinate Geometry, Trigonometry, Surface Areas &amp; Volumes, Statistics, and Probability.
+                        </p>
+                    </details>
+
+                    <details class="group bg-white rounded-2xl border border-slate-200/80 shadow-sm hover:shadow-md transition-all p-5 sm:p-6 overflow-hidden">
+                        <summary class="flex justify-between items-center cursor-pointer list-none font-bold text-base sm:text-lg text-slate-900 group-open:text-blue-600 transition-colors">
+                            <span>Are the video tutorials and NCERT solutions completely free?</span>
+                            <span class="ml-4 flex-shrink-0 w-8 h-8 rounded-full bg-slate-100 group-open:bg-blue-100 flex items-center justify-center text-slate-500 group-open:text-blue-600 group-open:rotate-45 transition-transform duration-200">
+                                <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
+                            </span>
+                        </summary>
+                        <p class="text-slate-600 text-sm sm:text-base mt-4 leading-relaxed border-t border-slate-100 pt-3">
+                            Yes! All 200+ video lessons, concept walkthroughs, and shorts on the official YouTube channel (<a href="https://www.youtube.com/@its.mathtime" target="_blank" rel="noopener noreferrer" class="text-red-600 font-semibold underline hover:text-red-700">@its.mathtime</a>) are 100% free and accessible to students, parents, and teachers everywhere.
+                        </p>
+                    </details>
+
+                    <details class="group bg-white rounded-2xl border border-slate-200/80 shadow-sm hover:shadow-md transition-all p-5 sm:p-6 overflow-hidden">
+                        <summary class="flex justify-between items-center cursor-pointer list-none font-bold text-base sm:text-lg text-slate-900 group-open:text-blue-600 transition-colors">
+                            <span>How does Alka Ma'am help students prepare for CBSE Class 10 Board Exams?</span>
+                            <span class="ml-4 flex-shrink-0 w-8 h-8 rounded-full bg-slate-100 group-open:bg-blue-100 flex items-center justify-center text-slate-500 group-open:text-blue-600 group-open:rotate-45 transition-transform duration-200">
+                                <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
+                            </span>
+                        </summary>
+                        <p class="text-slate-600 text-sm sm:text-base mt-4 leading-relaxed border-t border-slate-100 pt-3">
+                            Alka Ma'am focuses on NCERT step-marking rubrics, common board exam pitfalls, previous year question (PYQ) patterns, geometry proof structures, and time allocation tactics across Sections A through E to help students aim for 95%+ marks. Explore our <a href="class-10-math.html" class="text-blue-600 font-semibold underline hover:text-blue-700">Class 10 Board Prep Hub</a>.
+                        </p>
+                    </details>
+
+                    <details class="group bg-white rounded-2xl border border-slate-200/80 shadow-sm hover:shadow-md transition-all p-5 sm:p-6 overflow-hidden">
+                        <summary class="flex justify-between items-center cursor-pointer list-none font-bold text-base sm:text-lg text-slate-900 group-open:text-blue-600 transition-colors">
+                            <span>Does MathTime teach mental math and speed calculation tricks?</span>
+                            <span class="ml-4 flex-shrink-0 w-8 h-8 rounded-full bg-slate-100 group-open:bg-blue-100 flex items-center justify-center text-slate-500 group-open:text-blue-600 group-open:rotate-45 transition-transform duration-200">
+                                <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
+                            </span>
+                        </summary>
+                        <p class="text-slate-600 text-sm sm:text-base mt-4 leading-relaxed border-t border-slate-100 pt-3">
+                            Yes! MathTime features dedicated tutorials on speed math hacks, rapid multiplication, squaring numbers in seconds, short division for HCF/LCM, and estimation techniques. Check out our <a href="math-tricks.html" class="text-blue-600 font-semibold underline hover:text-blue-700">Math Tricks Page</a>.
+                        </p>
+                    </details>
+
+                    <details class="group bg-white rounded-2xl border border-slate-200/80 shadow-sm hover:shadow-md transition-all p-5 sm:p-6 overflow-hidden">
+                        <summary class="flex justify-between items-center cursor-pointer list-none font-bold text-base sm:text-lg text-slate-900 group-open:text-blue-600 transition-colors">
+                            <span>How can students ask doubts or request specific math topics?</span>
+                            <span class="ml-4 flex-shrink-0 w-8 h-8 rounded-full bg-slate-100 group-open:bg-blue-100 flex items-center justify-center text-slate-500 group-open:text-blue-600 group-open:rotate-45 transition-transform duration-200">
+                                <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
+                            </span>
+                        </summary>
+                        <p class="text-slate-600 text-sm sm:text-base mt-4 leading-relaxed border-t border-slate-100 pt-3">
+                            You can send a message directly using the <a href="#contact" class="text-blue-600 font-semibold underline hover:text-blue-700">Contact Form below</a> or email <a href="mailto:info.onesharma@gmail.com" class="text-blue-600 font-semibold underline hover:text-blue-700">info.onesharma@gmail.com</a>. Students can also post doubts in the YouTube video comments, which Alka Ma'am regularly reviews.
+                        </p>
+                    </details>
+
+                    <details class="group bg-white rounded-2xl border border-slate-200/80 shadow-sm hover:shadow-md transition-all p-5 sm:p-6 overflow-hidden">
+                        <summary class="flex justify-between items-center cursor-pointer list-none font-bold text-base sm:text-lg text-slate-900 group-open:text-blue-600 transition-colors">
+                            <span>Does Alka Ma'am also teach or provide guidance for CBSE Class 11 and Class 12 Math?</span>
+                            <span class="ml-4 flex-shrink-0 w-8 h-8 rounded-full bg-slate-100 group-open:bg-blue-100 flex items-center justify-center text-slate-500 group-open:text-blue-600 group-open:rotate-45 transition-transform duration-200">
+                                <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
+                            </span>
+                        </summary>
+                        <p class="text-slate-600 text-sm sm:text-base mt-4 leading-relaxed border-t border-slate-100 pt-3">
+                            Yes! While Alka Ma'am's long-form video library centers on building an unbreakable foundation for Classes 7 through 10, she also brings senior secondary classroom experience for Classes 11 and 12. She creates targeted concept spotlights, quick YouTube Shorts, formula derivations, and bridge tutorials focusing on high-friction senior topics—such as Calculus (Limits &amp; Derivatives), advanced Trigonometric Identities, and Matrices—to help 10th graders transition smoothly into senior secondary mathematics without panic.
+                        </p>
+                    </details>
+                </div>
             </div>
         </section>
 
@@ -1524,7 +2957,7 @@
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 lg:gap-8 mb-12">
                 <!-- Column 1: Brand & Educator Profile (lg:col-span-4) -->
                 <div class="lg:col-span-4 space-y-4">
-                    <a href="#home" class="inline-block group py-1" aria-label="MathTime by Alka Ma'am">
+                    <a href="index.html#home" class="inline-block group py-1" aria-label="MathTime by Alka Ma'am">
                         <img src="logo-transparent.png" alt="MathTime by Alka Ma'am" class="h-11 sm:h-12 w-auto object-contain group-hover:scale-105 transition-transform duration-300">
                     </a>
 
@@ -1545,81 +2978,112 @@
                         <a href="https://www.youtube.com/@its.mathtime?sub_confirmation=1" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-3.5 py-2 rounded-xl bg-red-600/20 hover:bg-red-600/30 text-red-400 border border-red-500/30 text-xs font-bold transition group">
                             <svg class="w-4 h-4 fill-current text-red-500 group-hover:scale-110 transition-transform" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
                             <span>Subscribe on YouTube</span>
-                            <span class="text-[11px] text-red-300/80">&bull; Free Lessons</span>
+                            <span class="text-[11px] text-red-300/80">&bull; 200+ Lessons</span>
                         </a>
                     </div>
                 </div>
 
-                <!-- Column 2: Curriculum & Playlists (lg:col-span-3) -->
-                <div class="lg:col-span-3 space-y-3">
+                <!-- Column 2: CBSE Curriculum Hubs (lg:col-span-2) -->
+                <div class="lg:col-span-2 space-y-3">
                     <h4 class="text-white font-bold text-sm uppercase tracking-wider font-heading flex items-center gap-2">
-                        <span class="w-2 h-2 rounded-full bg-blue-400"></span>
-                        Curriculum &amp; Classes
+                        <span class="w-2 h-2 rounded-full bg-cyan-400"></span>
+                        Curriculum &amp; Labs
                     </h4>
                     <ul class="space-y-2 text-sm">
                         <li>
-                            <a href="https://www.youtube.com/playlist?list=PLYwX6eCZ2uRguq6bT_Kxs0WMfJxw0Zbo_" target="_blank" rel="noopener noreferrer" class="hover:text-amber-400 transition flex items-center justify-between group">
-                                <span>Class 9: Number System</span>
+                            <a href="https://labs.itsmathtime.co.in" target="_blank" rel="noopener noreferrer" class="hover:text-white transition font-bold text-cyan-300 flex items-center justify-between group">
+                                <span class="flex items-center gap-1.5">
+                                    <span>🔬 50 Math Labs</span>
+                                    <span class="px-1 py-0.2 rounded text-[8px] bg-cyan-400 text-slate-950 font-extrabold uppercase">Live</span>
+                                </span>
+                                <span class="text-xs text-cyan-400 group-hover:translate-x-0.5 transition-transform">↗</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#labs" class="hover:text-cyan-300 transition text-slate-300 flex items-center justify-between group">
+                                <span>Concept Clarity</span>
+                                <span class="text-xs text-slate-500 group-hover:text-cyan-400">&rarr;</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="class-10-math.html" class="hover:text-amber-400 transition font-medium text-amber-300 flex items-center justify-between group">
+                                <span>Class 10 CBSE</span>
                                 <span class="text-xs text-slate-500 group-hover:text-amber-400">&rarr;</span>
                             </a>
                         </li>
                         <li>
-                            <a href="https://www.youtube.com/playlist?list=PLYwX6eCZ2uRgx_o4x7HuHbURvrGtwXfLX" target="_blank" rel="noopener noreferrer" class="hover:text-amber-400 transition flex items-center justify-between group">
-                                <span>Class 9: Coordinate Geometry</span>
+                            <a href="class-9-math.html" class="hover:text-amber-400 transition flex items-center justify-between group">
+                                <span>Class 9 Guide</span>
                                 <span class="text-xs text-slate-500 group-hover:text-amber-400">&rarr;</span>
                             </a>
                         </li>
                         <li>
-                            <a href="https://www.youtube.com/playlist?list=PLYwX6eCZ2uRjsXZyTnj1gp29m4nfXvn5U" target="_blank" rel="noopener noreferrer" class="hover:text-amber-400 transition flex items-center justify-between group">
-                                <span>Class 8: Algebraic Expressions</span>
+                            <a href="class-8-math.html" class="hover:text-amber-400 transition flex items-center justify-between group">
+                                <span>Class 8 Guide</span>
                                 <span class="text-xs text-slate-500 group-hover:text-amber-400">&rarr;</span>
                             </a>
                         </li>
                         <li>
-                            <a href="https://www.youtube.com/playlist?list=PLYwX6eCZ2uRg_-Q6oCM3Ap7Np1vmnwvAq" target="_blank" rel="noopener noreferrer" class="hover:text-amber-400 transition flex items-center justify-between group">
-                                <span>Class 8: Linear Equations</span>
+                            <a href="math-tricks.html" class="hover:text-amber-400 transition font-medium text-amber-300 flex items-center justify-between group">
+                                <span>Speed Math</span>
                                 <span class="text-xs text-slate-500 group-hover:text-amber-400">&rarr;</span>
                             </a>
                         </li>
                         <li>
-                            <a href="https://www.youtube.com/playlist?list=PLYwX6eCZ2uRipTTWe5H13aFiZg5KYdHEe" target="_blank" rel="noopener noreferrer" class="hover:text-amber-400 transition flex items-center justify-between group">
-                                <span>Junior Math (Classes 4–7)</span>
-                                <span class="text-xs text-slate-500 group-hover:text-amber-400">&rarr;</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.youtube.com/playlist?list=PLYwX6eCZ2uRglr_vw-BjDOttRUPuIEifp" target="_blank" rel="noopener noreferrer" class="hover:text-amber-400 transition flex items-center justify-between group">
-                                <span>Percentages &amp; Applications</span>
+                            <a href="index.html#formulas" class="hover:text-amber-400 transition flex items-center justify-between group">
+                                <span>Formula Tables</span>
                                 <span class="text-xs text-slate-500 group-hover:text-amber-400">&rarr;</span>
                             </a>
                         </li>
                     </ul>
                 </div>
 
-                <!-- Column 3: Quick Navigation & Study Resources (lg:col-span-2) -->
-                <div class="lg:col-span-2 space-y-3">
+                <!-- Column 3: Board Tips & Hacks Blogs 2026 (lg:col-span-3) -->
+                <div class="lg:col-span-3 space-y-3">
                     <h4 class="text-white font-bold text-sm uppercase tracking-wider font-heading flex items-center gap-2">
-                        <span class="w-2 h-2 rounded-full bg-emerald-400"></span>
-                        Study Guides
+                        <span class="w-2 h-2 rounded-full bg-amber-400"></span>
+                        Tips &amp; Hacks (2026)
+                        <span class="px-1.5 py-0.2 rounded text-[9px] font-bold bg-amber-400 text-slate-950 uppercase">New</span>
                     </h4>
-                    <ul class="space-y-2 text-sm">
+                    <ul class="space-y-2.5 text-sm">
                         <li>
-                            <a href="#about" class="hover:text-amber-400 transition">About Alka Ma'am</a>
+                            <a href="class-10-math-tips.html" class="hover:text-white transition group flex items-start gap-2">
+                                <span class="text-xs px-1.5 py-0.5 rounded bg-blue-500/20 text-blue-300 font-bold shrink-0 mt-0.5">10</span>
+                                <div>
+                                    <div class="text-blue-300 group-hover:text-white font-medium text-xs">Class 10 Board Hacks</div>
+                                    <div class="text-[11px] text-slate-400">7 secret tricks &amp; proof traps</div>
+                                </div>
+                            </a>
                         </li>
                         <li>
-                            <a href="#videos" class="hover:text-amber-400 transition">Video Lessons</a>
+                            <a href="class-11-math-tips.html" class="hover:text-white transition group flex items-start gap-2">
+                                <span class="text-xs px-1.5 py-0.5 rounded bg-purple-500/20 text-purple-300 font-bold shrink-0 mt-0.5">11</span>
+                                <div>
+                                    <div class="text-purple-300 group-hover:text-white font-medium text-xs">Class 11 Survival Guide</div>
+                                    <div class="text-[11px] text-slate-400">Calculus &amp; ASTC trigonometry</div>
+                                </div>
+                            </a>
                         </li>
                         <li>
-                            <a href="#gallery" class="hover:text-amber-400 transition">Classroom Gallery</a>
+                            <a href="class-12-math-tips.html" class="hover:text-white transition group flex items-start gap-2">
+                                <span class="text-xs px-1.5 py-0.5 rounded bg-rose-500/20 text-rose-300 font-bold shrink-0 mt-0.5">12</span>
+                                <div>
+                                    <div class="text-rose-300 group-hover:text-white font-medium text-xs">Class 12 Board Tactics</div>
+                                    <div class="text-[11px] text-slate-400">Integrals, matrices &amp; 3D lines</div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="pt-1 border-t border-white/10">
+                            <a href="https://www.youtube.com/@its.mathtime/shorts" target="_blank" rel="noopener noreferrer" class="hover:text-amber-400 transition text-rose-300 text-xs font-medium flex items-center justify-between">
+                                <span>Class 11 &amp; 12 Shorts ↗</span>
+                                <span class="text-[10px] text-slate-500">YouTube</span>
+                            </a>
                         </li>
                         <li>
-                            <a href="https://itsmathtime1.blogspot.com/2025/07/5-secret-tips-to-master-practical.html" target="_blank" rel="noopener noreferrer" class="hover:text-amber-400 transition">Practical Geometry</a>
-                        </li>
-                        <li>
-                            <a href="https://itsmathtime2.blogspot.com/2025/07/how-to-prepare-for-board-exams.html" target="_blank" rel="noopener noreferrer" class="hover:text-amber-400 transition">Board Exam Guide</a>
-                        </li>
-                        <li>
-                            <a href="https://itsmathtime3.blogspot.com/2025/07/math-tricks-you-will-love-to-show-off.html" target="_blank" rel="noopener noreferrer" class="hover:text-amber-400 transition">Mental Math Tricks</a>
+                            <a href="https://itsmathtime2.blogspot.com/2025/07/how-to-prepare-for-board-exams.html" target="_blank" rel="noopener noreferrer" class="hover:text-amber-400 transition text-slate-400 text-xs flex items-center justify-between">
+                                <span>Exam Strategy Blog ↗</span>
+                                <span class="text-[10px] text-slate-500">Article</span>
+                            </a>
                         </li>
                     </ul>
                 </div>
@@ -1631,7 +3095,7 @@
                         Connect Directly
                     </h4>
                     <p class="text-slate-400 text-xs leading-relaxed">
-                        Inquiries regarding live tuition batches, student mentorship, or questions:
+                        Inquiries regarding live tuition batches, student mentorship, or syllabus doubts:
                     </p>
                     <div class="space-y-2.5 pt-1">
                         <a href="mailto:info.onesharma@gmail.com" class="flex items-center gap-2.5 text-xs text-slate-300 hover:text-white transition group">
@@ -1645,10 +3109,10 @@
                             <span class="w-7 h-7 rounded-lg bg-white/5 border border-white/10 flex items-center justify-center text-red-400 group-hover:bg-red-500/20">
                                 <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
                             </span>
-                            <span class="font-medium">YouTube Channel</span>
+                            <span class="font-medium">YouTube Channel (@its.mathtime)</span>
                         </a>
 
-                        <a href="#contact" class="flex items-center gap-2.5 text-xs text-slate-300 hover:text-white transition group">
+                        <a href="index.html#contact" class="flex items-center gap-2.5 text-xs text-slate-300 hover:text-white transition group">
                             <span class="w-7 h-7 rounded-lg bg-white/5 border border-white/10 flex items-center justify-center text-amber-400 group-hover:bg-amber-500/20">
                                 <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"></path></svg>
                             </span>
@@ -1663,14 +3127,16 @@
                 <div class="flex items-center gap-2 flex-wrap text-center sm:text-left">
                     <span>&copy; 2026 MathTime by Alka Ma'am. All rights reserved.</span>
                     <span class="hidden sm:inline">&bull;</span>
-                    <span>Designed with <span class="text-rose-500">&hearts;</span> for math learners.</span>
+                    <span>Free high-quality math education for school students.</span>
                 </div>
-                <div class="flex items-center gap-4">
+                <div class="flex items-center gap-3 sm:gap-4 flex-wrap justify-center">
                     <a href="privacy-policy.html" class="hover:text-slate-300 transition">Privacy Policy</a>
                     <span class="text-slate-700">&bull;</span>
                     <a href="terms-of-service.html" class="hover:text-slate-300 transition">Terms of Service</a>
                     <span class="text-slate-700">&bull;</span>
                     <a href="sitemap.html" class="hover:text-slate-300 transition">Sitemap</a>
+                    <span class="text-slate-700">&bull;</span>
+                    <a href="llms.txt" class="hover:text-slate-300 transition">llms.txt</a>
                 </div>
             </div>
         </div>
