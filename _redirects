@@ -1,0 +1,6 @@
+# Netlify Redirects for MathTime by Alka Ma'am
+# Canonical root redirection
+/index.html    /    301
+
+# Custom 404 error page handling
+/*    /404.html    404

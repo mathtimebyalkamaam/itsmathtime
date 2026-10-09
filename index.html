@@ -20,7 +20,8 @@
     <link rel="apple-touch-icon" href="logo-icon-square.png">
 
     <!-- Canonical URL -->
-    <link rel="canonical" href="https://mathtimebyalkamaam.github.io/itsmathtime/">
+    <link rel="canonical" href="https://itsmathtime.co.in/">
+    <meta name="theme-color" content="#0b1120">
 
     <!-- Performance & DNS Prefetch Hints -->
     <link rel="dns-prefetch" href="//www.youtube.com">
@@ -31,9 +32,6 @@
 
     <!-- Static Compiled Tailwind CSS (Optimized for Fast FCP & Core Web Vitals) -->
     <link rel="stylesheet" href="tailwind.min.css">
-    
-    <!-- Tailwind CSS CDN Fallback / JIT -->
-    <script src="https://cdn.tailwindcss.com"></script>
     
     <!-- Google Fonts with Preconnect -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -50,17 +48,17 @@
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://mathtimebyalkamaam.github.io/itsmathtime/">
+    <meta property="og:url" content="https://itsmathtime.co.in/">
     <meta property="og:title" content="MathTime by Alka Ma'am – Learn Math the Smart Way">
     <meta property="og:description" content="Official website of MathTime by Alka Ma'am. Learn Class 7, 8, 9, 10 Math, Board Exam Tips and Strategies. Engaging video lectures and live classes for students.">
-    <meta property="og:image" content="https://mathtimebyalkamaam.github.io/itsmathtime/logo.png">
+    <meta property="og:image" content="https://itsmathtime.co.in/logo.png">
 
     <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://mathtimebyalkamaam.github.io/itsmathtime/">
-    <meta property="twitter:title" content="MathTime by Alka Ma'am – Learn Math the Smart Way">
-    <meta property="twitter:description" content="Official website of MathTime by Alka Ma'am. Learn Class 7, 8, 9, 10 Math, Board Exam Tips and Strategies. Engaging video lectures and live classes for students.">
-    <meta property="twitter:image" content="https://mathtimebyalkamaam.github.io/itsmathtime/logo.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://itsmathtime.co.in/">
+    <meta name="twitter:title" content="MathTime by Alka Ma'am – Learn Math the Smart Way">
+    <meta name="twitter:description" content="Official website of MathTime by Alka Ma'am. Learn Class 7, 8, 9, 10 Math, Board Exam Tips and Strategies. Engaging video lectures and live classes for students.">
+    <meta name="twitter:image" content="https://itsmathtime.co.in/logo.png">
 
     <!-- Structured Data (JSON-LD) with E-E-A-T, VideoObject, Breadcrumb & BlogPosting Schemas -->
     <script type="application/ld+json">
@@ -68,11 +66,22 @@
       "@context": "https://schema.org",
       "@graph": [
         {
-          "@type": "EducationalOrganization",
-          "@id": "https://mathtimebyalkamaam.github.io/itsmathtime/#organization",
+          "@type": "WebSite",
+          "@id": "https://itsmathtime.co.in/#website",
+          "url": "https://itsmathtime.co.in/",
           "name": "MathTime by Alka Ma'am",
-          "url": "https://mathtimebyalkamaam.github.io/itsmathtime/",
-          "logo": "https://mathtimebyalkamaam.github.io/itsmathtime/logo.png",
+          "description": "Free CBSE Mathematics Video Lessons, Interactive NCERT Solutions, and Board Exam Tips for Classes 7-10 and Senior Secondary Concepts by Alka Sharma.",
+          "publisher": {
+            "@id": "https://itsmathtime.co.in/#organization"
+          },
+          "inLanguage": "en-IN"
+        },
+        {
+          "@type": "EducationalOrganization",
+          "@id": "https://itsmathtime.co.in/#organization",
+          "name": "MathTime by Alka Ma'am",
+          "url": "https://itsmathtime.co.in/",
+          "logo": "https://itsmathtime.co.in/logo.png",
           "description": "Online mathematics education platform by Alka Sharma, offering engaging video lectures, rapid concept shorts, formula guides, and study strategies for CBSE Classes 7 through 10, along with senior secondary (Classes 11 & 12) concept spotlights and bridge modules.",
           "email": "info.onesharma@gmail.com",
           "contactPoint": {
@@ -115,10 +124,10 @@
           ],
           "founder": {
             "@type": "Person",
-            "@id": "https://mathtimebyalkamaam.github.io/itsmathtime/#person",
+            "@id": "https://itsmathtime.co.in/#person",
             "name": "Alka Sharma",
             "jobTitle": "Senior Mathematics Educator & CBSE Board Specialist",
-            "url": "https://mathtimebyalkamaam.github.io/itsmathtime/#about",
+            "url": "https://itsmathtime.co.in/#about",
             "description": "Dedicated mathematics educator with M.Sc. in Mathematics, B.Ed., and CTET certification by CBSE, bringing 15+ years of teaching excellence across secondary (Classes 7–10) and senior secondary (Classes 11–12) foundational mathematics.",
             "knowsAbout": [
               "Mathematics", 
@@ -167,8 +176,26 @@
             ],
             "sameAs": [
               "https://www.youtube.com/@its.mathtime",
-              "https://mathtimebyalkamaam.github.io/itsmathtime/"
+              "https://itsmathtime.co.in/"
             ]
+          }
+        },
+        {
+          "@type": "Course",
+          "@id": "https://itsmathtime.co.in/#course-cbse-math",
+          "name": "CBSE Mathematics Video Lessons (Classes 7–10)",
+          "description": "Complete NCERT curriculum video course for CBSE Classes 7, 8, 9, and 10 with exam strategies and speed math hacks by Alka Sharma.",
+          "provider": {
+            "@id": "https://itsmathtime.co.in/#organization"
+          },
+          "isAccessibleForFree": true,
+          "inLanguage": "en-IN",
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.9",
+            "reviewCount": "350",
+            "bestRating": "5",
+            "worstRating": "1"
           }
         },
         {
@@ -178,31 +205,7 @@
               "@type": "ListItem",
               "position": 1,
               "name": "Home",
-              "item": "https://mathtimebyalkamaam.github.io/itsmathtime/#home"
-            },
-            {
-              "@type": "ListItem",
-              "position": 2,
-              "name": "About Alka Sharma",
-              "item": "https://mathtimebyalkamaam.github.io/itsmathtime/#about"
-            },
-            {
-              "@type": "ListItem",
-              "position": 3,
-              "name": "Video Lessons",
-              "item": "https://mathtimebyalkamaam.github.io/itsmathtime/#videos"
-            },
-            {
-              "@type": "ListItem",
-              "position": 4,
-              "name": "Math Playlists",
-              "item": "https://mathtimebyalkamaam.github.io/itsmathtime/#playlists"
-            },
-            {
-              "@type": "ListItem",
-              "position": 5,
-              "name": "Math Blog",
-              "item": "https://mathtimebyalkamaam.github.io/itsmathtime/#blog"
+              "item": "https://itsmathtime.co.in/"
             }
           ]
         },
@@ -303,7 +306,7 @@
         },
         {
           "@type": "FAQPage",
-          "@id": "https://mathtimebyalkamaam.github.io/itsmathtime/#faq",
+          "@id": "https://itsmathtime.co.in/#faq",
           "mainEntity": [
             {
               "@type": "Question",
@@ -413,7 +416,7 @@
             "@type": "Person",
             "name": "Alka Sharma"
           },
-          "url": "https://mathtimebyalkamaam.github.io/itsmathtime/class-10-math-tips.html",
+          "url": "https://itsmathtime.co.in/class-10-math-tips.html",
           "publisher": {
             "@type": "Organization",
             "name": "MathTime by Alka Ma'am"
@@ -427,7 +430,7 @@
             "@type": "Person",
             "name": "Alka Sharma"
           },
-          "url": "https://mathtimebyalkamaam.github.io/itsmathtime/class-11-math-tips.html",
+          "url": "https://itsmathtime.co.in/class-11-math-tips.html",
           "publisher": {
             "@type": "Organization",
             "name": "MathTime by Alka Ma'am"
@@ -441,7 +444,7 @@
             "@type": "Person",
             "name": "Alka Sharma"
           },
-          "url": "https://mathtimebyalkamaam.github.io/itsmathtime/class-12-math-tips.html",
+          "url": "https://itsmathtime.co.in/class-12-math-tips.html",
           "publisher": {
             "@type": "Organization",
             "name": "MathTime by Alka Ma'am"

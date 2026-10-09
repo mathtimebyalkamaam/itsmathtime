@@ -3,17 +3,17 @@
 > Official mathematics education hub led by Alka Sharma (M.Sc., B.Ed., CTET Certified). Dedicated to CBSE Class 7, 8, 9, and 10 mathematics conceptual clarity, NCERT solutions, speed calculation tricks, and board exam preparation, featuring expanding Senior Secondary (Classes 11 & 12) concept spotlights, formula hacks, and YouTube Shorts.
 
 ## Core Resources & Pages
-- [Home Page](https://mathtimebyalkamaam.github.io/itsmathtime/): Overview of MathTime learning programs, educator background, featured video lessons, and student resources.
-- [CBSE Class 10 Math Guide](https://mathtimebyalkamaam.github.io/itsmathtime/class-10-math.html): Complete chapter-wise syllabus breakdown, high-yield board exam strategies, and video tutorials for Class 10 students.
-- [CBSE Class 10 Board Exam Hacks](https://mathtimebyalkamaam.github.io/itsmathtime/class-10-math-tips.html): 7 secret board hacks, discriminant zero trap, animated circle theorem proof, and time triage tips.
-- [Class 11 Math Survival Blueprint](https://mathtimebyalkamaam.github.io/itsmathtime/class-11-math-tips.html): 6 high-yield calculus and trig shortcuts, ASTC quadrant rule, animated unit circle, and binomial theorem formulas.
-- [CBSE Class 12 Integration & Board Tactics](https://mathtimebyalkamaam.github.io/itsmathtime/class-12-math-tips.html): Definite integrals King's Property, tabular integration by parts, 10-second matrix inverse, and animated area under curve diagram.
-- [CBSE Class 9 Math Guide](https://mathtimebyalkamaam.github.io/itsmathtime/class-9-math.html): In-depth NCERT solutions, geometry proof theorems, number systems, and foundation building.
-- [CBSE Class 8 Math Guide](https://mathtimebyalkamaam.github.io/itsmathtime/class-8-math.html): Middle-school conceptual mastery, rational numbers, linear equations, and factorisation tutorials.
-- [Math Tricks & Speed Calculations](https://mathtimebyalkamaam.github.io/itsmathtime/math-tricks.html): Rapid calculation secrets, squaring shortcuts, multiplication hacks, and mental math methods.
+- [Home Page](https://itsmathtime.co.in/): Overview of MathTime learning programs, educator background, featured video lessons, and student resources.
+- [CBSE Class 10 Math Guide](https://itsmathtime.co.in/class-10-math.html): Complete chapter-wise syllabus breakdown, high-yield board exam strategies, and video tutorials for Class 10 students.
+- [CBSE Class 10 Board Exam Hacks](https://itsmathtime.co.in/class-10-math-tips.html): 7 secret board hacks, discriminant zero trap, animated circle theorem proof, and time triage tips.
+- [Class 11 Math Survival Blueprint](https://itsmathtime.co.in/class-11-math-tips.html): 6 high-yield calculus and trig shortcuts, ASTC quadrant rule, animated unit circle, and binomial theorem formulas.
+- [CBSE Class 12 Integration & Board Tactics](https://itsmathtime.co.in/class-12-math-tips.html): Definite integrals King's Property, tabular integration by parts, 10-second matrix inverse, and animated area under curve diagram.
+- [CBSE Class 9 Math Guide](https://itsmathtime.co.in/class-9-math.html): In-depth NCERT solutions, geometry proof theorems, number systems, and foundation building.
+- [CBSE Class 8 Math Guide](https://itsmathtime.co.in/class-8-math.html): Middle-school conceptual mastery, rational numbers, linear equations, and factorisation tutorials.
+- [Math Tricks & Speed Calculations](https://itsmathtime.co.in/math-tricks.html): Rapid calculation secrets, squaring shortcuts, multiplication hacks, and mental math methods.
 - [Official YouTube Channel](https://www.youtube.com/@its.mathtime): Over 200+ free high-definition video lessons, shorts, and chapter walkthroughs.
 - [YouTube Shorts & Senior Spotlights](https://www.youtube.com/@its.mathtime/shorts): Rapid mental math hacks and senior secondary (Classes 11 & 12) concept breakdowns.
-- [HTML Sitemap](https://mathtimebyalkamaam.github.io/itsmathtime/sitemap.html): Full directory of all lessons, pages, and educational resources.
+- [HTML Sitemap](https://itsmathtime.co.in/sitemap.html): Full directory of all lessons, pages, and educational resources.
 
 ## Educator Profile & Qualifications
 - **Instructor:** Alka Sharma

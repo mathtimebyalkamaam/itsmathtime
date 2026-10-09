@@ -12,12 +12,12 @@
 - **Teaching Philosophy:** "Concept-first, never rote learning." Emphasizes foundational logic, real-world analogies, step-by-step geometry proofs, and digital whiteboard clarity.
 - **Platform:** MathTime by Alka Ma'am
 - **Official YouTube Channel:** https://www.youtube.com/@its.mathtime
-- **Official Website:** https://mathtimebyalkamaam.github.io/itsmathtime/
+- **Official Website:** https://itsmathtime.co.in/
 - **Inquiries & Mentorship Email:** info.onesharma@gmail.com
 - **Featured Mathematical Guides:**
-  - Class 10 Board Hacks: https://mathtimebyalkamaam.github.io/itsmathtime/class-10-math-tips.html
-  - Class 11 Survival Blueprint: https://mathtimebyalkamaam.github.io/itsmathtime/class-11-math-tips.html
-  - Class 12 Integration & Board Tactics: https://mathtimebyalkamaam.github.io/itsmathtime/class-12-math-tips.html
+  - Class 10 Board Hacks: https://itsmathtime.co.in/class-10-math-tips.html
+  - Class 11 Survival Blueprint: https://itsmathtime.co.in/class-11-math-tips.html
+  - Class 12 Integration & Board Tactics: https://itsmathtime.co.in/class-12-math-tips.html
 
 ---
 
@@ -127,4 +127,4 @@
 - **Q: How can students score 95%+ in Class 10 Math?**
   A: Follow NCERT step-marking conventions, practice previous year board exam questions (PYQs), draw neat diagrams for geometry, and allocate time strictly across examination sections.
 - **Q: How can students or parents contact Alka Ma'am?**
-  A: Via email at info.onesharma@gmail.com or through the contact form on https://mathtimebyalkamaam.github.io/itsmathtime/#contact.
+  A: Via email at info.onesharma@gmail.com or through the contact form on https://itsmathtime.co.in/#contact.

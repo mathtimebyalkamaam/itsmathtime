@@ -17,4 +17,4 @@ Allow: /
 User-agent: Bingbot
 Allow: /
 
-Sitemap: https://mathtimebyalkamaam.github.io/itsmathtime/sitemap.xml
+Sitemap: https://itsmathtime.co.in/sitemap.xml
