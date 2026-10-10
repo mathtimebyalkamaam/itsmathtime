@@ -1,51 +1,60 @@
-// Mobile menu toggle with icon state
-const mobileMenuButton = document.getElementById('mobile-menu-button');
-const mobileMenu = document.getElementById('mobile-menu');
-const hamburgerIcon = document.getElementById('hamburger-icon');
-const closeIcon = document.getElementById('close-icon');
+// --- Mobile Menu Toggle with Icon State ---
+function setupMobileMenu() {
+    const mobileMenuButton = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const hamburgerIcon = document.getElementById('hamburger-icon');
+    const closeIcon = document.getElementById('close-icon');
 
-if (mobileMenuButton && mobileMenu) {
-    mobileMenuButton.addEventListener('click', () => {
-        const isHidden = mobileMenu.classList.toggle('hidden');
-        mobileMenuButton.setAttribute('aria-expanded', (!isHidden).toString());
-        if (hamburgerIcon && closeIcon) {
-            hamburgerIcon.classList.toggle('hidden', !isHidden);
-            closeIcon.classList.toggle('hidden', isHidden);
-        }
-    });
+    if (mobileMenuButton && mobileMenu) {
+        mobileMenuButton.addEventListener('click', () => {
+            const isHidden = mobileMenu.classList.toggle('hidden');
+            mobileMenuButton.setAttribute('aria-expanded', (!isHidden).toString());
+            if (hamburgerIcon && closeIcon) {
+                hamburgerIcon.classList.toggle('hidden', !isHidden);
+                closeIcon.classList.toggle('hidden', isHidden);
+            }
+        });
+    }
 }
 
-// Smooth scrolling for navigation links with header offset
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        const href = this.getAttribute('href');
-        if (!href || href === '#') return;
+// --- Smooth Scrolling for Navigation Links with Header Offset ---
+function setupSmoothScroll() {
+    const mobileMenu = document.getElementById('mobile-menu');
+    const mobileMenuButton = document.getElementById('mobile-menu-button');
+    const hamburgerIcon = document.getElementById('hamburger-icon');
+    const closeIcon = document.getElementById('close-icon');
 
-        const target = document.querySelector(href);
-        if (target) {
-            e.preventDefault();
-            const headerHeight = document.getElementById('main-header')?.offsetHeight || 70;
-            const targetPosition = target.getBoundingClientRect().top + window.pageYOffset - headerHeight;
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            const href = this.getAttribute('href');
+            if (!href || href === '#') return;
 
-            window.scrollTo({
-                top: targetPosition,
-                behavior: 'smooth'
-            });
-        }
+            const target = document.querySelector(href);
+            if (target) {
+                e.preventDefault();
+                const headerHeight = document.getElementById('main-header')?.offsetHeight || 70;
+                const targetPosition = target.getBoundingClientRect().top + window.pageYOffset - headerHeight;
 
-        // Close mobile menu after clicking a link
-        if (mobileMenu && !mobileMenu.classList.contains('hidden')) {
-            mobileMenu.classList.add('hidden');
-            if (mobileMenuButton) {
-                mobileMenuButton.setAttribute('aria-expanded', 'false');
+                window.scrollTo({
+                    top: targetPosition,
+                    behavior: 'smooth'
+                });
             }
-            if (hamburgerIcon && closeIcon) {
-                hamburgerIcon.classList.remove('hidden');
-                closeIcon.classList.add('hidden');
+
+            // Close mobile menu after clicking a link
+            if (mobileMenu && !mobileMenu.classList.contains('hidden')) {
+                mobileMenu.classList.add('hidden');
+                if (mobileMenuButton) {
+                    mobileMenuButton.setAttribute('aria-expanded', 'false');
+                }
+                if (hamburgerIcon && closeIcon) {
+                    hamburgerIcon.classList.remove('hidden');
+                    closeIcon.classList.add('hidden');
+                }
             }
-        }
+        });
     });
-});
+}
 
 // --- Working Contact Form & Inquiry Submission ---
 function setupContactForm() {
@@ -56,6 +65,9 @@ function setupContactForm() {
     const btnSpinner = document.getElementById('btn-spinner');
 
     if (!contactForm || !formMessage) return;
+
+    formMessage.setAttribute('role', 'status');
+    formMessage.setAttribute('aria-live', 'polite');
 
     contactForm.addEventListener('submit', function (e) {
         e.preventDefault();
@@ -298,60 +310,124 @@ function setupShareWebsite() {
     }
 }
 
-// --- Sticky Header Scroll Effects & Active Nav Spy ---
+// --- High-Performance Unified Scroll Manager (Sticky Header, Reading Progress & Active Nav Spy) ---
 function setupHeaderScrollAndSpy() {
     const header = document.getElementById('main-header');
     const progressBar = document.getElementById('scroll-progress-bar');
-    const navLinks = document.querySelectorAll('.nav-link');
+    const navLinks = Array.from(document.querySelectorAll('.nav-link'));
     const sections = Array.from(document.querySelectorAll('section[id]'));
+    const backToTopBtn = document.getElementById('back-to-top');
+    const progressCircle = document.getElementById('progress-circle');
 
-    function handleScroll() {
-        const scrollY = window.scrollY;
+    if (!header && !progressBar && !backToTopBtn && !sections.length) return;
+
+    let isHeaderCompact = false;
+    let isBackToTopVisible = false;
+    let activeSectionId = '';
+    let isTicking = false;
+    let cachedSections = [];
+
+    function updateCachedOffsets() {
+        if (!sections.length) return;
+        const headerOffset = header ? header.offsetHeight + 40 : 100;
+        cachedSections = sections.map(section => {
+            const top = section.offsetTop - headerOffset;
+            return {
+                id: section.getAttribute('id'),
+                top: top,
+                bottom: top + section.offsetHeight
+            };
+        });
+    }
+
+    // Debounced resize handler to update cached section geometry without layout thrashing
+    let resizeTimer = null;
+    window.addEventListener('resize', () => {
+        clearTimeout(resizeTimer);
+        resizeTimer = setTimeout(updateCachedOffsets, 150);
+    }, { passive: true });
+
+    updateCachedOffsets();
+
+    function renderScrollUI() {
+        const scrollY = window.scrollY || window.pageYOffset || 0;
         const totalHeight = document.documentElement.scrollHeight - window.innerHeight;
 
-        // 1. Reading progress bar
-        if (progressBar && totalHeight > 0) {
-            const progress = (scrollY / totalHeight) * 100;
-            progressBar.style.width = `${Math.min(100, Math.max(0, progress))}%`;
+        // 1. Reading progress bar (header) and back-to-top circular progress
+        if (totalHeight > 0) {
+            const progress = Math.min(100, Math.max(0, (scrollY / totalHeight) * 100));
+            if (progressBar) {
+                progressBar.style.width = `${progress}%`;
+            }
+            if (progressCircle) {
+                progressCircle.style.strokeDashoffset = Math.max(0, Math.min(100, 100 - progress));
+            }
         }
 
-        // 2. Compact header on scroll
+        // 2. Compact header on scroll (only mutate DOM classes on state boundary change)
         if (header) {
-            if (scrollY > 30) {
-                header.classList.remove('py-3.5');
-                header.classList.add('py-2', 'bg-slate-900/95', 'shadow-2xl');
-            } else {
-                header.classList.remove('py-2', 'shadow-2xl');
-                header.classList.add('py-3.5');
+            const shouldBeCompact = scrollY > 30;
+            if (shouldBeCompact !== isHeaderCompact) {
+                isHeaderCompact = shouldBeCompact;
+                if (shouldBeCompact) {
+                    header.classList.remove('py-3.5');
+                    header.classList.add('py-2', 'bg-slate-900/95', 'shadow-2xl');
+                } else {
+                    header.classList.remove('py-2', 'shadow-2xl');
+                    header.classList.add('py-3.5');
+                }
             }
         }
 
-        // 3. Active Nav Spy
-        const headerHeight = header ? header.offsetHeight + 40 : 100;
-        let currentSectionId = '';
-
-        sections.forEach(section => {
-            const top = section.offsetTop - headerHeight;
-            const height = section.offsetHeight;
-            if (scrollY >= top && scrollY < top + height) {
-                currentSectionId = section.getAttribute('id');
-            }
-        });
-
-        if (currentSectionId) {
-            navLinks.forEach(link => {
-                if (link.getAttribute('href') === `#${currentSectionId}`) {
-                    link.classList.add('active-nav', 'text-white');
-                    link.classList.remove('text-slate-300');
+        // 3. Back to Top Button visibility (only mutate DOM on threshold crossing)
+        if (backToTopBtn) {
+            const shouldShowBackToTop = scrollY > 350;
+            if (shouldShowBackToTop !== isBackToTopVisible) {
+                isBackToTopVisible = shouldShowBackToTop;
+                if (shouldShowBackToTop) {
+                    backToTopBtn.classList.remove('opacity-0', 'pointer-events-none');
+                    backToTopBtn.classList.add('opacity-100');
                 } else {
-                    link.classList.remove('active-nav');
+                    backToTopBtn.classList.remove('opacity-100');
+                    backToTopBtn.classList.add('opacity-0', 'pointer-events-none');
                 }
-            });
+            }
+        }
+
+        // 4. Active Nav Spy (zero layout reads - pure arithmetic comparisons)
+        if (cachedSections.length && navLinks.length) {
+            let currentId = '';
+            for (let i = 0; i < cachedSections.length; i++) {
+                const s = cachedSections[i];
+                if (scrollY >= s.top && scrollY < s.bottom) {
+                    currentId = s.id;
+                    break;
+                }
+            }
+
+            if (currentId && currentId !== activeSectionId) {
+                activeSectionId = currentId;
+                navLinks.forEach(link => {
+                    const isMatch = link.getAttribute('href') === `#${currentId}`;
+                    link.classList.toggle('active-nav', isMatch);
+                    link.classList.toggle('text-white', isMatch);
+                    link.classList.toggle('text-slate-300', !isMatch);
+                });
+            }
+        }
+
+        isTicking = false;
+    }
+
+    function onScroll() {
+        if (!isTicking) {
+            window.requestAnimationFrame(renderScrollUI);
+            isTicking = true;
         }
     }
 
-    window.addEventListener('scroll', handleScroll, { passive: true });
-    handleScroll(); // Initial check
+    window.addEventListener('scroll', onScroll, { passive: true });
+    renderScrollUI(); // Initial frame calculation
 }
 
 // --- Floating Math Particles Engine (Canvas Physics) ---
@@ -480,11 +556,18 @@ function setupMathParticles() {
         animationFrameId = requestAnimationFrame(animate);
     }
 
-    // Hero mouse tracking
+    // Hero mouse tracking (cached geometry avoids forced layout thrashing)
+    let heroRect = heroSection.getBoundingClientRect();
+    window.addEventListener('resize', () => {
+        heroRect = heroSection.getBoundingClientRect();
+    }, { passive: true });
+    window.addEventListener('scroll', () => {
+        heroRect = heroSection.getBoundingClientRect();
+    }, { passive: true });
+
     heroSection.addEventListener('mousemove', (e) => {
-        const rect = heroSection.getBoundingClientRect();
-        mouse.x = e.clientX - rect.left;
-        mouse.y = e.clientY - rect.top;
+        mouse.x = e.clientX - heroRect.left;
+        mouse.y = e.clientY - heroRect.top;
     }, { passive: true });
 
     heroSection.addEventListener('mouseleave', () => {
@@ -611,20 +694,29 @@ function setup3DTiltEffect() {
 
     const cards = document.querySelectorAll('.tilt-card');
     cards.forEach(card => {
+        let rafId = null;
         card.addEventListener('mousemove', (e) => {
-            const rect = card.getBoundingClientRect();
-            const x = e.clientX - rect.left;
-            const y = e.clientY - rect.top;
-            const centerX = rect.width / 2;
-            const centerY = rect.height / 2;
+            if (rafId) return;
+            rafId = requestAnimationFrame(() => {
+                const rect = card.getBoundingClientRect();
+                const x = e.clientX - rect.left;
+                const y = e.clientY - rect.top;
+                const centerX = rect.width / 2;
+                const centerY = rect.height / 2;
 
-            const rotateX = ((y - centerY) / centerY) * -6; // Max 6 deg
-            const rotateY = ((x - centerX) / centerX) * 6;
+                const rotateX = ((y - centerY) / centerY) * -6; // Max 6 deg
+                const rotateY = ((x - centerX) / centerX) * 6;
 
-            card.style.transform = `perspective(1000px) rotateX(${rotateX.toFixed(2)}deg) rotateY(${rotateY.toFixed(2)}deg) scale3d(1.02, 1.02, 1.02)`;
-        });
+                card.style.transform = `perspective(1000px) rotateX(${rotateX.toFixed(2)}deg) rotateY(${rotateY.toFixed(2)}deg) scale3d(1.02, 1.02, 1.02)`;
+                rafId = null;
+            });
+        }, { passive: true });
 
         card.addEventListener('mouseleave', () => {
+            if (rafId) {
+                cancelAnimationFrame(rafId);
+                rafId = null;
+            }
             card.style.transform = 'perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1)';
         });
     });
@@ -750,35 +842,10 @@ function setupGalleryLightbox() {
     }, { passive: true });
 }
 
-// --- Back to Top Floating Button Engine with Circular Progress ---
+// --- Back to Top Floating Button Click Handler ---
 function setupBackToTop() {
     const backToTopBtn = document.getElementById('back-to-top');
-    const progressCircle = document.getElementById('progress-circle');
     if (!backToTopBtn) return;
-
-    function handleScroll() {
-        const scrollY = window.scrollY;
-        const totalHeight = document.documentElement.scrollHeight - window.innerHeight;
-
-        // Show/hide button after scrolling down 350px
-        if (scrollY > 350) {
-            backToTopBtn.classList.remove('opacity-0', 'pointer-events-none');
-            backToTopBtn.classList.add('opacity-100');
-        } else {
-            backToTopBtn.classList.remove('opacity-100');
-            backToTopBtn.classList.add('opacity-0', 'pointer-events-none');
-        }
-
-        // Calculate circular progress offset (0 to 100)
-        if (progressCircle && totalHeight > 0) {
-            const scrollFraction = scrollY / totalHeight;
-            const dashoffset = 100 - (scrollFraction * 100);
-            progressCircle.style.strokeDashoffset = Math.max(0, Math.min(100, dashoffset));
-        }
-    }
-
-    window.addEventListener('scroll', handleScroll, { passive: true });
-    handleScroll();
 
     backToTopBtn.addEventListener('click', () => {
         window.scrollTo({
@@ -873,11 +940,15 @@ function setupInteractiveLabDemo() {
         const px = cx + r * cos;
         const py = cy - r * sin;
 
-        // Update readouts
+        // Update readouts & accessible slider attributes
         if (angleVal) angleVal.textContent = `${deg}° (${(rad / Math.PI).toFixed(2)}π rad)`;
         if (sinVal) sinVal.textContent = sin >= 0 ? `+${sin.toFixed(3)}` : sin.toFixed(3);
         if (cosVal) cosVal.textContent = cos >= 0 ? `+${cos.toFixed(3)}` : cos.toFixed(3);
         if (tanVal) tanVal.textContent = Number.isFinite(tan) ? (tan >= 0 ? `+${tan.toFixed(3)}` : tan.toFixed(3)) : 'Undefined';
+        if (slider) {
+            slider.setAttribute('aria-valuenow', deg.toString());
+            slider.setAttribute('aria-valuetext', `${deg} degrees`);
+        }
 
         // Quadrant & ASTC Rule
         let q = 'I';
@@ -975,17 +1046,24 @@ function setupInteractiveLabDemo() {
 
     function startAutoPlay() {
         isPlaying = true;
-        if (playBtn) playBtn.innerHTML = `<span>⏸ Pause Rotation</span>`;
+        if (playBtn) {
+            playBtn.innerHTML = `<span>⏸ Pause Rotation</span>`;
+            playBtn.setAttribute('aria-label', 'Pause simulation rotation');
+        }
         animFrame = requestAnimationFrame(step);
     }
 
     function stopAutoPlay() {
         isPlaying = false;
-        if (playBtn) playBtn.innerHTML = `<span>▶ Auto Rotate (Living System)</span>`;
+        if (playBtn) {
+            playBtn.innerHTML = `<span>▶ Auto Rotate (Living System)</span>`;
+            playBtn.setAttribute('aria-label', 'Start auto rotation simulation');
+        }
         if (animFrame) cancelAnimationFrame(animFrame);
     }
 
     if (playBtn) {
+        playBtn.setAttribute('aria-label', 'Start auto rotation simulation');
         playBtn.addEventListener('click', () => {
             if (isPlaying) {
                 stopAutoPlay();
@@ -1001,6 +1079,8 @@ function setupInteractiveLabDemo() {
 
 // Run animations and features when the DOM is fully loaded
 document.addEventListener('DOMContentLoaded', () => {
+    setupMobileMenu();           // Mobile hamburger menu toggle
+    setupSmoothScroll();         // Smooth scrolling for navigation links
     animateOnLoadElements();     // Trigger initial load animations
     setupScrollAnimations();     // Set up scroll animations
     setupHeaderScrollAndSpy();   // Sticky header compression, reading progress & spy
