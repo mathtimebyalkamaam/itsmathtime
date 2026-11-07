@@ -35,6 +35,7 @@
     <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" onload="renderMathInElement(document.body, {delimiters: [{left: '$$', right: '$$', display: true}, {left: '$', right: '$', display: false}]});"></script>
 
     <!-- SEO Meta Tags -->
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
     <meta name="description" content="Ace CBSE Class 12 Mathematics Board Exams with Alka Ma'am. Definite Integrals King's property, 2x2 Matrix Inverse trick, Tabular Integration by Parts, and animated calculus diagrams.">
     <meta name="keywords" content="Class 12 Math tips, CBSE Class 12 board exam hacks, integration shortcuts class 12, matrix inverse shortcut, definite integral king property, Alka Sharma MathTime">
     <meta name="author" content="Alka Sharma">
@@ -81,6 +82,43 @@
             { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://itsmathtime.co.in/" },
             { "@type": "ListItem", "position": 2, "name": "Class 11 Guide", "item": "https://itsmathtime.co.in/class-11-math-tips.html" },
             { "@type": "ListItem", "position": 3, "name": "Class 12 Board Tactics", "item": "https://itsmathtime.co.in/class-12-math-tips.html" }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "What is King's Property in Definite Integrals?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "King's Property states ∫_a^b f(x)dx = ∫_a^b f(a+b-x)dx. Adding the original integral I to the transformed integral eliminates complicated denominators in over 80% of CBSE 4-mark and 6-mark integration problems."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is the 10-second shortcut for finding the inverse of a 2x2 matrix?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "For a 2x2 matrix [a b; c d], the inverse is (1/(ad-bc)) * [d -b; -c a]. Swap the main diagonal elements and negate the off-diagonal elements."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How to avoid calculation traps in finding the shortest distance between 3D skew lines?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Ensure line equations are strictly in symmetric standard Cartesian form (x-x1)/a1 = (y-y1)/b1 = (z-z1)/c1 before reading vector a and direction vector b. Beware of inverted terms like (1-x)/2 = -(x-1)/2."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Where can I visualize definite integrals and 3D skew lines in 3D?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Test Riemann sums, area under curve, and 3D skew lines distance live at https://labs.itsmathtime.co.in/simulators/definite-integral-area and https://labs.itsmathtime.co.in/simulators/skew-lines-3d-distance."
+              }
+            }
           ]
         }
       ]
@@ -703,6 +741,68 @@
             </div>
 
         </article>
+
+        <!-- Class 12 Math Tactics FAQs Section (GEO & Rich Snippets) -->
+        <section class="mt-14 pt-12 border-t border-slate-200">
+            <div class="text-center max-w-2xl mx-auto mb-10">
+                <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-rose-100 text-rose-800 border border-rose-200 text-xs font-semibold uppercase tracking-wider mb-3">
+                    Class 12 Math FAQs
+                </span>
+                <h3 class="text-2xl sm:text-3xl font-extrabold text-slate-900 font-heading">
+                    Frequently Asked Questions on Class 12 Board Tactics
+                </h3>
+            </div>
+
+            <div class="space-y-4">
+                <details class="group bg-white rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition-all p-5 sm:p-6 overflow-hidden">
+                    <summary class="flex justify-between items-center cursor-pointer list-none font-bold text-base sm:text-lg text-slate-900 group-open:text-rose-600 transition-colors">
+                        <span>What is King's Property in Definite Integrals?</span>
+                        <span class="ml-4 flex-shrink-0 w-8 h-8 rounded-full bg-slate-100 group-open:bg-rose-100 flex items-center justify-center text-slate-500 group-open:text-rose-600 group-open:rotate-45 transition-transform duration-200">
+                            <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
+                        </span>
+                    </summary>
+                    <p class="text-slate-600 text-sm sm:text-base mt-4 leading-relaxed border-t border-slate-100 pt-3">
+                        King's Property states ∫_a^b f(x)dx = ∫_a^b f(a+b-x)dx. Adding the original integral I to the transformed integral eliminates complicated denominators in over 80% of CBSE 4-mark and 6-mark integration problems.
+                    </p>
+                </details>
+
+                <details class="group bg-white rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition-all p-5 sm:p-6 overflow-hidden">
+                    <summary class="flex justify-between items-center cursor-pointer list-none font-bold text-base sm:text-lg text-slate-900 group-open:text-rose-600 transition-colors">
+                        <span>What is the 10-second shortcut for finding the inverse of a 2x2 matrix?</span>
+                        <span class="ml-4 flex-shrink-0 w-8 h-8 rounded-full bg-slate-100 group-open:bg-rose-100 flex items-center justify-center text-slate-500 group-open:text-rose-600 group-open:rotate-45 transition-transform duration-200">
+                            <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
+                        </span>
+                    </summary>
+                    <p class="text-slate-600 text-sm sm:text-base mt-4 leading-relaxed border-t border-slate-100 pt-3">
+                        For a 2x2 matrix [a b; c d], the inverse is (1/(ad-bc)) * [d -b; -c a]. Swap the main diagonal elements and negate the off-diagonal elements.
+                    </p>
+                </details>
+
+                <details class="group bg-white rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition-all p-5 sm:p-6 overflow-hidden">
+                    <summary class="flex justify-between items-center cursor-pointer list-none font-bold text-base sm:text-lg text-slate-900 group-open:text-rose-600 transition-colors">
+                        <span>How to avoid calculation traps in finding the shortest distance between 3D skew lines?</span>
+                        <span class="ml-4 flex-shrink-0 w-8 h-8 rounded-full bg-slate-100 group-open:bg-rose-100 flex items-center justify-center text-slate-500 group-open:text-rose-600 group-open:rotate-45 transition-transform duration-200">
+                            <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
+                        </span>
+                    </summary>
+                    <p class="text-slate-600 text-sm sm:text-base mt-4 leading-relaxed border-t border-slate-100 pt-3">
+                        Ensure line equations are strictly in symmetric standard Cartesian form (x-x1)/a1 = (y-y1)/b1 = (z-z1)/c1 before reading vector a and direction vector b. Beware of inverted terms like (1-x)/2 = -(x-1)/2.
+                    </p>
+                </details>
+
+                <details class="group bg-white rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition-all p-5 sm:p-6 overflow-hidden">
+                    <summary class="flex justify-between items-center cursor-pointer list-none font-bold text-base sm:text-lg text-slate-900 group-open:text-rose-600 transition-colors">
+                        <span>Where can I visualize definite integrals and 3D skew lines in 3D?</span>
+                        <span class="ml-4 flex-shrink-0 w-8 h-8 rounded-full bg-slate-100 group-open:bg-rose-100 flex items-center justify-center text-slate-500 group-open:text-rose-600 group-open:rotate-45 transition-transform duration-200">
+                            <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
+                        </span>
+                    </summary>
+                    <p class="text-slate-600 text-sm sm:text-base mt-4 leading-relaxed border-t border-slate-100 pt-3">
+                        Test Riemann sums, area under curve, and 3D skew lines distance live at <a href="https://labs.itsmathtime.co.in/simulators/definite-integral-area" target="_blank" rel="noopener" class="text-rose-600 font-semibold underline">https://labs.itsmathtime.co.in/simulators/definite-integral-area</a> and <a href="https://labs.itsmathtime.co.in/simulators/skew-lines-3d-distance" target="_blank" rel="noopener" class="text-rose-600 font-semibold underline">https://labs.itsmathtime.co.in/simulators/skew-lines-3d-distance</a>.
+                    </p>
+                </details>
+            </div>
+        </section>
     </main>
 
     <!-- Modern 4-Column Educational Footer -->
