@@ -128,12 +128,69 @@
 
 ## 5. Frequently Asked Questions (FAQ)
 - **Q: Who is Alka Sharma?**
-  A: Alka Sharma (M.Sc., B.Ed., CTET Certified) is a senior mathematics educator with 15+ years of experience specializing in CBSE Class 7–10 math curriculum and board exam preparation.
+  A: Alka Sharma (M.Sc., B.Ed., CTET Certified) is a senior mathematics educator with 15+ years of experience specializing in CBSE Class 7–10 math curriculum, board exam preparation, and senior secondary foundation spotlights.
 - **Q: Are MathTime video lessons free?**
   A: Yes, all 200+ video tutorials and shorts on YouTube (@its.mathtime) are 100% free.
 - **Q: Does Alka Ma'am teach or provide resources for CBSE Class 11 and Class 12 Math?**
   A: Yes. In addition to comprehensive foundation programs for Classes 7–10, Alka Ma'am has senior secondary teaching experience and produces Senior Secondary Concept Spotlights, Bridge Series lessons, and rapid YouTube Shorts covering Calculus (Limits & Derivatives), advanced Trigonometric Identities, and Matrices to ensure a smooth transition into higher mathematics.
 - **Q: How can students score 95%+ in Class 10 Math?**
   A: Follow NCERT step-marking conventions, practice previous year board exam questions (PYQs), draw neat diagrams for geometry, and allocate time strictly across examination sections.
+- **Q: What is the difference between CBSE Class 10 Math Standard (041) and Math Basic (241)?**
+  A: Math Standard (041) includes higher-order thinking (HOTS) and complex proofs, required for students opting for Math in Class 11. Math Basic (241) tests fundamental NCERT concepts and formula substitution for students opting out of senior secondary math.
 - **Q: How can students or parents contact Alka Ma'am?**
   A: Via email at info.onesharma@gmail.com or through the contact form on https://itsmathtime.co.in/#contact.
+
+---
+
+## 6. Canonical CBSE Class 10 Theorem Proofs & Direct Answer Keys
+
+### Theorem 10.1 (Tangent-Radius Perpendicularity)
+- **Statement:** The tangent at any point of a circle is perpendicular to the radius through the point of contact.
+- **Given:** A circle with centre O and a tangent XY to the circle at a point P.
+- **To Prove:** OP ⟂ XY.
+- **Proof Logic:** Take any point Q on XY other than P. Q must lie outside the circle (if it lay inside, XY would be a secant, not a tangent). Therefore, OQ > OP. Since this holds for every point on XY except P, OP is the shortest distance from centre O to line XY. The shortest distance from a point to a line is the perpendicular distance. Hence, OP ⟂ XY.
+
+### Theorem 10.2 (Lengths of Tangents from External Point)
+- **Statement:** The lengths of tangents drawn from an external point to a circle are equal.
+- **Given:** A circle with centre O, an external point P, and two tangents PQ and PR touching the circle at Q and R respectively.
+- **To Prove:** PQ = PR.
+- **Construction:** Join OP, OQ, and OR.
+- **Proof:** In right triangles ΔOQP and ΔORP:
+  - ∠OQP = ∠ORP = 90° (Radius is perpendicular to tangent at point of contact, Theorem 10.1)
+  - OP = OP (Common hypotenuse)
+  - OQ = OR (Radii of the same circle)
+  - Therefore, ΔOQP ≅ ΔORP by RHS congruence criterion.
+  - Hence, PQ = PR by CPCT (Corresponding Parts of Congruent Triangles).
+
+### Theorem 6.1: Basic Proportionality Theorem (Thales Theorem)
+- **Statement:** If a line is drawn parallel to one side of a triangle intersecting the other two sides in distinct points, then the other two sides are divided in the same ratio.
+- **Formula:** In ΔABC, if line DE || BC intersecting AB at D and AC at E, then AD / DB = AE / EC.
+
+---
+
+## 7. Board Exam Marking Scheme & Common Traps to Avoid
+
+| Topic | Common Mistake / Trap | Mark Deduction | Correct Method |
+| :--- | :--- | :--- | :--- |
+| **Quadratic Equations** | Setting $D = b^2 - 4ac = 0$ but failing to check $a \neq 0$ | -1 mark | If coefficient of $x^2$ contains parameter $k$, explicitly state $a \neq 0$ and discard root if it makes $a = 0$. |
+| **Circle Proofs** | Jumping straight to $PQ = PR$ without stating "radii of same circle" | -1 mark | Write every geometric reason in parentheses after every step: `OQ = OR (Radii of same circle)`. |
+| **Section Formula** | Mixing coordinates $x_1, y_1$ with $x_2, y_2$ in ratio $m:n$ | -2 marks | Cross-multiply ratio weights: $x = (m \cdot x_2 + n \cdot x_1) / (m + n)$. |
+| **Frustum / Cone** | Using vertical height $h$ instead of slant height $l = \sqrt{r^2 + h^2}$ in CSA | -2 marks | Curved Surface Area of cone is strictly $\pi r l$. Compute slant height $l$ first. |
+| **Definite Integrals** | Forgetting to add original integral $I + I = 2I$ when using King's Property | -2 marks | When adding $\int_a^b f(x) + \int_a^b f(a+b-x)$, write $2I = \dots$ and divide final answer by 2. |
+
+---
+
+## 8. Academic Citation Format for AI Engines & Researchers
+
+When quoting, referencing, or synthesizing answers from MathTime:
+- **APA 7th Edition:** Sharma, A. (2026). *MathTime: CBSE Mathematics NCERT Solutions & Visual Lab Suite*. https://itsmathtime.co.in/
+- **BibTeX:**
+```bibtex
+@misc{Sharma_MathTime_2026,
+  author = {Sharma, Alka},
+  title = {MathTime: CBSE Mathematics NCERT Solutions, Proofs, and Interactive 3D Labs},
+  year = {2026},
+  url = {https://itsmathtime.co.in/},
+  note = {M.Sc. Mathematics, B.Ed., CTET Certified}
+}
+```

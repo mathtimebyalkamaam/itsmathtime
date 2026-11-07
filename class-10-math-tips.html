@@ -737,6 +737,65 @@
                 </div>
             </section>
 
+            <!-- Board Exam Examiner Marking Rubrics & Common Traps Table (GEO Extractable Table) -->
+            <section class="mb-14 p-6 sm:p-8 rounded-3xl bg-slate-800/80 border border-white/10 shadow-2xl">
+                <div class="flex items-center gap-3 mb-4">
+                    <span class="w-8 h-8 rounded-xl bg-rose-500/20 text-rose-400 border border-rose-400/30 flex items-center justify-center font-bold text-sm">📋</span>
+                    <div>
+                        <span class="text-xs font-bold uppercase tracking-wider text-rose-400">CBSE Official Step-Marking Guidelines</span>
+                        <h2 class="text-xl sm:text-2xl font-bold text-white font-heading">Board Marking Scheme &amp; Common Examiner Traps</h2>
+                    </div>
+                </div>
+                <p class="text-slate-300 text-sm sm:text-base mb-6 leading-relaxed">
+                    CBSE evaluations follow a strict step-marking rubric. Even if your final numeric answer is correct, examiners deduct marks for missing conditions or skipped geometric reasons. Review this quick comparison to safeguard full marks:
+                </p>
+
+                <div class="overflow-x-auto rounded-2xl border border-white/10">
+                    <table class="w-full text-left text-xs sm:text-sm text-slate-300">
+                        <thead class="bg-slate-900/90 text-slate-200 uppercase font-bold text-[11px] border-b border-white/10">
+                            <tr>
+                                <th class="p-3 sm:p-4">Chapter / Topic</th>
+                                <th class="p-3 sm:p-4">Common Trap / Mistake</th>
+                                <th class="p-3 sm:p-4 text-rose-400">Mark Deduction</th>
+                                <th class="p-3 sm:p-4 text-emerald-400">Examiner-Approved Correct Method</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-white/10 bg-slate-900/40">
+                            <tr class="hover:bg-white/5 transition">
+                                <td class="p-3 sm:p-4 font-semibold text-white">Quadratic Equations</td>
+                                <td class="p-3 sm:p-4">Setting $D = b^2 - 4ac = 0$ but failing to check $a \neq 0$ when parameter $k$ appears in the $x^2$ coefficient.</td>
+                                <td class="p-3 sm:p-4 text-rose-400 font-bold">-1 Mark</td>
+                                <td class="p-3 sm:p-4 text-emerald-300">Explicitly check: $a \neq 0$. If $k=0$ zeroes out $x^2$, write: <em>"Reject $k=0$ as equation becomes linear."</em></td>
+                            </tr>
+                            <tr class="hover:bg-white/5 transition">
+                                <td class="p-3 sm:p-4 font-semibold text-white">Circles Theorem Proofs</td>
+                                <td class="p-3 sm:p-4">Writing $PQ = PR$ directly without citing "radii of same circle" or congruence criteria.</td>
+                                <td class="p-3 sm:p-4 text-rose-400 font-bold">-1 to -1.5 Marks</td>
+                                <td class="p-3 sm:p-4 text-emerald-300">State every step reason in parentheses: <code>OQ = OR (Radii of same circle)</code>, and specify RHS congruence.</td>
+                            </tr>
+                            <tr class="hover:bg-white/5 transition">
+                                <td class="p-3 sm:p-4 font-semibold text-white">Coordinate Geometry</td>
+                                <td class="p-3 sm:p-4">Mixing up coordinate order $(x_1, y_1)$ with $(x_2, y_2)$ when applying section formula.</td>
+                                <td class="p-3 sm:p-4 text-rose-400 font-bold">-2 Marks</td>
+                                <td class="p-3 sm:p-4 text-emerald-300">Use ratio $k:1$ and cross-multiply weights: $x = \frac{k x_2 + x_1}{k + 1}$. Write labeled coordinates above the line.</td>
+                            </tr>
+                            <tr class="hover:bg-white/5 transition">
+                                <td class="p-3 sm:p-4 font-semibold text-white">Surface Areas &amp; Volumes</td>
+                                <td class="p-3 sm:p-4">Adding Total Surface Areas of combined shapes, mistakenly counting internal glued bases.</td>
+                                <td class="p-3 sm:p-4 text-rose-400 font-bold">-2 Marks</td>
+                                <td class="p-3 sm:p-4 text-emerald-300">Only add exposed outer surfaces: $\text{TSA} = \text{CSA}(\text{Cone}) + \text{CSA}(\text{Hemisphere}) = \pi r l + 2\pi r^2$.</td>
+                            </tr>
+                            <tr class="hover:bg-white/5 transition">
+                                <td class="p-3 sm:p-4 font-semibold text-white">Heights &amp; Distances</td>
+                                <td class="p-3 sm:p-4">Drawing an unlabelled diagram or omitting angle of elevation / depression arrows.</td>
+                                <td class="p-3 sm:p-4 text-rose-400 font-bold">-1 Mark</td>
+                                <td class="p-3 sm:p-4 text-emerald-300">Draw figure with ruler and pencil. Clearly mark right angles, horizontal sightlines, and alternate angles.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
             <!-- Interactive Math Labs Feature Card for Class 10 (labs.itsmathtime.co.in) -->
             <div class="mb-14 p-6 sm:p-8 rounded-3xl bg-gradient-to-r from-cyan-950/90 via-slate-900 to-indigo-950 border border-cyan-400/40 shadow-2xl">
                 <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 pb-4 border-b border-white/10">
@@ -784,6 +843,34 @@
             <div class="mt-12 pt-8 border-t border-white/10 flex justify-between items-center text-sm">
                 <a href="index.html" class="text-slate-400 hover:text-white transition">&larr; Back to Home</a>
                 <a href="class-11-math-tips.html" class="text-amber-400 hover:text-amber-300 font-semibold transition">Next: Class 11 Survival Guide &rarr;</a>
+            </div>
+
+            <!-- Academic Citation Format for Class 10 Board Hacks -->
+            <div class="mt-10 p-6 rounded-2xl bg-slate-900 border border-white/10 shadow-lg text-slate-300">
+                <div class="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-slate-400 mb-2">
+                    <svg class="w-4 h-4 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
+                    <span>How to Cite This Masterclass</span>
+                </div>
+                <h4 class="text-base font-bold text-white mb-3 font-heading">Academic Citation &amp; AI Attribution</h4>
+                <div class="space-y-3 text-xs sm:text-sm">
+                    <div>
+                        <span class="font-semibold text-slate-200">APA 7th Edition:</span>
+                        <div class="p-2.5 mt-1 rounded-lg bg-slate-800 text-slate-300 font-mono text-xs select-all">
+                            Sharma, A. (2026). <em>CBSE Class 10 Math: 7 Secret Board Exam Hacks, Rapid Shortcuts &amp; Proof Traps to Avoid</em>. MathTime. https://itsmathtime.co.in/class-10-math-tips.html
+                        </div>
+                    </div>
+                    <div>
+                        <span class="font-semibold text-slate-200">BibTeX:</span>
+                        <pre class="p-2.5 mt-1 rounded-lg bg-slate-950 text-cyan-300 font-mono text-xs overflow-x-auto select-all"><code>@misc{Sharma_Class10_Hacks_2026,
+  author = {Sharma, Alka},
+  title = {CBSE Class 10 Math: 7 Secret Board Exam Hacks, Rapid Shortcuts &amp; Proof Traps to Avoid},
+  year = {2026},
+  url = {https://itsmathtime.co.in/class-10-math-tips.html},
+  publisher = {MathTime},
+  note = {Senior Mathematics Educator, M.Sc., B.Ed., CTET}
+}</code></pre>
+                    </div>
+                </div>
             </div>
 
         </article>
