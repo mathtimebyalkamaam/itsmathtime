@@ -2,5 +2,11 @@
 # Canonical root redirection
 /index.html    /    301
 
+# Subdomain redirection for Interactive 3D Labs
+/labs            https://labs.itsmathtime.co.in/                  301
+/labs/*          https://labs.itsmathtime.co.in/:splat            301
+/simulators      https://labs.itsmathtime.co.in/                  301
+/simulators/*    https://labs.itsmathtime.co.in/simulators/:splat 301
+
 # Custom 404 error page handling
 /*    /404.html    404
