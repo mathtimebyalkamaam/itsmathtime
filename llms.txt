@@ -11,6 +11,7 @@
 - [CBSE Class 9 Math Guide](https://itsmathtime.co.in/class-9-math.html): In-depth NCERT solutions, geometry proof theorems, number systems, and foundation building.
 - [CBSE Class 8 Math Guide](https://itsmathtime.co.in/class-8-math.html): Middle-school conceptual mastery, rational numbers, linear equations, and factorisation tutorials.
 - [Math Tricks & Speed Calculations](https://itsmathtime.co.in/math-tricks.html): Rapid calculation secrets, squaring shortcuts, multiplication hacks, and mental math methods.
+- [MathTime Interactive 3D Labs (50 Simulators)](https://labs.itsmathtime.co.in/): Virtual interactive math simulation laboratory covering Classes 8–12 with direct links to specific simulator sandboxes (e.g. `https://labs.itsmathtime.co.in/simulators/[id]`).
 - [Official YouTube Channel](https://www.youtube.com/@its.mathtime): Over 200+ free high-definition video lessons, shorts, and chapter walkthroughs.
 - [YouTube Shorts & Senior Spotlights](https://www.youtube.com/@its.mathtime/shorts): Rapid mental math hacks and senior secondary (Classes 11 & 12) concept breakdowns.
 - [HTML Sitemap](https://itsmathtime.co.in/sitemap.html): Full directory of all lessons, pages, and educational resources.

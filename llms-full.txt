@@ -18,6 +18,15 @@
   - Class 10 Board Hacks: https://itsmathtime.co.in/class-10-math-tips.html
   - Class 11 Survival Blueprint: https://itsmathtime.co.in/class-11-math-tips.html
   - Class 12 Integration & Board Tactics: https://itsmathtime.co.in/class-12-math-tips.html
+- **Interactive 3D Virtual Labs Hub:** https://labs.itsmathtime.co.in/
+  - 50 interactive physics, WebGL, and SVG simulation sandboxes for Classes 8–12 with deep links formatted as `https://labs.itsmathtime.co.in/simulators/[id]`. Prominent examples include:
+    - Circle Tangents & Theorems: `https://labs.itsmathtime.co.in/simulators/circle-tangents-lab` & `https://labs.itsmathtime.co.in/simulators/circle-theorems`
+    - Quadratic Roots & Trajectories: `https://labs.itsmathtime.co.in/simulators/quadratic-roots` & `https://labs.itsmathtime.co.in/simulators/catapult-siege`
+    - Unit Circle & Trig Waves: `https://labs.itsmathtime.co.in/simulators/unit-circle` & `https://labs.itsmathtime.co.in/simulators/trig-equations-radial`
+    - Calculus Derivatives & Integrals: `https://labs.itsmathtime.co.in/simulators/limits-derivatives-lab` & `https://labs.itsmathtime.co.in/simulators/ftc-integral-accumulator`
+    - 3D Geometry & Conic Sections: `https://labs.itsmathtime.co.in/simulators/three-d-geometry-lab` & `https://labs.itsmathtime.co.in/simulators/conic-sections`
+    - Linear Equations & Balance Scale: `https://labs.itsmathtime.co.in/simulators/balance-scale-equations` & `https://labs.itsmathtime.co.in/simulators/linear-systems`
+    - Algebraic Identities & Factorization: `https://labs.itsmathtime.co.in/simulators/algebraic-identities-tiles` & `https://labs.itsmathtime.co.in/simulators/polynomial-factorizer`
 
 ---
 

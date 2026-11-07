@@ -126,6 +126,13 @@
                 <a href="index.html" class="nav-link px-3 py-1.5 rounded-full hover:text-white hover:bg-white/10 transition-all duration-200">Home</a>
                 <a href="index.html#about" class="nav-link px-3 py-1.5 rounded-full hover:text-white hover:bg-white/10 transition-all duration-200">About</a>
                 
+                <!-- 3D Math Labs Menu Item -->
+                <a href="https://labs.itsmathtime.co.in/" target="_blank" rel="noopener" class="nav-link px-3 py-1.5 rounded-full hover:text-white hover:bg-cyan-500/10 transition-all duration-200 flex items-center gap-1.5 text-cyan-300 font-semibold border border-cyan-400/20 hover:border-cyan-400/40">
+                    <span class="text-sm">🧪</span>
+                    <span>3D Labs (50+ Simulators)</span>
+                    <span style="background: #e11d48; color: #fff; font-size: 11px; padding: 2px 6px; border-radius: 9999px;">FREE</span>
+                </a>
+
                 <!-- Curriculum Dropdown -->
                 <div class="relative group header-dropdown">
                     <button type="button" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle nav-link px-3 py-1.5 rounded-full hover:text-white hover:bg-white/10 transition-all duration-200 flex items-center gap-1.5 cursor-pointer text-amber-300 group-hover:text-amber-300 focus:outline-none">
@@ -291,6 +298,14 @@
                 <a href="index.html" class="block py-2 px-3 rounded-lg text-slate-200 hover:text-white hover:bg-white/10 transition duration-200">Home</a>
                 <a href="index.html#about" class="block py-2 px-3 rounded-lg text-slate-200 hover:text-white hover:bg-white/10 transition duration-200">About Alka Ma'am</a>
                 
+                <a href="https://labs.itsmathtime.co.in/" target="_blank" rel="noopener" class="flex items-center justify-between py-2 px-3 rounded-lg text-cyan-300 hover:text-white bg-cyan-950/40 border border-cyan-800/40 transition duration-200 font-semibold my-1">
+                    <span class="flex items-center gap-2">
+                        <span>🧪</span>
+                        <span>3D Labs (50+ Simulators)</span>
+                    </span>
+                    <span style="background: #e11d48; color: #fff; font-size: 11px; padding: 2px 6px; border-radius: 9999px;">FREE</span>
+                </a>
+
                 <!-- Mobile Section: CBSE Class Guides -->
                 <div class="pt-3 pb-1 px-3 text-[11px] font-bold uppercase tracking-wider text-slate-400 flex items-center gap-1.5">
                     <span>📚</span> <span>CBSE Curriculum Hubs</span>
@@ -396,146 +411,314 @@
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             <!-- Chapter Card 1 -->
-            <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition">
-                <span class="text-xs font-bold text-blue-600 uppercase tracking-wider">Unit I • Number Systems</span>
-                <h3 class="text-xl font-bold font-heading text-slate-900 mt-2 mb-3">1. Real Numbers</h3>
-                <p class="text-sm text-slate-600 mb-4 leading-relaxed">
-                    Fundamental Theorem of Arithmetic, proving irrationality of √2, √3, √5, and prime factorisation techniques.
-                </p>
-                <div class="text-xs font-semibold text-amber-600 bg-amber-50 px-3 py-1.5 rounded-lg inline-block">
-                    ★ High Frequency Board Topic
+            <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition flex flex-col justify-between">
+                <div>
+                    <span class="text-xs font-bold text-blue-600 uppercase tracking-wider">Unit I • Number Systems</span>
+                    <h3 class="text-xl font-bold font-heading text-slate-900 mt-2 mb-3">1. Real Numbers</h3>
+                    <p class="text-sm text-slate-600 mb-4 leading-relaxed">
+                        Fundamental Theorem of Arithmetic, proving irrationality of √2, √3, √5, and prime factorisation techniques.
+                    </p>
+                    <div class="text-xs font-semibold text-amber-600 bg-amber-50 px-3 py-1.5 rounded-lg inline-block">
+                        ★ High Frequency Board Topic
+                    </div>
+                </div>
+                <div style="background: #0f172a; border-left: 4px solid #06b6d4; padding: 14px; border-radius: 8px; margin: 16px 0 0 0;">
+                    <h4 style="color: #38bdf8; margin: 0 0 6px 0; font-size: 0.875rem; font-weight: 700;">🧪 Visualize It Live in 3D:</h4>
+                    <p style="color: #cbd5e1; margin: 0 0 10px 0; font-size: 0.8rem; line-height: 1.4;">
+                        Don't just memorize this formula. Explore density between real and rational numbers dynamically in Alka Ma'am's virtual lab:
+                    </p>
+                    <a href="https://labs.itsmathtime.co.in/simulators/rational-numbers-density"
+                       target="_blank"
+                       rel="noopener"
+                       style="display: inline-block; background: #0284c7; color: #ffffff; padding: 7px 14px; border-radius: 6px; text-decoration: none; font-weight: 600; font-size: 0.8rem;">
+                        Launch Real Numbers Lab &rarr;
+                    </a>
                 </div>
             </div>
 
             <!-- Chapter Card 2 -->
-            <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition">
-                <span class="text-xs font-bold text-indigo-600 uppercase tracking-wider">Unit II • Algebra</span>
-                <h3 class="text-xl font-bold font-heading text-slate-900 mt-2 mb-3">2. Polynomials</h3>
-                <p class="text-sm text-slate-600 mb-4 leading-relaxed">
-                    Geometrical meaning of zeroes, relationship between zeroes and coefficients of quadratic polynomials.
-                </p>
-                <div class="text-xs font-semibold text-indigo-600 bg-indigo-50 px-3 py-1.5 rounded-lg inline-block">
-                    Zeroes &amp; Graphical Analysis
+            <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition flex flex-col justify-between">
+                <div>
+                    <span class="text-xs font-bold text-indigo-600 uppercase tracking-wider">Unit II • Algebra</span>
+                    <h3 class="text-xl font-bold font-heading text-slate-900 mt-2 mb-3">2. Polynomials</h3>
+                    <p class="text-sm text-slate-600 mb-4 leading-relaxed">
+                        Geometrical meaning of zeroes, relationship between zeroes and coefficients of quadratic polynomials.
+                    </p>
+                    <div class="text-xs font-semibold text-indigo-600 bg-indigo-50 px-3 py-1.5 rounded-lg inline-block">
+                        Zeroes &amp; Graphical Analysis
+                    </div>
+                </div>
+                <div style="background: #0f172a; border-left: 4px solid #06b6d4; padding: 14px; border-radius: 8px; margin: 16px 0 0 0;">
+                    <h4 style="color: #38bdf8; margin: 0 0 6px 0; font-size: 0.875rem; font-weight: 700;">🧪 Visualize It Live in 3D:</h4>
+                    <p style="color: #cbd5e1; margin: 0 0 10px 0; font-size: 0.8rem; line-height: 1.4;">
+                        Don't just memorize this formula. Factor polynomials visually with area tiles in Alka Ma'am's virtual lab:
+                    </p>
+                    <a href="https://labs.itsmathtime.co.in/simulators/polynomial-factorizer"
+                       target="_blank"
+                       rel="noopener"
+                       style="display: inline-block; background: #0284c7; color: #ffffff; padding: 7px 14px; border-radius: 6px; text-decoration: none; font-weight: 600; font-size: 0.8rem;">
+                        Launch Polynomial Factorizer Lab &rarr;
+                    </a>
                 </div>
             </div>
 
             <!-- Chapter Card 3 -->
-            <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition">
-                <span class="text-xs font-bold text-indigo-600 uppercase tracking-wider">Unit II • Algebra</span>
-                <h3 class="text-xl font-bold font-heading text-slate-900 mt-2 mb-3">3. Linear Equations</h3>
-                <p class="text-sm text-slate-600 mb-4 leading-relaxed">
-                    Pair of linear equations in two variables: graphical method, substitution method, and elimination method.
-                </p>
-                <div class="text-xs font-semibold text-slate-700 bg-slate-100 px-3 py-1.5 rounded-lg inline-block">
-                    Word Problems Mastery
+            <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition flex flex-col justify-between">
+                <div>
+                    <span class="text-xs font-bold text-indigo-600 uppercase tracking-wider">Unit II • Algebra</span>
+                    <h3 class="text-xl font-bold font-heading text-slate-900 mt-2 mb-3">3. Linear Equations</h3>
+                    <p class="text-sm text-slate-600 mb-4 leading-relaxed">
+                        Pair of linear equations in two variables: graphical method, substitution method, and elimination method.
+                    </p>
+                    <div class="text-xs font-semibold text-slate-700 bg-slate-100 px-3 py-1.5 rounded-lg inline-block">
+                        Word Problems Mastery
+                    </div>
+                </div>
+                <div style="background: #0f172a; border-left: 4px solid #06b6d4; padding: 14px; border-radius: 8px; margin: 16px 0 0 0;">
+                    <h4 style="color: #38bdf8; margin: 0 0 6px 0; font-size: 0.875rem; font-weight: 700;">🔬 Test This Theorem Live in 3D:</h4>
+                    <p style="color: #cbd5e1; margin: 0 0 10px 0; font-size: 0.8rem; line-height: 1.4;">
+                        Inspect intersecting, parallel, and coincident line systems in real time in Alka Ma'am's interactive lab:
+                    </p>
+                    <a href="https://labs.itsmathtime.co.in/simulators/linear-systems"
+                       target="_blank"
+                       rel="noopener"
+                       style="display: inline-block; background: #0284c7; color: #ffffff; padding: 7px 14px; border-radius: 6px; text-decoration: none; font-weight: 600; font-size: 0.8rem;">
+                        Launch Linear Systems Lab &rarr;
+                    </a>
                 </div>
             </div>
 
             <!-- Chapter Card 4 -->
-            <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition">
-                <span class="text-xs font-bold text-indigo-600 uppercase tracking-wider">Unit II • Algebra</span>
-                <h3 class="text-xl font-bold font-heading text-slate-900 mt-2 mb-3">4. Quadratic Equations</h3>
-                <p class="text-sm text-slate-600 mb-4 leading-relaxed">
-                    Standard form ax² + bx + c = 0, solutions by factorisation, quadratic formula, nature of roots (discriminant D).
-                </p>
-                <div class="text-xs font-semibold text-amber-600 bg-amber-50 px-3 py-1.5 rounded-lg inline-block">
-                    ★ 5-Mark Word Problems
+            <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition flex flex-col justify-between">
+                <div>
+                    <span class="text-xs font-bold text-indigo-600 uppercase tracking-wider">Unit II • Algebra</span>
+                    <h3 class="text-xl font-bold font-heading text-slate-900 mt-2 mb-3">4. Quadratic Equations</h3>
+                    <p class="text-sm text-slate-600 mb-4 leading-relaxed">
+                        Standard form ax² + bx + c = 0, solutions by factorisation, quadratic formula, nature of roots (discriminant D).
+                    </p>
+                    <div class="text-xs font-semibold text-amber-600 bg-amber-50 px-3 py-1.5 rounded-lg inline-block">
+                        ★ 5-Mark Word Problems
+                    </div>
+                </div>
+                <div style="background: #0f172a; border-left: 4px solid #06b6d4; padding: 14px; border-radius: 8px; margin: 16px 0 0 0;">
+                    <h4 style="color: #38bdf8; margin: 0 0 6px 0; font-size: 0.875rem; font-weight: 700;">🧪 Visualize It Live in 3D:</h4>
+                    <p style="color: #cbd5e1; margin: 0 0 10px 0; font-size: 0.8rem; line-height: 1.4;">
+                        Don't just memorize this formula. Drag discriminant D = b² - 4ac and watch parabola roots morph in Alka Ma'am's virtual lab:
+                    </p>
+                    <a href="https://labs.itsmathtime.co.in/simulators/quadratic-roots"
+                       target="_blank"
+                       rel="noopener"
+                       style="display: inline-block; background: #0284c7; color: #ffffff; padding: 7px 14px; border-radius: 6px; text-decoration: none; font-weight: 600; font-size: 0.8rem;">
+                        Launch Quadratic Roots Lab &rarr;
+                    </a>
                 </div>
             </div>
 
             <!-- Chapter Card 5 -->
-            <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition">
-                <span class="text-xs font-bold text-indigo-600 uppercase tracking-wider">Unit II • Algebra</span>
-                <h3 class="text-xl font-bold font-heading text-slate-900 mt-2 mb-3">5. Arithmetic Progressions</h3>
-                <p class="text-sm text-slate-600 mb-4 leading-relaxed">
-                    General term (n-th term: a + (n-1)d), sum of first n terms (Sn = n/2[2a + (n-1)d]), and daily life applications.
-                </p>
-                <div class="text-xs font-semibold text-emerald-600 bg-emerald-50 px-3 py-1.5 rounded-lg inline-block">
-                    Formula Applications
+            <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition flex flex-col justify-between">
+                <div>
+                    <span class="text-xs font-bold text-indigo-600 uppercase tracking-wider">Unit II • Algebra</span>
+                    <h3 class="text-xl font-bold font-heading text-slate-900 mt-2 mb-3">5. Arithmetic Progressions</h3>
+                    <p class="text-sm text-slate-600 mb-4 leading-relaxed">
+                        General term (n-th term: a + (n-1)d), sum of first n terms (Sn = n/2[2a + (n-1)d]), and daily life applications.
+                    </p>
+                    <div class="text-xs font-semibold text-emerald-600 bg-emerald-50 px-3 py-1.5 rounded-lg inline-block">
+                        Formula Applications
+                    </div>
+                </div>
+                <div style="background: #0f172a; border-left: 4px solid #06b6d4; padding: 14px; border-radius: 8px; margin: 16px 0 0 0;">
+                    <h4 style="color: #38bdf8; margin: 0 0 6px 0; font-size: 0.875rem; font-weight: 700;">🧪 Visualize It Live in 3D:</h4>
+                    <p style="color: #cbd5e1; margin: 0 0 10px 0; font-size: 0.8rem; line-height: 1.4;">
+                        Don't just memorize this formula. Build AP staircases and Gauss pairing sums dynamically in Alka Ma'am's virtual lab:
+                    </p>
+                    <a href="https://labs.itsmathtime.co.in/simulators/arithmetic-progression-lab"
+                       target="_blank"
+                       rel="noopener"
+                       style="display: inline-block; background: #0284c7; color: #ffffff; padding: 7px 14px; border-radius: 6px; text-decoration: none; font-weight: 600; font-size: 0.8rem;">
+                        Launch Arithmetic Progression Lab &rarr;
+                    </a>
                 </div>
             </div>
 
             <!-- Chapter Card 6 -->
-            <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition">
-                <span class="text-xs font-bold text-purple-600 uppercase tracking-wider">Unit III • Geometry</span>
-                <h3 class="text-xl font-bold font-heading text-slate-900 mt-2 mb-3">6. Triangles</h3>
-                <p class="text-sm text-slate-600 mb-4 leading-relaxed">
-                    Basic Proportionality Theorem (Thales Theorem), criteria for similarity of triangles (AAA, SSS, SAS).
-                </p>
-                <div class="text-xs font-semibold text-purple-600 bg-purple-50 px-3 py-1.5 rounded-lg inline-block">
-                    ★ Proof Theorems
+            <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition flex flex-col justify-between">
+                <div>
+                    <span class="text-xs font-bold text-purple-600 uppercase tracking-wider">Unit III • Geometry</span>
+                    <h3 class="text-xl font-bold font-heading text-slate-900 mt-2 mb-3">6. Triangles</h3>
+                    <p class="text-sm text-slate-600 mb-4 leading-relaxed">
+                        Basic Proportionality Theorem (Thales Theorem), criteria for similarity of triangles (AAA, SSS, SAS).
+                    </p>
+                    <div class="text-xs font-semibold text-purple-600 bg-purple-50 px-3 py-1.5 rounded-lg inline-block">
+                        ★ Proof Theorems
+                    </div>
+                </div>
+                <div style="background: #0f172a; border-left: 4px solid #06b6d4; padding: 14px; border-radius: 8px; margin: 16px 0 0 0;">
+                    <h4 style="color: #38bdf8; margin: 0 0 6px 0; font-size: 0.875rem; font-weight: 700;">🔬 Test This Theorem Live in 3D:</h4>
+                    <p style="color: #cbd5e1; margin: 0 0 10px 0; font-size: 0.8rem; line-height: 1.4;">
+                        Slide parallel transversals and verify Thales Theorem (AD/DB = AE/EC) live in Alka Ma'am's virtual lab:
+                    </p>
+                    <a href="https://labs.itsmathtime.co.in/simulators/similar-triangles"
+                       target="_blank"
+                       rel="noopener"
+                       style="display: inline-block; background: #0284c7; color: #ffffff; padding: 7px 14px; border-radius: 6px; text-decoration: none; font-weight: 600; font-size: 0.8rem;">
+                        Launch Thales Theorem / Similarity Lab &rarr;
+                    </a>
                 </div>
             </div>
 
             <!-- Chapter Card 7 -->
-            <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition">
-                <span class="text-xs font-bold text-rose-600 uppercase tracking-wider">Unit V • Trigonometry</span>
-                <h3 class="text-xl font-bold font-heading text-slate-900 mt-2 mb-3">7. Intro to Trigonometry</h3>
-                <p class="text-sm text-slate-600 mb-4 leading-relaxed">
-                    Trigonometric ratios (sin, cos, tan, cosec, sec, cot), specific angle values (0°, 30°, 45°, 60°, 90°), and identities.
-                </p>
-                <div class="text-xs font-semibold text-rose-600 bg-rose-50 px-3 py-1.5 rounded-lg inline-block">
-                    ★ Identities Proofs
+            <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition flex flex-col justify-between">
+                <div>
+                    <span class="text-xs font-bold text-rose-600 uppercase tracking-wider">Unit V • Trigonometry</span>
+                    <h3 class="text-xl font-bold font-heading text-slate-900 mt-2 mb-3">7. Intro to Trigonometry</h3>
+                    <p class="text-sm text-slate-600 mb-4 leading-relaxed">
+                        Trigonometric ratios (sin, cos, tan, cosec, sec, cot), specific angle values (0°, 30°, 45°, 60°, 90°), and identities.
+                    </p>
+                    <div class="text-xs font-semibold text-rose-600 bg-rose-50 px-3 py-1.5 rounded-lg inline-block">
+                        ★ Identities Proofs
+                    </div>
+                </div>
+                <div style="background: #0f172a; border-left: 4px solid #06b6d4; padding: 14px; border-radius: 8px; margin: 16px 0 0 0;">
+                    <h4 style="color: #38bdf8; margin: 0 0 6px 0; font-size: 0.875rem; font-weight: 700;">🧪 Visualize It Live in 3D:</h4>
+                    <p style="color: #cbd5e1; margin: 0 0 10px 0; font-size: 0.8rem; line-height: 1.4;">
+                        Don't just memorize this formula. Unwrap the unit circle into sine and cosine waves dynamically in Alka Ma'am's virtual lab:
+                    </p>
+                    <a href="https://labs.itsmathtime.co.in/simulators/unit-circle"
+                       target="_blank"
+                       rel="noopener"
+                       style="display: inline-block; background: #0284c7; color: #ffffff; padding: 7px 14px; border-radius: 6px; text-decoration: none; font-weight: 600; font-size: 0.8rem;">
+                        Launch Unit Circle Trigonometry Lab &rarr;
+                    </a>
                 </div>
             </div>
 
             <!-- Chapter Card 8 -->
-            <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition">
-                <span class="text-xs font-bold text-rose-600 uppercase tracking-wider">Unit V • Trigonometry</span>
-                <h3 class="text-xl font-bold font-heading text-slate-900 mt-2 mb-3">8. Heights and Distances</h3>
-                <p class="text-sm text-slate-600 mb-4 leading-relaxed">
-                    Angles of elevation and depression, single and multi-step diagrammatic word problems.
-                </p>
-                <div class="text-xs font-semibold text-amber-600 bg-amber-50 px-3 py-1.5 rounded-lg inline-block">
-                    Case Study Favourite
+            <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition flex flex-col justify-between">
+                <div>
+                    <span class="text-xs font-bold text-rose-600 uppercase tracking-wider">Unit V • Trigonometry</span>
+                    <h3 class="text-xl font-bold font-heading text-slate-900 mt-2 mb-3">8. Heights and Distances</h3>
+                    <p class="text-sm text-slate-600 mb-4 leading-relaxed">
+                        Angles of elevation and depression, single and multi-step diagrammatic word problems.
+                    </p>
+                    <div class="text-xs font-semibold text-amber-600 bg-amber-50 px-3 py-1.5 rounded-lg inline-block">
+                        Case Study Favourite
+                    </div>
+                </div>
+                <div style="background: #0f172a; border-left: 4px solid #06b6d4; padding: 14px; border-radius: 8px; margin: 16px 0 0 0;">
+                    <h4 style="color: #38bdf8; margin: 0 0 6px 0; font-size: 0.875rem; font-weight: 700;">🧪 Visualize It Live in 3D:</h4>
+                    <p style="color: #cbd5e1; margin: 0 0 10px 0; font-size: 0.8rem; line-height: 1.4;">
+                        Aim virtual clinometers to measure towers and cliff heights dynamically in Alka Ma'am's interactive lab:
+                    </p>
+                    <a href="https://labs.itsmathtime.co.in/simulators/trig-heights"
+                       target="_blank"
+                       rel="noopener"
+                       style="display: inline-block; background: #0284c7; color: #ffffff; padding: 7px 14px; border-radius: 6px; text-decoration: none; font-weight: 600; font-size: 0.8rem;">
+                        Launch Heights &amp; Distances Lab &rarr;
+                    </a>
                 </div>
             </div>
 
             <!-- Chapter Card 9 -->
-            <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition">
-                <span class="text-xs font-bold text-purple-600 uppercase tracking-wider">Unit III • Geometry</span>
-                <h3 class="text-xl font-bold font-heading text-slate-900 mt-2 mb-3">9. Circles</h3>
-                <p class="text-sm text-slate-600 mb-4 leading-relaxed">
-                    Tangent to a circle, radius-tangent perpendicularity, and equality of tangents drawn from an external point.
-                </p>
-                <div class="text-xs font-semibold text-purple-600 bg-purple-50 px-3 py-1.5 rounded-lg inline-block">
-                    Tangent Theorems
+            <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition flex flex-col justify-between">
+                <div>
+                    <span class="text-xs font-bold text-purple-600 uppercase tracking-wider">Unit III • Geometry</span>
+                    <h3 class="text-xl font-bold font-heading text-slate-900 mt-2 mb-3">9. Circles</h3>
+                    <p class="text-sm text-slate-600 mb-4 leading-relaxed">
+                        Tangent to a circle, radius-tangent perpendicularity, and equality of tangents drawn from an external point.
+                    </p>
+                    <div class="text-xs font-semibold text-purple-600 bg-purple-50 px-3 py-1.5 rounded-lg inline-block">
+                        Tangent Theorems
+                    </div>
+                </div>
+                <div style="background: #0f172a; border-left: 4px solid #06b6d4; padding: 14px; border-radius: 8px; margin: 16px 0 0 0;">
+                    <h4 style="color: #38bdf8; margin: 0 0 6px 0; font-size: 0.875rem; font-weight: 700;">🔬 Test This Theorem Live in 3D:</h4>
+                    <p style="color: #cbd5e1; margin: 0 0 10px 0; font-size: 0.8rem; line-height: 1.4;">
+                        Verify why tangents drawn from an external point are equal in length and perpendicular to the radius using Alka Ma'am's interactive lab:
+                    </p>
+                    <a href="https://labs.itsmathtime.co.in/simulators/circle-tangents-lab"
+                       target="_blank"
+                       rel="noopener"
+                       style="display: inline-block; background: #0284c7; color: #ffffff; padding: 7px 14px; border-radius: 6px; text-decoration: none; font-weight: 600; font-size: 0.8rem;">
+                        Open Interactive Circle Tangents Lab &rarr;
+                    </a>
                 </div>
             </div>
 
             <!-- Chapter Card 10 -->
-            <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition">
-                <span class="text-xs font-bold text-teal-600 uppercase tracking-wider">Unit VI • Mensuration</span>
-                <h3 class="text-xl font-bold font-heading text-slate-900 mt-2 mb-3">10. Surface Areas &amp; Volumes</h3>
-                <p class="text-sm text-slate-600 mb-4 leading-relaxed">
-                    Surface areas and volumes of combinations of solid shapes: cubes, cuboids, spheres, hemispheres, cylinders, cones.
-                </p>
-                <div class="text-xs font-semibold text-teal-600 bg-teal-50 px-3 py-1.5 rounded-lg inline-block">
-                    Combined Solids
+            <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition flex flex-col justify-between">
+                <div>
+                    <span class="text-xs font-bold text-teal-600 uppercase tracking-wider">Unit VI • Mensuration</span>
+                    <h3 class="text-xl font-bold font-heading text-slate-900 mt-2 mb-3">10. Surface Areas &amp; Volumes</h3>
+                    <p class="text-sm text-slate-600 mb-4 leading-relaxed">
+                        Surface areas and volumes of combinations of solid shapes: cubes, cuboids, spheres, hemispheres, cylinders, cones.
+                    </p>
+                    <div class="text-xs font-semibold text-teal-600 bg-teal-50 px-3 py-1.5 rounded-lg inline-block">
+                        Combined Solids
+                    </div>
+                </div>
+                <div style="background: #0f172a; border-left: 4px solid #06b6d4; padding: 14px; border-radius: 8px; margin: 16px 0 0 0;">
+                    <h4 style="color: #38bdf8; margin: 0 0 6px 0; font-size: 0.875rem; font-weight: 700;">🧪 Visualize It Live in 3D:</h4>
+                    <p style="color: #cbd5e1; margin: 0 0 10px 0; font-size: 0.8rem; line-height: 1.4;">
+                        Don't just memorize this formula. Unfold 3D curved surfaces into flat 2D nets in Alka Ma'am's virtual lab:
+                    </p>
+                    <a href="https://labs.itsmathtime.co.in/simulators/surface-area-volumes"
+                       target="_blank"
+                       rel="noopener"
+                       style="display: inline-block; background: #0284c7; color: #ffffff; padding: 7px 14px; border-radius: 6px; text-decoration: none; font-weight: 600; font-size: 0.8rem;">
+                        Launch Surface Areas &amp; Volumes Lab &rarr;
+                    </a>
                 </div>
             </div>
 
             <!-- Chapter Card 11 -->
-            <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition">
-                <span class="text-xs font-bold text-blue-600 uppercase tracking-wider">Unit VII • Statistics</span>
-                <h3 class="text-xl font-bold font-heading text-slate-900 mt-2 mb-3">11. Statistics &amp; Probability</h3>
-                <p class="text-sm text-slate-600 mb-4 leading-relaxed">
-                    Mean (Direct, Assumed Mean methods), Median, Mode of grouped data, and classical definition of probability.
-                </p>
-                <div class="text-xs font-semibold text-blue-600 bg-blue-50 px-3 py-1.5 rounded-lg inline-block">
-                    Full Marks Potential
+            <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition flex flex-col justify-between">
+                <div>
+                    <span class="text-xs font-bold text-blue-600 uppercase tracking-wider">Unit VII • Statistics</span>
+                    <h3 class="text-xl font-bold font-heading text-slate-900 mt-2 mb-3">11. Statistics &amp; Probability</h3>
+                    <p class="text-sm text-slate-600 mb-4 leading-relaxed">
+                        Mean (Direct, Assumed Mean methods), Median, Mode of grouped data, and classical definition of probability.
+                    </p>
+                    <div class="text-xs font-semibold text-blue-600 bg-blue-50 px-3 py-1.5 rounded-lg inline-block">
+                        Full Marks Potential
+                    </div>
+                </div>
+                <div style="background: #0f172a; border-left: 4px solid #06b6d4; padding: 14px; border-radius: 8px; margin: 16px 0 0 0;">
+                    <h4 style="color: #38bdf8; margin: 0 0 6px 0; font-size: 0.875rem; font-weight: 700;">🧪 Visualize It Live in 3D:</h4>
+                    <p style="color: #cbd5e1; margin: 0 0 10px 0; font-size: 0.8rem; line-height: 1.4;">
+                        Don't just memorize this formula. Balance fulcrums and test Monty Hall probability odds dynamically in Alka Ma'am's virtual lab:
+                    </p>
+                    <a href="https://labs.itsmathtime.co.in/simulators/statistics-visualizer"
+                       target="_blank"
+                       rel="noopener"
+                       style="display: inline-block; background: #0284c7; color: #ffffff; padding: 7px 14px; border-radius: 6px; text-decoration: none; font-weight: 600; font-size: 0.8rem;">
+                        Launch Statistics &amp; Probability Lab &rarr;
+                    </a>
                 </div>
             </div>
 
             <!-- Chapter Card 12 -->
-            <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition">
-                <span class="text-xs font-bold text-emerald-600 uppercase tracking-wider">Unit IV • Coordinate Geometry</span>
-                <h3 class="text-xl font-bold font-heading text-slate-900 mt-2 mb-3">12. Coordinate Geometry</h3>
-                <p class="text-sm text-slate-600 mb-4 leading-relaxed">
-                    Distance formula between two points, section formula (internal division), and midpoint calculations.
-                </p>
-                <div class="text-xs font-semibold text-emerald-600 bg-emerald-50 px-3 py-1.5 rounded-lg inline-block">
-                    Formula Direct Scoring
+            <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition flex flex-col justify-between">
+                <div>
+                    <span class="text-xs font-bold text-emerald-600 uppercase tracking-wider">Unit IV • Coordinate Geometry</span>
+                    <h3 class="text-xl font-bold font-heading text-slate-900 mt-2 mb-3">12. Coordinate Geometry</h3>
+                    <p class="text-sm text-slate-600 mb-4 leading-relaxed">
+                        Distance formula between two points, section formula (internal division), and midpoint calculations.
+                    </p>
+                    <div class="text-xs font-semibold text-emerald-600 bg-emerald-50 px-3 py-1.5 rounded-lg inline-block">
+                        Formula Direct Scoring
+                    </div>
+                </div>
+                <div style="background: #0f172a; border-left: 4px solid #06b6d4; padding: 14px; border-radius: 8px; margin: 16px 0 0 0;">
+                    <h4 style="color: #38bdf8; margin: 0 0 6px 0; font-size: 0.875rem; font-weight: 700;">🧪 Visualize It Live in 3D:</h4>
+                    <p style="color: #cbd5e1; margin: 0 0 10px 0; font-size: 0.8rem; line-height: 1.4;">
+                        Don't just memorize this formula. Drag division ratios m₁:m₂ on the section line in Alka Ma'am's virtual lab:
+                    </p>
+                    <a href="https://labs.itsmathtime.co.in/simulators/coordinate-section-formula"
+                       target="_blank"
+                       rel="noopener"
+                       style="display: inline-block; background: #0284c7; color: #ffffff; padding: 7px 14px; border-radius: 6px; text-decoration: none; font-weight: 600; font-size: 0.8rem;">
+                        Launch Section Formula Lab &rarr;
+                    </a>
                 </div>
             </div>
         </div>
