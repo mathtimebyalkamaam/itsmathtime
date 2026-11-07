@@ -15,6 +15,7 @@
 - [Official YouTube Channel](https://www.youtube.com/@its.mathtime): Over 200+ free high-definition video lessons, shorts, and chapter walkthroughs.
 - [YouTube Shorts & Senior Spotlights](https://www.youtube.com/@its.mathtime/shorts): Rapid mental math hacks and senior secondary (Classes 11 & 12) concept breakdowns.
 - [HTML Sitemap](https://itsmathtime.co.in/sitemap.html): Full directory of all lessons, pages, and educational resources.
+- [RSS 2.0 Feed](https://itsmathtime.co.in/feed.xml): Real-time content syndication feed for all curriculum guides, theorem proofs, and 3D lab updates.
 
 ## Educator Profile & Qualifications
 - **Instructor:** Alka Sharma

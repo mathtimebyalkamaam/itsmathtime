@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>MathTime by Alka Ma'am - CBSE Mathematics Guides &amp; 3D Visual Labs</title>
+    <link>https://itsmathtime.co.in/</link>
+    <atom:link href="https://itsmathtime.co.in/feed.xml" rel="self" type="application/rss+xml" />
+    <description>Master CBSE Mathematics for Classes 8 through 12 with senior educator Alka Sharma (M.Sc., B.Ed., CTET). Free NCERT solutions, canonical theorem proofs, board exam hacks, and 50+ interactive 3D virtual simulations.</description>
+    <language>en-IN</language>
+    <lastBuildDate>Sat, 07 Nov 2026 20:55:00 +0530</lastBuildDate>
+    <generator>MathTime Content Syndication Engine</generator>
+    <image>
+      <url>https://itsmathtime.co.in/logo.png</url>
+      <title>MathTime by Alka Ma'am</title>
+      <link>https://itsmathtime.co.in/</link>
+    </image>
+
+    <item>
+      <title>CBSE Class 10 Math: Complete Syllabus, Canonical Theorem Proofs &amp; 3D Interactive Labs</title>
+      <link>https://itsmathtime.co.in/class-10-math.html</link>
+      <guid isPermaLink="true">https://itsmathtime.co.in/class-10-math.html</guid>
+      <pubDate>Sat, 07 Nov 2026 12:00:00 +0530</pubDate>
+      <dc:creator>Alka Sharma</dc:creator>
+      <category>CBSE Class 10</category>
+      <category>Mathematics</category>
+      <category>Theorems</category>
+      <description>In-depth curriculum guide for CBSE Class 10 Mathematics. Includes complete NCERT solutions, high-yield chapter breakdowns, canonical proofs for Theorem 10.1, 10.2, and 6.1 (BPT), CBSE Standard (041) vs Basic (241) blueprint comparison, and links to interactive 3D virtual laboratories.</description>
+    </item>
+
+    <item>
+      <title>CBSE Class 10 Math: 7 Secret Board Exam Hacks, Rapid Shortcuts &amp; Proof Traps to Avoid</title>
+      <link>https://itsmathtime.co.in/class-10-math-tips.html</link>
+      <guid isPermaLink="true">https://itsmathtime.co.in/class-10-math-tips.html</guid>
+      <pubDate>Sat, 07 Nov 2026 12:00:00 +0530</pubDate>
+      <dc:creator>Alka Sharma</dc:creator>
+      <category>CBSE Class 10</category>
+      <category>Board Exam Tips</category>
+      <category>Marking Scheme</category>
+      <description>Masterclass by senior educator Alka Ma'am on scoring 95%+ in Class 10 CBSE Math. Covers the 3-second discriminant zero trap, symmetric variable assumptions in AP, 3D composite solid surface area pitfalls, and official board examiner step-marking rubrics.</description>
+    </item>
+
+    <item>
+      <title>CBSE Class 11 Math Survival Guide: Calculus Foundations, Trigonometric Identities &amp; Bridge Strategies</title>
+      <link>https://itsmathtime.co.in/class-11-math-tips.html</link>
+      <guid isPermaLink="true">https://itsmathtime.co.in/class-11-math-tips.html</guid>
+      <pubDate>Sat, 07 Nov 2026 12:00:00 +0530</pubDate>
+      <dc:creator>Alka Sharma</dc:creator>
+      <category>CBSE Class 11</category>
+      <category>Calculus</category>
+      <category>Trigonometry</category>
+      <description>Crucial bridge blueprint for students transitioning from Class 10 to Class 11 Mathematics. Master limits, derivatives, compound angle trigonometry, and coordinate geometry with clear visual intuitions.</description>
+    </item>
+
+    <item>
+      <title>CBSE Class 12 Math Board Tactics: High-Weightage Calculus, 3D Geometry &amp; Vector Algebra</title>
+      <link>https://itsmathtime.co.in/class-12-math-tips.html</link>
+      <guid isPermaLink="true">https://itsmathtime.co.in/class-12-math-tips.html</guid>
+      <pubDate>Sat, 07 Nov 2026 12:00:00 +0530</pubDate>
+      <dc:creator>Alka Sharma</dc:creator>
+      <category>CBSE Class 12</category>
+      <category>Calculus</category>
+      <category>3D Geometry</category>
+      <description>Strategic board exam preparation guide for Class 12 Mathematics. Master definite integral properties (King's Property), shortest distance between skew lines, matrix methods, and 3-hour examination time management.</description>
+    </item>
+
+    <item>
+      <title>CBSE Class 9 Math: Complete NCERT Syllabus, Proof Foundations &amp; 3D Lab Suite</title>
+      <link>https://itsmathtime.co.in/class-9-math.html</link>
+      <guid isPermaLink="true">https://itsmathtime.co.in/class-9-math.html</guid>
+      <pubDate>Sat, 07 Nov 2026 12:00:00 +0530</pubDate>
+      <dc:creator>Alka Sharma</dc:creator>
+      <category>CBSE Class 9</category>
+      <category>NCERT Solutions</category>
+      <category>Geometry</category>
+      <description>Comprehensive guide to CBSE Class 9 Mathematics. Master polynomial factorisation, irrational numbers on number lines, triangle congruence criteria, and surface area derivations with interactive visual tools.</description>
+    </item>
+
+    <item>
+      <title>CBSE Class 8 Math: Complete NCERT Guide, Rational Numbers &amp; Visual Manipulatives</title>
+      <link>https://itsmathtime.co.in/class-8-math.html</link>
+      <guid isPermaLink="true">https://itsmathtime.co.in/class-8-math.html</guid>
+      <pubDate>Sat, 07 Nov 2026 12:00:00 +0530</pubDate>
+      <dc:creator>Alka Sharma</dc:creator>
+      <category>CBSE Class 8</category>
+      <category>Middle School Math</category>
+      <category>Algebra</category>
+      <description>Foundational guide for Class 8 CBSE Mathematics. Build intuitive clarity on linear equations in one variable, algebraic identities, mensuration, and visual balance scale simulators.</description>
+    </item>
+
+    <item>
+      <title>Speed Math &amp; Mental Tricks: Rapid Multiplication, Square Roots &amp; Vedic Shortcuts</title>
+      <link>https://itsmathtime.co.in/math-tricks.html</link>
+      <guid isPermaLink="true">https://itsmathtime.co.in/math-tricks.html</guid>
+      <pubDate>Sat, 07 Nov 2026 12:00:00 +0530</pubDate>
+      <dc:creator>Alka Sharma</dc:creator>
+      <category>Mental Math</category>
+      <category>Vedic Math</category>
+      <category>Speed Calculations</category>
+      <description>Unlock lightning-fast arithmetic with Alka Ma'am's curated mental math shortcuts: base-100 multiplication, instantaneous squares ending in 5, criss-cross methods, and rapid percentage estimations.</description>
+    </item>
+
+    <item>
+      <title>MathTime Interactive 3D Laboratories: 50+ Real-Time Visual Math Simulators</title>
+      <link>https://labs.itsmathtime.co.in/</link>
+      <guid isPermaLink="true">https://labs.itsmathtime.co.in/</guid>
+      <pubDate>Sat, 07 Nov 2026 12:00:00 +0530</pubDate>
+      <dc:creator>Alka Sharma</dc:creator>
+      <category>Interactive Labs</category>
+      <category>3D Visualizations</category>
+      <category>STEM Tools</category>
+      <description>Explore mathematical theorems dynamically in real time. Manipulate circle tangent angles, slice 3D conic sections, test Thales theorem transversals, and explore Fourier trigonometric waves at labs.itsmathtime.co.in.</description>
+    </item>
+  </channel>
+</rss>
