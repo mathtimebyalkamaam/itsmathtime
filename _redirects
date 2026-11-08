@@ -1,5 +1,9 @@
 # Netlify Redirects for MathTime by Alka Ma'am
-# Canonical root redirection
+# Hostname canonicalization: Redirect alternate hostname (www) to apex canonical domain
+http://www.itsmathtime.co.in/*     https://itsmathtime.co.in/:splat    301!
+https://www.itsmathtime.co.in/*    https://itsmathtime.co.in/:splat    301!
+
+# Canonical root redirection (prevent index.html duplicate content)
 /index.html    /    301
 
 # Subdomain redirection for Interactive 3D Labs
