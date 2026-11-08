@@ -43,6 +43,11 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
 
+    <!-- KaTeX for Pure Mathematical LaTeX Typesetting -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" onload="renderMathInElement(document.body, {delimiters: [{left: '$$', right: '$$', display: true}, {left: '$', right: '$', display: false}], throwOnError: false});"></script>
+
     <!-- SEO Meta Tags -->
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
     <meta name="description" content="Official site of MathTime by Alka Ma'am. Learn CBSE Class 7-12 Math, Board Exam tips, and 3D interactive labs. Engaging video lectures and live classes.">
@@ -1383,8 +1388,8 @@
                                     </svg>
                                 </div>
                                 <div class="mt-3 flex items-center gap-4 text-[11px] text-slate-300 font-mono">
-                                    <span class="flex items-center gap-1.5"><span class="w-3 h-1.5 rounded-full bg-amber-400"></span> Base = cos θ</span>
-                                    <span class="flex items-center gap-1.5"><span class="w-3 h-1.5 rounded-full bg-cyan-400"></span> Height = sin θ</span>
+                                    <span class="flex items-center gap-1.5"><span class="w-3 h-1.5 rounded-full bg-amber-400"></span> $\text{Base} = \cos \theta$</span>
+                                    <span class="flex items-center gap-1.5"><span class="w-3 h-1.5 rounded-full bg-cyan-400"></span> $\text{Height} = \sin \theta$</span>
                                     <span class="flex items-center gap-1.5"><span class="w-3 h-1.5 rounded-full bg-white"></span> Radius = 1</span>
                                 </div>
                             </div>
@@ -1395,7 +1400,7 @@
                                 <div class="p-4 rounded-2xl bg-slate-900/90 border border-white/10 space-y-3">
                                     <div class="flex items-center justify-between">
                                         <label for="lab-angle-slider" class="text-xs sm:text-sm font-bold text-slate-200 flex items-center gap-2">
-                                            <span>Touch / Slide Parameter: Angle θ</span>
+                                            <span>Touch / Slide Parameter: Angle $\theta$</span>
                                             <span id="lab-quadrant-badge" class="px-2 py-0.5 rounded text-[11px] font-bold border bg-emerald-500/20 text-emerald-300 border-emerald-400/40">Quadrant I</span>
                                         </label>
                                         <span id="lab-angle-val" class="font-mono text-sm sm:text-base font-extrabold text-cyan-300">45° (0.25π rad)</span>
@@ -1418,15 +1423,15 @@
                                 <!-- Real-Time Computed Mathematical Values -->
                                 <div class="grid grid-cols-3 gap-3">
                                     <div class="p-3 rounded-2xl bg-cyan-950/40 border border-cyan-400/30 text-center">
-                                        <div class="text-[11px] text-cyan-300/80 font-bold uppercase tracking-wider">sin θ (Height)</div>
+                                        <div class="text-[11px] text-cyan-300/80 font-bold uppercase tracking-wider">$\sin \theta$ (Height)</div>
                                         <div id="lab-sin-val" class="text-xl sm:text-2xl font-mono font-extrabold text-cyan-300 mt-1">+0.707</div>
                                     </div>
                                     <div class="p-3 rounded-2xl bg-amber-950/40 border border-amber-400/30 text-center">
-                                        <div class="text-[11px] text-amber-300/80 font-bold uppercase tracking-wider">cos θ (Base)</div>
+                                        <div class="text-[11px] text-amber-300/80 font-bold uppercase tracking-wider">$\cos \theta$ (Base)</div>
                                         <div id="lab-cos-val" class="text-xl sm:text-2xl font-mono font-extrabold text-amber-300 mt-1">+0.707</div>
                                     </div>
                                     <div class="p-3 rounded-2xl bg-purple-950/40 border border-purple-400/30 text-center">
-                                        <div class="text-[11px] text-purple-300/80 font-bold uppercase tracking-wider">tan θ (Slope)</div>
+                                        <div class="text-[11px] text-purple-300/80 font-bold uppercase tracking-wider">$\tan \theta$ (Slope)</div>
                                         <div id="lab-tan-val" class="text-xl sm:text-2xl font-mono font-extrabold text-purple-300 mt-1">+1.000</div>
                                     </div>
                                 </div>
@@ -1436,7 +1441,7 @@
                                     <span class="text-lg">💡</span>
                                     <div>
                                         <strong class="text-white">Why This Rewires Your Brain:</strong>
-                                        <span class="text-slate-300"> When θ moves to 90°, the vertical sine bar reaches the apex of the circle (1.000) while the horizontal base collapses to zero. You never have to memorize formulas again &mdash; you physically see why they are mathematically inevitable!</span>
+                                        <span class="text-slate-300"> When $\theta$ moves to $90^\circ$, the vertical sine bar reaches the apex of the circle (1.000) while the horizontal base collapses to zero. You never have to memorize formulas again &mdash; you physically see why they are mathematically inevitable!</span>
                                         <div class="mt-1 text-[11px] text-amber-300 font-medium">
                                             ASTC Rule Active: <span id="lab-astc-rule" class="font-bold">All (A) positive</span>
                                         </div>
@@ -1608,7 +1613,7 @@
                                 Calculus Rates &amp; Limiting Secants
                             </h4>
                             <p class="text-xs sm:text-sm text-slate-300 mt-2 leading-relaxed">
-                                Watch secants fuse into the instantaneous tangent line as Δx &rarr; 0. Visual Riemann sums dividing curves into infinitely thin rectangles to reveal the birth of integration.
+                                Watch secants fuse into the instantaneous tangent line as $\Delta x \to 0$. Visual Riemann sums dividing curves into infinitely thin rectangles to reveal the birth of integration.
                             </p>
                             <div class="mt-4 pt-3 border-t border-white/10 flex items-center gap-2 text-[11px] text-slate-400">
                                 <span>Target: Classes 11 &amp; 12 / JEE</span> &bull; <span>10 Visual Labs</span>
@@ -1627,7 +1632,7 @@
                                 Polynomial Roots &amp; Quadratic Curves
                             </h4>
                             <p class="text-xs sm:text-sm text-slate-300 mt-2 leading-relaxed">
-                                Slide coefficients a, b, c and watch the parabola float, invert, and intersect the x-axis. Live discriminant Δ tracker showing real vs imaginary roots as the vertex shifts.
+                                Slide coefficients $a, b, c$ and watch the parabola float, invert, and intersect the $x$-axis. Live discriminant $\Delta = b^2 - 4ac$ tracker showing real vs imaginary roots as the vertex shifts.
                             </p>
                             <div class="mt-4 pt-3 border-t border-white/10 flex items-center gap-2 text-[11px] text-slate-400">
                                 <span>Target: Classes 9, 10 &amp; 11</span> &bull; <span>8 Visual Labs</span>
@@ -1646,7 +1651,7 @@
                                 Unit Circle Harmonics &amp; Wave Mechanics
                             </h4>
                             <p class="text-xs sm:text-sm text-slate-300 mt-2 leading-relaxed">
-                                Rotate vectors around 360° to physically see circular rotation unwind into continuous sine and cosine waves. ASTC quadrant rules visually revealed through positive/negative coordinate axes.
+                                Rotate vectors around $360^\circ$ to physically see circular rotation unwind into continuous sine and cosine waves. ASTC quadrant rules visually revealed through positive/negative coordinate axes.
                             </p>
                             <div class="mt-4 pt-3 border-t border-white/10 flex items-center gap-2 text-[11px] text-slate-400">
                                 <span>Target: Classes 10, 11 &amp; 12</span> &bull; <span>8 Visual Labs</span>
@@ -1684,7 +1689,7 @@
                                 Coordinate Geometry &amp; Vector Fields
                             </h4>
                             <p class="text-xs sm:text-sm text-slate-300 mt-2 leading-relaxed">
-                                Move point P to see internal and external section formula ratios m:n divide line segments dynamically. Vector addition parallelograms and dot product projections computed live.
+                                Move point $P$ to see internal and external section formula ratios $m:n$ divide line segments dynamically. Vector addition parallelograms and dot product projections computed live.
                             </p>
                             <div class="mt-4 pt-3 border-t border-white/10 flex items-center gap-2 text-[11px] text-slate-400">
                                 <span>Target: Classes 10, 11 &amp; 12</span> &bull; <span>6 Visual Labs</span>
@@ -1883,7 +1888,7 @@
                                     <span class="text-xs text-amber-300 font-semibold">Playlist</span>
                                 </div>
                                 <div>
-                                    <div class="text-2xl font-black font-heading">&radic;2 &bull; &pi; &bull; Real Numbers</div>
+                                    <div class="text-2xl font-black font-heading">$\sqrt{2}$ &bull; $\pi$ &bull; Real Numbers</div>
                                     <div class="text-xs text-blue-200 mt-1">Number System Complete Chapter</div>
                                 </div>
                                 <div class="flex items-center gap-2 text-xs font-semibold text-white/90 group-hover:text-amber-300 transition-colors">
@@ -2270,45 +2275,45 @@
                                 <tbody class="divide-y divide-slate-100 font-mono text-slate-800">
                                     <tr class="hover:bg-slate-50 transition">
                                         <td class="py-3 px-4 font-bold text-indigo-600">1</td>
-                                        <td class="py-3 px-4 font-bold">(a + b)²</td>
-                                        <td class="py-3 px-4 text-blue-700">a² + 2ab + b²</td>
+                                        <td class="py-3 px-4 font-bold">$(a + b)^2$</td>
+                                        <td class="py-3 px-4 text-blue-700">$a^2 + 2ab + b^2$</td>
                                         <td class="py-3 px-4 font-sans text-xs text-slate-600">Expansion &amp; rapid squaring</td>
                                     </tr>
                                     <tr class="hover:bg-slate-50 transition">
                                         <td class="py-3 px-4 font-bold text-indigo-600">2</td>
-                                        <td class="py-3 px-4 font-bold">(a - b)²</td>
-                                        <td class="py-3 px-4 text-blue-700">a² - 2ab + b²</td>
+                                        <td class="py-3 px-4 font-bold">$(a - b)^2$</td>
+                                        <td class="py-3 px-4 text-blue-700">$a^2 - 2ab + b^2$</td>
                                         <td class="py-3 px-4 font-sans text-xs text-slate-600">Take care of the middle negative sign</td>
                                     </tr>
                                     <tr class="hover:bg-slate-50 transition">
                                         <td class="py-3 px-4 font-bold text-indigo-600">3</td>
-                                        <td class="py-3 px-4 font-bold">a² - b²</td>
-                                        <td class="py-3 px-4 text-blue-700">(a - b)(a + b)</td>
+                                        <td class="py-3 px-4 font-bold">$a^2 - b^2$</td>
+                                        <td class="py-3 px-4 text-blue-700">$(a - b)(a + b)$</td>
                                         <td class="py-3 px-4 font-sans text-xs text-slate-600">Difference of squares &bull; Rapid factorisation</td>
                                     </tr>
                                     <tr class="hover:bg-slate-50 transition">
                                         <td class="py-3 px-4 font-bold text-indigo-600">4</td>
-                                        <td class="py-3 px-4 font-bold">(x + a)(x + b)</td>
-                                        <td class="py-3 px-4 text-blue-700">x² + (a + b)x + ab</td>
+                                        <td class="py-3 px-4 font-bold">$(x + a)(x + b)$</td>
+                                        <td class="py-3 px-4 text-blue-700">$x^2 + (a + b)x + ab$</td>
                                         <td class="py-3 px-4 font-sans text-xs text-slate-600">Splitting the middle term in quadratics</td>
                                     </tr>
                                     <tr class="hover:bg-slate-50 transition">
                                         <td class="py-3 px-4 font-bold text-indigo-600">5</td>
-                                        <td class="py-3 px-4 font-bold">(a + b + c)²</td>
-                                        <td class="py-3 px-4 text-blue-700">a² + b² + c² + 2ab + 2bc + 2ca</td>
+                                        <td class="py-3 px-4 font-bold">$(a + b + c)^2$</td>
+                                        <td class="py-3 px-4 text-blue-700">$a^2 + b^2 + c^2 + 2ab + 2bc + 2ca$</td>
                                         <td class="py-3 px-4 font-sans text-xs text-slate-600">Class 9 Polynomials Exercise 2.4/2.5</td>
                                     </tr>
                                     <tr class="hover:bg-slate-50 transition">
                                         <td class="py-3 px-4 font-bold text-indigo-600">6</td>
-                                        <td class="py-3 px-4 font-bold">(a + b)³</td>
-                                        <td class="py-3 px-4 text-blue-700">a³ + b³ + 3ab(a + b)</td>
+                                        <td class="py-3 px-4 font-bold">$(a + b)^3$</td>
+                                        <td class="py-3 px-4 text-blue-700">$a^3 + b^3 + 3ab(a + b)$</td>
                                         <td class="py-3 px-4 font-sans text-xs text-slate-600">Cube of a binomial expansion</td>
                                     </tr>
                                     <tr class="hover:bg-slate-50 transition">
                                         <td class="py-3 px-4 font-bold text-indigo-600">7</td>
-                                        <td class="py-3 px-4 font-bold">a³ + b³ + c³ - 3abc</td>
-                                        <td class="py-3 px-4 text-blue-700">(a + b + c)(a² + b² + c² - ab - bc - ca)</td>
-                                        <td class="py-3 px-4 font-sans text-xs text-slate-600">If a + b + c = 0, then a³ + b³ + c³ = 3abc</td>
+                                        <td class="py-3 px-4 font-bold">$a^3 + b^3 + c^3 - 3abc$</td>
+                                        <td class="py-3 px-4 text-blue-700">$(a + b + c)(a^2 + b^2 + c^2 - ab - bc - ca)$</td>
+                                        <td class="py-3 px-4 font-sans text-xs text-slate-600">If $a + b + c = 0$, then $a^3 + b^3 + c^3 = 3abc$</td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -2316,7 +2321,7 @@
                         <div style="background: #0f172a; border-left: 4px solid #06b6d4; padding: 18px; border-radius: 8px; margin: 20px 0 0 0;">
                             <h4 style="color: #38bdf8; margin: 0 0 8px 0; font-size: 1.05rem; font-weight: 700;">🧪 Visualize It Live in 3D:</h4>
                             <p style="color: #cbd5e1; margin: 0 0 12px 0; font-size: 0.925rem; line-height: 1.5;">
-                                Don't just memorize this formula. Test geometric proofs of (a+b)², (a-b)², and a²-b² using interactive algebra tiles in Alka Ma'am's virtual lab:
+                                Don't just memorize this formula. Test geometric proofs of $(a+b)^2$, $(a-b)^2$, and $a^2-b^2$ using interactive algebra tiles in Alka Ma'am's virtual lab:
                             </p>
                             <a href="https://labs.itsmathtime.co.in/simulators/algebraic-identities-tiles"
                                target="_blank"
@@ -2340,62 +2345,62 @@
                             <table class="w-full text-center border-collapse text-sm">
                                 <thead>
                                     <tr class="bg-slate-100 text-slate-700 border-b border-slate-200">
-                                        <th class="py-3 px-4 font-bold text-left">Trig Ratio (θ)</th>
-                                        <th class="py-3 px-4 font-bold">0°</th>
-                                        <th class="py-3 px-4 font-bold">30°</th>
-                                        <th class="py-3 px-4 font-bold">45°</th>
-                                        <th class="py-3 px-4 font-bold">60°</th>
-                                        <th class="py-3 px-4 font-bold">90°</th>
+                                        <th class="py-3 px-4 font-bold text-left">Trig Ratio ($\theta$)</th>
+                                        <th class="py-3 px-4 font-bold">$0^\circ$</th>
+                                        <th class="py-3 px-4 font-bold">$30^\circ$</th>
+                                        <th class="py-3 px-4 font-bold">$45^\circ$</th>
+                                        <th class="py-3 px-4 font-bold">$60^\circ$</th>
+                                        <th class="py-3 px-4 font-bold">$90^\circ$</th>
                                     </tr>
                                 </thead>
                                 <tbody class="divide-y divide-slate-100 font-mono text-slate-800">
                                     <tr class="hover:bg-slate-50 transition">
-                                        <td class="py-3 px-4 text-left font-bold text-slate-900">sin θ</td>
-                                        <td class="py-3 px-4">0</td>
-                                        <td class="py-3 px-4">1/2</td>
-                                        <td class="py-3 px-4">1/√2</td>
-                                        <td class="py-3 px-4">√3/2</td>
-                                        <td class="py-3 px-4">1</td>
+                                        <td class="py-3 px-4 text-left font-bold text-slate-900">$\sin \theta$</td>
+                                        <td class="py-3 px-4">$0$</td>
+                                        <td class="py-3 px-4">$\frac{1}{2}$</td>
+                                        <td class="py-3 px-4">$\frac{1}{\sqrt{2}}$</td>
+                                        <td class="py-3 px-4">$\frac{\sqrt{3}}{2}$</td>
+                                        <td class="py-3 px-4">$1$</td>
                                     </tr>
                                     <tr class="hover:bg-slate-50 transition">
-                                        <td class="py-3 px-4 text-left font-bold text-slate-900">cos θ</td>
-                                        <td class="py-3 px-4">1</td>
-                                        <td class="py-3 px-4">√3/2</td>
-                                        <td class="py-3 px-4">1/√2</td>
-                                        <td class="py-3 px-4">1/2</td>
-                                        <td class="py-3 px-4">0</td>
+                                        <td class="py-3 px-4 text-left font-bold text-slate-900">$\cos \theta$</td>
+                                        <td class="py-3 px-4">$1$</td>
+                                        <td class="py-3 px-4">$\frac{\sqrt{3}}{2}$</td>
+                                        <td class="py-3 px-4">$\frac{1}{\sqrt{2}}$</td>
+                                        <td class="py-3 px-4">$\frac{1}{2}$</td>
+                                        <td class="py-3 px-4">$0$</td>
                                     </tr>
                                     <tr class="hover:bg-slate-50 transition">
-                                        <td class="py-3 px-4 text-left font-bold text-slate-900">tan θ</td>
-                                        <td class="py-3 px-4">0</td>
-                                        <td class="py-3 px-4">1/√3</td>
-                                        <td class="py-3 px-4 font-bold text-blue-600">1</td>
-                                        <td class="py-3 px-4">√3</td>
+                                        <td class="py-3 px-4 text-left font-bold text-slate-900">$\tan \theta$</td>
+                                        <td class="py-3 px-4">$0$</td>
+                                        <td class="py-3 px-4">$\frac{1}{\sqrt{3}}$</td>
+                                        <td class="py-3 px-4 font-bold text-blue-600">$1$</td>
+                                        <td class="py-3 px-4">$\sqrt{3}$</td>
                                         <td class="py-3 px-4 text-slate-400 font-sans italic text-xs">Not Defined</td>
                                     </tr>
                                     <tr class="hover:bg-slate-50 transition">
-                                        <td class="py-3 px-4 text-left font-bold text-slate-900">cosec θ</td>
+                                        <td class="py-3 px-4 text-left font-bold text-slate-900">$\csc \theta$</td>
                                         <td class="py-3 px-4 text-slate-400 font-sans italic text-xs">Not Defined</td>
-                                        <td class="py-3 px-4">2</td>
-                                        <td class="py-3 px-4">√2</td>
-                                        <td class="py-3 px-4">2/√3</td>
-                                        <td class="py-3 px-4">1</td>
+                                        <td class="py-3 px-4">$2$</td>
+                                        <td class="py-3 px-4">$\sqrt{2}$</td>
+                                        <td class="py-3 px-4">$\frac{2}{\sqrt{3}}$</td>
+                                        <td class="py-3 px-4">$1$</td>
                                     </tr>
                                     <tr class="hover:bg-slate-50 transition">
-                                        <td class="py-3 px-4 text-left font-bold text-slate-900">sec θ</td>
-                                        <td class="py-3 px-4">1</td>
-                                        <td class="py-3 px-4">2/√3</td>
-                                        <td class="py-3 px-4">√2</td>
-                                        <td class="py-3 px-4">2</td>
+                                        <td class="py-3 px-4 text-left font-bold text-slate-900">$\sec \theta$</td>
+                                        <td class="py-3 px-4">$1$</td>
+                                        <td class="py-3 px-4">$\frac{2}{\sqrt{3}}$</td>
+                                        <td class="py-3 px-4">$\sqrt{2}$</td>
+                                        <td class="py-3 px-4">$2$</td>
                                         <td class="py-3 px-4 text-slate-400 font-sans italic text-xs">Not Defined</td>
                                     </tr>
                                     <tr class="hover:bg-slate-50 transition">
-                                        <td class="py-3 px-4 text-left font-bold text-slate-900">cot θ</td>
+                                        <td class="py-3 px-4 text-left font-bold text-slate-900">$\cot \theta$</td>
                                         <td class="py-3 px-4 text-slate-400 font-sans italic text-xs">Not Defined</td>
-                                        <td class="py-3 px-4">√3</td>
-                                        <td class="py-3 px-4 font-bold text-blue-600">1</td>
-                                        <td class="py-3 px-4">1/√3</td>
-                                        <td class="py-3 px-4">0</td>
+                                        <td class="py-3 px-4">$\sqrt{3}$</td>
+                                        <td class="py-3 px-4 font-bold text-blue-600">$1$</td>
+                                        <td class="py-3 px-4">$\frac{1}{\sqrt{3}}$</td>
+                                        <td class="py-3 px-4">$0$</td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -2403,7 +2408,7 @@
                         <div style="background: #0f172a; border-left: 4px solid #06b6d4; padding: 18px; border-radius: 8px; margin: 20px 0 0 0;">
                             <h4 style="color: #38bdf8; margin: 0 0 8px 0; font-size: 1.05rem; font-weight: 700;">🧪 Visualize It Live in 3D:</h4>
                             <p style="color: #cbd5e1; margin: 0 0 12px 0; font-size: 0.925rem; line-height: 1.5;">
-                                Don't just memorize this formula. Drag angle θ from 0° to 90° and watch sine &amp; cosine projections unfold dynamically on the unit circle in Alka Ma'am's virtual lab:
+                                Don't just memorize this formula. Drag angle $\theta$ from $0^\circ$ to $90^\circ$ and watch sine &amp; cosine projections unfold dynamically on the unit circle in Alka Ma'am's virtual lab:
                             </p>
                             <a href="https://labs.itsmathtime.co.in/simulators/unit-circle"
                                target="_blank"
@@ -2433,42 +2438,42 @@
                                         <th class="py-3 px-4 font-bold">Volume</th>
                                     </tr>
                                 </thead>
-                                <tbody class="divide-y divide-slate-100 font-mono text-slate-800">
+                                <tbody class="divide-y divide-slate-100 text-slate-800">
                                     <tr class="hover:bg-slate-50 transition">
                                         <td class="py-3 px-4 font-sans font-bold text-slate-900">Cuboid</td>
-                                        <td class="py-3 px-4">2h(l + b)</td>
-                                        <td class="py-3 px-4">2(lb + bh + hl)</td>
-                                        <td class="py-3 px-4">l &times; b &times; h</td>
+                                        <td class="py-3 px-4">$2h(l + b)$</td>
+                                        <td class="py-3 px-4">$2(lb + bh + hl)$</td>
+                                        <td class="py-3 px-4">$l \times b \times h$</td>
                                     </tr>
                                     <tr class="hover:bg-slate-50 transition">
                                         <td class="py-3 px-4 font-sans font-bold text-slate-900">Cube</td>
-                                        <td class="py-3 px-4">4a²</td>
-                                        <td class="py-3 px-4">6a²</td>
-                                        <td class="py-3 px-4">a³</td>
+                                        <td class="py-3 px-4">$4a^2$</td>
+                                        <td class="py-3 px-4">$6a^2$</td>
+                                        <td class="py-3 px-4">$a^3$</td>
                                     </tr>
                                     <tr class="hover:bg-slate-50 transition">
                                         <td class="py-3 px-4 font-sans font-bold text-slate-900">Right Circular Cylinder</td>
-                                        <td class="py-3 px-4">2πrh</td>
-                                        <td class="py-3 px-4">2πr(r + h)</td>
-                                        <td class="py-3 px-4">πr²h</td>
+                                        <td class="py-3 px-4">$2\pi r h$</td>
+                                        <td class="py-3 px-4">$2\pi r(r + h)$</td>
+                                        <td class="py-3 px-4">$\pi r^2 h$</td>
                                     </tr>
                                     <tr class="hover:bg-slate-50 transition">
                                         <td class="py-3 px-4 font-sans font-bold text-slate-900">Right Circular Cone</td>
-                                        <td class="py-3 px-4">πrl &nbsp;<span class="font-sans text-xs text-slate-500">(l = √(r² + h²))</span></td>
-                                        <td class="py-3 px-4">πr(l + r)</td>
-                                        <td class="py-3 px-4">(1/3)πr²h</td>
+                                        <td class="py-3 px-4">$\pi r l \quad (l = \sqrt{r^2 + h^2})$</td>
+                                        <td class="py-3 px-4">$\pi r(l + r)$</td>
+                                        <td class="py-3 px-4">$\frac{1}{3}\pi r^2 h$</td>
                                     </tr>
                                     <tr class="hover:bg-slate-50 transition">
                                         <td class="py-3 px-4 font-sans font-bold text-slate-900">Sphere</td>
-                                        <td class="py-3 px-4">4πr²</td>
-                                        <td class="py-3 px-4">4πr²</td>
-                                        <td class="py-3 px-4">(4/3)πr³</td>
+                                        <td class="py-3 px-4">$4\pi r^2$</td>
+                                        <td class="py-3 px-4">$4\pi r^2$</td>
+                                        <td class="py-3 px-4">$\frac{4}{3}\pi r^3$</td>
                                     </tr>
                                     <tr class="hover:bg-slate-50 transition">
                                         <td class="py-3 px-4 font-sans font-bold text-slate-900">Hemisphere</td>
-                                        <td class="py-3 px-4">2πr²</td>
-                                        <td class="py-3 px-4">3πr²</td>
-                                        <td class="py-3 px-4">(2/3)πr³</td>
+                                        <td class="py-3 px-4">$2\pi r^2$</td>
+                                        <td class="py-3 px-4">$3\pi r^2$</td>
+                                        <td class="py-3 px-4">$\frac{2}{3}\pi r^3$</td>
                                     </tr>
                                 </tbody>
                             </table>

@@ -1173,8 +1173,27 @@ function setupAnalyticsTracking() {
     });
 }
 
+// --- Pure LaTeX KaTeX Auto-Renderer Helper ---
+function setupKaTeXRenderer() {
+    function runRender() {
+        if (typeof renderMathInElement === 'function') {
+            renderMathInElement(document.body, {
+                delimiters: [
+                    {left: '$$', right: '$$', display: true},
+                    {left: '$', right: '$', display: false}
+                ],
+                throwOnError: false
+            });
+        }
+    }
+    runRender();
+    // Also attach to window load for late script resolutions
+    window.addEventListener('load', runRender, { once: true });
+}
+
 // Run animations and features when the DOM is fully loaded
 document.addEventListener('DOMContentLoaded', () => {
+    setupKaTeXRenderer();        // Pure LaTeX KaTeX mathematics typesetter
     setupMobileMenu();           // Mobile hamburger menu toggle
     setupSmoothScroll();         // Smooth scrolling for navigation links
     animateOnLoadElements();     // Trigger initial load animations

@@ -26,6 +26,12 @@
     <!-- CSS: Static Compiled Tailwind & Custom Styles -->
     <link rel="stylesheet" href="tailwind.min.css">
     <link rel="stylesheet" href="style.css">
+
+    <!-- KaTeX for Pure Mathematical LaTeX Typesetting -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" onload="renderMathInElement(document.body, {delimiters: [{left: '$$', right: '$$', display: true}, {left: '$', right: '$', display: false}], throwOnError: false});"></script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="dns-prefetch" href="https://fonts.googleapis.com">
@@ -535,7 +541,7 @@
                 <div>
                     <span class="text-xs font-bold text-indigo-600 uppercase tracking-wider">Chapter 2</span>
                     <h3 class="text-xl font-bold font-heading text-slate-900 mt-2 mb-2">Polynomials</h3>
-                    <p class="text-sm text-slate-600">Zeroes of a polynomial, Factor Theorem, algebraic identities ((x+y)³, (x+y+z)², x³+y³+z³-3xyz).</p>
+                    <p class="text-sm text-slate-600">Zeroes of a polynomial, Factor Theorem, algebraic identities ($(x+y)^3$, $(x+y+z)^2$, $x^3+y^3+z^3-3xyz$).</p>
                 </div>
                 <div style="background: #0f172a; border-left: 4px solid #06b6d4; padding: 14px; border-radius: 8px; margin: 16px 0 0 0;">
                     <h4 style="color: #38bdf8; margin: 0 0 6px 0; font-size: 0.875rem; font-weight: 700;">🧪 Visualize It Live in 3D:</h4>
@@ -630,7 +636,7 @@
                 <div>
                     <span class="text-xs font-bold text-teal-600 uppercase tracking-wider">Chapter 10</span>
                     <h3 class="text-xl font-bold font-heading text-slate-900 mt-2 mb-2">Heron's Formula</h3>
-                    <p class="text-sm text-slate-600">Calculating area of triangles using semi-perimeter s: Area = √(s(s-a)(s-b)(s-c)) and incircle radius.</p>
+                    <p class="text-sm text-slate-600">Calculating area of triangles using semi-perimeter $s$: $\text{Area} = \sqrt{s(s-a)(s-b)(s-c)}$ and applications.</p>
                 </div>
                 <div style="background: #0f172a; border-left: 4px solid #06b6d4; padding: 14px; border-radius: 8px; margin: 16px 0 0 0;">
                     <h4 style="color: #38bdf8; margin: 0 0 6px 0; font-size: 0.875rem; font-weight: 700;">🧪 Visualize It Live in 3D:</h4>

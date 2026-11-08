@@ -26,6 +26,12 @@
     <!-- CSS: Static Compiled Tailwind & Custom Styles -->
     <link rel="stylesheet" href="tailwind.min.css">
     <link rel="stylesheet" href="style.css">
+
+    <!-- KaTeX for Pure Mathematical LaTeX Typesetting -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" onload="renderMathInElement(document.body, {delimiters: [{left: '$$', right: '$$', display: true}, {left: '$', right: '$', display: false}], throwOnError: false});"></script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="dns-prefetch" href="https://fonts.googleapis.com">
@@ -535,7 +541,7 @@
                     <span class="text-xs font-bold text-blue-600 uppercase tracking-wider">Unit I • Number Systems</span>
                     <h3 class="text-xl font-bold font-heading text-slate-900 mt-2 mb-3">1. Real Numbers</h3>
                     <p class="text-sm text-slate-600 mb-4 leading-relaxed">
-                        Fundamental Theorem of Arithmetic, proving irrationality of √2, √3, √5, and prime factorisation techniques.
+                        Fundamental Theorem of Arithmetic, proving irrationality of $\sqrt{2}, \sqrt{3}, \sqrt{5}$, and prime factorisation techniques.
                     </p>
                     <div class="text-xs font-semibold text-amber-600 bg-amber-50 px-3 py-1.5 rounded-lg inline-block">
                         ★ High Frequency Board Topic
@@ -561,7 +567,7 @@
                     <span class="text-xs font-bold text-indigo-600 uppercase tracking-wider">Unit II • Algebra</span>
                     <h3 class="text-xl font-bold font-heading text-slate-900 mt-2 mb-3">2. Polynomials</h3>
                     <p class="text-sm text-slate-600 mb-4 leading-relaxed">
-                        Geometrical meaning of zeroes, relationship between zeroes and coefficients of quadratic polynomials.
+                        Geometrical meaning of zeroes, relationship between zeroes and coefficients ($\alpha + \beta = -\frac{b}{a}$, $\alpha\beta = \frac{c}{a}$).
                     </p>
                     <div class="text-xs font-semibold text-indigo-600 bg-indigo-50 px-3 py-1.5 rounded-lg inline-block">
                         Zeroes &amp; Graphical Analysis
@@ -587,7 +593,7 @@
                     <span class="text-xs font-bold text-indigo-600 uppercase tracking-wider">Unit II • Algebra</span>
                     <h3 class="text-xl font-bold font-heading text-slate-900 mt-2 mb-3">3. Linear Equations</h3>
                     <p class="text-sm text-slate-600 mb-4 leading-relaxed">
-                        Pair of linear equations in two variables: graphical method, substitution method, and elimination method.
+                        Pair of linear equations in two variables ($a_1 x + b_1 y + c_1 = 0$): graphical, substitution, and elimination methods.
                     </p>
                     <div class="text-xs font-semibold text-slate-700 bg-slate-100 px-3 py-1.5 rounded-lg inline-block">
                         Word Problems Mastery
@@ -613,7 +619,7 @@
                     <span class="text-xs font-bold text-indigo-600 uppercase tracking-wider">Unit II • Algebra</span>
                     <h3 class="text-xl font-bold font-heading text-slate-900 mt-2 mb-3">4. Quadratic Equations</h3>
                     <p class="text-sm text-slate-600 mb-4 leading-relaxed">
-                        Standard form ax² + bx + c = 0, solutions by factorisation, quadratic formula, nature of roots (discriminant D).
+                        Standard form $ax^2 + bx + c = 0$, solutions by factorisation, quadratic formula, nature of roots (discriminant $D = b^2 - 4ac$).
                     </p>
                     <div class="text-xs font-semibold text-amber-600 bg-amber-50 px-3 py-1.5 rounded-lg inline-block">
                         ★ 5-Mark Word Problems
@@ -622,7 +628,7 @@
                 <div style="background: #0f172a; border-left: 4px solid #06b6d4; padding: 14px; border-radius: 8px; margin: 16px 0 0 0;">
                     <h4 style="color: #38bdf8; margin: 0 0 6px 0; font-size: 0.875rem; font-weight: 700;">🧪 Visualize It Live in 3D:</h4>
                     <p style="color: #cbd5e1; margin: 0 0 10px 0; font-size: 0.8rem; line-height: 1.4;">
-                        Don't just memorize this formula. Drag discriminant D = b² - 4ac and watch parabola roots morph in Alka Ma'am's virtual lab:
+                        Don't just memorize this formula. Drag discriminant $D = b^2 - 4ac$ and watch parabola roots morph in Alka Ma'am's virtual lab:
                     </p>
                     <a href="https://labs.itsmathtime.co.in/simulators/quadratic-roots"
                        target="_blank"
@@ -639,7 +645,7 @@
                     <span class="text-xs font-bold text-indigo-600 uppercase tracking-wider">Unit II • Algebra</span>
                     <h3 class="text-xl font-bold font-heading text-slate-900 mt-2 mb-3">5. Arithmetic Progressions</h3>
                     <p class="text-sm text-slate-600 mb-4 leading-relaxed">
-                        General term (n-th term: a + (n-1)d), sum of first n terms (Sn = n/2[2a + (n-1)d]), and daily life applications.
+                        General term ($n$-th term: $a_n = a + (n-1)d$), sum of first $n$ terms ($S_n = \frac{n}{2}[2a + (n-1)d]$), and daily life applications.
                     </p>
                     <div class="text-xs font-semibold text-emerald-600 bg-emerald-50 px-3 py-1.5 rounded-lg inline-block">
                         Formula Applications
@@ -674,7 +680,7 @@
                 <div style="background: #0f172a; border-left: 4px solid #06b6d4; padding: 14px; border-radius: 8px; margin: 16px 0 0 0;">
                     <h4 style="color: #38bdf8; margin: 0 0 6px 0; font-size: 0.875rem; font-weight: 700;">🔬 Test This Theorem Live in 3D:</h4>
                     <p style="color: #cbd5e1; margin: 0 0 10px 0; font-size: 0.8rem; line-height: 1.4;">
-                        Slide parallel transversals and verify Thales Theorem (AD/DB = AE/EC) live in Alka Ma'am's virtual lab:
+                        Slide parallel transversals and verify Thales Theorem ($\frac{AD}{DB} = \frac{AE}{EC}$) live in Alka Ma'am's virtual lab:
                     </p>
                     <a href="https://labs.itsmathtime.co.in/simulators/similar-triangles"
                        target="_blank"
@@ -691,7 +697,7 @@
                     <span class="text-xs font-bold text-rose-600 uppercase tracking-wider">Unit V • Trigonometry</span>
                     <h3 class="text-xl font-bold font-heading text-slate-900 mt-2 mb-3">7. Intro to Trigonometry</h3>
                     <p class="text-sm text-slate-600 mb-4 leading-relaxed">
-                        Trigonometric ratios (sin, cos, tan, cosec, sec, cot), specific angle values (0°, 30°, 45°, 60°, 90°), and identities.
+                        Trigonometric ratios ($\sin \theta, \cos \theta, \tan \theta, \csc \theta, \sec \theta, \cot \theta$), standard angle values ($0^\circ, 30^\circ, 45^\circ, 60^\circ, 90^\circ$), and fundamental Pythagorean identities ($\sin^2 \theta + \cos^2 \theta = 1$).
                     </p>
                     <div class="text-xs font-semibold text-rose-600 bg-rose-50 px-3 py-1.5 rounded-lg inline-block">
                         ★ Identities Proofs
@@ -821,7 +827,7 @@
                     <span class="text-xs font-bold text-emerald-600 uppercase tracking-wider">Unit IV • Coordinate Geometry</span>
                     <h3 class="text-xl font-bold font-heading text-slate-900 mt-2 mb-3">12. Coordinate Geometry</h3>
                     <p class="text-sm text-slate-600 mb-4 leading-relaxed">
-                        Distance formula between two points, section formula (internal division), and midpoint calculations.
+                        Distance formula between two points, section formula (internal division: $\frac{m_1 x_2 + m_2 x_1}{m_1 + m_2}, \frac{m_1 y_2 + m_2 y_1}{m_1 + m_2}$), and midpoint calculations.
                     </p>
                     <div class="text-xs font-semibold text-emerald-600 bg-emerald-50 px-3 py-1.5 rounded-lg inline-block">
                         Formula Direct Scoring
@@ -830,7 +836,7 @@
                 <div style="background: #0f172a; border-left: 4px solid #06b6d4; padding: 14px; border-radius: 8px; margin: 16px 0 0 0;">
                     <h4 style="color: #38bdf8; margin: 0 0 6px 0; font-size: 0.875rem; font-weight: 700;">🧪 Visualize It Live in 3D:</h4>
                     <p style="color: #cbd5e1; margin: 0 0 10px 0; font-size: 0.8rem; line-height: 1.4;">
-                        Don't just memorize this formula. Drag division ratios m₁:m₂ on the section line in Alka Ma'am's virtual lab:
+                        Don't just memorize this formula. Drag division ratios $m_1:m_2$ on the section line in Alka Ma'am's virtual lab:
                     </p>
                     <a href="https://labs.itsmathtime.co.in/simulators/coordinate-section-formula"
                        target="_blank"
