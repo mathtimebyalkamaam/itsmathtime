@@ -28,6 +28,9 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+    <link rel="dns-prefetch" href="https://www.googletagmanager.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 
     <!-- SEO Meta Tags -->
@@ -147,6 +150,9 @@
     </script>
 </head>
 <body class="bg-slate-50 text-slate-800">
+    <!-- Skip to Main Content (Accessibility WCAG 2.1) -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
 
     <!-- Announcement Bar -->
     <div class="bg-gradient-to-r from-indigo-950 via-slate-900 to-indigo-950 text-indigo-200 text-xs py-2 px-4 text-center border-b border-indigo-800/40 relative z-50">
@@ -339,7 +345,7 @@
             </div>
 
             <!-- Mobile Menu Button -->
-            <button id="mobile-menu-button" aria-label="Toggle navigation menu" aria-expanded="false" class="lg:hidden p-2 rounded-xl text-slate-300 hover:text-white hover:bg-white/10 focus:outline-none transition-colors">
+            <button id="mobile-menu-button" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobile-menu" class="lg:hidden p-2 rounded-xl text-slate-300 hover:text-white hover:bg-white/10 focus:outline-none transition-colors">
                 <svg id="hamburger-icon" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
                 </svg>
@@ -429,7 +435,9 @@
         </div>
     </header>
 
-    <!-- Hero Section -->
+    
+    <main id="main-content">
+<!-- Hero Section -->
     <section class="bg-gradient-to-b from-[#0a0f1d] via-[#101828] to-[#0f172a] text-white py-16 sm:py-24 relative overflow-hidden">
         <div class="container mx-auto px-4 sm:px-6 text-center max-w-4xl relative z-10">
             <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-amber-400/15 border border-amber-400/30 text-amber-300 text-xs sm:text-sm font-semibold mb-6">
@@ -840,6 +848,8 @@
     </section>
 
     <!-- Footer -->
+
+    </main>
     <footer class="bg-slate-950 text-slate-300 pt-16 pb-12 border-t border-white/10 relative overflow-hidden">
         <!-- Background Subtle Glow Orbs -->
         <div class="absolute -top-32 left-1/4 w-80 h-80 bg-blue-600/10 rounded-full blur-3xl pointer-events-none"></div>
@@ -850,7 +860,7 @@
                 <!-- Column 1: Brand & Educator Profile (lg:col-span-3) -->
                 <div class="lg:col-span-3 space-y-4">
                     <a href="/#home" class="inline-block group py-1" aria-label="MathTime by Alka Ma'am">
-                        <img src="logo-transparent.png" alt="MathTime by Alka Ma'am" width="124" height="48" loading="lazy" decoding="async" class="h-11 sm:h-12 w-auto object-contain group-hover:scale-105 transition-transform duration-300">
+                        <img src="logo-transparent.png" alt="MathTime by Alka Ma'am" width="124" height="48" fetchpriority="high" decoding="async" decoding="async" class="h-11 sm:h-12 w-auto object-contain group-hover:scale-105 transition-transform duration-300">
                     </a>
 
                     <p class="text-slate-400 text-sm leading-relaxed">

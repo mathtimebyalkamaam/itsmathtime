@@ -493,6 +493,8 @@
     </script>
 </head>
 <body class="text-gray-800">
+    <!-- Skip to Main Content (Accessibility WCAG 2.1) -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
 
     <!-- Announcement Bar -->
     <div class="bg-gradient-to-r from-cyan-950 via-slate-900 to-indigo-950 text-cyan-200 text-xs py-2 px-4 text-center border-b border-cyan-800/40 relative z-50">
@@ -708,7 +710,7 @@
             </div>
 
             <!-- Mobile Menu Button -->
-            <button id="mobile-menu-button" aria-label="Toggle navigation menu" aria-expanded="false" class="lg:hidden p-2 rounded-xl text-slate-300 hover:text-white hover:bg-white/10 focus:outline-none transition-colors">
+            <button id="mobile-menu-button" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobile-menu" class="lg:hidden p-2 rounded-xl text-slate-300 hover:text-white hover:bg-white/10 focus:outline-none transition-colors">
                 <svg id="hamburger-icon" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
                 </svg>
@@ -810,7 +812,7 @@
         </div>
     </header>
 
-    <main>
+    <main id="main-content">
         <!-- Modern Hero Section -->
         <section id="home" class="relative min-h-[92vh] flex items-center bg-gradient-to-b from-[#0a0f1d] via-[#101828] to-[#0f172a] text-white pt-12 pb-20 overflow-hidden">
             <!-- Math Particles Canvas (Interactive physics) -->
@@ -3079,7 +3081,7 @@
                     <div class="lg:col-span-5 space-y-6 animate-on-scroll fade-in-up">
                         <div class="bg-white/[0.05] border border-white/10 rounded-3xl p-6 sm:p-8 backdrop-blur-xl">
                             <div class="mb-5 pb-5 border-b border-white/10">
-                                <img src="logo-transparent.png" alt="MathTime by Alka Ma'am" width="103" height="40" loading="lazy" decoding="async" class="h-10 w-auto object-contain">
+                                <img src="logo-transparent.png" alt="MathTime by Alka Ma'am" width="103" height="40" fetchpriority="high" decoding="async" decoding="async" class="h-10 w-auto object-contain">
                             </div>
                             <h3 class="text-xl font-bold text-white mb-4 font-heading">Direct Channels</h3>
                             
@@ -3484,7 +3486,7 @@
         <!-- Lightbox Content Container -->
         <div class="relative max-w-4xl w-full flex flex-col items-center">
             <div class="relative overflow-hidden rounded-2xl shadow-2xl border border-white/10 bg-slate-900 max-h-[75vh]">
-                <img id="lightbox-img" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'%3E%3C/svg%3E" alt="Gallery Image" class="w-auto max-h-[75vh] object-contain transition-all duration-300">
+                <img id="lightbox-img" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'%3E%3C/svg%3E" alt="Gallery Image" width="800" height="600" class="w-auto max-h-[75vh] object-contain transition-all duration-300">
             </div>
             <!-- Caption & Counter -->
             <div class="mt-4 flex items-center justify-between w-full px-2 text-white text-sm sm:text-base">

@@ -1,4 +1,4 @@
-// --- Mobile Menu Toggle with Icon State ---
+// --- Mobile Menu Toggle with Accessible State & Keyboard Navigation ---
 function setupMobileMenu() {
     const mobileMenuButton = document.getElementById('mobile-menu-button');
     const mobileMenu = document.getElementById('mobile-menu');
@@ -6,12 +6,41 @@ function setupMobileMenu() {
     const closeIcon = document.getElementById('close-icon');
 
     if (mobileMenuButton && mobileMenu) {
-        mobileMenuButton.addEventListener('click', () => {
-            const isHidden = mobileMenu.classList.toggle('hidden');
-            mobileMenuButton.setAttribute('aria-expanded', (!isHidden).toString());
+        mobileMenuButton.setAttribute('aria-controls', 'mobile-menu');
+
+        const toggleMenu = (forceOpen) => {
+            const shouldOpen = forceOpen !== undefined ? forceOpen : mobileMenu.classList.contains('hidden');
+            mobileMenu.classList.toggle('hidden', !shouldOpen);
+            mobileMenuButton.setAttribute('aria-expanded', shouldOpen.toString());
             if (hamburgerIcon && closeIcon) {
-                hamburgerIcon.classList.toggle('hidden', !isHidden);
-                closeIcon.classList.toggle('hidden', isHidden);
+                hamburgerIcon.classList.toggle('hidden', shouldOpen);
+                closeIcon.classList.toggle('hidden', !shouldOpen);
+            }
+            if (shouldOpen) {
+                const firstLink = mobileMenu.querySelector('a, button');
+                if (firstLink) firstLink.focus();
+            }
+        };
+
+        mobileMenuButton.addEventListener('click', (e) => {
+            e.stopPropagation();
+            toggleMenu();
+        });
+
+        // Close on Escape key and return focus to toggle button
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && !mobileMenu.classList.contains('hidden')) {
+                toggleMenu(false);
+                mobileMenuButton.focus();
+            }
+        });
+
+        // Close on click outside
+        document.addEventListener('click', (e) => {
+            if (!mobileMenu.classList.contains('hidden') &&
+                !mobileMenu.contains(e.target) &&
+                !mobileMenuButton.contains(e.target)) {
+                toggleMenu(false);
             }
         });
     }
@@ -189,6 +218,12 @@ function animateOnLoadElements() {
 // Function to handle elements that animate on scroll
 function setupScrollAnimations() {
     const animateElements = document.querySelectorAll('.animate-on-scroll');
+    if (!animateElements.length) return;
+
+    if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+        animateElements.forEach(el => el.classList.add('is-visible'));
+        return;
+    }
 
     const observerOptions = {
         root: null, // viewport
@@ -453,6 +488,10 @@ function setupHeaderScrollAndSpy() {
 
 // --- Floating Math Particles Engine (Canvas Physics) ---
 function setupMathParticles() {
+    if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+        return;
+    }
+
     const canvas = document.getElementById('math-particles-canvas');
     if (!canvas) return;
 
@@ -712,6 +751,7 @@ function setupVideoModal() {
 function setup3DTiltEffect() {
     // Only apply on fine-pointer devices (desktops/laptops) for best performance
     if (window.matchMedia('(pointer: coarse)').matches) return;
+    if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
 
     const cards = document.querySelectorAll('.tilt-card');
     cards.forEach(card => {

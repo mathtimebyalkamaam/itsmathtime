@@ -931,5 +931,98 @@ textarea:focus-visible {
     }
 }
 
+/* ==========================================================================
+   Accessibility & Mobile-First Performance Enhancements
+   ========================================================================== */
+
+/* 1. Skip to Main Content Link (WCAG 2.1 Level A) */
+.skip-link {
+    position: absolute;
+    top: -120px;
+    left: 1rem;
+    z-index: 99999;
+    padding: 0.75rem 1.25rem;
+    background: #f59e0b;
+    color: #0f172a;
+    font-weight: 800;
+    font-size: 0.875rem;
+    border-radius: 0.75rem;
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.4), 0 0 0 2px #ffffff;
+    text-decoration: none;
+    transition: top 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.skip-link:focus,
+.skip-link:focus-visible {
+    top: 1rem;
+    outline: 3px solid #38bdf8;
+    outline-offset: 3px;
+}
+
+/* 2. Global Keyboard Focus Indicator (WCAG 2.1 Focus Visible) */
+:focus-visible {
+    outline: 2px solid #38bdf8;
+    outline-offset: 2px;
+}
+
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+    outline: 2px solid #38bdf8;
+    outline-offset: 2px;
+}
+
+/* 3. Mobile Touch Target Normalization */
+@media (max-width: 768px) {
+    #mobile-menu a,
+    #mobile-menu button {
+        min-height: 44px;
+        display: flex;
+        align-items: center;
+    }
+}
+
+/* 4. Responsive Table Containers with Smooth Touch Scroll */
+.overflow-x-auto {
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: thin;
+}
+
+/* 5. Prefers-Reduced-Motion Engine */
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto !important;
+    }
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.001ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.001ms !important;
+        scroll-behavior: auto !important;
+    }
+
+    .animate-float-1,
+    .animate-float-2,
+    .animate-float-3,
+    .animate-float-4,
+    .animate-pulse-glow,
+    .anim-pulse,
+    .anim-sweep,
+    .animate-on-scroll {
+        animation: none !important;
+        transform: none !important;
+        opacity: 1 !important;
+    }
+
+    .glass-pill:hover {
+        transform: none !important;
+    }
+}
+
+
 
 
