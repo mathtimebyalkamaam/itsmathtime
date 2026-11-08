@@ -4,6 +4,8 @@
 
 ## Core Resources & Pages
 - [Home Page](https://itsmathtime.co.in/): Overview of MathTime learning programs, educator background, featured video lessons, and student resources.
+- [CBSE Class 12 Math Board Hub](https://itsmathtime.co.in/class-12-math.html): Complete Senior Secondary NCERT syllabus breakdown, 35-mark Calculus core, 3D vectors & skew lines proofs, and 95%+ board playbook.
+- [CBSE Class 11 Math Hub](https://itsmathtime.co.in/class-11-math.html): Senior Secondary foundation, Sets, ASTC Trigonometry, Conic sections, Limits first principles, and interactive 3D simulations.
 - [CBSE Class 10 Math Guide](https://itsmathtime.co.in/class-10-math.html): Complete chapter-wise syllabus breakdown, high-yield board exam strategies, and video tutorials for Class 10 students.
 - [CBSE Class 10 Board Exam Hacks](https://itsmathtime.co.in/class-10-math-tips.html): 7 secret board hacks, discriminant zero trap, animated circle theorem proof, and time triage tips.
 - [Class 11 Math Survival Blueprint](https://itsmathtime.co.in/class-11-math-tips.html): 6 high-yield calculus and trig shortcuts, ASTC quadrant rule, animated unit circle, and binomial theorem formulas.
