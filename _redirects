@@ -8,5 +8,17 @@
 /simulators      https://labs.itsmathtime.co.in/                  301
 /simulators/*    https://labs.itsmathtime.co.in/simulators/:splat 301
 
+# Extensionless educational routes & sitemap alias
+/class-8-math           /class-8-math.html          200
+/class-9-math           /class-9-math.html          200
+/class-10-math          /class-10-math.html         200
+/class-10-math-tips     /class-10-math-tips.html    200
+/class-11-math-tips     /class-11-math-tips.html    200
+/class-12-math-tips     /class-12-math-tips.html    200
+/math-tricks            /math-tricks.html           200
+/privacy-policy         /privacy-policy.html        200
+/terms-of-service       /terms-of-service.html      200
+/sitemap                /sitemap.xml                301
+
 # Custom 404 error page handling
 /*    /404.html    404

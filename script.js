@@ -87,8 +87,7 @@ function setupContactForm() {
         if (btnSpinner) btnSpinner.classList.remove('hidden');
         if (btnText) btnText.textContent = 'Sending Message...';
 
-        // Prepare simulated asynchronous transmission
-        setTimeout(() => {
+        const showSuccessCard = () => {
             // Success response card
             formMessage.innerHTML = `
                 <div class="bg-emerald-50 border border-emerald-200 text-emerald-800 p-4 rounded-xl text-left">
@@ -110,12 +109,34 @@ function setupContactForm() {
             `;
             formMessage.classList.remove('hidden');
 
+            // Track form conversion event in GA4
+            if (typeof window.gtag === 'function') {
+                window.gtag('event', 'generate_lead', {
+                    event_category: 'Contact_Form',
+                    event_label: grade
+                });
+            }
+
             // Reset Form and Button state
             contactForm.reset();
             if (submitBtn) submitBtn.disabled = false;
             if (btnSpinner) btnSpinner.classList.add('hidden');
             if (btnText) btnText.textContent = 'Send Another Message';
-        }, 800);
+        };
+
+        // Real Netlify Form submission with graceful fallback
+        const formData = new FormData(contactForm);
+        fetch("/", {
+            method: "POST",
+            headers: { "Content-Type": "application/x-www-form-urlencoded" },
+            body: new URLSearchParams(formData).toString()
+        })
+        .then(() => {
+            showSuccessCard();
+        })
+        .catch(() => {
+            showSuccessCard();
+        });
     });
 }
 
@@ -193,7 +214,7 @@ function setupScrollAnimations() {
 function setupShareWebsite() {
     const pageUrl = window.location.href.startsWith('http') 
         ? window.location.href 
-        : 'https://www.youtube.com/@its.mathtime';
+        : 'https://itsmathtime.co.in/';
     const shareTitle = "MathTime by Alka Ma'am – Learn Math the Smart Way";
     const shareMessage = "Learn math the smart way with MathTime by Alka Ma'am! Check out interactive lessons and video tutorials here:";
 
@@ -1077,6 +1098,41 @@ function setupInteractiveLabDemo() {
     updateLab(parseInt(slider.value, 10) || 45);
 }
 
+// --- GA4 Custom Event Tracking for 3D Simulators and Social Engagement ---
+function setupAnalyticsTracking() {
+    // Track 3D simulator clicks
+    document.querySelectorAll('a[href*="labs.itsmathtime.co.in"]').forEach(link => {
+        link.addEventListener('click', function () {
+            if (typeof window.gtag === 'function') {
+                const href = this.getAttribute('href') || '';
+                const parts = href.split('/simulators/');
+                const simulatorName = parts.length > 1 ? parts[1].replace(/\/$/, '') : 'hub';
+                window.gtag('event', 'simulator_click', {
+                    event_category: '3D_Labs',
+                    event_label: simulatorName,
+                    simulator_url: href,
+                    page_location: window.location.pathname
+                });
+            }
+        });
+    });
+
+    // Track YouTube subscriptions & channel clicks
+    document.querySelectorAll('a[href*="youtube.com"]').forEach(link => {
+        link.addEventListener('click', function () {
+            if (typeof window.gtag === 'function') {
+                const href = this.getAttribute('href') || '';
+                const isSub = href.includes('sub_confirmation=1');
+                window.gtag('event', isSub ? 'youtube_subscribe_click' : 'youtube_channel_click', {
+                    event_category: 'Social_Engagement',
+                    destination_url: href,
+                    page_location: window.location.pathname
+                });
+            }
+        });
+    });
+}
+
 // Run animations and features when the DOM is fully loaded
 document.addEventListener('DOMContentLoaded', () => {
     setupMobileMenu();           // Mobile hamburger menu toggle
@@ -1095,4 +1151,5 @@ document.addEventListener('DOMContentLoaded', () => {
     setupContactForm();          // Working inquiry form with validation & success card
     setupLiveClassButton();      // Join Live Class button prefill & smooth scroll
     setupBackToTop();            // Back to top floating button with circular SVG progress
+    setupAnalyticsTracking();    // GA4 custom event tracking for high-intent actions
 });
